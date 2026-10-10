@@ -10,6 +10,25 @@ Research programme for building an agent that plays the native **Mini Motorways*
 * A **traffic-aware bypass** (opt-in `Weights(bypass=True)`) is implemented and demonstrated on one case; its value is unproven (S37, stopped).
 * Work was halted at the user's request with S36 at 80 % and S37 in progress; both reports state exactly what is partial.
 
+## Project status: discontinued
+The author stopped the project here (October 2026). It is published as-is for anyone who wants to pick it up. Nothing is being maintained.
+
+### What works
+* Lock-step control of the real game (headless or visible) with a native legal-action mask, verified reward accounting and reproducible deterministic play.
+* Planner B+ plays legally and safely for 5–7 game weeks; its regression tests (`research/s36_rebaseline/code/test_bplus.py`) pass apart from one test whose criterion was corrected but not rerun.
+* A complete evaluation pipeline (paired seeds, bootstrap CIs, separate reporting of training-run and rollout variation) and ~1,000 logged native episodes.
+
+### Open problems (unsolved, in rough order of importance)
+1. **The game is lost to colour timing, not to roads.** Every agent dies when a colour's destination demand outruns its car supply — either immediately (a colour's first destination spawns before any house of it; ~25 % of seeds end at decision ~140 with 2–5 deliveries) or at week 5–7 (several colours overcrowd at once). No road action changes car supply; routing is static and density-blind (S25). The only untested levers are the weekly upgrade choice (found inert for the agents tried, M1) and whatever a human does differently in weeks 5+.
+2. **No agent reaches week 8.** Horizon 1,500 (≈ 10.7 weeks) was never reached by anything; the best episodes end around decision 1,070.
+3. **RL did not add value over a correct planner.** The hybrid PPO's gains over the original planner were the planner's own bug (ignored new destinations); against the fixed planner every checkpoint is behind (S36, partial). Three training seeds gave three different policies (replication). Colour separation was never learned by any architecture (S16/S17).
+4. **The bypass idea is unresolved.** The mechanism works (S37: detects a 2× detour, builds it, cars use it, the targeted colour stops piling up pins), but its effect on outcomes was measured on one confounded seed and fired on only 1 of 13 further seeds under the rules tried. The proposed next step (continuous expected-benefit score instead of thresholds; then possibly a small learned build/don't-build decision) was not implemented.
+5. **S36 rebaseline is 80 % complete**; the new-seed hybrid cells have 1–3 rollouts.
+6. **Known smaller issues:** the planner's route search is concrete-first and never re-optimises a connected house (deliberate, but produces 2× detours); the executor sometimes refuses routes because a new driveway would mothball a connecting one (`would_destroy` abandons, up to 141 in one episode); a rare native state transient makes stochastic rollouts non-reproducible even with fixed torch seeds; launching more than ~4–5 game instances at once causes IPC start-up timeouts; the HUD road-count badge appears to show only the last digit of the inventory (the exported number is the simulation's).
+
+### If you continue
+Start from `research/CORRECTED_PLANNER_REBASELINE_S36.md` and `research/TRAFFIC_BYPASS_S37.md`; the environment version to use is plugin build `postfix_v8` (hash in `research/spawn_harness/backup/SHA256.txt`); do not tune on the 12 development seeds (500000 + 7919·i), the 8 fresh seeds (900000 + 7919·i) or the 12 new seeds (1100003 + 7919·i) — pick a new family.
+
 ## Layout
 | path | what |
 |---|---|
