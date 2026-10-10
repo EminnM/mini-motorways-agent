@@ -1,5 +1,7 @@
 # Mini Motorways agent research
 
+> **Disclaimer.** Independent research and educational project. Not affiliated with, endorsed by, or supported by Dinosaur Polo Club. It requires your own legitimately purchased copy of *Mini Motorways*; no game files, assets, binaries or decompiled game source are included or distributed here — only our own code and our own experiment data. Modifying or instrumenting the game may be subject to the game's and Steam's terms; use at your own responsibility. Nothing here affects other players (single-player game, no online component).
+
 Research programme for building an agent that plays the native **Mini Motorways** (Unity) game through an in-process plugin, with a deterministic planner, reinforcement-learning experiments, and a long series of audited native experiments. Everything is documented as phase reports under `research/`; start with **[`research/SYSTEM_OVERVIEW.md`](research/SYSTEM_OVERVIEW.md)** (how the stack works) and the phase table below.
 
 ## Status (October 2026)
