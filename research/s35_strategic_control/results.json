@@ -1,0 +1,727 @@
+{
+ "summary": {
+  "d2only": {
+   "n": 10,
+   "deliveries_total": 398.0,
+   "deliveries_median": 38.0,
+   "length_median": 304.5,
+   "survived": 0,
+   "illegal": 0,
+   "concrete_unspent_mean": 35.5,
+   "connected_end_mean": 7.8,
+   "houses_end_mean": 8.7,
+   "all_houses_connected_at_end": 6,
+   "gameover_with_overcrowded_dest": 10,
+   "abandoned": 0,
+   "destroy_vetoes": 0,
+   "kinds": {
+    "WAIT": 2557,
+    "ADD": 316,
+    "REMOVE": 0,
+    "UPG": 17
+   }
+  },
+  "default": {
+   "n": 10,
+   "deliveries_total": 388.0,
+   "deliveries_median": 38.0,
+   "length_median": 304.5,
+   "survived": 0,
+   "illegal": 0,
+   "concrete_unspent_mean": 35.8,
+   "connected_end_mean": 7.8,
+   "houses_end_mean": 8.7,
+   "all_houses_connected_at_end": 6,
+   "gameover_with_overcrowded_dest": 10,
+   "abandoned": 0,
+   "destroy_vetoes": 0,
+   "kinds": {
+    "WAIT": 2562,
+    "ADD": 311,
+    "REMOVE": 0,
+    "UPG": 17
+   }
+  },
+  "plannerB": {
+   "n": 10,
+   "deliveries_total": 485.0,
+   "deliveries_median": 36.0,
+   "length_median": 298.5,
+   "survived": 0,
+   "illegal": 0,
+   "concrete_unspent_mean": 37.3,
+   "connected_end_mean": 8.0,
+   "houses_end_mean": 9.0,
+   "all_houses_connected_at_end": 6,
+   "gameover_with_overcrowded_dest": 10,
+   "abandoned": 0,
+   "destroy_vetoes": 0,
+   "kinds": {
+    "WAIT": 2776,
+    "ADD": 296,
+    "REMOVE": 0,
+    "UPG": 19
+   }
+  },
+  "random_r0": {
+   "n": 10,
+   "deliveries_total": 497.0,
+   "deliveries_median": 38.5,
+   "length_median": 307.0,
+   "survived": 0,
+   "illegal": 0,
+   "concrete_unspent_mean": 35.0,
+   "connected_end_mean": 8.2,
+   "houses_end_mean": 9.1,
+   "all_houses_connected_at_end": 6,
+   "gameover_with_overcrowded_dest": 10,
+   "abandoned": 0,
+   "destroy_vetoes": 0,
+   "kinds": {
+    "WAIT": 2793,
+    "ADD": 338,
+    "REMOVE": 0,
+    "UPG": 19
+   }
+  },
+  "random_r1": {
+   "n": 10,
+   "deliveries_total": 391.0,
+   "deliveries_median": 38.0,
+   "length_median": 304.5,
+   "survived": 0,
+   "illegal": 0,
+   "concrete_unspent_mean": 36.0,
+   "connected_end_mean": 8.0,
+   "houses_end_mean": 8.9,
+   "all_houses_connected_at_end": 6,
+   "gameover_with_overcrowded_dest": 10,
+   "abandoned": 0,
+   "destroy_vetoes": 0,
+   "kinds": {
+    "WAIT": 2585,
+    "ADD": 288,
+    "REMOVE": 0,
+    "UPG": 17
+   }
+  },
+  "random_r2": {
+   "n": 10,
+   "deliveries_total": 387.0,
+   "deliveries_median": 36.0,
+   "length_median": 298.5,
+   "survived": 0,
+   "illegal": 0,
+   "concrete_unspent_mean": 37.7,
+   "connected_end_mean": 7.3,
+   "houses_end_mean": 8.3,
+   "all_houses_connected_at_end": 6,
+   "gameover_with_overcrowded_dest": 10,
+   "abandoned": 0,
+   "destroy_vetoes": 0,
+   "kinds": {
+    "WAIT": 2519,
+    "ADD": 295,
+    "REMOVE": 0,
+    "UPG": 17
+   }
+  },
+  "vis_plannerB": {
+   "n": 1,
+   "deliveries_total": 41.0,
+   "deliveries_median": 41.0,
+   "length_median": 294.0,
+   "survived": 0,
+   "illegal": 0,
+   "concrete_unspent_mean": 40.0,
+   "connected_end_mean": 9.0,
+   "houses_end_mean": 9.0,
+   "all_houses_connected_at_end": 1,
+   "gameover_with_overcrowded_dest": 1,
+   "abandoned": 0,
+   "destroy_vetoes": 0,
+   "kinds": {
+    "WAIT": 264,
+    "ADD": 28,
+    "REMOVE": 0,
+    "UPG": 2
+   }
+  },
+  "wrapper": {
+   "n": 10,
+   "deliveries_total": 485.0,
+   "deliveries_median": 36.0,
+   "length_median": 298.5,
+   "survived": 0,
+   "illegal": 0,
+   "concrete_unspent_mean": 37.3,
+   "connected_end_mean": 8.0,
+   "houses_end_mean": 9.0,
+   "all_houses_connected_at_end": 6,
+   "gameover_with_overcrowded_dest": 10,
+   "abandoned": 0,
+   "destroy_vetoes": 0,
+   "kinds": {
+    "WAIT": 2776,
+    "ADD": 296,
+    "REMOVE": 0,
+    "UPG": 19
+   }
+  }
+ },
+ "paired_vs_plannerB": {
+  "d2only": {
+   "deliveries": {
+    "n": 10,
+    "sum": -87.0,
+    "higher": 2,
+    "equal": 7,
+    "lower": 1,
+    "ci95_mean": [
+     -30.5,
+     3.7
+    ],
+    "diffs": [
+     0.0,
+     -104.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     10.0,
+     7.0,
+     0.0,
+     0.0
+    ]
+   },
+   "length": {
+    "n": 10,
+    "sum": -201.0,
+    "higher": 1,
+    "equal": 8,
+    "lower": 1,
+    "ci95_mean": [
+     -78.0,
+     17.7
+    ],
+    "diffs": [
+     0.0,
+     -260.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     59.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "identical_outcome_seeds": 7
+  },
+  "default": {
+   "deliveries": {
+    "n": 10,
+    "sum": -97.0,
+    "higher": 1,
+    "equal": 7,
+    "lower": 2,
+    "ci95_mean": [
+     -31.5,
+     2.7
+    ],
+    "diffs": [
+     0.0,
+     -104.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     10.0,
+     -3.0,
+     0.0,
+     0.0
+    ]
+   },
+   "length": {
+    "n": 10,
+    "sum": -201.0,
+    "higher": 1,
+    "equal": 8,
+    "lower": 1,
+    "ci95_mean": [
+     -78.0,
+     17.7
+    ],
+    "diffs": [
+     0.0,
+     -260.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     59.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "identical_outcome_seeds": 7
+  },
+  "random_r0": {
+   "deliveries": {
+    "n": 10,
+    "sum": 12.0,
+    "higher": 2,
+    "equal": 8,
+    "lower": 0,
+    "ci95_mean": [
+     0.0,
+     3.2
+    ],
+    "diffs": [
+     0.0,
+     2.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     10.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "length": {
+    "n": 10,
+    "sum": 59.0,
+    "higher": 1,
+    "equal": 9,
+    "lower": 0,
+    "ci95_mean": [
+     0.0,
+     17.7
+    ],
+    "diffs": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     59.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "identical_outcome_seeds": 8
+  },
+  "random_r1": {
+   "deliveries": {
+    "n": 10,
+    "sum": -94.0,
+    "higher": 1,
+    "equal": 8,
+    "lower": 1,
+    "ci95_mean": [
+     -31.2,
+     3.0
+    ],
+    "diffs": [
+     0.0,
+     -104.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     10.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "length": {
+    "n": 10,
+    "sum": -201.0,
+    "higher": 1,
+    "equal": 8,
+    "lower": 1,
+    "ci95_mean": [
+     -78.0,
+     17.7
+    ],
+    "diffs": [
+     0.0,
+     -260.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     59.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "identical_outcome_seeds": 8
+  },
+  "random_r2": {
+   "deliveries": {
+    "n": 10,
+    "sum": -98.0,
+    "higher": 1,
+    "equal": 8,
+    "lower": 1,
+    "ci95_mean": [
+     -31.2,
+     1.8
+    ],
+    "diffs": [
+     0.0,
+     -104.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     6.0,
+     0.0,
+     0.0
+    ]
+   },
+   "length": {
+    "n": 10,
+    "sum": -260.0,
+    "higher": 0,
+    "equal": 9,
+    "lower": 1,
+    "ci95_mean": [
+     -78.0,
+     0.0
+    ],
+    "diffs": [
+     0.0,
+     -260.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "identical_outcome_seeds": 8
+  },
+  "vis_plannerB": {
+   "deliveries": {
+    "n": 1,
+    "sum": 0.0,
+    "higher": 0,
+    "equal": 1,
+    "lower": 0,
+    "ci95_mean": [
+     0.0,
+     0.0
+    ],
+    "diffs": [
+     0.0
+    ]
+   },
+   "length": {
+    "n": 1,
+    "sum": -21.0,
+    "higher": 0,
+    "equal": 0,
+    "lower": 1,
+    "ci95_mean": [
+     -21.0,
+     -21.0
+    ],
+    "diffs": [
+     -21.0
+    ]
+   },
+   "identical_outcome_seeds": 0
+  },
+  "wrapper": {
+   "deliveries": {
+    "n": 10,
+    "sum": 0.0,
+    "higher": 0,
+    "equal": 10,
+    "lower": 0,
+    "ci95_mean": [
+     0.0,
+     0.0
+    ],
+    "diffs": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "length": {
+    "n": 10,
+    "sum": 0.0,
+    "higher": 0,
+    "equal": 10,
+    "lower": 0,
+    "ci95_mean": [
+     0.0,
+     0.0
+    ],
+    "diffs": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "identical_outcome_seeds": 10
+  }
+ },
+ "network_divergence": {
+  "d2only": {
+   "100": {
+    "n": 10,
+    "jaccard_mean": 0.7106763300931658,
+    "jaccard_min": 0.2571428571428571,
+    "seeds_identical": 4
+   },
+   "200": {
+    "n": 7,
+    "jaccard_mean": 0.6476337364213978,
+    "jaccard_min": 0.225,
+    "seeds_identical": 3
+   },
+   "300": {
+    "n": 4,
+    "jaccard_mean": 0.5693494596420129,
+    "jaccard_min": 0.3492063492063492,
+    "seeds_identical": 1
+   },
+   "400": {
+    "n": 2,
+    "jaccard_mean": 0.6191123188405797,
+    "jaccard_min": 0.3541666666666667,
+    "seeds_identical": 0
+   }
+  },
+  "default": {
+   "100": {
+    "n": 10,
+    "jaccard_mean": 0.7106763300931658,
+    "jaccard_min": 0.2571428571428571,
+    "seeds_identical": 4
+   },
+   "200": {
+    "n": 7,
+    "jaccard_mean": 0.6476337364213978,
+    "jaccard_min": 0.225,
+    "seeds_identical": 3
+   },
+   "300": {
+    "n": 4,
+    "jaccard_mean": 0.5693494596420129,
+    "jaccard_min": 0.3492063492063492,
+    "seeds_identical": 1
+   },
+   "400": {
+    "n": 2,
+    "jaccard_mean": 0.6052942916296954,
+    "jaccard_min": 0.32653061224489793,
+    "seeds_identical": 0
+   }
+  },
+  "random_r0": {
+   "100": {
+    "n": 10,
+    "jaccard_mean": 0.8409920634920635,
+    "jaccard_min": 0.2571428571428571,
+    "seeds_identical": 7
+   },
+   "200": {
+    "n": 7,
+    "jaccard_mean": 0.8427018633540373,
+    "jaccard_min": 0.225,
+    "seeds_identical": 5
+   },
+   "300": {
+    "n": 4,
+    "jaccard_mean": 0.7424645390070922,
+    "jaccard_min": 0.5531914893617021,
+    "seeds_identical": 1
+   },
+   "400": {
+    "n": 3,
+    "jaccard_mean": 0.7002027943965029,
+    "jaccard_min": 0.5060240963855421,
+    "seeds_identical": 0
+   }
+  },
+  "random_r1": {
+   "100": {
+    "n": 10,
+    "jaccard_mean": 0.7373429967598324,
+    "jaccard_min": 0.2571428571428571,
+    "seeds_identical": 5
+   },
+   "200": {
+    "n": 7,
+    "jaccard_mean": 0.6476337364213978,
+    "jaccard_min": 0.225,
+    "seeds_identical": 3
+   },
+   "300": {
+    "n": 4,
+    "jaccard_mean": 0.686491935483871,
+    "jaccard_min": 0.3709677419354839,
+    "seeds_identical": 2
+   },
+   "400": {
+    "n": 2,
+    "jaccard_mean": 0.5920289855072464,
+    "jaccard_min": 0.3,
+    "seeds_identical": 0
+   }
+  },
+  "random_r2": {
+   "100": {
+    "n": 10,
+    "jaccard_mean": 0.815883097010459,
+    "jaccard_min": 0.38235294117647056,
+    "seeds_identical": 5
+   },
+   "200": {
+    "n": 7,
+    "jaccard_mean": 0.7583480221356835,
+    "jaccard_min": 0.34,
+    "seeds_identical": 4
+   },
+   "300": {
+    "n": 4,
+    "jaccard_mean": 0.5693494596420129,
+    "jaccard_min": 0.3492063492063492,
+    "seeds_identical": 1
+   },
+   "400": {
+    "n": 2,
+    "jaccard_mean": 0.6191123188405797,
+    "jaccard_min": 0.3541666666666667,
+    "seeds_identical": 0
+   }
+  },
+  "vis_plannerB": {
+   "100": {
+    "n": 1,
+    "jaccard_mean": 1.0,
+    "jaccard_min": 1.0,
+    "seeds_identical": 1
+   },
+   "200": {
+    "n": 1,
+    "jaccard_mean": 0.7586206896551724,
+    "jaccard_min": 0.7586206896551724,
+    "seeds_identical": 0
+   }
+  },
+  "wrapper": {
+   "100": {
+    "n": 10,
+    "jaccard_mean": 1.0,
+    "jaccard_min": 1.0,
+    "seeds_identical": 10
+   },
+   "200": {
+    "n": 7,
+    "jaccard_mean": 1.0,
+    "jaccard_min": 1.0,
+    "seeds_identical": 7
+   },
+   "300": {
+    "n": 4,
+    "jaccard_mean": 1.0,
+    "jaccard_min": 1.0,
+    "seeds_identical": 4
+   },
+   "400": {
+    "n": 3,
+    "jaccard_mean": 1.0,
+    "jaccard_min": 1.0,
+    "seeds_identical": 3
+   }
+  }
+ },
+ "decision_points": {
+  "d2only": {
+   "points": 72,
+   "d1_live": 5,
+   "d2_live": 14,
+   "chose_dedicated": 14,
+   "differs_from_planner": 14,
+   "episodes_with_any_difference": 9,
+   "dedicated_extra_cost_mean": 2.142857142857143
+  },
+  "default": {
+   "points": 72,
+   "d1_live": 4,
+   "d2_live": 14,
+   "chose_dedicated": 14,
+   "differs_from_planner": 15,
+   "episodes_with_any_difference": 9,
+   "dedicated_extra_cost_mean": 2.142857142857143
+  },
+  "random_r0": {
+   "points": 73,
+   "d1_live": 3,
+   "d2_live": 18,
+   "chose_dedicated": 12,
+   "differs_from_planner": 12,
+   "episodes_with_any_difference": 8,
+   "dedicated_extra_cost_mean": 2.5555555555555554
+  },
+  "random_r1": {
+   "points": 74,
+   "d1_live": 4,
+   "d2_live": 14,
+   "chose_dedicated": 8,
+   "differs_from_planner": 9,
+   "episodes_with_any_difference": 6,
+   "dedicated_extra_cost_mean": 2.142857142857143
+  },
+  "random_r2": {
+   "points": 70,
+   "d1_live": 5,
+   "d2_live": 13,
+   "chose_dedicated": 10,
+   "differs_from_planner": 11,
+   "episodes_with_any_difference": 8,
+   "dedicated_extra_cost_mean": 1.5384615384615385
+  },
+  "wrapper": {
+   "points": 74,
+   "d1_live": 3,
+   "d2_live": 15,
+   "chose_dedicated": 0,
+   "differs_from_planner": 0,
+   "episodes_with_any_difference": 0,
+   "dedicated_extra_cost_mean": 2.6
+  }
+ }
+}

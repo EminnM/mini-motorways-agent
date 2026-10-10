@@ -1,0 +1,469 @@
+{
+ "1_splits_disjoint_by_scene_house": {
+  "passed": true,
+  "detail": "{'train': 2180, 'validation': 279, 'test': 413} tasks; per-length test counts {2: 88, 3: 100, 5: 100, 7: 93, 10: 32}; no (scene,house) pair or task id shared; overlaps=[]",
+  "stats": {
+   "2": {
+    "enumerated": 548,
+    "train": {
+     "available": 367,
+     "used": 367
+    },
+    "validation": {
+     "available": 93,
+     "used": 60
+    },
+    "test": {
+     "available": 88,
+     "used": 88
+    }
+   },
+   "3": {
+    "enumerated": 728,
+    "train": {
+     "available": 493,
+     "used": 493
+    },
+    "validation": {
+     "available": 124,
+     "used": 60
+    },
+    "test": {
+     "available": 111,
+     "used": 100
+    }
+   },
+   "5": {
+    "enumerated": 988,
+    "train": {
+     "available": 687,
+     "used": 600
+    },
+    "validation": {
+     "available": 139,
+     "used": 60
+    },
+    "test": {
+     "available": 162,
+     "used": 100
+    }
+   },
+   "7": {
+    "enumerated": 746,
+    "train": {
+     "available": 533,
+     "used": 533
+    },
+    "validation": {
+     "available": 120,
+     "used": 60
+    },
+    "test": {
+     "available": 93,
+     "used": 93
+    }
+   },
+   "10": {
+    "enumerated": 258,
+    "train": {
+     "available": 187,
+     "used": 187
+    },
+    "validation": {
+     "available": 39,
+     "used": 39
+    },
+    "test": {
+     "available": 32,
+     "used": 32
+    }
+   }
+  }
+ },
+ "2_every_task_solvable_min_k_correct_any_order": {
+  "passed": true,
+  "detail": "2872 tasks: independent networkx min-edits (live mask + observation) == stored k == generator Dijkstra == route length; the shortest route succeeds in 8616 replays (forward/reverse/random order) with reward 0,...,0,1 and termination exactly at the k-th ADD (13s); violations=[]",
+  "per_k": {
+   "2": 515,
+   "3": 653,
+   "5": 760,
+   "7": 686,
+   "10": 258
+  }
+ },
+ "3_exhaustive_search_confirms_minimum_on_small_tasks": {
+  "passed": true,
+  "detail": "k=2: exhaustive depth<=2 search (all legal actions incl. WAIT/REMOVE) finds the minimum 2 on 30/30 tasks; k=3: no action sequence of length <=2 wins on 4 tasks (84,667 env steps). Larger k rely on the shortest-path lower bound (every successful sequence must add every non-initial edge of a house-carpark path)"
+ },
+ "4_no_single_action_shortcut": {
+  "passed": true,
+  "detail": "500,680 single legal actions (WAIT/ADD/REMOVE) from the start state of all 2872 tasks: 0 reward or terminate (58s)"
+ },
+ "5_partial_routes_and_timeouts_give_zero_reward": {
+  "passed": true,
+  "detail": "4726 routes with one required edge withheld: reward 0, not terminal, not connected; WAIT-only episodes truncate at 10*k with reward 0; violations=[]"
+ },
+ "6_connectivity_detected_independently_of_generator": {
+  "passed": true,
+  "detail": "52,524 visited states: env.connected == observation-only BFS == networkx components == (reward>0) in all; route-minus-one-edge never connects (0 false positives) (69s)"
+ },
+ "7_synthetic_masks_vs_native_masks_on_24_captured_states": {
+  "passed": true,
+  "detail": "ADD recall 100.0% (native-legal edges also legal here), precision 91.6% (synthetic mask is a superset on window-boundary and one-water-endpoint edges); REMOVE sets identical on 24/24 states; WAIT legal 24/24, upgrade slots illegal 24/24; mean legal ADD native 155.3 vs synthetic 169.7",
+  "per_state": [
+   {
+    "seed": 182150,
+    "native_add": 136,
+    "synth_add": 143,
+    "recall": 1.0,
+    "precision": 0.951048951048951,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 7
+   },
+   {
+    "seed": 205907,
+    "native_add": 166,
+    "synth_add": 184,
+    "recall": 1.0,
+    "precision": 0.9021739130434783,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 229664,
+    "native_add": 176,
+    "synth_add": 192,
+    "recall": 1.0,
+    "precision": 0.9166666666666666,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 16
+   },
+   {
+    "seed": 253421,
+    "native_add": 144,
+    "synth_add": 159,
+    "recall": 1.0,
+    "precision": 0.9056603773584906,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 15
+   },
+   {
+    "seed": 261340,
+    "native_add": 154,
+    "synth_add": 166,
+    "recall": 1.0,
+    "precision": 0.927710843373494,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 12
+   },
+   {
+    "seed": 269259,
+    "native_add": 165,
+    "synth_add": 183,
+    "recall": 1.0,
+    "precision": 0.9016393442622951,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 311000,
+    "native_add": 172,
+    "synth_add": 187,
+    "recall": 1.0,
+    "precision": 0.9197860962566845,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 15
+   },
+   {
+    "seed": 318919,
+    "native_add": 144,
+    "synth_add": 159,
+    "recall": 1.0,
+    "precision": 0.9056603773584906,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 15
+   },
+   {
+    "seed": 326838,
+    "native_add": 148,
+    "synth_add": 164,
+    "recall": 1.0,
+    "precision": 0.9024390243902439,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 16
+   },
+   {
+    "seed": 334757,
+    "native_add": 162,
+    "synth_add": 180,
+    "recall": 1.0,
+    "precision": 0.9,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 342676,
+    "native_add": 148,
+    "synth_add": 165,
+    "recall": 1.0,
+    "precision": 0.896969696969697,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 17
+   },
+   {
+    "seed": 350595,
+    "native_add": 135,
+    "synth_add": 142,
+    "recall": 1.0,
+    "precision": 0.9507042253521126,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 7
+   },
+   {
+    "seed": 358514,
+    "native_add": 165,
+    "synth_add": 183,
+    "recall": 1.0,
+    "precision": 0.9016393442622951,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 366433,
+    "native_add": 137,
+    "synth_add": 144,
+    "recall": 1.0,
+    "precision": 0.9513888888888888,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 7
+   },
+   {
+    "seed": 374352,
+    "native_add": 166,
+    "synth_add": 184,
+    "recall": 1.0,
+    "precision": 0.9021739130434783,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 382271,
+    "native_add": 161,
+    "synth_add": 175,
+    "recall": 1.0,
+    "precision": 0.92,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 14
+   },
+   {
+    "seed": 390190,
+    "native_add": 167,
+    "synth_add": 183,
+    "recall": 1.0,
+    "precision": 0.912568306010929,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 16
+   },
+   {
+    "seed": 398109,
+    "native_add": 164,
+    "synth_add": 182,
+    "recall": 1.0,
+    "precision": 0.9010989010989011,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 406028,
+    "native_add": 137,
+    "synth_add": 144,
+    "recall": 1.0,
+    "precision": 0.9513888888888888,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 7
+   },
+   {
+    "seed": 413947,
+    "native_add": 166,
+    "synth_add": 184,
+    "recall": 1.0,
+    "precision": 0.9021739130434783,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 421866,
+    "native_add": 147,
+    "synth_add": 163,
+    "recall": 1.0,
+    "precision": 0.901840490797546,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 16
+   },
+   {
+    "seed": 429785,
+    "native_add": 166,
+    "synth_add": 184,
+    "recall": 1.0,
+    "precision": 0.9021739130434783,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 437704,
+    "native_add": 137,
+    "synth_add": 144,
+    "recall": 1.0,
+    "precision": 0.9513888888888888,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 7
+   },
+   {
+    "seed": 445623,
+    "native_add": 164,
+    "synth_add": 179,
+    "recall": 1.0,
+    "precision": 0.9162011173184358,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 15
+   }
+  ]
+ },
+ "8_house_edge_replacement_stub_quirk_and_road_budget": {
+  "passed": true,
+  "detail": "ADD on another house edge replaces the driveway (edge count and concrete unchanged: True); house edges not removable: True; stub REMOVE legal iff action tile is the carpark (True/True) and has no effect (True); budget 25: after 25 non-house ADDs concrete=0, then ADD only where it replaces the house edge"
+ },
+ "9_no_privileged_path_labels_in_observation": {
+  "passed": true,
+  "detail": "obs unchanged when k/task_id/split metadata change: True; obs is bit-identical to an independent rebuild from the scene file + (house, driveway) alone: True; non-native channels all zero: True; changing only the driveway direction changes 4 entries, all road channels: True; the env stores no route/solution field"
+ },
+ "10_alternative_valid_routes_are_accepted": {
+  "passed": true,
+  "detail": "575 tasks: a route that avoids one edge of the shortest route (length >= k) completes with reward +1 on 575/575 (0 further tasks have no alternative because every route edge is a bridge of the legal graph); tasks with >= 2 distinct shortest routes: 100% (median count 6, cap 60)"
+ },
+ "11_horizon_rule_preregistered_and_env_speed": {
+  "passed": true,
+  "detail": "horizon(k)=10k: {2: 20, 3: 30, 5: 50, 7: 70, 10: 100} written to PREREGISTERED_PROTOCOL.json with manifest hashes; random-policy env speed 7734 steps/s",
+  "env_steps_per_s": 7733.521976127508
+ }
+}

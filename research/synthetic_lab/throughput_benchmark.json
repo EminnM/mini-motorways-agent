@@ -1,0 +1,8 @@
+{
+  "env only, random legal action": 4170.259793042595,
+  "env only, oracle action": 3362.161407045065,
+  "env + flat MLP policy inference (batch 1)": 574.8683896309109,
+  "env + spatial CNN policy inference (batch 1)": 239.89421145011474,
+  "PPO training, flat MLP (512x4 epochs)": 226.71838030254966,
+  "PPO training, spatial CNN (512x4 epochs)": 54.94089394647394
+}

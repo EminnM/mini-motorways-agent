@@ -1,0 +1,1243 @@
+{
+ "stageA": {
+  "episodes": 36,
+  "choices_total": 75,
+  "choices_per_episode_mean": 2.0833333333333335,
+  "export_two_options_always": true,
+  "apply_type_matches_export": [
+   75,
+   75
+  ],
+  "offered_types_differ": [
+   75,
+   75
+  ],
+  "pair_frequency": {
+   "Roundabout | TrafficLight": 36,
+   "Bridge | TrafficLight": 18,
+   "Concrete | TrafficLight": 9,
+   "Motorway | Roundabout": 6,
+   "Bridge | Motorway": 3,
+   "Concrete | Roundabout": 2,
+   "Bridge | Concrete": 1
+  },
+  "type_frequency": {
+   "TrafficLight": 63,
+   "Roundabout": 44,
+   "Bridge": 22,
+   "Motorway": 9,
+   "Concrete": 12
+  },
+  "inventory_delta_samples": [
+   {
+    "type": "TrafficLight",
+    "amount": 2,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 2
+   },
+   {
+    "type": "Bridge",
+    "amount": 1,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 1
+   },
+   {
+    "type": "Motorway",
+    "amount": 1,
+    "addConcrete": 10,
+    "concrete_total_delta": 10,
+    "type_total_delta": 1
+   },
+   {
+    "type": "TrafficLight",
+    "amount": 2,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 2
+   },
+   {
+    "type": "TrafficLight",
+    "amount": 2,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 2
+   },
+   {
+    "type": "TrafficLight",
+    "amount": 2,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 2
+   },
+   {
+    "type": "Bridge",
+    "amount": 1,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 1
+   },
+   {
+    "type": "TrafficLight",
+    "amount": 2,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 2
+   },
+   {
+    "type": "Bridge",
+    "amount": 1,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 1
+   },
+   {
+    "type": "TrafficLight",
+    "amount": 2,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 2
+   },
+   {
+    "type": "Concrete",
+    "amount": 30,
+    "addConcrete": 0,
+    "concrete_total_delta": 30,
+    "type_total_delta": 30
+   },
+   {
+    "type": "TrafficLight",
+    "amount": 2,
+    "addConcrete": 20,
+    "concrete_total_delta": 20,
+    "type_total_delta": 2
+   }
+  ],
+  "choice_decisions_slot0": [
+   141,
+   281,
+   421,
+   561
+  ],
+  "pass": true
+ },
+ "arms": {
+  "slot0": {
+   "n": 12,
+   "deliveries_total": 615.0,
+   "deliveries_median": 39.0,
+   "decisions_median": 305.5,
+   "survived_600": 1,
+   "illegal": 0,
+   "choices": 25,
+   "min_concrete_median": 12.5,
+   "chosen_types": {
+    "TrafficLight": 12,
+    "Bridge": 6,
+    "Motorway": 3,
+    "Concrete": 3,
+    "Roundabout": 1
+   }
+  },
+  "random": {
+   "n": 12,
+   "deliveries_total": 616.0,
+   "deliveries_median": 39.0,
+   "decisions_median": 305.5,
+   "survived_600": 1,
+   "illegal": 0,
+   "choices": 25,
+   "min_concrete_median": 12.5,
+   "chosen_types": {
+    "TrafficLight": 8,
+    "Bridge": 6,
+    "Motorway": 1,
+    "Roundabout": 7,
+    "Concrete": 3
+   }
+  },
+  "ruleR": {
+   "n": 12,
+   "deliveries_total": 618.0,
+   "deliveries_median": 40.0,
+   "decisions_median": 305.5,
+   "survived_600": 1,
+   "illegal": 0,
+   "choices": 25,
+   "min_concrete_median": 12.0,
+   "chosen_types": {
+    "TrafficLight": 12,
+    "Bridge": 7,
+    "Motorway": 2,
+    "Concrete": 4
+   }
+  }
+ },
+ "paired": {
+  "ruleR_minus_slot0": {
+   "n": 12,
+   "deliveries": {
+    "values": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     3.0
+    ],
+    "sum": 3.0,
+    "median": 0.0,
+    "higher": 1,
+    "equal": 11,
+    "lower": 0,
+    "ci95_mean": [
+     0.0,
+     0.75
+    ]
+   },
+   "decisions": {
+    "values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "median": 0.0,
+    "higher": 0,
+    "equal": 12,
+    "lower": 0
+   },
+   "seeds_with_identical_choice_sequence": 10
+  },
+  "random_minus_slot0": {
+   "n": 12,
+   "deliveries": {
+    "values": [
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "sum": 1.0,
+    "median": 0.0,
+    "higher": 1,
+    "equal": 11,
+    "lower": 0,
+    "ci95_mean": [
+     0.0,
+     0.25
+    ]
+   },
+   "decisions": {
+    "values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "median": 0.0,
+    "higher": 0,
+    "equal": 12,
+    "lower": 0
+   },
+   "seeds_with_identical_choice_sequence": 4
+  },
+  "ruleR_minus_random": {
+   "n": 12,
+   "deliveries": {
+    "values": [
+     -1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     3.0
+    ],
+    "sum": 2.0,
+    "median": 0.0,
+    "higher": 1,
+    "equal": 10,
+    "lower": 1,
+    "ci95_mean": [
+     -0.25,
+     0.75
+    ]
+   },
+   "decisions": {
+    "values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "median": 0.0,
+    "higher": 0,
+    "equal": 12,
+    "lower": 0
+   },
+   "seeds_with_identical_choice_sequence": 4
+  }
+ },
+ "per_seed": {
+  "500000": {
+   "slot0": {
+    "deliveries": 105.0,
+    "decisions": 498,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ],
+     [
+      421,
+      [
+       "Motorway",
+       "Roundabout"
+      ],
+      0,
+      "Motorway"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 106.0,
+    "decisions": 498,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ],
+     [
+      421,
+      [
+       "Motorway",
+       "Roundabout"
+      ],
+      0,
+      "Motorway"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 105.0,
+    "decisions": 498,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ],
+     [
+      421,
+      [
+       "Motorway",
+       "Roundabout"
+      ],
+      0,
+      "Motorway"
+     ]
+    ]
+   }
+  },
+  "507919": {
+   "slot0": {
+    "deliveries": 5.0,
+    "decisions": 151,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 5.0,
+    "decisions": 151,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      1,
+      "Roundabout"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 5.0,
+    "decisions": 151,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ]
+    ]
+   }
+  },
+  "515838": {
+   "slot0": {
+    "deliveries": 6.0,
+    "decisions": 145,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 6.0,
+    "decisions": 145,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 6.0,
+    "decisions": 145,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ]
+    ]
+   }
+  },
+  "523757": {
+   "slot0": {
+    "deliveries": 40.0,
+    "decisions": 310,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 40.0,
+    "decisions": 310,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 40.0,
+    "decisions": 310,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   }
+  },
+  "531676": {
+   "slot0": {
+    "deliveries": 38.0,
+    "decisions": 295,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 38.0,
+    "decisions": 295,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      1,
+      "Roundabout"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 38.0,
+    "decisions": 295,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   }
+  },
+  "539595": {
+   "slot0": {
+    "deliveries": 43.0,
+    "decisions": 323,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Concrete",
+       "TrafficLight"
+      ],
+      0,
+      "Concrete"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 43.0,
+    "decisions": 323,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      1,
+      "Roundabout"
+     ],
+     [
+      281,
+      [
+       "Concrete",
+       "TrafficLight"
+      ],
+      0,
+      "Concrete"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 43.0,
+    "decisions": 323,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Concrete",
+       "TrafficLight"
+      ],
+      0,
+      "Concrete"
+     ]
+    ]
+   }
+  },
+  "547514": {
+   "slot0": {
+    "deliveries": 5.0,
+    "decisions": 154,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 5.0,
+    "decisions": 154,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 5.0,
+    "decisions": 154,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ]
+    ]
+   }
+  },
+  "555433": {
+   "slot0": {
+    "deliveries": 40.0,
+    "decisions": 318,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Concrete",
+       "TrafficLight"
+      ],
+      0,
+      "Concrete"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 40.0,
+    "decisions": 318,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      1,
+      "Roundabout"
+     ],
+     [
+      281,
+      [
+       "Concrete",
+       "TrafficLight"
+      ],
+      1,
+      "TrafficLight"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 40.0,
+    "decisions": 318,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Concrete",
+       "TrafficLight"
+      ],
+      0,
+      "Concrete"
+     ]
+    ]
+   }
+  },
+  "563352": {
+   "slot0": {
+    "deliveries": 172.0,
+    "decisions": 600,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ],
+     [
+      421,
+      [
+       "Motorway",
+       "Roundabout"
+      ],
+      0,
+      "Motorway"
+     ],
+     [
+      561,
+      [
+       "Roundabout",
+       "Concrete"
+      ],
+      0,
+      "Roundabout"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 172.0,
+    "decisions": 600,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ],
+     [
+      421,
+      [
+       "Motorway",
+       "Roundabout"
+      ],
+      1,
+      "Roundabout"
+     ],
+     [
+      561,
+      [
+       "Bridge",
+       "Concrete"
+      ],
+      1,
+      "Concrete"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 172.0,
+    "decisions": 600,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ],
+     [
+      421,
+      [
+       "Motorway",
+       "Roundabout"
+      ],
+      0,
+      "Motorway"
+     ],
+     [
+      561,
+      [
+       "Roundabout",
+       "Concrete"
+      ],
+      1,
+      "Concrete"
+     ]
+    ]
+   }
+  },
+  "571271": {
+   "slot0": {
+    "deliveries": 35.0,
+    "decisions": 290,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 35.0,
+    "decisions": 290,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      1,
+      "Roundabout"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 35.0,
+    "decisions": 290,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   }
+  },
+  "579190": {
+   "slot0": {
+    "deliveries": 88.0,
+    "decisions": 442,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Concrete",
+       "TrafficLight"
+      ],
+      0,
+      "Concrete"
+     ],
+     [
+      421,
+      [
+       "Motorway",
+       "Bridge"
+      ],
+      0,
+      "Motorway"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 88.0,
+    "decisions": 442,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      1,
+      "Roundabout"
+     ],
+     [
+      281,
+      [
+       "Concrete",
+       "TrafficLight"
+      ],
+      0,
+      "Concrete"
+     ],
+     [
+      421,
+      [
+       "Motorway",
+       "Bridge"
+      ],
+      1,
+      "Bridge"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 88.0,
+    "decisions": 442,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Concrete",
+       "TrafficLight"
+      ],
+      0,
+      "Concrete"
+     ],
+     [
+      421,
+      [
+       "Motorway",
+       "Bridge"
+      ],
+      1,
+      "Bridge"
+     ]
+    ]
+   }
+  },
+  "587109": {
+   "slot0": {
+    "deliveries": 38.0,
+    "decisions": 301,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   },
+   "random": {
+    "deliveries": 38.0,
+    "decisions": 301,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      1,
+      "TrafficLight"
+     ]
+    ]
+   },
+   "ruleR": {
+    "deliveries": 41.0,
+    "decisions": 301,
+    "choices": [
+     [
+      141,
+      [
+       "TrafficLight",
+       "Roundabout"
+      ],
+      0,
+      "TrafficLight"
+     ],
+     [
+      281,
+      [
+       "Bridge",
+       "TrafficLight"
+      ],
+      0,
+      "Bridge"
+     ]
+    ]
+   }
+  }
+ }
+}

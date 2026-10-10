@@ -1,0 +1,47 @@
+[
+ {
+  "test": "test_loop_is_a_two_cycle_not_a_consecutive_repeat",
+  "passed": true,
+  "detail": "loop_cnn_det_182150.json: cycle steps [(7, 80), (81, 91), (92, 141)], longest consecutive identical ADD run = 1; loop_cnn_det_205907.json: cycle steps [(25, 71), (77, 141)], longest consecutive identical ADD run = 1"
+ },
+ {
+  "test": "test_each_loop_step_is_legal_applied_changes_roads_and_observation",
+  "passed": true,
+  "detail": "242 loop steps checked: legal, 'AddRoad succeeded', edge absent before / present after, observation road channels changed, action illegal afterwards"
+ },
+ {
+  "test": "test_each_loop_add_replaces_the_other_edge_at_a_house_tile",
+  "passed": true,
+  "detail": "237 cycle steps: every ADD touches a House tile and removes exactly one other (the previous) edge: net road count unchanged"
+ },
+ {
+  "test": "test_swap_events_overall_involve_house_tiles",
+  "passed": true,
+  "detail": "245/245 ADD steps that removed an existing edge touched a House tile (both S4 seeds)"
+ },
+ {
+  "test": "test_terminal_penalty_paid_iff_game_not_already_terminal_at_step_start",
+  "passed": true,
+  "detail": "9 episodes ended with 'justTerminated' (-10 exactly once); 2 ended with 'terminal state (not applied)' (penalty 0, accepted=False): penalty presence == game not terminal at STEP start"
+ },
+ {
+  "test": "test_zero_penalty_episode_final_step_shows_clock_moved_outside_step",
+  "passed": true,
+  "detail": "zero-penalty final STEPs advanced sim time by [0.1, 0.1] s (a normal STEP advances 1.0 s): the clock was moved by something other than that STEP"
+ },
+ {
+  "test": "test_csharp_penalty_rule_is_justTerminated_and_wasTerminal_is_read_at_step_start",
+  "passed": true,
+  "detail": "STEP handler: penalty = justTerminated(isTerminalNow && !wasTerminal), wasTerminal = IsTerminal() read BEFORE applying the action; IsTerminal() also fires one decision early on the overcrowd timer (pre-emption)"
+ },
+ {
+  "test": "test_s4_terminal_reward_sums_are_only_0_or_minus10_and_five_of_twenty_are_zero",
+  "passed": true,
+  "detail": "S4 logs: 5/20 terminated episodes carry no terminal penalty; the rest exactly -10"
+ },
+ {
+  "test": "test_logging_on_off_twin_on_a_full_terminal_episode_is_identical",
+  "passed": true,
+  "detail": "plain vs RecorderEnv+diagnostics, full 143-decision terminal episode: observations, masks, rewards, termination identical; episode row return 0.0, diag_errors 0"
+ }
+]

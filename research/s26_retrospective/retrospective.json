@@ -1,0 +1,187 @@
+{
+ "S8C_S13replicate": {
+  "by_houses_per_destination": {
+   "(0,0.75]": {
+    "rate": 0.0287,
+    "dest_decisions": 1082
+   },
+   "(0.75,1.25]": {
+    "rate": 0.0499,
+    "dest_decisions": 3345
+   },
+   "(1.25,2]": {
+    "rate": 0.0639,
+    "dest_decisions": 4943
+   },
+   "(2,3]": {
+    "rate": 0.0679,
+    "dest_decisions": 839
+   },
+   "0": {
+    "rate": 0.0093,
+    "dest_decisions": 540
+   }
+  },
+  "by_decision_bin": {
+   "0-99": {
+    "rate": 0.0385,
+    "dest_decisions": 1505
+   },
+   "100-199": {
+    "rate": 0.0468,
+    "dest_decisions": 2605
+   },
+   "200-299": {
+    "rate": 0.0638,
+    "dest_decisions": 2460
+   },
+   "300-399": {
+    "rate": 0.0541,
+    "dest_decisions": 2034
+   },
+   "400-499": {
+    "rate": 0.0614,
+    "dest_decisions": 1433
+   },
+   "500-599": {
+    "rate": 0.0576,
+    "dest_decisions": 729
+   }
+  },
+  "by_max_demand": {
+   "1-3": {
+    "rate": 0.0512,
+    "dest_decisions": 4024
+   },
+   "4-6": {
+    "rate": 0.0575,
+    "dest_decisions": 3792
+   },
+   ">=7": {
+    "rate": 0.0489,
+    "dest_decisions": 2865
+   }
+  },
+  "by_overcrowding": {
+   "normal": {
+    "rate": 0.0553,
+    "dest_decisions": 7901
+   },
+   "overcrowded": {
+    "rate": 0.0489,
+    "dest_decisions": 2865
+   }
+  },
+  "late_(t>=300)_by_houses_per_destination": {
+   "(0.75,1.25]": {
+    "rate": 0.0529,
+    "dest_decisions": 1172
+   },
+   "(1.25,2]": {
+    "rate": 0.0597,
+    "dest_decisions": 2914
+   }
+  }
+ },
+ "plannerB_S22": {
+  "by_houses_per_destination": {
+   "(0,0.75]": {
+    "rate": 0.0305,
+    "dest_decisions": 688
+   },
+   "(0.75,1.25]": {
+    "rate": 0.0436,
+    "dest_decisions": 3555
+   },
+   "(1.25,2]": {
+    "rate": 0.049,
+    "dest_decisions": 13765
+   },
+   "(2,3]": {
+    "rate": 0.0626,
+    "dest_decisions": 21241
+   },
+   "0": {
+    "rate": 0.0,
+    "dest_decisions": 1406
+   }
+  },
+  "by_decision_bin": {
+   "0-99": {
+    "rate": 0.0431,
+    "dest_decisions": 6037
+   },
+   "100-199": {
+    "rate": 0.0531,
+    "dest_decisions": 9676
+   },
+   "200-299": {
+    "rate": 0.0537,
+    "dest_decisions": 12811
+   },
+   "300-399": {
+    "rate": 0.0553,
+    "dest_decisions": 5818
+   },
+   "400-499": {
+    "rate": 0.0593,
+    "dest_decisions": 4770
+   },
+   "500-599": {
+    "rate": 0.0748,
+    "dest_decisions": 1618
+   }
+  },
+  "by_max_demand": {
+   "0": {
+    "rate": 0.0,
+    "dest_decisions": 1323
+   },
+   "1-3": {
+    "rate": 0.0593,
+    "dest_decisions": 20540
+   },
+   "4-6": {
+    "rate": 0.0502,
+    "dest_decisions": 9351
+   },
+   ">=7": {
+    "rate": 0.0525,
+    "dest_decisions": 9516
+   }
+  },
+  "by_overcrowding": {
+   "normal": {
+    "rate": 0.0541,
+    "dest_decisions": 31214
+   },
+   "overcrowded": {
+    "rate": 0.0525,
+    "dest_decisions": 9516
+   }
+  },
+  "late_(t>=300)_by_houses_per_destination": {
+   "(0,0.75]": {
+    "rate": 0.0389,
+    "dest_decisions": 540
+   },
+   "(0.75,1.25]": {
+    "rate": 0.0425,
+    "dest_decisions": 424
+   },
+   "(1.25,2]": {
+    "rate": 0.0544,
+    "dest_decisions": 3934
+   },
+   "(2,3]": {
+    "rate": 0.0647,
+    "dest_decisions": 7308
+   }
+  }
+ },
+ "_notes": {
+  "S21 native_eval logs": "no per-step destination records (dests not logged) -> per-destination rate UNAVAILABLE; only totals",
+  "S24": "anchor snapshots only (decision 200) -> no time series; UNAVAILABLE",
+  "S13 demand model": "P(+1 pin)=0.055 per destination-decision (demand>0), 0.22 from zero (fitted S13); deliveries can only consume existing pins"
+ }
+}

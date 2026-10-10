@@ -1,0 +1,140 @@
+{
+ "seed": 1007922,
+ "at": 327,
+ "concrete": 39,
+ "bridges": 1,
+ "houses": [
+  {
+   "house": [
+    -15,
+    4
+   ],
+   "group": 0,
+   "connected": true,
+   "existing_drive": 5,
+   "shortest_len": 5,
+   "shortcut_new_tiles": 0,
+   "shortcut_breaks": 0,
+   "detour_ratio": 1.0
+  },
+  {
+   "house": [
+    -14,
+    2
+   ],
+   "group": 0,
+   "connected": true,
+   "existing_drive": 8,
+   "shortest_len": 6,
+   "shortcut_new_tiles": 2,
+   "shortcut_breaks": 0,
+   "detour_ratio": 1.33
+  },
+  {
+   "house": [
+    -14,
+    3
+   ],
+   "group": 0,
+   "connected": true,
+   "existing_drive": 5,
+   "shortest_len": 5,
+   "shortcut_new_tiles": 0,
+   "shortcut_breaks": 0,
+   "detour_ratio": 1.0
+  },
+  {
+   "house": [
+    -9,
+    1
+   ],
+   "group": 2,
+   "connected": true,
+   "existing_drive": 11,
+   "shortest_len": 11,
+   "shortcut_new_tiles": 0,
+   "shortcut_breaks": 0,
+   "detour_ratio": 1.0
+  },
+  {
+   "house": [
+    -8,
+    1
+   ],
+   "group": 2,
+   "connected": true,
+   "existing_drive": 10,
+   "shortest_len": 10,
+   "shortcut_new_tiles": 0,
+   "shortcut_breaks": 0,
+   "detour_ratio": 1.0
+  },
+  {
+   "house": [
+    -5,
+    -1
+   ],
+   "group": 3,
+   "connected": true,
+   "existing_drive": 22,
+   "shortest_len": 10,
+   "shortcut_new_tiles": 8,
+   "shortcut_breaks": 0,
+   "detour_ratio": 2.2
+  },
+  {
+   "house": [
+    -5,
+    0
+   ],
+   "group": 3,
+   "connected": true,
+   "existing_drive": 21,
+   "shortest_len": 9,
+   "shortcut_new_tiles": 8,
+   "shortcut_breaks": 0,
+   "detour_ratio": 2.33
+  },
+  {
+   "house": [
+    -4,
+    3
+   ],
+   "group": 1,
+   "connected": true,
+   "existing_drive": 7,
+   "shortest_len": 7,
+   "shortcut_new_tiles": 0,
+   "shortcut_breaks": 0,
+   "detour_ratio": 1.0
+  },
+  {
+   "house": [
+    -4,
+    6
+   ],
+   "group": 1,
+   "connected": true,
+   "existing_drive": 10,
+   "shortest_len": 10,
+   "shortcut_new_tiles": 0,
+   "shortcut_breaks": 0,
+   "detour_ratio": 1.0
+  },
+  {
+   "house": [
+    -2,
+    2
+   ],
+   "group": 0,
+   "connected": true,
+   "existing_drive": 16,
+   "shortest_len": 10,
+   "shortcut_new_tiles": 4,
+   "shortcut_breaks": 0,
+   "detour_ratio": 1.6
+  }
+ ],
+ "unreached_dests": [],
+ "active_edges": 51
+}

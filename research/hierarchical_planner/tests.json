@@ -1,0 +1,50 @@
+{
+ "T1_action_legality": {
+  "illegal_actions": 0,
+  "actions": 19491,
+  "pass": true
+ },
+ "T2_connectivity_model": {
+  "mismatching_decisions": 0,
+  "pass": true
+ },
+ "T3_resource_accounting": {
+  "completed_plans_checked": 312,
+  "mismatches": [],
+  "n_mismatch": 0,
+  "pass": true
+ },
+ "T4_execution_completes": {
+  "plans": 312,
+  "completed": 312,
+  "abandoned": 0,
+  "in_progress_at_end": 0,
+  "abandon_reasons": {},
+  "completion_rate": 1.0,
+  "pass": true
+ },
+ "T5_connection_preservation": {
+  "connections_destroyed_total": 0,
+  "destroy_vetoes": 0,
+  "adversarial": {
+   "ok": true,
+   "flagged_by_model": true,
+   "truly_lost_in_env": true,
+   "edge": [
+    -4,
+    -1,
+    "E"
+   ],
+   "house": [
+    -4,
+    -1
+   ]
+  },
+  "pass": true
+ },
+ "T6_determinism": {
+  "identical_action_sequences": true,
+  "pass": true
+ },
+ "all_pass": true
+}

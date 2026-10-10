@@ -1,0 +1,8232 @@
+{
+ "seeds": {
+  "500000": {
+   "anchor_state": {
+    "hash": "0e337f99aaa587b4",
+    "connected": [
+     [
+      -4,
+      -3
+     ],
+     [
+      -4,
+      -1
+     ]
+    ],
+    "houses": 2,
+    "n_func": 12,
+    "concrete": 16,
+    "score": 3,
+    "vehicles": 1,
+    "legal_par": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "legal_den": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       13.000000012107193,
+       "D",
+       1,
+       -13,
+       -6
+      ],
+      [
+       13.000000012107193,
+       "H",
+       1,
+       -9,
+       0
+      ],
+      [
+       23.00000002142042,
+       "H",
+       1,
+       -7,
+       0
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       13.000000012107193,
+       "D",
+       1,
+       -13,
+       -6
+      ],
+      [
+       13.000000012107193,
+       "H",
+       1,
+       -9,
+       0
+      ],
+      [
+       23.00000002142042,
+       "H",
+       1,
+       -7,
+       0
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 16
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 5,
+     "edits_accepted": 5,
+     "concrete_delta": 5,
+     "terminal": -1,
+     "spawns": [
+      [
+       13.000000012107193,
+       "D",
+       1,
+       -13,
+       -6
+      ],
+      [
+       13.000000012107193,
+       "H",
+       1,
+       -8,
+       0
+      ],
+      [
+       23.00000002142042,
+       "H",
+       1,
+       -9,
+       0
+      ]
+     ],
+     "first_spawn_div_vs_base": 13.000000012107193,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng first differs at t=20 after the first spawn difference at 13.000000012107193 (downstream shift)",
+      "first_spawn_difference_t": 13.000000012107193
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 19,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       13.000000012107193,
+       "D",
+       1,
+       -13,
+       -6
+      ],
+      [
+       13.000000012107193,
+       "H",
+       1,
+       -8,
+       0
+      ],
+      [
+       23.00000002142042,
+       "H",
+       1,
+       -10,
+       0
+      ]
+     ],
+     "first_spawn_div_vs_base": 13.000000012107193,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=5 (first spawn difference at 13.000000012107193)",
+      "first_spawn_difference_t": 13.000000012107193
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 8
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 8
+      },
+      "10": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 8
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 8
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 8
+      },
+      "45": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 3,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 8
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 8
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [
+     [
+      -4,
+      -3
+     ],
+     [
+      -4,
+      -1
+     ]
+    ],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 4
+    },
+    "parallel": {
+     "window_end": 10,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 1
+    },
+    "dense": {
+     "window_end": 10,
+     "deliveries_diff": -1,
+     "vehicles_diff": 0,
+     "deliveries_base": 1
+    }
+   }
+  },
+  "507919": {
+   "anchor_state": {
+    "hash": "6bbe9fbccd0b2622",
+    "connected": [],
+    "houses": 2,
+    "n_func": 3,
+    "concrete": 25,
+    "score": 0,
+    "vehicles": 0,
+    "legal_par": [],
+    "legal_den": [
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "D",
+       1,
+       -11,
+       -6
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -4,
+       -3
+      ],
+      [
+       28.000000026077032,
+       "H",
+       1,
+       -4,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 3.850000003585592,
+       "concrete": 25
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 18.85000001755543,
+       "concrete": 25
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "D",
+       1,
+       -11,
+       -6
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -4,
+       -3
+      ],
+      [
+       28.000000026077032,
+       "H",
+       1,
+       -4,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 3.850000003585592,
+       "concrete": 25
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 18.85000001755543,
+       "concrete": 25
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "D",
+       1,
+       -11,
+       -6
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -4,
+       -3
+      ],
+      [
+       28.000000026077032,
+       "H",
+       1,
+       -4,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 3.850000003585592,
+       "concrete": 25
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 18.85000001755543,
+       "concrete": 25
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 3,
+     "edits_accepted": 3,
+     "concrete_delta": 3,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "D",
+       1,
+       -11,
+       -6
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -7,
+       -1
+      ],
+      [
+       28.000000026077032,
+       "H",
+       1,
+       -4,
+       -3
+      ]
+     ],
+     "first_spawn_div_vs_base": 18.000000016763806,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng first differs at t=20 after the first spawn difference at 18.000000016763806 (downstream shift)",
+      "first_spawn_difference_t": 18.000000016763806
+     },
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 8,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 9,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 3.850000003585592,
+       "concrete": 22
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 9,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 18.85000001755543,
+       "concrete": 22
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "parallel": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "dense": {
+     "window_end": 10,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    }
+   }
+  },
+  "515838": {
+   "anchor_state": {
+    "hash": "320336702e9db009",
+    "connected": [],
+    "houses": 2,
+    "n_func": 3,
+    "concrete": 25,
+    "score": 0,
+    "vehicles": 0,
+    "legal_par": [],
+    "legal_den": [
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       5.000000004656613,
+       "D",
+       1,
+       -12,
+       -6
+      ],
+      [
+       5.000000004656613,
+       "H",
+       1,
+       -6,
+       -3
+      ],
+      [
+       15.000000013969839,
+       "H",
+       1,
+       -4,
+       -3
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 9.95000000926666,
+       "concrete": 25
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 24.9500000232365,
+       "concrete": 25
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       5.000000004656613,
+       "D",
+       1,
+       -12,
+       -6
+      ],
+      [
+       5.000000004656613,
+       "H",
+       1,
+       -6,
+       -3
+      ],
+      [
+       15.000000013969839,
+       "H",
+       1,
+       -4,
+       -3
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 9.95000000926666,
+       "concrete": 25
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 24.9500000232365,
+       "concrete": 25
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       5.000000004656613,
+       "D",
+       1,
+       -12,
+       -6
+      ],
+      [
+       5.000000004656613,
+       "H",
+       1,
+       -6,
+       -3
+      ],
+      [
+       15.000000013969839,
+       "H",
+       1,
+       -4,
+       -3
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 9.95000000926666,
+       "concrete": 25
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 24.9500000232365,
+       "concrete": 25
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 3,
+     "edits_accepted": 3,
+     "concrete_delta": 3,
+     "terminal": -1,
+     "spawns": [
+      [
+       5.000000004656613,
+       "D",
+       1,
+       -12,
+       -6
+      ],
+      [
+       5.000000004656613,
+       "H",
+       1,
+       -8,
+       -1
+      ],
+      [
+       15.000000013969839,
+       "H",
+       1,
+       -6,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": 5.000000004656613,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=5 (first spawn difference at 5.000000004656613)",
+      "first_spawn_difference_t": 5.000000004656613
+     },
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 8,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 8,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 9,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 9.95000000926666,
+       "concrete": 22
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 9,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 24.9500000232365,
+       "concrete": 22
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "parallel": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "dense": {
+     "window_end": 5,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    }
+   }
+  },
+  "523757": {
+   "anchor_state": {
+    "hash": "470d246fa364c37f",
+    "connected": [
+     [
+      -17,
+      3
+     ],
+     [
+      -15,
+      3
+     ]
+    ],
+    "houses": 2,
+    "n_func": 14,
+    "concrete": 14,
+    "score": 3,
+    "vehicles": 0,
+    "legal_par": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "legal_den": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       8.00000000745058,
+       "D",
+       1,
+       -17,
+       6
+      ],
+      [
+       8.00000000745058,
+       "H",
+       1,
+       -8,
+       5
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -8,
+       4
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       8.00000000745058,
+       "D",
+       1,
+       -17,
+       6
+      ],
+      [
+       8.00000000745058,
+       "H",
+       1,
+       -8,
+       5
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -8,
+       4
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       8.00000000745058,
+       "D",
+       1,
+       -16,
+       7
+      ],
+      [
+       8.00000000745058,
+       "H",
+       1,
+       -8,
+       4
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -8,
+       3
+      ]
+     ],
+     "first_spawn_div_vs_base": 8.00000000745058,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=5 (first spawn difference at 8.00000000745058)",
+      "first_spawn_difference_t": 8.00000000745058
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       8.00000000745058,
+       "D",
+       1,
+       -13,
+       4
+      ],
+      [
+       8.00000000745058,
+       "H",
+       1,
+       -6,
+       3
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -6,
+       5
+      ]
+     ],
+     "first_spawn_div_vs_base": 8.00000000745058,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=5 (first spawn difference at 8.00000000745058)",
+      "first_spawn_difference_t": 8.00000000745058
+     },
+     "deliveries_60": 3,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "10": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "30": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "45": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "60": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [
+     [
+      -17,
+      3
+     ],
+     [
+      -15,
+      3
+     ]
+    ],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 4
+    },
+    "parallel": {
+     "window_end": 5,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "dense": {
+     "window_end": 5,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    }
+   }
+  },
+  "531676": {
+   "anchor_state": {
+    "hash": "7b8a3a9bd7d0bbca",
+    "connected": [
+     [
+      -14,
+      -5
+     ],
+     [
+      -4,
+      -3
+     ]
+    ],
+    "houses": 2,
+    "n_func": 13,
+    "concrete": 15,
+    "score": 3,
+    "vehicles": 0,
+    "legal_par": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "legal_den": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "D",
+       1,
+       -13,
+       -2
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -8,
+       -5
+      ],
+      [
+       28.000000026077032,
+       "H",
+       1,
+       -6,
+       -5
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 5,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "D",
+       1,
+       -13,
+       -2
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -8,
+       -5
+      ],
+      [
+       28.000000026077032,
+       "H",
+       1,
+       -6,
+       -5
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 5,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 6,
+     "edits_accepted": 6,
+     "concrete_delta": 6,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "D",
+       1,
+       -14,
+       -2
+      ],
+      [
+       17.000000015832484,
+       "H",
+       1,
+       -8,
+       -6
+      ],
+      [
+       27.00000002514571,
+       "H",
+       1,
+       -10,
+       -6
+      ]
+     ],
+     "first_spawn_div_vs_base": 17.000000015832484,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng first differs at t=20 after the first spawn difference at 17.000000015832484 (downstream shift)",
+      "first_spawn_difference_t": 17.000000015832484
+     },
+     "deliveries_60": 5,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 19,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 9
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 19,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 9
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 19,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 9
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 9
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 9
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 9
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 9
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       18.000000016763806,
+       "D",
+       1,
+       -13,
+       -2
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -8,
+       -6
+      ],
+      [
+       28.000000026077032,
+       "H",
+       1,
+       -6,
+       -5
+      ]
+     ],
+     "first_spawn_div_vs_base": 17.000000015832484,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng first differs at t=20 after the first spawn difference at 17.000000015832484 (downstream shift)",
+      "first_spawn_difference_t": 17.000000015832484
+     },
+     "deliveries_60": 5,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [
+     [
+      -14,
+      -5
+     ],
+     [
+      -4,
+      -3
+     ]
+    ],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 5
+    },
+    "parallel": {
+     "window_end": 10,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 1
+    },
+    "dense": {
+     "window_end": 10,
+     "deliveries_diff": 0,
+     "vehicles_diff": 1,
+     "deliveries_base": 1
+    }
+   }
+  },
+  "539595": {
+   "anchor_state": {
+    "hash": "57e4f5bac0951085",
+    "connected": [
+     [
+      -15,
+      4
+     ],
+     [
+      -13,
+      4
+     ]
+    ],
+    "houses": 2,
+    "n_func": 13,
+    "concrete": 15,
+    "score": 4,
+    "vehicles": 0,
+    "legal_par": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "legal_den": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       18.000000016763806,
+       "D",
+       1,
+       -14,
+       6
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -5,
+       6
+      ],
+      [
+       28.000000026077032,
+       "H",
+       1,
+       -5,
+       7
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 3,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       18.000000016763806,
+       "D",
+       1,
+       -14,
+       6
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -5,
+       6
+      ],
+      [
+       28.000000026077032,
+       "H",
+       1,
+       -5,
+       7
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 3,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       19.00000001769513,
+       "D",
+       1,
+       -14,
+       7
+      ],
+      [
+       19.00000001769513,
+       "H",
+       1,
+       -4,
+       5
+      ],
+      [
+       29.000000027008355,
+       "H",
+       1,
+       -4,
+       7
+      ]
+     ],
+     "first_spawn_div_vs_base": 18.000000016763806,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng first differs at t=20 after the first spawn difference at 18.000000016763806 (downstream shift)",
+      "first_spawn_difference_t": 18.000000016763806
+     },
+     "deliveries_60": 3,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       19.00000001769513,
+       "D",
+       1,
+       -15,
+       7
+      ],
+      [
+       19.00000001769513,
+       "H",
+       1,
+       -5,
+       4
+      ],
+      [
+       29.000000027008355,
+       "H",
+       1,
+       -4,
+       6
+      ]
+     ],
+     "first_spawn_div_vs_base": 18.000000016763806,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng first differs at t=20 after the first spawn difference at 18.000000016763806 (downstream shift)",
+      "first_spawn_difference_t": 18.000000016763806
+     },
+     "deliveries_60": 3,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [
+     [
+      -15,
+      4
+     ],
+     [
+      -13,
+      4
+     ]
+    ],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 4
+    },
+    "parallel": {
+     "window_end": 10,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "dense": {
+     "window_end": 10,
+     "deliveries_diff": 0,
+     "vehicles_diff": 1,
+     "deliveries_base": 0
+    }
+   }
+  },
+  "547514": {
+   "anchor_state": {
+    "hash": "a430c2db606021f2",
+    "connected": [],
+    "houses": 2,
+    "n_func": 3,
+    "concrete": 25,
+    "score": 0,
+    "vehicles": 0,
+    "legal_par": [],
+    "legal_den": [
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       21.000000019557774,
+       "D",
+       1,
+       -9,
+       -3
+      ],
+      [
+       21.000000019557774,
+       "H",
+       1,
+       -13,
+       -6
+      ],
+      [
+       31.000000028871,
+       "H",
+       1,
+       -4,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 0.45000000041909516,
+       "concrete": 25
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 15.450000014388934,
+       "concrete": 25
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       21.000000019557774,
+       "D",
+       1,
+       -9,
+       -3
+      ],
+      [
+       21.000000019557774,
+       "H",
+       1,
+       -13,
+       -6
+      ],
+      [
+       31.000000028871,
+       "H",
+       1,
+       -4,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 0.45000000041909516,
+       "concrete": 25
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 15.450000014388934,
+       "concrete": 25
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       21.000000019557774,
+       "D",
+       1,
+       -9,
+       -3
+      ],
+      [
+       21.000000019557774,
+       "H",
+       1,
+       -13,
+       -6
+      ],
+      [
+       31.000000028871,
+       "H",
+       1,
+       -4,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 3,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 5,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 25
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 0.45000000041909516,
+       "concrete": 25
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 6,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 15.450000014388934,
+       "concrete": 25
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 3,
+     "edits_accepted": 3,
+     "concrete_delta": 3,
+     "terminal": -1,
+     "spawns": [
+      [
+       21.000000019557774,
+       "D",
+       1,
+       -9,
+       -3
+      ],
+      [
+       21.000000019557774,
+       "H",
+       1,
+       -13,
+       -6
+      ],
+      [
+       31.000000028871,
+       "H",
+       1,
+       -4,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 0,
+     "first_overcrowding_cp": 45,
+     "cp_summary": {
+      "1": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "5": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "10": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "20": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 2,
+       "n_func": 6,
+       "overcrowding": false,
+       "max_demand": 5,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "30": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 3,
+       "n_func": 8,
+       "overcrowding": false,
+       "max_demand": 6,
+       "max_overcrowding_time": 0.0,
+       "concrete": 22
+      },
+      "45": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 9,
+       "overcrowding": true,
+       "max_demand": 7,
+       "max_overcrowding_time": 0.45000000041909516,
+       "concrete": 22
+      },
+      "60": {
+       "score": 0,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 0,
+       "houses": 4,
+       "n_func": 9,
+       "overcrowding": true,
+       "max_demand": 8,
+       "max_overcrowding_time": 15.450000014388934,
+       "concrete": 22
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "parallel": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "dense": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    }
+   }
+  },
+  "555433": {
+   "anchor_state": {
+    "hash": "6db4e8e16b4fd6c0",
+    "connected": [
+     [
+      -15,
+      4
+     ],
+     [
+      -13,
+      4
+     ]
+    ],
+    "houses": 2,
+    "n_func": 14,
+    "concrete": 14,
+    "score": 4,
+    "vehicles": 1,
+    "legal_par": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "legal_den": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       9.000000008381903,
+       "D",
+       1,
+       -14,
+       7
+      ],
+      [
+       9.000000008381903,
+       "H",
+       1,
+       -6,
+       7
+      ],
+      [
+       19.00000001769513,
+       "H",
+       1,
+       -5,
+       7
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 6,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "10": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 3,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "30": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 1,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "45": {
+       "score": 9,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "60": {
+       "score": 10,
+       "deliveries": 6,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       9.000000008381903,
+       "D",
+       1,
+       -14,
+       7
+      ],
+      [
+       9.000000008381903,
+       "H",
+       1,
+       -6,
+       7
+      ],
+      [
+       19.00000001769513,
+       "H",
+       1,
+       -5,
+       7
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 6,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "10": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 3,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "30": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 1,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "45": {
+       "score": 9,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "60": {
+       "score": 10,
+       "deliveries": 6,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       9.000000008381903,
+       "D",
+       1,
+       -14,
+       7
+      ],
+      [
+       9.000000008381903,
+       "H",
+       1,
+       -6,
+       5
+      ],
+      [
+       19.00000001769513,
+       "H",
+       1,
+       -6,
+       6
+      ]
+     ],
+     "first_spawn_div_vs_base": 9.000000008381903,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=5 (first spawn difference at 9.000000008381903)",
+      "first_spawn_difference_t": 9.000000008381903
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "10": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       9.000000008381903,
+       "D",
+       1,
+       -15,
+       8
+      ],
+      [
+       9.000000008381903,
+       "H",
+       1,
+       -4,
+       5
+      ],
+      [
+       19.00000001769513,
+       "H",
+       1,
+       -6,
+       5
+      ]
+     ],
+     "first_spawn_div_vs_base": 9.000000008381903,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=5 (first spawn difference at 9.000000008381903)",
+      "first_spawn_difference_t": 9.000000008381903
+     },
+     "deliveries_60": 3,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [
+     [
+      -15,
+      4
+     ],
+     [
+      -13,
+      4
+     ]
+    ],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 6
+    },
+    "parallel": {
+     "window_end": 5,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "dense": {
+     "window_end": 5,
+     "deliveries_diff": 0,
+     "vehicles_diff": 2,
+     "deliveries_base": 0
+    }
+   }
+  },
+  "563352": {
+   "anchor_state": {
+    "hash": "897bb54f97d54099",
+    "connected": [
+     [
+      -16,
+      4
+     ],
+     [
+      -15,
+      4
+     ]
+    ],
+    "houses": 2,
+    "n_func": 14,
+    "concrete": 14,
+    "score": 3,
+    "vehicles": 0,
+    "legal_par": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "legal_den": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       24.000000022351742,
+       "D",
+       1,
+       -16,
+       7
+      ],
+      [
+       24.000000022351742,
+       "H",
+       1,
+       -5,
+       3
+      ],
+      [
+       34.00000003166497,
+       "H",
+       1,
+       -5,
+       5
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       24.000000022351742,
+       "D",
+       1,
+       -16,
+       7
+      ],
+      [
+       24.000000022351742,
+       "H",
+       1,
+       -5,
+       3
+      ],
+      [
+       34.00000003166497,
+       "H",
+       1,
+       -5,
+       5
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       24.000000022351742,
+       "D",
+       1,
+       -15,
+       7
+      ],
+      [
+       24.000000022351742,
+       "H",
+       1,
+       -7,
+       3
+      ],
+      [
+       34.00000003166497,
+       "H",
+       1,
+       -7,
+       4
+      ]
+     ],
+     "first_spawn_div_vs_base": 24.000000022351742,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng first differs at t=30 after the first spawn difference at 24.000000022351742 (downstream shift)",
+      "first_spawn_difference_t": 24.000000022351742
+     },
+     "deliveries_60": 6,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 2,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "60": {
+       "score": 9,
+       "deliveries": 6,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       24.000000022351742,
+       "D",
+       1,
+       -15,
+       6
+      ],
+      [
+       24.000000022351742,
+       "H",
+       1,
+       -5,
+       4
+      ],
+      [
+       34.00000003166497,
+       "H",
+       1,
+       -5,
+       7
+      ]
+     ],
+     "first_spawn_div_vs_base": 24.000000022351742,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=5 (first spawn difference at 24.000000022351742)",
+      "first_spawn_difference_t": 24.000000022351742
+     },
+     "deliveries_60": 3,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "10": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 22,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "30": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "45": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      },
+      "60": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 25,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 6
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [
+     [
+      -16,
+      4
+     ],
+     [
+      -15,
+      4
+     ]
+    ],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 4
+    },
+    "parallel": {
+     "window_end": 20,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 1
+    },
+    "dense": {
+     "window_end": 20,
+     "deliveries_diff": 0,
+     "vehicles_diff": 1,
+     "deliveries_base": 1
+    }
+   }
+  },
+  "571271": {
+   "anchor_state": {
+    "hash": "354d173c0bf5804f",
+    "connected": [
+     [
+      -5,
+      -3
+     ],
+     [
+      -4,
+      -1
+     ]
+    ],
+    "houses": 2,
+    "n_func": 13,
+    "concrete": 15,
+    "score": 3,
+    "vehicles": 1,
+    "legal_par": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "legal_den": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       5.000000004656613,
+       "D",
+       1,
+       -13,
+       -5
+      ],
+      [
+       5.000000004656613,
+       "H",
+       1,
+       -8,
+       -1
+      ],
+      [
+       15.000000013969839,
+       "H",
+       1,
+       -7,
+       -2
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       5.000000004656613,
+       "D",
+       1,
+       -13,
+       -5
+      ],
+      [
+       5.000000004656613,
+       "H",
+       1,
+       -8,
+       -1
+      ],
+      [
+       15.000000013969839,
+       "H",
+       1,
+       -7,
+       -2
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "45": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "60": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       5.000000004656613,
+       "D",
+       1,
+       -12,
+       -6
+      ],
+      [
+       5.000000004656613,
+       "H",
+       1,
+       -7,
+       -1
+      ],
+      [
+       15.000000013969839,
+       "H",
+       1,
+       -6,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": 5.000000004656613,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=5 (first spawn difference at 5.000000004656613)",
+      "first_spawn_difference_t": 5.000000004656613
+     },
+     "deliveries_60": 6,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 1,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "60": {
+       "score": 9,
+       "deliveries": 6,
+       "vehicles": 2,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       5.000000004656613,
+       "D",
+       1,
+       -12,
+       -6
+      ],
+      [
+       5.000000004656613,
+       "H",
+       1,
+       -8,
+       -1
+      ],
+      [
+       15.000000013969839,
+       "H",
+       1,
+       -6,
+       -1
+      ]
+     ],
+     "first_spawn_div_vs_base": 5.000000004656613,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=5 (first spawn difference at 5.000000004656613)",
+      "first_spawn_difference_t": 5.000000004656613
+     },
+     "deliveries_60": 6,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 21,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "5": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "10": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 23,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "20": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 1,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "30": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 4,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 3,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      },
+      "60": {
+       "score": 9,
+       "deliveries": 6,
+       "vehicles": 2,
+       "n_connected": 3,
+       "houses": 4,
+       "n_func": 24,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 7
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [
+     [
+      -5,
+      -3
+     ],
+     [
+      -4,
+      -1
+     ]
+    ],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 4
+    },
+    "parallel": {
+     "window_end": 5,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    },
+    "dense": {
+     "window_end": 5,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 0
+    }
+   }
+  },
+  "579190": {
+   "anchor_state": {
+    "hash": "9b96d0434b84145a",
+    "connected": [
+     [
+      -14,
+      3
+     ],
+     [
+      -14,
+      5
+     ]
+    ],
+    "houses": 2,
+    "n_func": 9,
+    "concrete": 19,
+    "score": 4,
+    "vehicles": 0,
+    "legal_par": [
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "legal_den": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "D",
+       1,
+       -14,
+       7
+      ],
+      [
+       17.000000015832484,
+       "H",
+       1,
+       -4,
+       5
+      ],
+      [
+       27.00000002514571,
+       "H",
+       1,
+       -9,
+       3
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "10": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 11,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "D",
+       1,
+       -14,
+       7
+      ],
+      [
+       17.000000015832484,
+       "H",
+       1,
+       -4,
+       5
+      ],
+      [
+       27.00000002514571,
+       "H",
+       1,
+       -9,
+       3
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "10": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 11,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 5,
+     "edits_accepted": 5,
+     "concrete_delta": 5,
+     "terminal": -1,
+     "spawns": [
+      [
+       16.00000001490116,
+       "D",
+       1,
+       -14,
+       7
+      ],
+      [
+       16.00000001490116,
+       "H",
+       1,
+       -6,
+       7
+      ],
+      [
+       26.000000024214387,
+       "H",
+       1,
+       -4,
+       3
+      ]
+     ],
+     "first_spawn_div_vs_base": 16.00000001490116,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng first differs at t=20 after the first spawn difference at 16.00000001490116 (downstream shift)",
+      "first_spawn_difference_t": 16.00000001490116
+     },
+     "deliveries_60": 4,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "10": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 14,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 14
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       17.000000015832484,
+       "H",
+       0,
+       -15,
+       5
+      ]
+     ],
+     "first_spawn_div_vs_base": 17.000000015832484,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=10 (first spawn difference at 17.000000015832484)",
+      "first_spawn_difference_t": 17.000000015832484
+     },
+     "deliveries_60": 5,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 1,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 18,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 2,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 18,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 3,
+       "vehicles": 3,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 18,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "60": {
+       "score": 9,
+       "deliveries": 5,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 18,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [
+     [
+      -14,
+      3
+     ],
+     [
+      -14,
+      5
+     ]
+    ],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 4
+    },
+    "parallel": {
+     "window_end": 10,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 1
+    },
+    "dense": {
+     "window_end": 10,
+     "deliveries_diff": -1,
+     "vehicles_diff": 0,
+     "deliveries_base": 1
+    }
+   }
+  },
+  "587109": {
+   "anchor_state": {
+    "hash": "c1286f8d13d5bdd4",
+    "connected": [
+     [
+      -15,
+      5
+     ],
+     [
+      -14,
+      7
+     ]
+    ],
+    "houses": 2,
+    "n_func": 9,
+    "concrete": 19,
+    "score": 3,
+    "vehicles": 0,
+    "legal_par": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "legal_den": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "branches": {
+    "base": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       8.00000000745058,
+       "D",
+       1,
+       -14,
+       2
+      ],
+      [
+       8.00000000745058,
+       "H",
+       1,
+       -7,
+       4
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -7,
+       5
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": null,
+     "deliveries_60": 5,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 11,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      }
+     }
+    },
+    "base2": {
+     "edits_requested": 0,
+     "edits_accepted": 0,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       8.00000000745058,
+       "D",
+       1,
+       -14,
+       2
+      ],
+      [
+       8.00000000745058,
+       "H",
+       1,
+       -7,
+       4
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -7,
+       5
+      ]
+     ],
+     "first_spawn_div_vs_base": null,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng identical at every checkpoint",
+      "first_spawn_difference_t": null
+     },
+     "deliveries_60": 5,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 9,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 11,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 12,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 19
+      }
+     }
+    },
+    "parallel": {
+     "edits_requested": 4,
+     "edits_accepted": 4,
+     "concrete_delta": 4,
+     "terminal": -1,
+     "spawns": [
+      [
+       8.00000000745058,
+       "D",
+       1,
+       -14,
+       2
+      ],
+      [
+       8.00000000745058,
+       "H",
+       1,
+       -7,
+       4
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -6,
+       5
+      ]
+     ],
+     "first_spawn_div_vs_base": 18.000000016763806,
+     "confound": {
+      "confounded": true,
+      "evidence": "prng differs at checkpoint t=10 (first spawn difference at 18.000000016763806)",
+      "first_spawn_difference_t": 18.000000016763806
+     },
+     "deliveries_60": 5,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 13,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 15,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 1,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "30": {
+       "score": 6,
+       "deliveries": 3,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 16,
+       "overcrowding": false,
+       "max_demand": 4,
+       "max_overcrowding_time": 0.0,
+       "concrete": 15
+      }
+     }
+    },
+    "dense": {
+     "edits_requested": 8,
+     "edits_accepted": 8,
+     "concrete_delta": 0,
+     "terminal": -1,
+     "spawns": [
+      [
+       8.00000000745058,
+       "D",
+       1,
+       -5,
+       2
+      ],
+      [
+       8.00000000745058,
+       "H",
+       1,
+       -9,
+       6
+      ],
+      [
+       18.000000016763806,
+       "H",
+       1,
+       -8,
+       7
+      ]
+     ],
+     "first_spawn_div_vs_base": 8.00000000745058,
+     "confound": {
+      "confounded": false,
+      "evidence": "prng first differs at t=10 after the first spawn difference at 8.00000000745058 (downstream shift)",
+      "first_spawn_difference_t": 8.00000000745058
+     },
+     "deliveries_60": 5,
+     "first_overcrowding_cp": null,
+     "cp_summary": {
+      "1": {
+       "score": 3,
+       "deliveries": 0,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "5": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 2,
+       "n_func": 17,
+       "overcrowding": false,
+       "max_demand": 0,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "10": {
+       "score": 4,
+       "deliveries": 1,
+       "vehicles": 2,
+       "n_connected": 2,
+       "houses": 3,
+       "n_func": 19,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "20": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "30": {
+       "score": 5,
+       "deliveries": 2,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 1,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "45": {
+       "score": 7,
+       "deliveries": 4,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 2,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      },
+      "60": {
+       "score": 8,
+       "deliveries": 5,
+       "vehicles": 0,
+       "n_connected": 2,
+       "houses": 4,
+       "n_func": 20,
+       "overcrowding": false,
+       "max_demand": 3,
+       "max_overcrowding_time": 0.0,
+       "concrete": 11
+      }
+     }
+    }
+   },
+   "checks": {
+    "base": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "base2": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "parallel": {
+     "legal_all": true,
+     "concrete_ok": true
+    },
+    "dense": {
+     "legal_all": true,
+     "concrete_ok": false
+    },
+    "initial_connectivity_identical": true,
+    "anchor_connected": [
+     [
+      -15,
+      5
+     ],
+     [
+      -14,
+      7
+     ]
+    ],
+    "base_vs_base2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true,
+     "vehicles_equal_all_cp": true,
+     "deliveries_60_diff": 0
+    }
+   },
+   "pre_divergence": {
+    "base2": {
+     "window_end": 60,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 5
+    },
+    "parallel": {
+     "window_end": 10,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 1
+    },
+    "dense": {
+     "window_end": 5,
+     "deliveries_diff": 0,
+     "vehicles_diff": 0,
+     "deliveries_base": 1
+    }
+   }
+  }
+ },
+ "checks": {
+  "500000": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [
+    [
+     -4,
+     -3
+    ],
+    [
+     -4,
+     -1
+    ]
+   ],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "507919": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "515838": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "523757": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [
+    [
+     -17,
+     3
+    ],
+    [
+     -15,
+     3
+    ]
+   ],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "531676": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [
+    [
+     -14,
+     -5
+    ],
+    [
+     -4,
+     -3
+    ]
+   ],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "539595": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [
+    [
+     -15,
+     4
+    ],
+    [
+     -13,
+     4
+    ]
+   ],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "547514": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "555433": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [
+    [
+     -15,
+     4
+    ],
+    [
+     -13,
+     4
+    ]
+   ],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "563352": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [
+    [
+     -16,
+     4
+    ],
+    [
+     -15,
+     4
+    ]
+   ],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "571271": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [
+    [
+     -5,
+     -3
+    ],
+    [
+     -4,
+     -1
+    ]
+   ],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "579190": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [
+    [
+     -14,
+     3
+    ],
+    [
+     -14,
+     5
+    ]
+   ],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  },
+  "587109": {
+   "base": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "base2": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "parallel": {
+    "legal_all": true,
+    "concrete_ok": true
+   },
+   "dense": {
+    "legal_all": true,
+    "concrete_ok": false
+   },
+   "initial_connectivity_identical": true,
+   "anchor_connected": [
+    [
+     -15,
+     5
+    ],
+    [
+     -14,
+     7
+    ]
+   ],
+   "base_vs_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true,
+    "vehicles_equal_all_cp": true,
+    "deliveries_60_diff": 0
+   }
+  }
+ },
+ "primary": {
+  "parallel_minus_base_full60": {
+   "n": 12,
+   "values": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1,
+    0,
+    -2,
+    2,
+    2,
+    0,
+    0
+   ],
+   "mean": 0.08333333333333333,
+   "median": 0.0,
+   "positive": 2,
+   "zero": 8,
+   "negative": 2,
+   "ci95_mean": [
+    -0.5,
+    0.6666666666666666
+   ]
+  },
+  "dense_minus_base_full60": {
+   "n": 12,
+   "values": [
+    0,
+    0,
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    -3,
+    -1,
+    2,
+    1,
+    0
+   ],
+   "mean": -0.25,
+   "median": 0.0,
+   "positive": 2,
+   "zero": 6,
+   "negative": 4,
+   "ci95_mean": [
+    -0.9166666666666666,
+    0.4166666666666667
+   ]
+  },
+  "base2_minus_base_full60": {
+   "n": 12,
+   "values": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "mean": 0.0,
+   "median": 0.0,
+   "positive": 0,
+   "zero": 12,
+   "negative": 0,
+   "ci95_mean": [
+    0.0,
+    0.0
+   ]
+  },
+  "base_deliveries_60": {
+   "n": 12,
+   "values": [
+    4,
+    0,
+    0,
+    4,
+    5,
+    4,
+    0,
+    6,
+    4,
+    4,
+    4,
+    5
+   ],
+   "mean": 3.3333333333333335,
+   "median": 4.0,
+   "positive": 9,
+   "zero": 3,
+   "negative": 0,
+   "ci95_mean": [
+    2.1666666666666665,
+    4.416666666666667
+   ]
+  }
+ },
+ "pre_divergence": {
+  "parallel": {
+   "n": 12,
+   "values": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "mean": 0.0,
+   "median": 0.0,
+   "positive": 0,
+   "zero": 12,
+   "negative": 0,
+   "ci95_mean": [
+    0.0,
+    0.0
+   ]
+  },
+  "dense": {
+   "n": 12,
+   "values": [
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1,
+    0
+   ],
+   "mean": -0.16666666666666666,
+   "median": 0.0,
+   "positive": 0,
+   "zero": 10,
+   "negative": 2,
+   "ci95_mean": [
+    -0.4166666666666667,
+    0.0
+   ]
+  },
+  "window_end_parallel": [
+   10,
+   60,
+   60,
+   5,
+   10,
+   10,
+   60,
+   5,
+   20,
+   5,
+   10,
+   10
+  ],
+  "window_end_dense": [
+   10,
+   10,
+   5,
+   5,
+   10,
+   10,
+   60,
+   5,
+   20,
+   5,
+   10,
+   5
+  ]
+ },
+ "secondary": {
+  "spawn_divergence_fraction": {
+   "parallel": 0.75,
+   "dense": 0.9166666666666666,
+   "base2": 0.0
+  },
+  "rng_confounded_fraction": {
+   "parallel": 0.3333333333333333,
+   "dense": 0.5833333333333334
+  },
+  "vehicles_60": {
+   "base": [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "parallel": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0
+   ],
+   "dense": [
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    0
+   ]
+  },
+  "terminal_steps": [
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   }
+  ],
+  "first_overcrowding_cp": [
+   {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   {
+    "base": 45,
+    "base2": 45,
+    "parallel": 45,
+    "dense": 45
+   },
+   {
+    "base": 45,
+    "base2": 45,
+    "parallel": 45,
+    "dense": 45
+   },
+   {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   {
+    "base": 45,
+    "base2": 45,
+    "parallel": 45,
+    "dense": 45
+   },
+   {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   }
+  ],
+  "edits_accepted": [
+   {
+    "parallel": 5,
+    "dense": 8
+   },
+   {
+    "parallel": 0,
+    "dense": 3
+   },
+   {
+    "parallel": 0,
+    "dense": 3
+   },
+   {
+    "parallel": 8,
+    "dense": 8
+   },
+   {
+    "parallel": 6,
+    "dense": 8
+   },
+   {
+    "parallel": 8,
+    "dense": 8
+   },
+   {
+    "parallel": 0,
+    "dense": 3
+   },
+   {
+    "parallel": 8,
+    "dense": 8
+   },
+   {
+    "parallel": 8,
+    "dense": 8
+   },
+   {
+    "parallel": 8,
+    "dense": 8
+   },
+   {
+    "parallel": 5,
+    "dense": 8
+   },
+   {
+    "parallel": 4,
+    "dense": 8
+   }
+  ]
+ },
+ "rows": [
+  {
+   "seed": 500000,
+   "d_full_par": 0,
+   "d_full_den": 0,
+   "d_full_base2": 0,
+   "base_60": 4,
+   "div_par": 13.000000012107193,
+   "div_den": 13.000000012107193,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": -1,
+   "pre_end_par": 10,
+   "pre_end_den": 10,
+   "veh60_base": 0,
+   "veh60_par": 0,
+   "veh60_den": 2,
+   "conf_par": false,
+   "conf_den": true,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   "edits": {
+    "parallel": 5,
+    "dense": 8
+   }
+  },
+  {
+   "seed": 507919,
+   "d_full_par": 0,
+   "d_full_den": 0,
+   "d_full_base2": 0,
+   "base_60": 0,
+   "div_par": null,
+   "div_den": 18.000000016763806,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 60,
+   "pre_end_den": 10,
+   "veh60_base": 0,
+   "veh60_par": 0,
+   "veh60_den": 0,
+   "conf_par": false,
+   "conf_den": false,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": 45,
+    "base2": 45,
+    "parallel": 45,
+    "dense": 45
+   },
+   "edits": {
+    "parallel": 0,
+    "dense": 3
+   }
+  },
+  {
+   "seed": 515838,
+   "d_full_par": 0,
+   "d_full_den": 0,
+   "d_full_base2": 0,
+   "base_60": 0,
+   "div_par": null,
+   "div_den": 5.000000004656613,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 60,
+   "pre_end_den": 5,
+   "veh60_base": 0,
+   "veh60_par": 0,
+   "veh60_den": 0,
+   "conf_par": false,
+   "conf_den": true,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": 45,
+    "base2": 45,
+    "parallel": 45,
+    "dense": 45
+   },
+   "edits": {
+    "parallel": 0,
+    "dense": 3
+   }
+  },
+  {
+   "seed": 523757,
+   "d_full_par": 0,
+   "d_full_den": -1,
+   "d_full_base2": 0,
+   "base_60": 4,
+   "div_par": 8.00000000745058,
+   "div_den": 8.00000000745058,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 5,
+   "pre_end_den": 5,
+   "veh60_base": 2,
+   "veh60_par": 1,
+   "veh60_den": 1,
+   "conf_par": true,
+   "conf_den": true,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   "edits": {
+    "parallel": 8,
+    "dense": 8
+   }
+  },
+  {
+   "seed": 531676,
+   "d_full_par": 0,
+   "d_full_den": 0,
+   "d_full_base2": 0,
+   "base_60": 5,
+   "div_par": 17.000000015832484,
+   "div_den": 17.000000015832484,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 10,
+   "pre_end_den": 10,
+   "veh60_base": 0,
+   "veh60_par": 0,
+   "veh60_den": 0,
+   "conf_par": false,
+   "conf_den": false,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   "edits": {
+    "parallel": 6,
+    "dense": 8
+   }
+  },
+  {
+   "seed": 539595,
+   "d_full_par": -1,
+   "d_full_den": -1,
+   "d_full_base2": 0,
+   "base_60": 4,
+   "div_par": 18.000000016763806,
+   "div_den": 18.000000016763806,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 10,
+   "pre_end_den": 10,
+   "veh60_base": 0,
+   "veh60_par": 0,
+   "veh60_den": 0,
+   "conf_par": false,
+   "conf_den": false,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   "edits": {
+    "parallel": 8,
+    "dense": 8
+   }
+  },
+  {
+   "seed": 547514,
+   "d_full_par": 0,
+   "d_full_den": 0,
+   "d_full_base2": 0,
+   "base_60": 0,
+   "div_par": null,
+   "div_den": null,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 60,
+   "pre_end_den": 60,
+   "veh60_base": 0,
+   "veh60_par": 0,
+   "veh60_den": 0,
+   "conf_par": false,
+   "conf_den": false,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": 45,
+    "base2": 45,
+    "parallel": 45,
+    "dense": 45
+   },
+   "edits": {
+    "parallel": 0,
+    "dense": 3
+   }
+  },
+  {
+   "seed": 555433,
+   "d_full_par": -2,
+   "d_full_den": -3,
+   "d_full_base2": 0,
+   "base_60": 6,
+   "div_par": 9.000000008381903,
+   "div_den": 9.000000008381903,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 5,
+   "pre_end_den": 5,
+   "veh60_base": 0,
+   "veh60_par": 0,
+   "veh60_den": 2,
+   "conf_par": true,
+   "conf_den": true,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   "edits": {
+    "parallel": 8,
+    "dense": 8
+   }
+  },
+  {
+   "seed": 563352,
+   "d_full_par": 2,
+   "d_full_den": -1,
+   "d_full_base2": 0,
+   "base_60": 4,
+   "div_par": 24.000000022351742,
+   "div_den": 24.000000022351742,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 20,
+   "pre_end_den": 20,
+   "veh60_base": 1,
+   "veh60_par": 0,
+   "veh60_den": 2,
+   "conf_par": false,
+   "conf_den": true,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   "edits": {
+    "parallel": 8,
+    "dense": 8
+   }
+  },
+  {
+   "seed": 571271,
+   "d_full_par": 2,
+   "d_full_den": 2,
+   "d_full_base2": 0,
+   "base_60": 4,
+   "div_par": 5.000000004656613,
+   "div_den": 5.000000004656613,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 5,
+   "pre_end_den": 5,
+   "veh60_base": 0,
+   "veh60_par": 2,
+   "veh60_den": 2,
+   "conf_par": true,
+   "conf_den": true,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   "edits": {
+    "parallel": 8,
+    "dense": 8
+   }
+  },
+  {
+   "seed": 579190,
+   "d_full_par": 0,
+   "d_full_den": 1,
+   "d_full_base2": 0,
+   "base_60": 4,
+   "div_par": 16.00000001490116,
+   "div_den": 17.000000015832484,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": -1,
+   "pre_end_par": 10,
+   "pre_end_den": 10,
+   "veh60_base": 0,
+   "veh60_par": 0,
+   "veh60_den": 2,
+   "conf_par": false,
+   "conf_den": true,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   "edits": {
+    "parallel": 5,
+    "dense": 8
+   }
+  },
+  {
+   "seed": 587109,
+   "d_full_par": 0,
+   "d_full_den": 0,
+   "d_full_base2": 0,
+   "base_60": 5,
+   "div_par": 18.000000016763806,
+   "div_den": 8.00000000745058,
+   "div_base2": null,
+   "pre_par": 0,
+   "pre_den": 0,
+   "pre_end_par": 10,
+   "pre_end_den": 5,
+   "veh60_base": 0,
+   "veh60_par": 0,
+   "veh60_den": 0,
+   "conf_par": true,
+   "conf_den": false,
+   "term": {
+    "base": -1,
+    "base2": -1,
+    "parallel": -1,
+    "dense": -1
+   },
+   "over_cp": {
+    "base": null,
+    "base2": null,
+    "parallel": null,
+    "dense": null
+   },
+   "edits": {
+    "parallel": 4,
+    "dense": 8
+   }
+  }
+ ]
+}

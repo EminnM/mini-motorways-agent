@@ -1,0 +1,40 @@
+experiment:
+  name: baseline_native
+  description: "MaskablePPO baseline using native score reward"
+  hypothesis: ""
+  tags:
+    - baseline
+    - native_reward
+
+environment:
+  initialization: normal
+  reward: native_score
+  decision_interval_seconds: 0.3
+  episode_horizon_decisions: 600
+
+policy:
+  algorithm: maskable_ppo
+
+training:
+  total_timesteps: 100000
+  seeds:
+    - 101
+    - 102
+    - 103
+  checkpoint_every: 10000
+  eval_every: 10000
+
+evaluation:
+  seeds:
+    - 10001
+    - 10002
+    - 10003
+    - 10004
+    - 10005
+  episodes_per_seed: 1
+  deterministic: true
+
+logging:
+  action_distribution: true
+  training_curve: true
+  episode_metrics: true

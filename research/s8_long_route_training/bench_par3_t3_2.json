@@ -1,0 +1,8 @@
+{
+ "tag": "par3_t3_2",
+ "env_random_steps_per_s": 5666.98091315684,
+ "env_plus_cnn_inference_steps_per_s": 290.22084754675063,
+ "ppo_minibatch_256_update_ms": 925.9935617446899,
+ "predicted_ppo_training_steps_per_s": 55.821323196930706,
+ "predicted_s_per_100k_decisions": 1791.4301251371703
+}

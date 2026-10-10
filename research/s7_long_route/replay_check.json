@@ -1,0 +1,40 @@
+{
+ "182150": {
+  "steps": 142,
+  "argmax_agreement": 108,
+  "native_action_illegal_in_s7": 1,
+  "upgrade_steps_skipped": 1,
+  "first_disagreement": {
+   "step": 0,
+   "native": [
+    "WAIT"
+   ],
+   "s7": [
+    "ADD",
+    -4,
+    -2,
+    "E"
+   ],
+   "native_action_legal_in_s7": true
+  }
+ },
+ "205907": {
+  "steps": 141,
+  "argmax_agreement": 15,
+  "native_action_illegal_in_s7": 46,
+  "upgrade_steps_skipped": 1,
+  "first_disagreement": {
+   "step": 11,
+   "native": [
+    "ADD",
+    -16,
+    4,
+    "S"
+   ],
+   "s7": [
+    "WAIT"
+   ],
+   "native_action_legal_in_s7": true
+  }
+ }
+}

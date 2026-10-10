@@ -1,0 +1,51 @@
+{
+ "C1_migrated_network_reproduces_S8C_outputs_on_saved_observations": {
+  "passed": true,
+  "detail": {
+   "observations": 408,
+   "max_abs_logit_diff": 0.0,
+   "max_abs_value_diff": 0.0,
+   "same_greedy_action": 408,
+   "params_src": 73416,
+   "params_dst": 75144,
+   "widened": [
+    "mlp_extractor.trunk.0.weight",
+    15,
+    21
+   ]
+  }
+ },
+ "C2_S7_gap7_gap10_validation_identical_through_adapter": {
+  "passed": true,
+  "detail": {
+   "7": {
+    "frozen_S8C_success": 0.8333333333333334,
+    "migrated_success": 0.8333333333333334,
+    "n": 60
+   },
+   "10": {
+    "frozen_S8C_success": 0.7692307692307693,
+    "migrated_success": 0.7692307692307693,
+    "n": 39
+   }
+  }
+ },
+ "_migration": {
+  "source": "C:\\Users\\TKA\\Desktop\\mini moto\\research\\s8_long_route_training\\runs\\arm_C_s11\\checkpoints\\step_0099840.zip",
+  "source_sha256": "85a9cb75cf287d24a4fd0b95e9a5ccf200fd1afcaa53807d0b19ddd333156097",
+  "migrated_checkpoint": "C:\\Users\\TKA\\Desktop\\mini moto\\research\\s14_group_observation\\s8c_migrated_v2_step0.zip",
+  "migrated_sha256": "b297422fdcd6221e74e5f7747ef120a1b743c38e851c1701c06e437df9cd9d36",
+  "report": {
+   "copied": 15,
+   "widened": [
+    "mlp_extractor.trunk.0.weight"
+   ],
+   "zero_initialised_slice": [
+    "mlp_extractor.trunk.0.weight",
+    15,
+    21
+   ]
+  },
+  "procedure": "copy all 22 tensors by name; mlp_extractor.trunk.0.weight widened from (32,15,3,3) to (32,21,3,3) with zeros in input channels 15..20; optimizer fresh"
+ }
+}

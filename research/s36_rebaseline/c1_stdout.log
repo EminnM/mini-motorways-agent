@@ -1,0 +1,39 @@
+FAIL T1_targets_unreached_destinations: {'unreached_seen': 7, 'latency_decisions': {'(-7, 7)': None, '(-12, 3)': None, '(-2, 7)': None, '(-13, -1)': None, '(-1, -2)': 0, '(-10, -2)': 0, '(-6, -4)': 0}}
+PASS T2_recognises_served_destinations: {'plan_episodes_per_destination': {'(-1, -2)': 1, '(-10, -2)': 1, '(-6, -4)': 1}, 'exec': {'plans': 17, 'completed': 17, 'abandoned': 0, 'abandon_reasons': {}, 'waits_for_concrete': 0, 'decisions': 696, 'illegal_suppressed': 0, 'destroy_vetoes': 0}}
+PASS T3_no_redundant_construction: {'plan_episodes_per_destination': {'(-1, -2)': 1, '(-10, -2)': 1, '(-6, -4)': 1}, 'removes': 0, 'abandon_reasons': {}}
+PASS T4_legality_and_resources: {'illegal': 0, 'boundary_violations': 0, 'negative_concrete_steps': 0, 't': 700, 'score': 220.0}
+PASS T5_connectivity_preserved: {'destroyed': 0, 'destroy_vetoes': 0}
+PASS T6_flag_off_equals_historical_plannerB: {'t': 315, 'score': 41.0, 'dest_plans': 0}
+5 passed of 6
+[dev plannerBplus r0] seed 500000: t 498 score 106 term True illegal 0 bviol 0 destroyed 0 conn 12/14 unreached 1 (demand 10) concrete 33 (153s)
+[dev plannerBplus r0] seed 507919: t 151 score 5 term True illegal 0 bviol 0 destroyed 0 conn 2/4 unreached 1 (demand 10) concrete 36 (177s)
+[dev plannerBplus r0] seed 515838: t 145 score 6 term True illegal 0 bviol 0 destroyed 0 conn 2/4 unreached 1 (demand 10) concrete 36 (199s)
+[dev plannerBplus r0] seed 523757: t 600 score 173 term False illegal 0 bviol 0 destroyed 0 conn 13/15 unreached 1 (demand 5) concrete 55 (314s)
+[dev plannerBplus r0] seed 531676: t 468 score 99 term True illegal 0 bviol 0 destroyed 0 conn 6/15 unreached 1 (demand 10) concrete 55 (394s)
+[dev plannerBplus r0] seed 539595: t 600 score 167 term False illegal 0 bviol 0 destroyed 0 conn 16/16 unreached 0 (demand 0) concrete 39 (477s)
+[dev plannerBplus r0] seed 547514: t 154 score 5 term True illegal 0 bviol 0 destroyed 0 conn 2/4 unreached 1 (demand 10) concrete 33 (496s)
+[dev plannerBplus r0] seed 555433: t 600 score 161 term False illegal 0 bviol 0 destroyed 0 conn 16/16 unreached 0 (demand 0) concrete 43 (581s)
+[dev plannerBplus r0] seed 563352: t 429 score 79 term True illegal 0 bviol 0 destroyed 0 conn 10/14 unreached 2 (demand 12) concrete 44 (648s)
+[dev plannerBplus r0] seed 571271: t 474 score 90 term True illegal 0 bviol 0 destroyed 0 conn 12/15 unreached 1 (demand 10) concrete 27 (726s)
+[dev plannerBplus r0] seed 579190: t 442 score 85 term True illegal 0 bviol 0 destroyed 0 conn 10/13 unreached 2 (demand 12) concrete 54 (800s)
+[dev plannerBplus r0] seed 587109: t 600 score 173 term False illegal 0 bviol 0 destroyed 0 conn 15/15 unreached 1 (demand 4) concrete 40 (898s)
+[fresh plannerBplus r0] seed 900000: t 824 score 303 term True illegal 0 bviol 0 destroyed 0 conn 24/29 unreached 2 (demand 18) concrete 36 (232s)
+[fresh plannerBplus r0] seed 907919: t 290 score 35 term True illegal 0 bviol 0 destroyed 0 conn 6/10 unreached 3 (demand 12) concrete 52 (273s)
+[fresh plannerBplus r0] seed 915838: t 496 score 104 term True illegal 0 bviol 0 destroyed 0 conn 12/15 unreached 2 (demand 14) concrete 49 (359s)
+[fresh plannerBplus r0] seed 923757: t 716 score 216 term True illegal 0 bviol 0 destroyed 0 conn 17/23 unreached 2 (demand 19) concrete 55 (543s)
+[fresh plannerBplus r0] seed 931676: t 598 score 152 term True illegal 0 bviol 0 destroyed 0 conn 14/16 unreached 2 (demand 17) concrete 59 (677s)
+[fresh plannerBplus r0] seed 939595: t 691 score 214 term True illegal 0 bviol 0 destroyed 0 conn 14/17 unreached 3 (demand 14) concrete 46 (806s)
+[fresh plannerBplus r0] seed 947514: t 528 score 125 term True illegal 0 bviol 0 destroyed 0 conn 15/15 unreached 1 (demand 10) concrete 24 (888s)
+[fresh plannerBplus r0] seed 955433: t 405 score 73 term True illegal 0 bviol 0 destroyed 0 conn 9/10 unreached 2 (demand 11) concrete 51 (965s)
+[new plannerB r0] seed 1100003: t 689 score 201 term True illegal 0 bviol 0 destroyed 0 conn 20/20 unreached 2 (demand 19) concrete 33 (160s)
+[new plannerB r0] seed 1107922: t 335 score 42 term True illegal 0 bviol 0 destroyed 0 conn 8/10 unreached 1 (demand 10) concrete 43 (198s)
+[new plannerB r0] seed 1115841: t 146 score 5 term True illegal 0 bviol 0 destroyed 0 conn 2/4 unreached 1 (demand 10) concrete 35 (217s)
+[new plannerB r0] seed 1123760: t 350 score 56 term True illegal 0 bviol 0 destroyed 0 conn 10/12 unreached 1 (demand 10) concrete 48 (269s)
+[new plannerB r0] seed 1131679: t 310 score 39 term True illegal 0 bviol 0 destroyed 0 conn 8/8 unreached 1 (demand 10) concrete 47 (317s)
+[new plannerB r0] seed 1139598: t 287 score 37 term True illegal 0 bviol 0 destroyed 0 conn 7/9 unreached 1 (demand 10) concrete 48 (362s)
+[new plannerB r0] seed 1147517: t 142 score 5 term True illegal 0 bviol 0 destroyed 0 conn 2/4 unreached 1 (demand 9) concrete 35 (382s)
+[new plannerB r0] seed 1155436: t 298 score 35 term True illegal 0 bviol 0 destroyed 0 conn 5/8 unreached 1 (demand 10) concrete 48 (418s)
+[new plannerB r0] seed 1163355: t 308 score 37 term True illegal 0 bviol 0 destroyed 0 conn 7/7 unreached 1 (demand 10) concrete 43 (474s)
+[new plannerB r0] seed 1171274: t 566 score 143 term True illegal 0 bviol 0 destroyed 0 conn 14/14 unreached 2 (demand 15) concrete 57 (577s)
+[new plannerB r0] seed 1179193: t 379 score 55 term True illegal 0 bviol 0 destroyed 0 conn 5/11 unreached 1 (demand 10) concrete 47 (649s)
+[new plannerB r0] seed 1187112: t 285 score 35 term True illegal 0 bviol 0 destroyed 0 conn 4/7 unreached 1 (demand 10) concrete 54 (688s)

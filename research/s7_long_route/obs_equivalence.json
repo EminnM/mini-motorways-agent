@@ -1,0 +1,42 @@
+{
+ "obs_entries_differing_per_state": {
+  "min": 0,
+  "median": 0.0,
+  "max": 0
+ },
+ "tile_channels_that_differ_total_over_24_states": {},
+ "global_indices_that_differ_total": {},
+ "policy_first_action_kind_native_vs_s7": {
+  "cnn11": {
+   "native": {
+    "ADD": 6,
+    "WAIT": 18
+   },
+   "s7": {
+    "ADD": 6,
+    "WAIT": 18
+   },
+   "same_action": 24
+  },
+  "cnn12": {
+   "native": {
+    "ADD": 24
+   },
+   "s7": {
+    "ADD": 24
+   },
+   "same_action": 24
+  },
+  "cnn13": {
+   "native": {
+    "ADD": 6,
+    "WAIT": 18
+   },
+   "s7": {
+    "ADD": 7,
+    "WAIT": 17
+   },
+   "same_action": 23
+  }
+ }
+}

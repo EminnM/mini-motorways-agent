@@ -1,0 +1,260 @@
+{
+ "T1_mask_geometry_and_expansion": {
+  "passed": true,
+  "detail": {
+   "states": [
+    {
+     "seed": 500000,
+     "i": 0,
+     "area": [
+      -15,
+      -7,
+      -3,
+      -1
+     ],
+     "n_add": 125,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 1
+     }
+    },
+    {
+     "seed": 500000,
+     "i": 60,
+     "area": [
+      -15,
+      -7,
+      -3,
+      -1
+     ],
+     "n_add": 112,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 1
+     }
+    },
+    {
+     "seed": 500000,
+     "i": 150,
+     "area": [
+      -15,
+      -7,
+      -2,
+      0
+     ],
+     "n_add": 119,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 4
+     }
+    },
+    {
+     "seed": 500000,
+     "i": 250,
+     "area": [
+      -15,
+      -7,
+      1,
+      1
+     ],
+     "n_add": 152,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 3
+     }
+    },
+    {
+     "seed": 507919,
+     "i": 0,
+     "area": [
+      -14,
+      -7,
+      -2,
+      -1
+     ],
+     "n_add": 130,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 4
+     }
+    },
+    {
+     "seed": 507919,
+     "i": 60,
+     "area": [
+      -14,
+      -7,
+      -2,
+      0
+     ],
+     "n_add": 148,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 4
+     }
+    },
+    {
+     "seed": 507919,
+     "i": 150,
+     "area": [
+      -14,
+      -7,
+      -1,
+      0
+     ],
+     "n_add": 131,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 4
+     }
+    },
+    {
+     "seed": 563352,
+     "i": 0,
+     "area": [
+      -17,
+      2,
+      -5,
+      8
+     ],
+     "n_add": 147,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 4
+     }
+    },
+    {
+     "seed": 563352,
+     "i": 60,
+     "area": [
+      -17,
+      2,
+      -5,
+      8
+     ],
+     "n_add": 133,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 4
+     }
+    },
+    {
+     "seed": 563352,
+     "i": 150,
+     "area": [
+      -17,
+      1,
+      -4,
+      8
+     ],
+     "n_add": 152,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 2
+     }
+    },
+    {
+     "seed": 563352,
+     "i": 250,
+     "area": [
+      -17,
+      0,
+      -1,
+      8
+     ],
+     "n_add": 192,
+     "both_endpoints_inside": true,
+     "edges_on_east_col_or_south_row": {
+      "E": 0,
+      "S": 0,
+      "corner_origins": 2
+     }
+    }
+   ],
+   "area_grows": true
+  }
+ },
+ "T2_interior_actions_preserved_vs_prefix_captures": {
+  "passed": true,
+  "detail": {
+   "states": 12,
+   "exact": 12,
+   "diffs": [],
+   "transient_retries": []
+  }
+ },
+ "T3_TryAddRoad_rejects_crossing_independently_of_mask": {
+  "passed": true,
+  "detail": {
+   "south_crossing": [
+    "ADD",
+    -11,
+    -7,
+    "S"
+   ],
+   "applyInfo": "TryAddRoad((-11, -7), South) rejected: outside playable area at expansion time (origin inside=True, far inside=False)",
+   "east_edge_from_export_xMax": [
+    "ADD",
+    -3,
+    -3,
+    "E"
+   ],
+   "east_accepted": false,
+   "east_info": "TileEditor.AddRoad((-3, -3), East) did not succeed: resultCode=CannotCreateBridge.",
+   "interior": [
+    "ADD",
+    -14,
+    -5,
+    "E"
+   ],
+   "interior_accepted": true
+  }
+ },
+ "T4_TryAddMotorway_area_check": {
+  "passed": true,
+  "detail": {
+   "outside": "motorway (-14, -6) -> (0, -6) rejected: outside playable area at expansion time (origin inside=True, far inside=False)",
+   "inside": "AddUnbuiltMotorway((-14, -6)) failed: resultCode=NotEnoughUpgrades"
+  }
+ },
+ "T5_interfaces_unchanged_and_hybrid_obeys_mask": {
+  "passed": true,
+  "detail": {
+   "action_space": 3111,
+   "v1": [
+    11666
+   ],
+   "v2": [
+    16328
+   ],
+   "checkpoint": "step_0100352.zip",
+   "kinds_100_decisions": {
+    "EDIT": 12,
+    "PLAN": 87,
+    "WAIT": 1
+   },
+   "illegal": 0
+  }
+ },
+ "_wall_s": 179.5
+}

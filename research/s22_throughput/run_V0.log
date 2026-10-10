@@ -1,0 +1,15 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[V0] seed 500000: steps 498 deliveries 105.0 connected_end 14/14 edits 0/0 illegal 0 lost 0 (68s)
+[V0] seed 507919: steps 151 deliveries 5.0 connected_end 2/4 edits 0/0 illegal 0 lost 0 (82s)
+[V0] seed 515838: steps 145 deliveries 6.0 connected_end 2/4 edits 0/0 illegal 0 lost 0 (96s)
+[V0] seed 523757: steps 310 deliveries 40.0 connected_end 9/9 edits 0/0 illegal 0 lost 0 (126s)
+[V0] seed 531676: steps 295 deliveries 38.0 connected_end 4/7 edits 0/0 illegal 0 lost 0 (155s)
+[V0] seed 539595: steps 323 deliveries 43.0 connected_end 9/9 edits 0/0 illegal 0 lost 0 (188s)
+[V0] seed 547514: steps 154 deliveries 5.0 connected_end 2/4 edits 0/0 illegal 0 lost 0 (204s)
+[V0] seed 555433: steps 318 deliveries 40.0 connected_end 10/10 edits 0/0 illegal 0 lost 0 (238s)
+[V0] seed 563352: steps 600 deliveries 172.0 connected_end 16/16 edits 0/0 illegal 0 lost 0 (310s)
+[V0] seed 571271: steps 290 deliveries 35.0 connected_end 4/7 edits 0/0 illegal 0 lost 0 (340s)
+[V0] seed 579190: steps 442 deliveries 88.0 connected_end 15/15 edits 0/0 illegal 0 lost 0 (390s)
+[V0] seed 587109: steps 301 deliveries 38.0 connected_end 8/8 edits 0/0 illegal 0 lost 0 (417s)

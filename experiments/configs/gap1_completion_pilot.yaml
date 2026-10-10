@@ -1,0 +1,39 @@
+# Gap-1 immediate-reward diagnostic: reward = 1.0 only on the transition that completes the connection.
+# Nothing else (no native score, no terminal penalty, no shaping, no penalties). One seed, ~10k decisions.
+experiment:
+  name: gap1_completion_pilot
+  description: "MaskablePPO on Gap-1 with binary completion reward; 10k-decision pilot"
+  hypothesis: "With the reward ambiguity removed, the current flat MLP + MaskablePPO can start to identify the missing edge."
+  tags: [gap1, completion, pilot]
+
+environment:
+  task: gap1
+  initialization: connected
+  reward: completion
+  decision_interval_seconds: 1.0
+  gap1:
+    manifest_dir: C:/Users/TKA/Desktop/mini moto/research/gap1/manifests
+    construction_window: 20
+    continuation_decisions: 0
+    success_terminates: true
+
+policy:
+  algorithm: maskable_ppo
+  network: mlp
+  hyperparameters:            # identical to the frozen Baseline-0 native run
+    n_steps: 512
+    batch_size: 256
+    n_epochs: 4
+    target_kl: 0.03
+    gamma: 0.99
+
+training:
+  total_timesteps: 10000       # SB3 collects whole rollouts of 512 -> 10,240 decisions
+  seeds: [301]
+  checkpoint_every: 2500
+  eval_every: 2500
+  n_envs: 1
+  headless: true
+
+evaluation:
+  seeds: [1]                   # unused for Gap-1 (validation manifest is evaluated separately)

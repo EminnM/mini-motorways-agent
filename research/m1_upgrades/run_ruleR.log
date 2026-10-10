@@ -1,0 +1,15 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[ruleR] seed 500000: steps 498 deliveries 105.0 conn 14/14 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight'), (281, ['Bridge', 'TrafficLight'], 0, 'Bridge'), (421, ['Motorway', 'Roundabout'], 0, 'Motorway')] (86s)
+[ruleR] seed 507919: steps 151 deliveries 5.0 conn 2/4 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight')] (99s)
+[ruleR] seed 515838: steps 145 deliveries 6.0 conn 2/4 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight')] (112s)
+[ruleR] seed 523757: steps 310 deliveries 40.0 conn 9/9 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight'), (281, ['Bridge', 'TrafficLight'], 0, 'Bridge')] (138s)
+[ruleR] seed 531676: steps 295 deliveries 38.0 conn 4/7 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight'), (281, ['Bridge', 'TrafficLight'], 0, 'Bridge')] (164s)
+[ruleR] seed 539595: steps 323 deliveries 43.0 conn 9/9 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight'), (281, ['Concrete', 'TrafficLight'], 0, 'Concrete')] (192s)
+[ruleR] seed 547514: steps 154 deliveries 5.0 conn 2/4 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight')] (207s)
+[ruleR] seed 555433: steps 318 deliveries 40.0 conn 10/10 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight'), (281, ['Concrete', 'TrafficLight'], 0, 'Concrete')] (239s)
+[ruleR] seed 563352: steps 600 deliveries 172.0 conn 16/16 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight'), (281, ['Bridge', 'TrafficLight'], 0, 'Bridge'), (421, ['Motorway', 'Roundabout'], 0, 'Motorway'), (561, ['Roundabout', 'Concrete'], 1, 'Concrete')] (306s)
+[ruleR] seed 571271: steps 290 deliveries 35.0 conn 4/7 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight'), (281, ['Bridge', 'TrafficLight'], 0, 'Bridge')] (337s)
+[ruleR] seed 579190: steps 442 deliveries 88.0 conn 15/15 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight'), (281, ['Concrete', 'TrafficLight'], 0, 'Concrete'), (421, ['Motorway', 'Bridge'], 1, 'Bridge')] (378s)
+[ruleR] seed 587109: steps 301 deliveries 41.0 conn 8/8 choices [(141, ['TrafficLight', 'Roundabout'], 0, 'TrafficLight'), (281, ['Bridge', 'TrafficLight'], 0, 'Bridge')] (407s)

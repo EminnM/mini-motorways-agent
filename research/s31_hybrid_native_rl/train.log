@@ -1,0 +1,65 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[update] decisions=2048 wall=183s kl=None
+[update] decisions=4096 wall=371s kl=0.025113049894571304
+[update] decisions=6144 wall=655s kl=0.022870846092700958
+[update] decisions=8192 wall=951s kl=0.03618428111076355
+[update] decisions=10240 wall=1334s kl=0.0183023139834404
+[update] decisions=12288 wall=1641s kl=0.019866764545440674
+[update] decisions=14336 wall=1925s kl=0.026267176494002342
+[update] decisions=16384 wall=2139s kl=0.020570766180753708
+[update] decisions=18432 wall=2324s kl=0.019789330661296844
+[update] decisions=20480 wall=2507s kl=0.03234834223985672
+[update] decisions=22528 wall=2690s kl=0.012746930122375488
+[update] decisions=24576 wall=2882s kl=0.01285606063902378
+[update] decisions=26624 wall=3104s kl=0.03566375747323036
+[update] decisions=28672 wall=3300s kl=0.031042903661727905
+[update] decisions=30720 wall=3510s kl=0.025184234604239464
+[update] decisions=32768 wall=3770s kl=0.026286166161298752
+[update] decisions=34816 wall=4017s kl=0.020729120820760727
+[update] decisions=36864 wall=4293s kl=0.027610808610916138
+[update] decisions=38912 wall=4572s kl=0.006624400615692139
+[update] decisions=40960 wall=4866s kl=0.034263551235198975
+[update] decisions=43008 wall=5178s kl=0.01596502959728241
+[update] decisions=45056 wall=5423s kl=0.023416372016072273
+[update] decisions=47104 wall=5611s kl=0.014753073453903198
+[update] decisions=49152 wall=5824s kl=0.013369930908083916
+[update] decisions=51200 wall=6045s kl=0.05746370553970337
+[update] decisions=53248 wall=6295s kl=0.01110746804624796
+[update] decisions=55296 wall=6554s kl=0.009767521172761917
+[update] decisions=57344 wall=6804s kl=0.018148843199014664
+[update] decisions=59392 wall=7047s kl=0.011087310500442982
+[update] decisions=61440 wall=7315s kl=0.016530431807041168
+[update] decisions=63488 wall=7577s kl=0.02546524442732334
+[update] decisions=65536 wall=7878s kl=0.009533245116472244
+[update] decisions=67584 wall=8117s kl=0.02850273996591568
+[update] decisions=69632 wall=8345s kl=0.012290677055716515
+[update] decisions=71680 wall=8576s kl=0.02167409658432007
+[update] decisions=73728 wall=8806s kl=0.007959411479532719
+[update] decisions=75776 wall=9071s kl=0.01933518424630165
+[update] decisions=77824 wall=9357s kl=0.021587522700428963
+[update] decisions=79872 wall=9646s kl=0.03510308638215065
+[update] decisions=81920 wall=9946s kl=0.0074834516271948814
+[update] decisions=83968 wall=10264s kl=0.021398037672042847
+[update] decisions=86016 wall=10556s kl=0.00997633021324873
+[update] decisions=88064 wall=10812s kl=0.015092574059963226
+[update] decisions=90112 wall=11035s kl=0.03963097929954529
+[update] decisions=92160 wall=11280s kl=0.01259988360106945
+[update] decisions=94208 wall=11533s kl=0.023030947893857956
+[update] decisions=96256 wall=11792s kl=0.022421792149543762
+[update] decisions=98304 wall=12046s kl=0.02518114447593689
+[update] decisions=100352 wall=12281s kl=0.03903406485915184
+DONE 100352

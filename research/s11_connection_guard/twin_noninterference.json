@@ -1,0 +1,6 @@
+{
+ "steps": 60,
+ "plain_vs_instrumented_guard_dry_identical": true,
+ "plain_vs_plain_identical": false,
+ "wall_s": 21.3
+}

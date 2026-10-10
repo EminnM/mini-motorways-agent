@@ -1,0 +1,5167 @@
+{
+ "forks_run": 17,
+ "skipped": [
+  {
+   "seed": 623757,
+   "anchor": 150,
+   "reason": "episode ended before the anchor"
+  },
+  {
+   "seed": 647514,
+   "anchor": 150,
+   "reason": "far and near segments not separated by >= 3 tiles"
+  },
+  {
+   "seed": 655433,
+   "anchor": 150,
+   "reason": "episode ended before the anchor"
+  }
+ ],
+ "checks": {
+  "equivalent_base_base2": 17,
+  "legal_all": 17,
+  "concrete_ok": 17
+ },
+ "prng": {
+  "far_after_edits_equal_base": 17,
+  "near_after_edits_equal_base": 17,
+  "far_confounded_before_first_spawn_diff": 3,
+  "near_confounded": 4
+ },
+ "classification_counts": {
+  "block_far": {
+   "UNCHANGED": 38,
+   "BLOCKED": 3,
+   "SHIFTED": 13
+  },
+  "block_near": {
+   "UNCHANGED": 25,
+   "BLOCKED": 6,
+   "SHIFTED": 24
+  },
+  "base2": {
+   "UNCHANGED": 55,
+   "BLOCKED": 0,
+   "SHIFTED": 0
+  }
+ },
+ "spawn_count_changes": {
+  "block_far": [
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "block_near": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2
+  ]
+ },
+ "type_timing_changes": 5,
+ "metric_handling": {
+  "base": [
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_4",
+   "same_colour_destination_missing_for_2",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "ok"
+  ],
+  "base2": [
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_4",
+   "same_colour_destination_missing_for_2",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "ok"
+  ],
+  "block_far": [
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_4",
+   "same_colour_destination_missing_for_2",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "ok"
+  ],
+  "block_near": [
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_4",
+   "same_colour_destination_missing_for_2",
+   "same_colour_destination_missing_for_2",
+   "ok",
+   "ok",
+   "same_colour_destination_missing_for_2",
+   "ok"
+  ]
+ },
+ "primary_seed_level": {
+  "far_minus_near": {
+   "n_seeds": 10,
+   "values": [
+    0.25,
+    0.25,
+    -1.0,
+    0.0,
+    -3.25,
+    -0.583,
+    0.5,
+    0.5,
+    0.333,
+    0.667
+   ],
+   "mean": -0.23333333333333334,
+   "median": 0.25,
+   "negative": 3,
+   "zero": 1,
+   "positive": 6,
+   "ci95_mean": [
+    -1.0083333333333333,
+    0.33333333333333337
+   ]
+  },
+  "far_minus_base": {
+   "n_seeds": 10,
+   "values": [
+    0.25,
+    -0.75,
+    0.0,
+    0.0,
+    -0.5,
+    0.0,
+    0.0,
+    0.0,
+    0.5,
+    -0.333
+   ],
+   "mean": -0.0833333333333333,
+   "median": 0.0,
+   "negative": 3,
+   "zero": 5,
+   "positive": 2,
+   "ci95_mean": [
+    -0.3,
+    0.125
+   ]
+  },
+  "near_minus_base": {
+   "n_seeds": 10,
+   "values": [
+    0.0,
+    -1.0,
+    1.0,
+    0.0,
+    2.75,
+    0.583,
+    -0.5,
+    -0.5,
+    0.167,
+    -1.0
+   ],
+   "mean": 0.15000000000000005,
+   "median": 0.0,
+   "negative": 4,
+   "zero": 2,
+   "positive": 4,
+   "ci95_mean": [
+    -0.4333333333333333,
+    0.8583333333333334
+   ]
+  }
+ },
+ "net_saving_seed_level": {
+  "block_far": {
+   "n_seeds": 10,
+   "values": [
+    -3.5,
+    2.5,
+    -3.0,
+    -3.0,
+    -2.0,
+    -8.5,
+    -3.0,
+    -3.0,
+    -3.5,
+    -1.0
+   ],
+   "mean": -2.8,
+   "median": -3.0,
+   "negative": 9,
+   "zero": 0,
+   "positive": 1,
+   "ci95_mean": [
+    -4.5,
+    -1.2
+   ]
+  },
+  "block_near": {
+   "n_seeds": 10,
+   "values": [
+    -3.0,
+    -8.0,
+    -0.5,
+    6.0,
+    -4.0,
+    -1.0,
+    -7.0,
+    -3.0,
+    -1.5,
+    -3.0
+   ],
+   "mean": -2.5,
+   "median": -3.0,
+   "negative": 9,
+   "zero": 0,
+   "positive": 1,
+   "ci95_mean": [
+    -4.65,
+    -0.1
+   ]
+  }
+ },
+ "fork_rows": [
+  {
+   "seed": 600000,
+   "anchor": 60,
+   "d_far": 0.0,
+   "d_near": 0.0,
+   "d_base2": 0.0,
+   "far_minus_near": 0.0,
+   "metric_base": [
+    7.0,
+    "ok"
+   ],
+   "cls_far": [
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "UNCHANGED"
+   ],
+   "prng_far": true,
+   "prng_near": false,
+   "net_far": -3,
+   "net_near": -3
+  },
+  {
+   "seed": 600000,
+   "anchor": 150,
+   "d_far": 0.5,
+   "d_near": 0.0,
+   "d_base2": 0.0,
+   "far_minus_near": 0.5,
+   "metric_base": [
+    9.25,
+    "ok"
+   ],
+   "cls_far": [
+    "SHIFTED",
+    "SHIFTED",
+    "SHIFTED",
+    "SHIFTED",
+    "SHIFTED"
+   ],
+   "cls_near": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": -4,
+   "net_near": -3
+  },
+  {
+   "seed": 607919,
+   "anchor": 60,
+   "d_far": 0.0,
+   "d_near": -2.0,
+   "d_base2": 0.0,
+   "far_minus_near": 2.0,
+   "metric_base": [
+    4.0,
+    "same_colour_destination_missing_for_2"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "BLOCKED",
+    "SHIFTED",
+    "SHIFTED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": -3,
+   "net_near": -13
+  },
+  {
+   "seed": 607919,
+   "anchor": 150,
+   "d_far": -1.5,
+   "d_near": 0.0,
+   "d_base2": 0.0,
+   "far_minus_near": -1.5,
+   "metric_base": [
+    11.5,
+    "ok"
+   ],
+   "cls_far": [
+    "SHIFTED",
+    "SHIFTED",
+    "UNCHANGED",
+    "SHIFTED"
+   ],
+   "cls_near": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": 8,
+   "net_near": -3
+  },
+  {
+   "seed": 615838,
+   "anchor": 60,
+   "d_far": 0.0,
+   "d_near": 1.0,
+   "d_base2": 0.0,
+   "far_minus_near": -1.0,
+   "metric_base": [
+    8.0,
+    "ok"
+   ],
+   "cls_far": [
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "BLOCKED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": -3,
+   "net_near": -2
+  },
+  {
+   "seed": 615838,
+   "anchor": 150,
+   "d_far": 0.0,
+   "d_near": 1.0,
+   "d_base2": 0.0,
+   "far_minus_near": -1.0,
+   "metric_base": [
+    6.333333333333333,
+    "ok"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "BLOCKED",
+    "SHIFTED",
+    "SHIFTED",
+    "SHIFTED"
+   ],
+   "prng_far": true,
+   "prng_near": false,
+   "net_far": -3,
+   "net_near": 1
+  },
+  {
+   "seed": 623757,
+   "anchor": 60,
+   "d_far": 0.0,
+   "d_near": 0.0,
+   "d_base2": 0.0,
+   "far_minus_near": 0.0,
+   "metric_base": [
+    7.5,
+    "same_colour_destination_missing_for_2"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "SHIFTED"
+   ],
+   "prng_far": false,
+   "prng_near": true,
+   "net_far": -3,
+   "net_near": 6
+  },
+  {
+   "seed": 631676,
+   "anchor": 60,
+   "d_far": 0.0,
+   "d_near": 5.5,
+   "d_base2": 0.0,
+   "far_minus_near": -5.5,
+   "metric_base": [
+    3.0,
+    "same_colour_destination_missing_for_2"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "BLOCKED",
+    "SHIFTED",
+    "SHIFTED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": -3,
+   "net_near": -5
+  },
+  {
+   "seed": 631676,
+   "anchor": 150,
+   "d_far": -1.0,
+   "d_near": 0.0,
+   "d_base2": 0.0,
+   "far_minus_near": -1.0,
+   "metric_base": [
+    9.5,
+    "ok"
+   ],
+   "cls_far": [
+    "SHIFTED",
+    "BLOCKED",
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": -1,
+   "net_near": -3
+  },
+  {
+   "seed": 639595,
+   "anchor": 60,
+   "d_far": 0.0,
+   "d_near": 0.0,
+   "d_base2": 0.0,
+   "far_minus_near": 0.0,
+   "metric_base": [
+    9.0,
+    "ok"
+   ],
+   "cls_far": [
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "UNCHANGED"
+   ],
+   "prng_far": false,
+   "prng_near": true,
+   "net_far": -3,
+   "net_near": -3
+  },
+  {
+   "seed": 639595,
+   "anchor": 150,
+   "d_far": 0.0,
+   "d_near": 1.166666666666667,
+   "d_base2": 0.0,
+   "far_minus_near": -1.166666666666667,
+   "metric_base": [
+    6.833333333333333,
+    "same_colour_destination_missing_for_4"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED",
+    "SHIFTED",
+    "UNCHANGED",
+    "BLOCKED"
+   ],
+   "cls_near": [
+    "UNCHANGED",
+    "SHIFTED",
+    "SHIFTED",
+    "SHIFTED",
+    "SHIFTED",
+    "UNCHANGED",
+    "BLOCKED",
+    "SHIFTED",
+    "SHIFTED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": -14,
+   "net_near": 1
+  },
+  {
+   "seed": 647514,
+   "anchor": 60,
+   "d_far": 0.0,
+   "d_near": -0.5,
+   "d_base2": 0.0,
+   "far_minus_near": 0.5,
+   "metric_base": [
+    4.5,
+    "same_colour_destination_missing_for_2"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "SHIFTED"
+   ],
+   "prng_far": false,
+   "prng_near": true,
+   "net_far": -3,
+   "net_near": -7
+  },
+  {
+   "seed": 655433,
+   "anchor": 60,
+   "d_far": 0.0,
+   "d_near": -0.5,
+   "d_base2": 0.0,
+   "far_minus_near": 0.5,
+   "metric_base": [
+    5.5,
+    "same_colour_destination_missing_for_2"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "SHIFTED",
+    "SHIFTED",
+    "SHIFTED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": -3,
+   "net_near": -3
+  },
+  {
+   "seed": 663352,
+   "anchor": 60,
+   "d_far": 0.0,
+   "d_near": 0.0,
+   "d_base2": 0.0,
+   "far_minus_near": 0.0,
+   "metric_base": [
+    12.0,
+    "ok"
+   ],
+   "cls_far": [
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "UNCHANGED"
+   ],
+   "prng_far": false,
+   "prng_near": true,
+   "net_far": -3,
+   "net_near": -3
+  },
+  {
+   "seed": 663352,
+   "anchor": 150,
+   "d_far": 1.0,
+   "d_near": 0.3333333333333339,
+   "d_base2": 0.0,
+   "far_minus_near": 0.6666666666666661,
+   "metric_base": [
+    11.666666666666666,
+    "ok"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "SHIFTED",
+    "SHIFTED"
+   ],
+   "cls_near": [
+    "UNCHANGED",
+    "SHIFTED",
+    "SHIFTED",
+    "SHIFTED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": -4,
+   "net_near": 0
+  },
+  {
+   "seed": 671271,
+   "anchor": 60,
+   "d_far": -0.6666666666666661,
+   "d_near": 0.0,
+   "d_base2": 0.0,
+   "far_minus_near": -0.6666666666666661,
+   "metric_base": [
+    5.333333333333333,
+    "same_colour_destination_missing_for_2"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "BLOCKED",
+    "SHIFTED"
+   ],
+   "cls_near": [
+    "UNCHANGED",
+    "UNCHANGED",
+    "SHIFTED",
+    "SHIFTED"
+   ],
+   "prng_far": false,
+   "prng_near": false,
+   "net_far": 1,
+   "net_near": -3
+  },
+  {
+   "seed": 671271,
+   "anchor": 150,
+   "d_far": 0.0,
+   "d_near": -2.0,
+   "d_base2": 0.0,
+   "far_minus_near": 2.0,
+   "metric_base": [
+    12.0,
+    "ok"
+   ],
+   "cls_far": [
+    "UNCHANGED",
+    "UNCHANGED"
+   ],
+   "cls_near": [
+    "BLOCKED",
+    "SHIFTED"
+   ],
+   "prng_far": true,
+   "prng_near": false,
+   "net_far": -3,
+   "net_near": -3
+  }
+ ],
+ "seed_rows": [
+  {
+   "seed": 600000,
+   "forks": 2,
+   "d_far": 0.25,
+   "d_near": 0.0,
+   "far_minus_near": 0.25,
+   "net_far": -3.5,
+   "net_near": -3.0
+  },
+  {
+   "seed": 607919,
+   "forks": 2,
+   "d_far": -0.75,
+   "d_near": -1.0,
+   "far_minus_near": 0.25,
+   "net_far": 2.5,
+   "net_near": -8.0
+  },
+  {
+   "seed": 615838,
+   "forks": 2,
+   "d_far": 0.0,
+   "d_near": 1.0,
+   "far_minus_near": -1.0,
+   "net_far": -3.0,
+   "net_near": -0.5
+  },
+  {
+   "seed": 623757,
+   "forks": 1,
+   "d_far": 0.0,
+   "d_near": 0.0,
+   "far_minus_near": 0.0,
+   "net_far": -3.0,
+   "net_near": 6.0
+  },
+  {
+   "seed": 631676,
+   "forks": 2,
+   "d_far": -0.5,
+   "d_near": 2.75,
+   "far_minus_near": -3.25,
+   "net_far": -2.0,
+   "net_near": -4.0
+  },
+  {
+   "seed": 639595,
+   "forks": 2,
+   "d_far": 0.0,
+   "d_near": 0.5833333333333335,
+   "far_minus_near": -0.5833333333333335,
+   "net_far": -8.5,
+   "net_near": -1.0
+  },
+  {
+   "seed": 647514,
+   "forks": 1,
+   "d_far": 0.0,
+   "d_near": -0.5,
+   "far_minus_near": 0.5,
+   "net_far": -3.0,
+   "net_near": -7.0
+  },
+  {
+   "seed": 655433,
+   "forks": 1,
+   "d_far": 0.0,
+   "d_near": -0.5,
+   "far_minus_near": 0.5,
+   "net_far": -3.0,
+   "net_near": -3.0
+  },
+  {
+   "seed": 663352,
+   "forks": 2,
+   "d_far": 0.5,
+   "d_near": 0.16666666666666696,
+   "far_minus_near": 0.33333333333333304,
+   "net_far": -3.5,
+   "net_near": -1.5
+  },
+  {
+   "seed": 671271,
+   "forks": 2,
+   "d_far": -0.33333333333333304,
+   "d_near": -1.0,
+   "far_minus_near": 0.666666666666667,
+   "net_far": -1.0,
+   "net_near": -3.0
+  }
+ ],
+ "forks": [
+  {
+   "seed": 600000,
+   "anchor": 60,
+   "far_dist": 6,
+   "near_dist": 2,
+   "n_segments": 11,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": true,
+     "evidence": "prng differs at checkpoint t=10 (first spawn difference at None)",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      8.00000000745058,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ],
+    "base2": [
+     [
+      8.00000000745058,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ],
+    "block_far": [
+     [
+      8.00000000745058,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ],
+    "block_near": [
+     [
+      8.00000000745058,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "UNCHANGED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     7.0,
+     "ok"
+    ],
+    "base2": [
+     7.0,
+     "ok"
+    ],
+    "block_far": [
+     7.0,
+     "ok"
+    ],
+    "block_near": [
+     7.0,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 0,
+     "per_house": {
+      "(-7, -3)": 0
+     }
+    },
+    "base2": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 0,
+     "per_house": {
+      "(-7, -3)": 0
+     }
+    },
+    "block_far": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 0,
+     "per_house": {
+      "(-7, -3)": 0
+     }
+    },
+    "block_near": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 0,
+     "per_house": {
+      "(-7, -3)": 0
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": -3
+   }
+  },
+  {
+   "seed": 600000,
+   "anchor": 150,
+   "far_dist": 6,
+   "near_dist": 2,
+   "n_segments": 13,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 3
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=10 after the first spawn difference at 5.000000004656613 (downstream shift)",
+     "first_spawn_difference_t": 5.000000004656613
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      5.000000004656613,
+      "D",
+      0,
+      -7,
+      -6
+     ],
+     [
+      5.000000004656613,
+      "H",
+      0,
+      -2,
+      -2
+     ],
+     [
+      15.000000013969839,
+      "H",
+      0,
+      -2,
+      -3
+     ],
+     [
+      54.00000005029142,
+      "H",
+      0,
+      -1,
+      0
+     ],
+     [
+      54.00000005029142,
+      "H",
+      1,
+      -9,
+      -1
+     ]
+    ],
+    "base2": [
+     [
+      5.000000004656613,
+      "D",
+      0,
+      -7,
+      -6
+     ],
+     [
+      5.000000004656613,
+      "H",
+      0,
+      -2,
+      -2
+     ],
+     [
+      15.000000013969839,
+      "H",
+      0,
+      -2,
+      -3
+     ],
+     [
+      54.00000005029142,
+      "H",
+      0,
+      -1,
+      0
+     ],
+     [
+      54.00000005029142,
+      "H",
+      1,
+      -9,
+      -1
+     ]
+    ],
+    "block_far": [
+     [
+      5.000000004656613,
+      "D",
+      0,
+      -9,
+      -6
+     ],
+     [
+      5.000000004656613,
+      "H",
+      0,
+      -2,
+      -3
+     ],
+     [
+      15.000000013969839,
+      "H",
+      0,
+      -2,
+      -2
+     ],
+     [
+      54.00000005029142,
+      "H",
+      0,
+      -1,
+      -4
+     ],
+     [
+      54.00000005029142,
+      "H",
+      1,
+      -9,
+      0
+     ]
+    ],
+    "block_near": [
+     [
+      5.000000004656613,
+      "D",
+      0,
+      -7,
+      -6
+     ],
+     [
+      5.000000004656613,
+      "H",
+      0,
+      -2,
+      -2
+     ],
+     [
+      15.000000013969839,
+      "H",
+      0,
+      -2,
+      -3
+     ],
+     [
+      54.00000005029142,
+      "H",
+      0,
+      -1,
+      0
+     ],
+     [
+      54.00000005029142,
+      "H",
+      1,
+      -9,
+      -1
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "SHIFTED",
+     "SHIFTED",
+     "SHIFTED",
+     "SHIFTED",
+     "SHIFTED"
+    ],
+    "block_near": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     9.25,
+     "ok"
+    ],
+    "base2": [
+     9.25,
+     "ok"
+    ],
+    "block_far": [
+     9.75,
+     "ok"
+    ],
+    "block_near": [
+     9.25,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 10,
+     "per_house": {
+      "(-2, -3)": 4,
+      "(-2, -2)": 2,
+      "(-9, -1)": 0,
+      "(-1, 0)": 4
+     }
+    },
+    "base2": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 10,
+     "per_house": {
+      "(-2, -3)": 4,
+      "(-2, -2)": 2,
+      "(-9, -1)": 0,
+      "(-1, 0)": 4
+     }
+    },
+    "block_far": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 11,
+     "per_house": {
+      "(-1, -4)": 4,
+      "(-2, -3)": 4,
+      "(-2, -2)": 2,
+      "(-9, 0)": 1
+     }
+    },
+    "block_near": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 10,
+     "per_house": {
+      "(-2, -3)": 4,
+      "(-2, -2)": 2,
+      "(-9, -1)": 0,
+      "(-1, 0)": 4
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -4,
+    "block_near": -3
+   }
+  },
+  {
+   "seed": 607919,
+   "anchor": 60,
+   "far_dist": 8,
+   "near_dist": 3,
+   "n_segments": 27,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=30 after the first spawn difference at 21.000000019557774 (downstream shift)",
+     "first_spawn_difference_t": 21.000000019557774
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      21.000000019557774,
+      "D",
+      1,
+      -13,
+      -6
+     ],
+     [
+      21.000000019557774,
+      "H",
+      1,
+      -8,
+      -1
+     ],
+     [
+      31.000000028871,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ],
+    "base2": [
+     [
+      21.000000019557774,
+      "D",
+      1,
+      -13,
+      -6
+     ],
+     [
+      21.000000019557774,
+      "H",
+      1,
+      -8,
+      -1
+     ],
+     [
+      31.000000028871,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ],
+    "block_far": [
+     [
+      21.000000019557774,
+      "D",
+      1,
+      -13,
+      -6
+     ],
+     [
+      21.000000019557774,
+      "H",
+      1,
+      -8,
+      -1
+     ],
+     [
+      31.000000028871,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ],
+    "block_near": [
+     [
+      21.000000019557774,
+      "D",
+      1,
+      -9,
+      -5
+     ],
+     [
+      21.000000019557774,
+      "H",
+      1,
+      -14,
+      -1
+     ],
+     [
+      31.000000028871,
+      "H",
+      1,
+      -14,
+      -2
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "BLOCKED",
+     "SHIFTED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     4.0,
+     "same_colour_destination_missing_for_2"
+    ],
+    "base2": [
+     4.0,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_far": [
+     4.0,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_near": [
+     2.0,
+     "same_colour_destination_missing_for_2"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 10,
+     "per_house": {
+      "(-7, -3)": 5,
+      "(-8, -1)": 5
+     }
+    },
+    "base2": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 10,
+     "per_house": {
+      "(-7, -3)": 5,
+      "(-8, -1)": 5
+     }
+    },
+    "block_far": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 10,
+     "per_house": {
+      "(-7, -3)": 5,
+      "(-8, -1)": 5
+     }
+    },
+    "block_near": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 20,
+     "per_house": {
+      "(-14, -2)": 9,
+      "(-14, -1)": 11
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": -13
+   }
+  },
+  {
+   "seed": 607919,
+   "anchor": 150,
+   "far_dist": 6,
+   "near_dist": 2,
+   "n_segments": 12,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=30 after the first spawn difference at 19.00000001769513 (downstream shift)",
+     "first_spawn_difference_t": 19.00000001769513
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      19.00000001769513,
+      "D",
+      0,
+      -7,
+      -6
+     ],
+     [
+      20.00000001862645,
+      "H",
+      0,
+      -1,
+      0
+     ],
+     [
+      75.0000000698492,
+      "H",
+      0,
+      0,
+      -1
+     ],
+     [
+      75.0000000698492,
+      "H",
+      1,
+      0,
+      -5
+     ],
+     [
+      85.00000007916242,
+      "H",
+      0,
+      -1,
+      1
+     ]
+    ],
+    "base2": [
+     [
+      19.00000001769513,
+      "D",
+      0,
+      -7,
+      -6
+     ],
+     [
+      20.00000001862645,
+      "H",
+      0,
+      -1,
+      0
+     ],
+     [
+      75.0000000698492,
+      "H",
+      0,
+      0,
+      -1
+     ],
+     [
+      75.0000000698492,
+      "H",
+      1,
+      0,
+      -5
+     ],
+     [
+      85.00000007916242,
+      "H",
+      0,
+      -1,
+      1
+     ]
+    ],
+    "block_far": [
+     [
+      19.00000001769513,
+      "D",
+      0,
+      -9,
+      -6
+     ],
+     [
+      20.00000001862645,
+      "H",
+      0,
+      -5,
+      0
+     ],
+     [
+      75.0000000698492,
+      "H",
+      0,
+      0,
+      -1
+     ],
+     [
+      75.0000000698492,
+      "H",
+      1,
+      -1,
+      -4
+     ]
+    ],
+    "block_near": [
+     [
+      19.00000001769513,
+      "D",
+      0,
+      -7,
+      -6
+     ],
+     [
+      20.00000001862645,
+      "H",
+      0,
+      -1,
+      0
+     ],
+     [
+      75.0000000698492,
+      "H",
+      0,
+      0,
+      -1
+     ],
+     [
+      75.0000000698492,
+      "H",
+      1,
+      0,
+      -5
+     ],
+     [
+      85.00000007916242,
+      "H",
+      0,
+      -1,
+      1
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "SHIFTED",
+     "SHIFTED",
+     "UNCHANGED",
+     "SHIFTED"
+    ],
+    "block_near": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": -1,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     11.5,
+     "ok"
+    ],
+    "base2": [
+     11.5,
+     "ok"
+    ],
+    "block_far": [
+     10.0,
+     "ok"
+    ],
+    "block_near": [
+     11.5,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 19,
+     "per_house": {
+      "(0, -5)": 6,
+      "(0, -1)": 4,
+      "(-1, 0)": 4,
+      "(-1, 1)": 5
+     }
+    },
+    "base2": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 19,
+     "per_house": {
+      "(0, -5)": 6,
+      "(0, -1)": 4,
+      "(-1, 0)": 4,
+      "(-1, 1)": 5
+     }
+    },
+    "block_far": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 8,
+     "per_house": {
+      "(-1, -4)": 4,
+      "(0, -1)": 4
+     }
+    },
+    "block_near": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 19,
+     "per_house": {
+      "(0, -5)": 6,
+      "(0, -1)": 4,
+      "(-1, 0)": 4,
+      "(-1, 1)": 5
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": 8,
+    "block_near": -3
+   }
+  },
+  {
+   "seed": 615838,
+   "anchor": 60,
+   "far_dist": 5,
+   "near_dist": 2,
+   "n_segments": 12,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=10 after the first spawn difference at 6.0000000055879354 (downstream shift)",
+     "first_spawn_difference_t": 6.0000000055879354
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      6.0000000055879354,
+      "H",
+      1,
+      -5,
+      5
+     ]
+    ],
+    "base2": [
+     [
+      6.0000000055879354,
+      "H",
+      1,
+      -5,
+      5
+     ]
+    ],
+    "block_far": [
+     [
+      6.0000000055879354,
+      "H",
+      1,
+      -5,
+      5
+     ]
+    ],
+    "block_near": [
+     [
+      6.0000000055879354,
+      "H",
+      1,
+      -5,
+      6
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "BLOCKED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     8.0,
+     "ok"
+    ],
+    "base2": [
+     8.0,
+     "ok"
+    ],
+    "block_far": [
+     8.0,
+     "ok"
+    ],
+    "block_near": [
+     9.0,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 12,
+     "per_house": {
+      "(-5, 5)": 7,
+      "(-5, 7)": 5
+     }
+    },
+    "base2": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 12,
+     "per_house": {
+      "(-5, 5)": 7,
+      "(-5, 7)": 5
+     }
+    },
+    "block_far": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 12,
+     "per_house": {
+      "(-5, 5)": 7,
+      "(-5, 7)": 5
+     }
+    },
+    "block_near": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 11,
+     "per_house": {
+      "(-5, 6)": 6,
+      "(-5, 7)": 5
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": -2
+   }
+  },
+  {
+   "seed": 615838,
+   "anchor": 150,
+   "far_dist": 5,
+   "near_dist": 2,
+   "n_segments": 9,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": true,
+     "evidence": "prng differs at checkpoint t=90 (first spawn difference at None)",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=10 after the first spawn difference at 4.00000000372529 (downstream shift)",
+     "first_spawn_difference_t": 4.00000000372529
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      4.00000000372529,
+      "D",
+      0,
+      -7,
+      4
+     ],
+     [
+      4.00000000372529,
+      "H",
+      0,
+      -13,
+      6
+     ],
+     [
+      64.00000005960464,
+      "H",
+      0,
+      -15,
+      1
+     ],
+     [
+      64.00000005960464,
+      "H",
+      1,
+      -7,
+      1
+     ]
+    ],
+    "base2": [
+     [
+      4.00000000372529,
+      "D",
+      0,
+      -7,
+      4
+     ],
+     [
+      4.00000000372529,
+      "H",
+      0,
+      -13,
+      6
+     ],
+     [
+      64.00000005960464,
+      "H",
+      0,
+      -15,
+      1
+     ],
+     [
+      64.00000005960464,
+      "H",
+      1,
+      -7,
+      1
+     ]
+    ],
+    "block_far": [
+     [
+      4.00000000372529,
+      "D",
+      0,
+      -7,
+      4
+     ],
+     [
+      4.00000000372529,
+      "H",
+      0,
+      -13,
+      6
+     ],
+     [
+      64.00000005960464,
+      "H",
+      0,
+      -15,
+      1
+     ],
+     [
+      64.00000005960464,
+      "H",
+      1,
+      -7,
+      1
+     ]
+    ],
+    "block_near": [
+     [
+      4.00000000372529,
+      "H",
+      0,
+      -3,
+      6
+     ],
+     [
+      24.000000022351742,
+      "D",
+      0,
+      -6,
+      1
+     ],
+     [
+      64.00000005960464,
+      "H",
+      0,
+      -16,
+      5
+     ],
+     [
+      64.00000005960464,
+      "H",
+      1,
+      -6,
+      5
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "BLOCKED",
+     "SHIFTED",
+     "SHIFTED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": [
+     [
+      [
+       "D",
+       0
+      ],
+      [
+       "H",
+       0
+      ],
+      4,
+      4
+     ],
+     [
+      [
+       "H",
+       0
+      ],
+      [
+       "D",
+       0
+      ],
+      4,
+      24
+     ]
+    ]
+   },
+   "metric": {
+    "base": [
+     6.333333333333333,
+     "ok"
+    ],
+    "base2": [
+     6.333333333333333,
+     "ok"
+    ],
+    "block_far": [
+     6.333333333333333,
+     "ok"
+    ],
+    "block_near": [
+     7.333333333333333,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 4,
+     "per_house": {
+      "(-15, 1)": 0,
+      "(-7, 1)": 4
+     }
+    },
+    "base2": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 4,
+     "per_house": {
+      "(-15, 1)": 0,
+      "(-7, 1)": 4
+     }
+    },
+    "block_far": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 4,
+     "per_house": {
+      "(-15, 1)": 0,
+      "(-7, 1)": 4
+     }
+    },
+    "block_near": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 0,
+     "per_house": {
+      "(-16, 5)": 0
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": 1
+   }
+  },
+  {
+   "seed": 623757,
+   "anchor": 60,
+   "far_dist": 8,
+   "near_dist": 2,
+   "n_segments": 37,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": true,
+     "evidence": "prng differs at checkpoint t=10 (first spawn difference at 11.000000010244548)",
+     "first_spawn_difference_t": 11.000000010244548
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      1.0000000009313226,
+      "D",
+      1,
+      -11,
+      -6
+     ],
+     [
+      1.0000000009313226,
+      "H",
+      1,
+      -4,
+      -3
+     ],
+     [
+      11.000000010244548,
+      "H",
+      1,
+      -4,
+      -2
+     ]
+    ],
+    "base2": [
+     [
+      1.0000000009313226,
+      "D",
+      1,
+      -11,
+      -6
+     ],
+     [
+      1.0000000009313226,
+      "H",
+      1,
+      -4,
+      -3
+     ],
+     [
+      11.000000010244548,
+      "H",
+      1,
+      -4,
+      -2
+     ]
+    ],
+    "block_far": [
+     [
+      1.0000000009313226,
+      "D",
+      1,
+      -11,
+      -6
+     ],
+     [
+      1.0000000009313226,
+      "H",
+      1,
+      -4,
+      -3
+     ],
+     [
+      11.000000010244548,
+      "H",
+      1,
+      -4,
+      -2
+     ]
+    ],
+    "block_near": [
+     [
+      1.0000000009313226,
+      "D",
+      1,
+      -11,
+      -6
+     ],
+     [
+      1.0000000009313226,
+      "H",
+      1,
+      -4,
+      -3
+     ],
+     [
+      11.000000010244548,
+      "H",
+      1,
+      -4,
+      -1
+     ]
+    ]
+   },
+   "terminal": {
+    "base": 83,
+    "base2": 83,
+    "block_far": 83,
+    "block_near": 83
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     7.5,
+     "same_colour_destination_missing_for_2"
+    ],
+    "base2": [
+     7.5,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_far": [
+     7.5,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_near": [
+     7.5,
+     "same_colour_destination_missing_for_2"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 35,
+     "per_house": {
+      "(-2, -4)": 8,
+      "(-4, -3)": 8,
+      "(-4, -2)": 9,
+      "(-2, -2)": 10
+     }
+    },
+    "base2": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 35,
+     "per_house": {
+      "(-2, -4)": 8,
+      "(-4, -3)": 8,
+      "(-4, -2)": 9,
+      "(-2, -2)": 10
+     }
+    },
+    "block_far": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 35,
+     "per_house": {
+      "(-2, -4)": 8,
+      "(-4, -3)": 8,
+      "(-4, -2)": 9,
+      "(-2, -2)": 10
+     }
+    },
+    "block_near": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 26,
+     "per_house": {
+      "(-2, -4)": 7,
+      "(-4, -3)": 7,
+      "(-2, -2)": 5,
+      "(-4, -1)": 7
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": 6
+   }
+  },
+  {
+   "seed": 631676,
+   "anchor": 60,
+   "far_dist": 6,
+   "near_dist": 3,
+   "n_segments": 19,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=30 after the first spawn difference at 21.000000019557774 (downstream shift)",
+     "first_spawn_difference_t": 21.000000019557774
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      21.000000019557774,
+      "D",
+      1,
+      -13,
+      -6
+     ],
+     [
+      21.000000019557774,
+      "H",
+      1,
+      -8,
+      -1
+     ],
+     [
+      31.000000028871,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ],
+    "base2": [
+     [
+      21.000000019557774,
+      "D",
+      1,
+      -13,
+      -6
+     ],
+     [
+      21.000000019557774,
+      "H",
+      1,
+      -8,
+      -1
+     ],
+     [
+      31.000000028871,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ],
+    "block_far": [
+     [
+      21.000000019557774,
+      "D",
+      1,
+      -13,
+      -6
+     ],
+     [
+      21.000000019557774,
+      "H",
+      1,
+      -8,
+      -1
+     ],
+     [
+      31.000000028871,
+      "H",
+      1,
+      -7,
+      -3
+     ]
+    ],
+    "block_near": [
+     [
+      21.000000019557774,
+      "D",
+      1,
+      -9,
+      -6
+     ],
+     [
+      21.000000019557774,
+      "H",
+      1,
+      -2,
+      -4
+     ],
+     [
+      31.000000028871,
+      "H",
+      1,
+      -2,
+      -3
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "BLOCKED",
+     "SHIFTED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     3.0,
+     "same_colour_destination_missing_for_2"
+    ],
+    "base2": [
+     3.0,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_far": [
+     3.0,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_near": [
+     8.5,
+     "same_colour_destination_missing_for_2"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 4,
+     "per_house": {
+      "(-7, -3)": 2,
+      "(-8, -1)": 2
+     }
+    },
+    "base2": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 4,
+     "per_house": {
+      "(-7, -3)": 2,
+      "(-8, -1)": 2
+     }
+    },
+    "block_far": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 4,
+     "per_house": {
+      "(-7, -3)": 2,
+      "(-8, -1)": 2
+     }
+    },
+    "block_near": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 6,
+     "per_house": {
+      "(-2, -4)": 4,
+      "(-2, -3)": 2
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": -5
+   }
+  },
+  {
+   "seed": 631676,
+   "anchor": 150,
+   "far_dist": 6,
+   "near_dist": 2,
+   "n_segments": 10,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=10 after the first spawn difference at 9.000000008381903 (downstream shift)",
+     "first_spawn_difference_t": 9.000000008381903
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      9.000000008381903,
+      "D",
+      0,
+      -7,
+      -6
+     ],
+     [
+      9.000000008381903,
+      "H",
+      0,
+      -2,
+      -5
+     ],
+     [
+      19.00000001769513,
+      "H",
+      0,
+      -2,
+      -4
+     ]
+    ],
+    "base2": [
+     [
+      9.000000008381903,
+      "D",
+      0,
+      -7,
+      -6
+     ],
+     [
+      9.000000008381903,
+      "H",
+      0,
+      -2,
+      -5
+     ],
+     [
+      19.00000001769513,
+      "H",
+      0,
+      -2,
+      -4
+     ]
+    ],
+    "block_far": [
+     [
+      9.000000008381903,
+      "D",
+      0,
+      -8,
+      -6
+     ],
+     [
+      9.000000008381903,
+      "H",
+      0,
+      -2,
+      -3
+     ],
+     [
+      19.00000001769513,
+      "H",
+      0,
+      -2,
+      -4
+     ]
+    ],
+    "block_near": [
+     [
+      9.000000008381903,
+      "D",
+      0,
+      -7,
+      -6
+     ],
+     [
+      9.000000008381903,
+      "H",
+      0,
+      -2,
+      -5
+     ],
+     [
+      19.00000001769513,
+      "H",
+      0,
+      -2,
+      -4
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "SHIFTED",
+     "BLOCKED",
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     9.5,
+     "ok"
+    ],
+    "base2": [
+     9.5,
+     "ok"
+    ],
+    "block_far": [
+     8.5,
+     "ok"
+    ],
+    "block_near": [
+     9.5,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 8,
+     "per_house": {
+      "(-2, -5)": 5,
+      "(-2, -4)": 3
+     }
+    },
+    "base2": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 8,
+     "per_house": {
+      "(-2, -5)": 5,
+      "(-2, -4)": 3
+     }
+    },
+    "block_far": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 6,
+     "per_house": {
+      "(-2, -4)": 4,
+      "(-2, -3)": 2
+     }
+    },
+    "block_near": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 8,
+     "per_house": {
+      "(-2, -5)": 5,
+      "(-2, -4)": 3
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -1,
+    "block_near": -3
+   }
+  },
+  {
+   "seed": 639595,
+   "anchor": 60,
+   "far_dist": 6,
+   "near_dist": 2,
+   "n_segments": 27,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 4,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": true,
+     "evidence": "prng differs at checkpoint t=30 (first spawn difference at None)",
+     "first_spawn_difference_t": null
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      14.000000013038516,
+      "H",
+      0,
+      -15,
+      6
+     ]
+    ],
+    "base2": [
+     [
+      14.000000013038516,
+      "H",
+      0,
+      -15,
+      6
+     ]
+    ],
+    "block_far": [
+     [
+      14.000000013038516,
+      "H",
+      0,
+      -15,
+      6
+     ]
+    ],
+    "block_near": [
+     [
+      14.000000013038516,
+      "H",
+      0,
+      -15,
+      6
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "UNCHANGED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     9.0,
+     "ok"
+    ],
+    "base2": [
+     9.0,
+     "ok"
+    ],
+    "block_far": [
+     9.0,
+     "ok"
+    ],
+    "block_near": [
+     9.0,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 0,
+     "per_house": {
+      "(-15, 6)": 0
+     }
+    },
+    "base2": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 0,
+     "per_house": {
+      "(-15, 6)": 0
+     }
+    },
+    "block_far": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 0,
+     "per_house": {
+      "(-15, 6)": 0
+     }
+    },
+    "block_near": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 0,
+     "per_house": {
+      "(-15, 6)": 0
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": -3
+   }
+  },
+  {
+   "seed": 639595,
+   "anchor": 150,
+   "far_dist": 11,
+   "near_dist": 2,
+   "n_segments": 43,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=60 after the first spawn difference at 54.00000005029142 (downstream shift)",
+     "first_spawn_difference_t": 54.00000005029142
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=10 after the first spawn difference at 6.0000000055879354 (downstream shift)",
+     "first_spawn_difference_t": 6.0000000055879354
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      6.0000000055879354,
+      "D",
+      0,
+      -10,
+      3
+     ],
+     [
+      6.0000000055879354,
+      "H",
+      0,
+      -15,
+      9
+     ],
+     [
+      16.00000001490116,
+      "H",
+      0,
+      -15,
+      7
+     ],
+     [
+      44.00000004097819,
+      "D",
+      1,
+      -5,
+      3
+     ],
+     [
+      44.00000004097819,
+      "H",
+      1,
+      -10,
+      6
+     ],
+     [
+      54.00000005029142,
+      "D",
+      3,
+      -12,
+      8
+     ],
+     [
+      54.00000005029142,
+      "H",
+      1,
+      -9,
+      6
+     ],
+     [
+      54.00000005029142,
+      "H",
+      3,
+      -7,
+      2
+     ],
+     [
+      76.00000007078052,
+      "H",
+      3,
+      -15,
+      2
+     ]
+    ],
+    "base2": [
+     [
+      6.0000000055879354,
+      "D",
+      0,
+      -10,
+      3
+     ],
+     [
+      6.0000000055879354,
+      "H",
+      0,
+      -15,
+      9
+     ],
+     [
+      16.00000001490116,
+      "H",
+      0,
+      -15,
+      7
+     ],
+     [
+      44.00000004097819,
+      "D",
+      1,
+      -5,
+      3
+     ],
+     [
+      44.00000004097819,
+      "H",
+      1,
+      -10,
+      6
+     ],
+     [
+      54.00000005029142,
+      "D",
+      3,
+      -12,
+      8
+     ],
+     [
+      54.00000005029142,
+      "H",
+      1,
+      -9,
+      6
+     ],
+     [
+      54.00000005029142,
+      "H",
+      3,
+      -7,
+      2
+     ],
+     [
+      76.00000007078052,
+      "H",
+      3,
+      -15,
+      2
+     ]
+    ],
+    "block_far": [
+     [
+      6.0000000055879354,
+      "D",
+      0,
+      -10,
+      3
+     ],
+     [
+      6.0000000055879354,
+      "H",
+      0,
+      -15,
+      9
+     ],
+     [
+      16.00000001490116,
+      "H",
+      0,
+      -15,
+      7
+     ],
+     [
+      44.00000004097819,
+      "D",
+      1,
+      -5,
+      3
+     ],
+     [
+      44.00000004097819,
+      "H",
+      1,
+      -10,
+      6
+     ],
+     [
+      54.00000005029142,
+      "D",
+      3,
+      -12,
+      8
+     ],
+     [
+      54.00000005029142,
+      "H",
+      1,
+      -11,
+      6
+     ],
+     [
+      54.00000005029142,
+      "H",
+      3,
+      -7,
+      2
+     ],
+     [
+      76.00000007078052,
+      "H",
+      3,
+      -2,
+      2
+     ]
+    ],
+    "block_near": [
+     [
+      6.0000000055879354,
+      "D",
+      0,
+      -10,
+      3
+     ],
+     [
+      6.0000000055879354,
+      "H",
+      0,
+      -15,
+      8
+     ],
+     [
+      16.00000001490116,
+      "H",
+      0,
+      -3,
+      5
+     ],
+     [
+      44.00000004097819,
+      "D",
+      1,
+      -6,
+      3
+     ],
+     [
+      44.00000004097819,
+      "H",
+      1,
+      -11,
+      6
+     ],
+     [
+      54.00000005029142,
+      "D",
+      3,
+      -12,
+      8
+     ],
+     [
+      54.00000005029142,
+      "H",
+      1,
+      -10,
+      6
+     ],
+     [
+      66.00000006146729,
+      "H",
+      3,
+      -15,
+      2
+     ],
+     [
+      88.00000008195639,
+      "H",
+      3,
+      -14,
+      2
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "SHIFTED",
+     "UNCHANGED",
+     "BLOCKED"
+    ],
+    "block_near": [
+     "UNCHANGED",
+     "SHIFTED",
+     "SHIFTED",
+     "SHIFTED",
+     "SHIFTED",
+     "UNCHANGED",
+     "BLOCKED",
+     "SHIFTED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": [
+     [
+      [
+       "H",
+       3
+      ],
+      [
+       "H",
+       3
+      ],
+      54,
+      66
+     ],
+     [
+      [
+       "H",
+       3
+      ],
+      [
+       "H",
+       3
+      ],
+      76,
+      88
+     ]
+    ]
+   },
+   "metric": {
+    "base": [
+     6.833333333333333,
+     "same_colour_destination_missing_for_4"
+    ],
+    "base2": [
+     6.833333333333333,
+     "same_colour_destination_missing_for_4"
+    ],
+    "block_far": [
+     6.833333333333333,
+     "same_colour_destination_missing_for_4"
+    ],
+    "block_near": [
+     8.0,
+     "same_colour_destination_missing_for_4"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 6,
+     "n_costed": 6,
+     "n_unreachable": 0,
+     "total_cost": 23,
+     "per_house": {
+      "(-15, 2)": 2,
+      "(-7, 2)": 6,
+      "(-10, 6)": 7,
+      "(-9, 6)": 6,
+      "(-15, 7)": 0,
+      "(-15, 9)": 2
+     }
+    },
+    "base2": {
+     "n_unconnected": 6,
+     "n_costed": 6,
+     "n_unreachable": 0,
+     "total_cost": 23,
+     "per_house": {
+      "(-15, 2)": 2,
+      "(-7, 2)": 6,
+      "(-10, 6)": 7,
+      "(-9, 6)": 6,
+      "(-15, 7)": 0,
+      "(-15, 9)": 2
+     }
+    },
+    "block_far": {
+     "n_unconnected": 6,
+     "n_costed": 6,
+     "n_unreachable": 0,
+     "total_cost": 34,
+     "per_house": {
+      "(-7, 2)": 6,
+      "(-2, 2)": 11,
+      "(-11, 6)": 8,
+      "(-10, 6)": 7,
+      "(-15, 7)": 0,
+      "(-15, 9)": 2
+     }
+    },
+    "block_near": {
+     "n_unconnected": 6,
+     "n_costed": 6,
+     "n_unreachable": 0,
+     "total_cost": 19,
+     "per_house": {
+      "(-15, 2)": 2,
+      "(-14, 2)": 1,
+      "(-3, 5)": 4,
+      "(-11, 6)": 6,
+      "(-10, 6)": 5,
+      "(-15, 8)": 1
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -14,
+    "block_near": 1
+   }
+  },
+  {
+   "seed": 647514,
+   "anchor": 60,
+   "far_dist": 8,
+   "near_dist": 2,
+   "n_segments": 27,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 4,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": true,
+     "evidence": "prng differs at checkpoint t=10 (first spawn difference at 15.000000013969839)",
+     "first_spawn_difference_t": 15.000000013969839
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      5.000000004656613,
+      "D",
+      1,
+      -13,
+      4
+     ],
+     [
+      5.000000004656613,
+      "H",
+      1,
+      -4,
+      4
+     ],
+     [
+      15.000000013969839,
+      "H",
+      1,
+      -6,
+      3
+     ]
+    ],
+    "base2": [
+     [
+      5.000000004656613,
+      "D",
+      1,
+      -13,
+      4
+     ],
+     [
+      5.000000004656613,
+      "H",
+      1,
+      -4,
+      4
+     ],
+     [
+      15.000000013969839,
+      "H",
+      1,
+      -6,
+      3
+     ]
+    ],
+    "block_far": [
+     [
+      5.000000004656613,
+      "D",
+      1,
+      -13,
+      4
+     ],
+     [
+      5.000000004656613,
+      "H",
+      1,
+      -4,
+      4
+     ],
+     [
+      15.000000013969839,
+      "H",
+      1,
+      -6,
+      3
+     ]
+    ],
+    "block_near": [
+     [
+      5.000000004656613,
+      "D",
+      1,
+      -13,
+      4
+     ],
+     [
+      5.000000004656613,
+      "H",
+      1,
+      -4,
+      4
+     ],
+     [
+      15.000000013969839,
+      "H",
+      1,
+      -4,
+      6
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     4.5,
+     "same_colour_destination_missing_for_2"
+    ],
+    "base2": [
+     4.5,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_far": [
+     4.5,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_near": [
+     4.0,
+     "same_colour_destination_missing_for_2"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 11,
+     "per_house": {
+      "(-6, 3)": 4,
+      "(-4, 4)": 7
+     }
+    },
+    "base2": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 11,
+     "per_house": {
+      "(-6, 3)": 4,
+      "(-4, 4)": 7
+     }
+    },
+    "block_far": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 11,
+     "per_house": {
+      "(-6, 3)": 4,
+      "(-4, 4)": 7
+     }
+    },
+    "block_near": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 15,
+     "per_house": {
+      "(-4, 4)": 7,
+      "(-4, 6)": 8
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": -7
+   }
+  },
+  {
+   "seed": 655433,
+   "anchor": 60,
+   "far_dist": 7,
+   "near_dist": 2,
+   "n_segments": 33,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 3,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=10 after the first spawn difference at 4.00000000372529 (downstream shift)",
+     "first_spawn_difference_t": 4.00000000372529
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      4.00000000372529,
+      "D",
+      1,
+      -14,
+      -2
+     ],
+     [
+      4.00000000372529,
+      "H",
+      1,
+      -9,
+      -5
+     ],
+     [
+      14.000000013038516,
+      "H",
+      1,
+      -6,
+      -5
+     ]
+    ],
+    "base2": [
+     [
+      4.00000000372529,
+      "D",
+      1,
+      -14,
+      -2
+     ],
+     [
+      4.00000000372529,
+      "H",
+      1,
+      -9,
+      -5
+     ],
+     [
+      14.000000013038516,
+      "H",
+      1,
+      -6,
+      -5
+     ]
+    ],
+    "block_far": [
+     [
+      4.00000000372529,
+      "D",
+      1,
+      -14,
+      -2
+     ],
+     [
+      4.00000000372529,
+      "H",
+      1,
+      -9,
+      -5
+     ],
+     [
+      14.000000013038516,
+      "H",
+      1,
+      -6,
+      -5
+     ]
+    ],
+    "block_near": [
+     [
+      4.00000000372529,
+      "D",
+      1,
+      -13,
+      -6
+     ],
+     [
+      4.00000000372529,
+      "H",
+      1,
+      -7,
+      -3
+     ],
+     [
+      14.000000013038516,
+      "H",
+      1,
+      -5,
+      -3
+     ]
+    ]
+   },
+   "terminal": {
+    "base": 79,
+    "base2": 79,
+    "block_far": 79,
+    "block_near": 79
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "SHIFTED",
+     "SHIFTED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     5.5,
+     "same_colour_destination_missing_for_2"
+    ],
+    "base2": [
+     5.5,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_far": [
+     5.5,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_near": [
+     5.0,
+     "same_colour_destination_missing_for_2"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 24,
+     "per_house": {
+      "(-9, -5)": 4,
+      "(-6, -5)": 7,
+      "(-2, -3)": 6,
+      "(-2, -2)": 7
+     }
+    },
+    "base2": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 24,
+     "per_house": {
+      "(-9, -5)": 4,
+      "(-6, -5)": 7,
+      "(-2, -3)": 6,
+      "(-2, -2)": 7
+     }
+    },
+    "block_far": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 24,
+     "per_house": {
+      "(-9, -5)": 4,
+      "(-6, -5)": 7,
+      "(-2, -3)": 6,
+      "(-2, -2)": 7
+     }
+    },
+    "block_near": {
+     "n_unconnected": 4,
+     "n_costed": 4,
+     "n_unreachable": 0,
+     "total_cost": 24,
+     "per_house": {
+      "(-7, -3)": 7,
+      "(-5, -3)": 8,
+      "(-2, -3)": 5,
+      "(-2, -2)": 4
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": -3
+   }
+  },
+  {
+   "seed": 663352,
+   "anchor": 60,
+   "far_dist": 5,
+   "near_dist": 2,
+   "n_segments": 9,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 4,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": true,
+     "evidence": "prng differs at checkpoint t=10 (first spawn difference at None)",
+     "first_spawn_difference_t": null
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      5.000000004656613,
+      "H",
+      1,
+      -6,
+      4
+     ]
+    ],
+    "base2": [
+     [
+      5.000000004656613,
+      "H",
+      1,
+      -6,
+      4
+     ]
+    ],
+    "block_far": [
+     [
+      5.000000004656613,
+      "H",
+      1,
+      -6,
+      4
+     ]
+    ],
+    "block_near": [
+     [
+      5.000000004656613,
+      "H",
+      1,
+      -6,
+      4
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "UNCHANGED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     12.0,
+     "ok"
+    ],
+    "base2": [
+     12.0,
+     "ok"
+    ],
+    "block_far": [
+     12.0,
+     "ok"
+    ],
+    "block_near": [
+     12.0,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 7,
+     "per_house": {
+      "(-6, 4)": 4,
+      "(-4, 4)": 3
+     }
+    },
+    "base2": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 7,
+     "per_house": {
+      "(-6, 4)": 4,
+      "(-4, 4)": 3
+     }
+    },
+    "block_far": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 7,
+     "per_house": {
+      "(-6, 4)": 4,
+      "(-4, 4)": 3
+     }
+    },
+    "block_near": {
+     "n_unconnected": 2,
+     "n_costed": 2,
+     "n_unreachable": 0,
+     "total_cost": 7,
+     "per_house": {
+      "(-6, 4)": 4,
+      "(-4, 4)": 3
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": -3
+   }
+  },
+  {
+   "seed": 663352,
+   "anchor": 150,
+   "far_dist": 7,
+   "near_dist": 2,
+   "n_segments": 18,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 4,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=90 after the first spawn difference at 63.00000005867332 (downstream shift)",
+     "first_spawn_difference_t": 63.00000005867332
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=30 after the first spawn difference at 14.000000013038516 (downstream shift)",
+     "first_spawn_difference_t": 14.000000013038516
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      14.000000013038516,
+      "D",
+      0,
+      -10,
+      3
+     ],
+     [
+      14.000000013038516,
+      "H",
+      0,
+      -15,
+      3
+     ],
+     [
+      63.00000005867332,
+      "H",
+      0,
+      -2,
+      2
+     ],
+     [
+      63.00000005867332,
+      "H",
+      1,
+      -6,
+      2
+     ]
+    ],
+    "base2": [
+     [
+      14.000000013038516,
+      "D",
+      0,
+      -10,
+      3
+     ],
+     [
+      14.000000013038516,
+      "H",
+      0,
+      -15,
+      3
+     ],
+     [
+      63.00000005867332,
+      "H",
+      0,
+      -2,
+      2
+     ],
+     [
+      63.00000005867332,
+      "H",
+      1,
+      -6,
+      2
+     ]
+    ],
+    "block_far": [
+     [
+      14.000000013038516,
+      "D",
+      0,
+      -10,
+      3
+     ],
+     [
+      14.000000013038516,
+      "H",
+      0,
+      -15,
+      3
+     ],
+     [
+      63.00000005867332,
+      "H",
+      0,
+      -1,
+      2
+     ],
+     [
+      63.00000005867332,
+      "H",
+      1,
+      -4,
+      2
+     ]
+    ],
+    "block_near": [
+     [
+      14.000000013038516,
+      "D",
+      0,
+      -10,
+      3
+     ],
+     [
+      14.000000013038516,
+      "H",
+      0,
+      -14,
+      5
+     ],
+     [
+      63.00000005867332,
+      "H",
+      0,
+      -15,
+      2
+     ],
+     [
+      63.00000005867332,
+      "H",
+      1,
+      -4,
+      2
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "SHIFTED",
+     "SHIFTED"
+    ],
+    "block_near": [
+     "UNCHANGED",
+     "SHIFTED",
+     "SHIFTED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     11.666666666666666,
+     "ok"
+    ],
+    "base2": [
+     11.666666666666666,
+     "ok"
+    ],
+    "block_far": [
+     12.666666666666666,
+     "ok"
+    ],
+    "block_near": [
+     12.0,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 3,
+     "n_costed": 3,
+     "n_unreachable": 0,
+     "total_cost": 11,
+     "per_house": {
+      "(-6, 2)": 4,
+      "(-2, 2)": 4,
+      "(-15, 3)": 3
+     }
+    },
+    "base2": {
+     "n_unconnected": 3,
+     "n_costed": 3,
+     "n_unreachable": 0,
+     "total_cost": 11,
+     "per_house": {
+      "(-6, 2)": 4,
+      "(-2, 2)": 4,
+      "(-15, 3)": 3
+     }
+    },
+    "block_far": {
+     "n_unconnected": 3,
+     "n_costed": 3,
+     "n_unreachable": 0,
+     "total_cost": 12,
+     "per_house": {
+      "(-4, 2)": 4,
+      "(-1, 2)": 5,
+      "(-15, 3)": 3
+     }
+    },
+    "block_near": {
+     "n_unconnected": 3,
+     "n_costed": 3,
+     "n_unreachable": 0,
+     "total_cost": 8,
+     "per_house": {
+      "(-15, 2)": 4,
+      "(-4, 2)": 4,
+      "(-14, 5)": 0
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -4,
+    "block_near": 0
+   }
+  },
+  {
+   "seed": 671271,
+   "anchor": 60,
+   "far_dist": 6,
+   "near_dist": 2,
+   "n_segments": 15,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 4,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=90 after the first spawn difference at 77.00000007171184 (downstream shift)",
+     "first_spawn_difference_t": 77.00000007171184
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=90 after the first spawn difference at 77.00000007171184 (downstream shift)",
+     "first_spawn_difference_t": 77.00000007171184
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      7.000000006519258,
+      "H",
+      0,
+      -11,
+      4
+     ],
+     [
+      77.00000007171184,
+      "D",
+      1,
+      -15,
+      7
+     ],
+     [
+      77.00000007171184,
+      "H",
+      1,
+      -8,
+      3
+     ],
+     [
+      87.00000008102506,
+      "H",
+      1,
+      -8,
+      4
+     ]
+    ],
+    "base2": [
+     [
+      7.000000006519258,
+      "H",
+      0,
+      -11,
+      4
+     ],
+     [
+      77.00000007171184,
+      "D",
+      1,
+      -15,
+      7
+     ],
+     [
+      77.00000007171184,
+      "H",
+      1,
+      -8,
+      3
+     ],
+     [
+      87.00000008102506,
+      "H",
+      1,
+      -8,
+      4
+     ]
+    ],
+    "block_far": [
+     [
+      7.000000006519258,
+      "H",
+      0,
+      -11,
+      4
+     ],
+     [
+      77.00000007171184,
+      "D",
+      1,
+      -15,
+      7
+     ],
+     [
+      77.00000007171184,
+      "H",
+      1,
+      -8,
+      5
+     ],
+     [
+      87.00000008102506,
+      "H",
+      1,
+      -9,
+      5
+     ]
+    ],
+    "block_near": [
+     [
+      7.000000006519258,
+      "H",
+      0,
+      -11,
+      4
+     ],
+     [
+      77.00000007171184,
+      "D",
+      1,
+      -15,
+      7
+     ],
+     [
+      77.00000007171184,
+      "H",
+      1,
+      -7,
+      3
+     ],
+     [
+      87.00000008102506,
+      "H",
+      1,
+      -7,
+      4
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "BLOCKED",
+     "SHIFTED"
+    ],
+    "block_near": [
+     "UNCHANGED",
+     "UNCHANGED",
+     "SHIFTED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 0
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": []
+   },
+   "metric": {
+    "base": [
+     5.333333333333333,
+     "same_colour_destination_missing_for_2"
+    ],
+    "base2": [
+     5.333333333333333,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_far": [
+     4.666666666666667,
+     "same_colour_destination_missing_for_2"
+    ],
+    "block_near": [
+     5.333333333333333,
+     "same_colour_destination_missing_for_2"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 3,
+     "n_costed": 3,
+     "n_unreachable": 0,
+     "total_cost": 5,
+     "per_house": {
+      "(-8, 3)": 3,
+      "(-11, 4)": 1,
+      "(-8, 4)": 1
+     }
+    },
+    "base2": {
+     "n_unconnected": 3,
+     "n_costed": 3,
+     "n_unreachable": 0,
+     "total_cost": 5,
+     "per_house": {
+      "(-8, 3)": 3,
+      "(-11, 4)": 1,
+      "(-8, 4)": 1
+     }
+    },
+    "block_far": {
+     "n_unconnected": 3,
+     "n_costed": 3,
+     "n_unreachable": 0,
+     "total_cost": 1,
+     "per_house": {
+      "(-11, 4)": 1,
+      "(-9, 5)": 0,
+      "(-8, 5)": 0
+     }
+    },
+    "block_near": {
+     "n_unconnected": 3,
+     "n_costed": 3,
+     "n_unreachable": 0,
+     "total_cost": 5,
+     "per_house": {
+      "(-7, 3)": 3,
+      "(-11, 4)": 1,
+      "(-7, 4)": 1
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": 1,
+    "block_near": -3
+   }
+  },
+  {
+   "seed": 671271,
+   "anchor": 150,
+   "far_dist": 7,
+   "near_dist": 2,
+   "n_segments": 10,
+   "equivalence_base_base2": {
+    "equivalent": true,
+    "same_spawns": true,
+    "same_prng": true,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "legal": {
+    "base": true,
+    "base2": true,
+    "block_far": true,
+    "block_near": true
+   },
+   "concrete_cp10_delta": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 3,
+    "block_near": 3
+   },
+   "empty_buildable_tiles_occupied": {
+    "block_far": 4,
+    "block_near": 4
+   },
+   "prng": {
+    "base2": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng identical at every checkpoint",
+     "first_spawn_difference_t": null
+    },
+    "block_far": {
+     "after_edits_equal_base": true,
+     "confounded": true,
+     "evidence": "prng differs at checkpoint t=90 (first spawn difference at None)",
+     "first_spawn_difference_t": null
+    },
+    "block_near": {
+     "after_edits_equal_base": true,
+     "confounded": false,
+     "evidence": "prng first differs at t=30 after the first spawn difference at 18.000000016763806 (downstream shift)",
+     "first_spawn_difference_t": 18.000000016763806
+    }
+   },
+   "spawns": {
+    "base": [
+     [
+      18.000000016763806,
+      "D",
+      0,
+      -12,
+      8
+     ],
+     [
+      80.0000000745058,
+      "H",
+      1,
+      -7,
+      2
+     ]
+    ],
+    "base2": [
+     [
+      18.000000016763806,
+      "D",
+      0,
+      -12,
+      8
+     ],
+     [
+      80.0000000745058,
+      "H",
+      1,
+      -7,
+      2
+     ]
+    ],
+    "block_far": [
+     [
+      18.000000016763806,
+      "D",
+      0,
+      -12,
+      8
+     ],
+     [
+      80.0000000745058,
+      "H",
+      1,
+      -7,
+      2
+     ]
+    ],
+    "block_near": [
+     [
+      18.000000016763806,
+      "D",
+      0,
+      -3,
+      8
+     ],
+     [
+      79.00000007357448,
+      "D",
+      1,
+      -2,
+      3
+     ],
+     [
+      80.0000000745058,
+      "H",
+      1,
+      -7,
+      2
+     ],
+     [
+      90.00000008381903,
+      "H",
+      1,
+      -8,
+      5
+     ]
+    ]
+   },
+   "terminal": {
+    "base": -1,
+    "base2": -1,
+    "block_far": -1,
+    "block_near": -1
+   },
+   "classification": {
+    "base2": [
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_far": [
+     "UNCHANGED",
+     "UNCHANGED"
+    ],
+    "block_near": [
+     "BLOCKED",
+     "SHIFTED"
+    ]
+   },
+   "n_spawn_diff": {
+    "base": 0,
+    "base2": 0,
+    "block_far": 0,
+    "block_near": 2
+   },
+   "type_timing_changes": {
+    "block_far": [],
+    "block_near": [
+     [
+      [
+       "H",
+       1
+      ],
+      [
+       "D",
+       1
+      ],
+      80,
+      79
+     ]
+    ]
+   },
+   "metric": {
+    "base": [
+     12.0,
+     "ok"
+    ],
+    "base2": [
+     12.0,
+     "ok"
+    ],
+    "block_far": [
+     12.0,
+     "ok"
+    ],
+    "block_near": [
+     10.0,
+     "ok"
+    ]
+   },
+   "connection_cost_cp_last": {
+    "base": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 3,
+     "per_house": {
+      "(-7, 2)": 3
+     }
+    },
+    "base2": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 3,
+     "per_house": {
+      "(-7, 2)": 3
+     }
+    },
+    "block_far": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 3,
+     "per_house": {
+      "(-7, 2)": 3
+     }
+    },
+    "block_near": {
+     "n_unconnected": 1,
+     "n_costed": 1,
+     "n_unreachable": 0,
+     "total_cost": 3,
+     "per_house": {
+      "(-7, 2)": 3
+     }
+    }
+   },
+   "net_saving_after_3": {
+    "block_far": -3,
+    "block_near": -3
+   }
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+[
+ {
+  "test": "test_s5_oscillation_is_reproduced_from_saved_traces_in_road_state_space",
+  "passed": true,
+  "detail": "seed 182150: {'two_state_oscillation_steps': 124, 'two_state_cycles': 4, 'revisits': 125}; seed 205907: {'two_state_oscillation_steps': 104, 'two_state_cycles': 2, 'revisits': 104}"
+ },
+ {
+  "test": "test_filter_detects_first_cycle_and_selects_next_ranked_legal_alternative",
+  "passed": true,
+  "detail": "seed 182150: first detection at decision 10; excluded [1391], chose rank-1 action 1091; seed 205907: first detection at decision 28; excluded [2077], chose rank-1 action 2231"
+ },
+ {
+  "test": "test_non_cycling_decisions_are_unchanged",
+  "passed": true,
+  "detail": "1362 decisions (pre-cycle prefix of both S5 traces, 8 WAIT episodes, 30 repeated-construction steps): zero interventions, action == policy argmax"
+ },
+ {
+  "test": "test_disabled_filter_reproduces_original_actions_exactly",
+  "passed": true,
+  "detail": "285/285 recorded actions reproduced with the filter disabled, through the full oscillation"
+ },
+ {
+  "test": "test_selector_ranking_equals_model_predict_on_120_saved_native_states",
+  "passed": true,
+  "detail": "ranking_from_logits(...)[0] == model.predict(deterministic) on 120/120 saved native states; ranking covers exactly the legal set"
+ },
+ {
+  "test": "test_filter_unit_cases",
+  "passed": true,
+  "detail": "A,A,A / A,B,A / A,B,A,B / rejection reasons / no_alternative / detected-but-not-continuing / deterministic ties / cycle statistics"
+ },
+ {
+  "test": "test_terminal_penalty_flag_matches_s5_traces_and_never_touches_rewards",
+  "passed": true,
+  "detail": "2 zero-penalty and 11 normal terminal traces: flag == (terminated & penalty==0); terminal_on_entry == applyInfo 'terminal state (not applied)'; sim-time advance of the final step ~0.1 s vs 1.0 s; return/length/action counts identical with diagnostics on vs off; diag_errors 0"
+ },
+ {
+  "test": "test_horizon_truncation_is_not_flagged_as_missing_penalty",
+  "passed": true,
+  "detail": "a horizon-truncated episode (terminated=False) is not reported as a missing penalty"
+ }
+]

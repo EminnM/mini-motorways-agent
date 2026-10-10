@@ -1,0 +1,432 @@
+{
+ "1_normal_path_unchanged_vs_S22_V0_log": {
+  "passed": true,
+  "detail": {
+   "runs": [
+    {
+     "identical": 149,
+     "mismatch_indices": [
+      127
+     ],
+     "transient": true
+    },
+    {
+     "identical": 150,
+     "mismatch_indices": [],
+     "transient": true
+    },
+    {
+     "identical": 150,
+     "mismatch_indices": [],
+     "transient": true
+    }
+   ],
+   "note": "pre-patch DLL itself showed 1/12 whole-episode divergences (S22 V0 vs V0dup); transient single-decision hash differences are native, not the op"
+  }
+ },
+ "2_restore_fidelity_and_no_mutation": {
+  "passed": true,
+  "detail": [
+   {
+    "seed": 500000,
+    "anchor": 30,
+    "bytes": 65621,
+    "equivalent": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true
+    },
+    "fingerprint_restore_equals_snapshot": [
+     true,
+     true
+    ],
+    "fingerprint_diff_is_clock_only": [
+     true,
+     true
+    ],
+    "restore_diff_example": "",
+    "prng_restore_equals_snapshot": [
+     true,
+     true
+    ],
+    "restore_note": "prng copied; activation 1/1; lanes 54/54; inboundLanes reordered=15 mismatched=0; vehicles 4/4; generic fields=11 applie",
+    "n_spawns": 3,
+    "terminal": -1
+   },
+   {
+    "seed": 500000,
+    "anchor": 90,
+    "bytes": 92414,
+    "equivalent": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true
+    },
+    "fingerprint_restore_equals_snapshot": [
+     true,
+     true
+    ],
+    "fingerprint_diff_is_clock_only": [
+     true,
+     true
+    ],
+    "restore_diff_example": "",
+    "prng_restore_equals_snapshot": [
+     true,
+     true
+    ],
+    "restore_note": "prng copied; activation 2/2; lanes 106/106; inboundLanes reordered=33 mismatched=0; vehicles 8/8; generic fields=11 appl",
+    "n_spawns": 0,
+    "terminal": -1
+   },
+   {
+    "seed": 507919,
+    "anchor": 30,
+    "bytes": 64095,
+    "equivalent": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true
+    },
+    "fingerprint_restore_equals_snapshot": [
+     false,
+     false
+    ],
+    "fingerprint_diff_is_clock_only": [
+     true,
+     true
+    ],
+    "restore_diff_example": "idx=18 snapshot={\"simulationTime\":29.900000027846545,\"bounds\":{\"xMin\":-18,\"yMin\":-10,\"width\":37,\"height\":21},\"tiles\":[{\"",
+    "prng_restore_equals_snapshot": [
+     true,
+     true
+    ],
+    "restore_note": "prng copied; activation 1/1; lanes 33/33; inboundLanes reordered=13 mismatched=0; vehicles 4/4; generic fields=11 applie",
+    "n_spawns": 3,
+    "terminal": -1
+   },
+   {
+    "seed": 507919,
+    "anchor": 90,
+    "bytes": 87267,
+    "equivalent": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true
+    },
+    "fingerprint_restore_equals_snapshot": [
+     true,
+     true
+    ],
+    "fingerprint_diff_is_clock_only": [
+     true,
+     true
+    ],
+    "restore_diff_example": "",
+    "prng_restore_equals_snapshot": [
+     true,
+     true
+    ],
+    "restore_note": "prng copied; activation 2/2; lanes 87/87; inboundLanes reordered=28 mismatched=0; vehicles 8/8; generic fields=11 applie",
+    "n_spawns": 0,
+    "terminal": -1
+   },
+   {
+    "seed": 515838,
+    "anchor": 30,
+    "bytes": 64095,
+    "equivalent": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true
+    },
+    "fingerprint_restore_equals_snapshot": [
+     false,
+     false
+    ],
+    "fingerprint_diff_is_clock_only": [
+     true,
+     true
+    ],
+    "restore_diff_example": "idx=18 snapshot={\"simulationTime\":29.900000027846545,\"bounds\":{\"xMin\":-18,\"yMin\":-10,\"width\":37,\"height\":21},\"tiles\":[{\"",
+    "prng_restore_equals_snapshot": [
+     true,
+     true
+    ],
+    "restore_note": "prng copied; activation 1/1; lanes 33/33; inboundLanes reordered=13 mismatched=0; vehicles 4/4; generic fields=11 applie",
+    "n_spawns": 3,
+    "terminal": -1
+   },
+   {
+    "seed": 515838,
+    "anchor": 90,
+    "bytes": 82197,
+    "equivalent": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true
+    },
+    "fingerprint_restore_equals_snapshot": [
+     false,
+     false
+    ],
+    "fingerprint_diff_is_clock_only": [
+     true,
+     true
+    ],
+    "restore_diff_example": "idx=18 snapshot={\"simulationTime\":89.9000000837259,\"bounds\":{\"xMin\":-18,\"yMin\":-10,\"width\":37,\"height\":21},\"tiles\":[{\"co",
+    "prng_restore_equals_snapshot": [
+     true,
+     true
+    ],
+    "restore_note": "prng copied; activation 2/2; lanes 87/87; inboundLanes reordered=28 mismatched=0; vehicles 8/8; generic fields=11 applie",
+    "n_spawns": 0,
+    "terminal": 54
+   }
+  ]
+ },
+ "3a_fork_base_branch_equals_straight_play": {
+  "passed": true,
+  "detail": [
+   {
+    "seed": 500000,
+    "prefix_identical": false,
+    "spawns_fork": [
+     [
+      13,
+      "D",
+      1,
+      -13,
+      -6
+     ],
+     [
+      13,
+      "H",
+      1,
+      -9,
+      0
+     ],
+     [
+      23,
+      "H",
+      1,
+      -7,
+      0
+     ]
+    ],
+    "spawns_straight": [
+     [
+      13,
+      "D",
+      1,
+      -13,
+      -6
+     ],
+     [
+      13,
+      "H",
+      1,
+      -9,
+      0
+     ],
+     [
+      23,
+      "H",
+      1,
+      -7,
+      0
+     ]
+    ],
+    "spawn_sets_equal": true,
+    "spawn_times_within_1": true,
+    "score_fork": {
+     "15": 4.0,
+     "30": 5.0,
+     "60": 7.0
+    },
+    "score_straight": {
+     "15": 4,
+     "30": 5,
+     "60": 7
+    },
+    "scores_equal": true
+   },
+   {
+    "seed": 507919,
+    "prefix_identical": true,
+    "spawns_fork": [
+     [
+      17,
+      "D",
+      1,
+      -11,
+      -6
+     ],
+     [
+      18,
+      "H",
+      1,
+      -4,
+      -3
+     ],
+     [
+      28,
+      "H",
+      1,
+      -4,
+      -1
+     ]
+    ],
+    "spawns_straight": [
+     [
+      18,
+      "D",
+      1,
+      -11,
+      -6
+     ],
+     [
+      18,
+      "H",
+      1,
+      -4,
+      -3
+     ],
+     [
+      28,
+      "H",
+      1,
+      -4,
+      -1
+     ]
+    ],
+    "spawn_sets_equal": true,
+    "spawn_times_within_1": true,
+    "score_fork": {
+     "15": 0.0,
+     "30": 0.0,
+     "60": 0.0
+    },
+    "score_straight": {
+     "15": 0,
+     "30": 0,
+     "60": 0
+    },
+    "scores_equal": true
+   }
+  ]
+ },
+ "3b_restore_plus_one_step_equals_original_plus_one_step": {
+  "passed": true,
+  "detail": [
+   {
+    "seed": 500000,
+    "tiles_equal": true,
+    "road_states_equal": true,
+    "content_equal": true,
+    "vehicle_counts_equal": true,
+    "legal_mask_equal": true,
+    "globals_diff": {},
+    "dest_demand_equal": true
+   },
+   {
+    "seed": 507919,
+    "tiles_equal": true,
+    "road_states_equal": true,
+    "content_equal": true,
+    "vehicle_counts_equal": true,
+    "legal_mask_equal": true,
+    "globals_diff": {},
+    "dest_demand_equal": true
+   }
+  ]
+ },
+ "4_edit_accounting_and_duplicate_intervention": {
+  "passed": true,
+  "detail": [
+   {
+    "seed": 500000,
+    "edits_accepted": 3,
+    "concrete_delta": 3,
+    "edits": [
+     {
+      "action": "ADD_ROAD(-11,-6,E)",
+      "ok": true,
+      "info": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True."
+     },
+     {
+      "action": "ADD_ROAD(-10,-6,E)",
+      "ok": true,
+      "info": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True."
+     },
+     {
+      "action": "ADD_ROAD(-9,-6,E)",
+      "ok": true,
+      "info": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True."
+     }
+    ],
+    "block_vs_block2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true
+    },
+    "block_prng_after_edits_equals_base": true,
+    "confound_vs_base": {
+     "confounded": true,
+     "evidence": "prng differs at checkpoint t=30 (first spawn difference at None)",
+     "first_spawn_difference_t": null
+    }
+   },
+   {
+    "seed": 507919,
+    "edits_accepted": 3,
+    "concrete_delta": 3,
+    "edits": [
+     {
+      "action": "ADD_ROAD(-7,-3,E)",
+      "ok": true,
+      "info": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True."
+     },
+     {
+      "action": "ADD_ROAD(-6,-3,E)",
+      "ok": true,
+      "info": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True."
+     },
+     {
+      "action": "ADD_ROAD(-5,-3,E)",
+      "ok": true,
+      "info": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True."
+     }
+    ],
+    "block_vs_block2": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true
+    },
+    "block_prng_after_edits_equals_base": true,
+    "confound_vs_base": {
+     "confounded": false,
+     "evidence": "prng first differs at t=30 after the first spawn difference at 18.000000016763806 (downstream shift)",
+     "first_spawn_difference_t": 18.000000016763806
+    }
+   }
+  ]
+ },
+ "_wall_s": 136.3
+}

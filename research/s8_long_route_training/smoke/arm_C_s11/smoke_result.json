@@ -1,0 +1,37 @@
+{
+ "initial_param_hash": "226e2e32f0a71cfb84ee66bb60f819366cb8029d4756141d82bc95865f522fd6",
+ "pretrained_strict_load_bitwise_equal": true,
+ "optimizer_state_empty_before": true,
+ "eval_left_training_state_unchanged": true,
+ "decisions_trained": 512,
+ "parameters_changed_by_ppo": true,
+ "optimizer_state_nonempty_after": true,
+ "all_parameters_finite": true,
+ "sb3_last_row": {
+  "train/approx_kl": 0.019768184050917625,
+  "train/entropy_loss": -2.5305991768836975,
+  "train/value_loss": 0.09330201474949718,
+  "train/policy_gradient_loss": -0.027623772737570107,
+  "train/explained_variance": 0.10280019044876099,
+  "train/n_updates": 4.0
+ },
+ "losses_finite": true,
+ "episode_log": {
+  "rejected": 0,
+  "bad_reward": 0,
+  "bad_boundary": 0,
+  "episodes": 71,
+  "successes": 67,
+  "steps": 512,
+  "len_over_horizon": 0
+ },
+ "rejected_actions_in_rollout": 0,
+ "reward_and_boundary_violations": 0,
+ "eval_left_training_state_unchanged_both": true,
+ "checkpoint_reload_predictions_equal": true,
+ "reloaded_params_equal": true,
+ "stage_during_smoke": 0,
+ "wall_s": 40.7,
+ "train_seconds": 12.6,
+ "SMOKE_PASS": true
+}

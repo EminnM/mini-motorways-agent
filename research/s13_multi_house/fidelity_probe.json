@@ -1,0 +1,33 @@
+{
+ "window_compare": {
+  "n_points": 290,
+  "exact_window_fraction": 0.121,
+  "median_max_edge_error_tiles": 1.0,
+  "p90_max_edge_error": 4.0,
+  "per_edge": {
+   "x0": {
+    "mean_signed_error": 0.56,
+    "exact_fraction": 0.51
+   },
+   "x1": {
+    "mean_signed_error": -0.14,
+    "exact_fraction": 0.348
+   },
+   "y0": {
+    "mean_signed_error": -0.43,
+    "exact_fraction": 0.552
+   },
+   "y1": {
+    "mean_signed_error": -0.21,
+    "exact_fraction": 0.814
+   }
+  },
+  "legal_add_count_ratio_mine_over_native_median": 1.366,
+  "ratio_p10_p90": [
+   1.097,
+   1.708
+  ]
+ },
+ "native_deliveries_per_connected_house_decision": 0.0436,
+ "synthetic_MU": 0.0436
+}

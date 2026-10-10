@@ -1,0 +1,1697 @@
+{
+ "checkpoint": "runs\\s19\\best.pt",
+ "checkpoint_iter": 185,
+ "checkpoint_val": {
+  "episodes": 18,
+  "deliveries_median": 147.5,
+  "deliveries_mean": 135.44444444444446,
+  "survived": 15,
+  "return_mean": 133.77777777777777,
+  "wait_frequency": 0.9395395067224419,
+  "scenarios": [
+   "507919_replicate",
+   "507919_s12_conserve",
+   "507919_s12_control",
+   "579190_replicate",
+   "579190_s12_conserve",
+   "579190_s12_control"
+  ],
+  "iter": 185,
+  "wall_s": 960.4
+ },
+ "env_seeds": "7000 + 100*idx + s, s in 0..2 (identical to S13 / S18-H)",
+ "metric_code": "evaluate.episode_ext = verbatim s13_baselines.episode accounting + latency / WAIT-primitive / illegal-primitive / strategic summary; summarize = s13_baselines.summarize + extensions",
+ "splits": {
+  "test": {
+   "WAIT": {
+    "episodes": 36,
+    "return_median": -10.0,
+    "return_mean": -10.0,
+    "deliveries_median": 0.0,
+    "decisions_median": 164.0,
+    "survived_600": 0,
+    "houses_median": 4.0,
+    "connected_end_median": 0.0,
+    "frac_connected_by_quarter_mean": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "new_houses_connected_within_60": [
+     0,
+     88
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 0.0,
+    "deliveries_per_plain_add_median": 0.0,
+    "new_house_latency_mean": null,
+    "new_house_rate_60": 0.0,
+    "wait_primitive_frac_mean": 1.0,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 0.0,
+    "frac_zero_concrete_mean": 0.0
+   },
+   "A_greedy_planner": {
+    "episodes": 36,
+    "return_median": 156.5,
+    "return_mean": 144.69,
+    "deliveries_median": 163.0,
+    "decisions_median": 600.0,
+    "survived_600": 24,
+    "houses_median": 8.5,
+    "connected_end_median": 8.5,
+    "frac_connected_by_quarter_mean": [
+     0.87,
+     0.988,
+     0.994,
+     0.992
+    ],
+    "new_houses_connected_within_60": [
+     280,
+     280
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.705,
+    "new_house_latency_mean": 3.4214285714285713,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9323444009744557,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 148.02777777777777,
+    "frac_zero_concrete_mean": 0.0,
+    "abandoned_plans_total": 0,
+    "plans_total": 295,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "B_resource_aware_planner": {
+    "episodes": 36,
+    "return_median": 168.5,
+    "return_mean": 152.31,
+    "deliveries_median": 168.5,
+    "decisions_median": 600.0,
+    "survived_600": 27,
+    "houses_median": 8.5,
+    "connected_end_median": 8.5,
+    "frac_connected_by_quarter_mean": [
+     0.873,
+     0.989,
+     0.994,
+     0.993
+    ],
+    "new_houses_connected_within_60": [
+     295,
+     295
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.5,
+    "deliveries_per_plain_add_median": 5.87,
+    "new_house_latency_mean": 3.4305084745762713,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9340155361720934,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 154.80555555555554,
+    "frac_zero_concrete_mean": 0.0,
+    "abandoned_plans_total": 0,
+    "plans_total": 305,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "C_learned_stochastic": {
+    "episodes": 36,
+    "return_median": 161.0,
+    "return_mean": 150.64,
+    "deliveries_median": 163.0,
+    "decisions_median": 600.0,
+    "survived_600": 26,
+    "houses_median": 9.0,
+    "connected_end_median": 9.0,
+    "frac_connected_by_quarter_mean": [
+     0.847,
+     0.972,
+     0.977,
+     0.985
+    ],
+    "new_houses_connected_within_60": [
+     311,
+     313
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 27.0,
+    "deliveries_per_plain_add_median": 5.138,
+    "new_house_latency_mean": 5.884244372990354,
+    "new_house_rate_60": 0.9936102236421726,
+    "wait_primitive_frac_mean": 0.9309412377253766,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 153.41666666666666,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9182071410483666,
+    "kind_frequency": {
+     "CONNECT": 0.08179285895163332,
+     "REMOVE": 0.0,
+     "WAIT": 0.9182071410483666
+    },
+    "kind_counts": {
+     "CONNECT": 323,
+     "REMOVE": 0,
+     "WAIT": 3626
+    },
+    "mean_duration": 4.929263991626636,
+    "mean_duration_connect": 4.056980904897572,
+    "alt_selected_total": 106,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 0,
+    "plans_total": 323,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "C_learned_greedy": {
+    "episodes": 36,
+    "return_median": 171.5,
+    "return_mean": 160.0,
+    "deliveries_median": 171.5,
+    "decisions_median": 600.0,
+    "survived_600": 25,
+    "houses_median": 9.5,
+    "connected_end_median": 9.5,
+    "frac_connected_by_quarter_mean": [
+     0.857,
+     0.982,
+     0.99,
+     0.986
+    ],
+    "new_houses_connected_within_60": [
+     321,
+     327
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 31.5,
+    "deliveries_per_plain_add_median": 5.614,
+    "new_house_latency_mean": 5.8286604361370715,
+    "new_house_rate_60": 0.981651376146789,
+    "wait_primitive_frac_mean": 0.934973089529068,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 163.05555555555554,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9211165048543689,
+    "kind_frequency": {
+     "CONNECT": 0.07888349514563107,
+     "REMOVE": 0.0,
+     "WAIT": 0.9211165048543689
+    },
+    "kind_counts": {
+     "CONNECT": 325,
+     "REMOVE": 0,
+     "WAIT": 3795
+    },
+    "mean_duration": 4.930499513941169,
+    "mean_duration_connect": 4.025771604938273,
+    "alt_selected_total": 43,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 0,
+    "plans_total": 325,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "D_random_strategic": {
+    "episodes": 36,
+    "return_median": 176.5,
+    "return_mean": 155.75,
+    "deliveries_median": 176.5,
+    "decisions_median": 600.0,
+    "survived_600": 30,
+    "houses_median": 9.0,
+    "connected_end_median": 9.0,
+    "frac_connected_by_quarter_mean": [
+     0.792,
+     0.97,
+     0.983,
+     0.995
+    ],
+    "new_houses_connected_within_60": [
+     317,
+     318
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.312,
+    "new_house_latency_mean": 10.034591194968554,
+    "new_house_rate_60": 0.9968553459119497,
+    "wait_primitive_frac_mean": 0.9312164316628064,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 157.41666666666666,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9193069306930693,
+    "kind_frequency": {
+     "CONNECT": 0.0806930693069307,
+     "REMOVE": 0.0,
+     "WAIT": 0.9193069306930693
+    },
+    "kind_counts": {
+     "CONNECT": 326,
+     "REMOVE": 0,
+     "WAIT": 3714
+    },
+    "mean_duration": 4.932217052046103,
+    "mean_duration_connect": 4.13873838353005,
+    "alt_selected_total": 106,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 1,
+    "plans_total": 326,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {
+     "spawn_on_route": 1
+    }
+   }
+  },
+  "validation": {
+   "WAIT": {
+    "episodes": 18,
+    "return_median": -10.0,
+    "return_mean": -10.0,
+    "deliveries_median": 0.0,
+    "decisions_median": 151.0,
+    "survived_600": 0,
+    "houses_median": 4.0,
+    "connected_end_median": 0.0,
+    "frac_connected_by_quarter_mean": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "new_houses_connected_within_60": [
+     0,
+     42
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 0.0,
+    "deliveries_per_plain_add_median": 0.0,
+    "new_house_latency_mean": null,
+    "new_house_rate_60": 0.0,
+    "wait_primitive_frac_mean": 1.0,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 0.0,
+    "frac_zero_concrete_mean": 0.0
+   },
+   "A_greedy_planner": {
+    "episodes": 18,
+    "return_median": 142.5,
+    "return_mean": 143.78,
+    "deliveries_median": 142.5,
+    "decisions_median": 600.0,
+    "survived_600": 17,
+    "houses_median": 7.0,
+    "connected_end_median": 7.0,
+    "frac_connected_by_quarter_mean": [
+     0.927,
+     0.99,
+     0.999,
+     1.0
+    ],
+    "new_houses_connected_within_60": [
+     112,
+     112
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.5,
+    "deliveries_per_plain_add_median": 6.091,
+    "new_house_latency_mean": 3.7589285714285716,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.949579945799458,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 144.33333333333334,
+    "frac_zero_concrete_mean": 0.0,
+    "abandoned_plans_total": 0,
+    "plans_total": 129,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "B_resource_aware_planner": {
+    "episodes": 18,
+    "return_median": 146.0,
+    "return_mean": 144.61,
+    "deliveries_median": 146.0,
+    "decisions_median": 600.0,
+    "survived_600": 17,
+    "houses_median": 7.0,
+    "connected_end_median": 7.0,
+    "frac_connected_by_quarter_mean": [
+     0.927,
+     0.991,
+     0.999,
+     1.0
+    ],
+    "new_houses_connected_within_60": [
+     112,
+     112
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 6.16,
+    "new_house_latency_mean": 3.5982142857142856,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9523577235772359,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 145.16666666666666,
+    "frac_zero_concrete_mean": 0.0,
+    "abandoned_plans_total": 0,
+    "plans_total": 123,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "C_learned_stochastic": {
+    "episodes": 18,
+    "return_median": 139.0,
+    "return_mean": 135.28,
+    "deliveries_median": 139.0,
+    "decisions_median": 600.0,
+    "survived_600": 15,
+    "houses_median": 7.0,
+    "connected_end_median": 7.0,
+    "frac_connected_by_quarter_mean": [
+     0.88,
+     0.981,
+     0.996,
+     0.999
+    ],
+    "new_houses_connected_within_60": [
+     112,
+     112
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.895,
+    "new_house_latency_mean": 5.517857142857143,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.944862527993338,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 136.94444444444446,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9395740465577018,
+    "kind_frequency": {
+     "CONNECT": 0.06042595344229817,
+     "REMOVE": 0.0,
+     "WAIT": 0.9395740465577018
+    },
+    "kind_counts": {
+     "CONNECT": 122,
+     "REMOVE": 0,
+     "WAIT": 1897
+    },
+    "mean_duration": 4.958811039816087,
+    "mean_duration_connect": 4.349272486772486,
+    "alt_selected_total": 42,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 0,
+    "plans_total": 122,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "C_learned_greedy": {
+    "episodes": 18,
+    "return_median": 147.5,
+    "return_mean": 133.78,
+    "deliveries_median": 147.5,
+    "decisions_median": 600.0,
+    "survived_600": 15,
+    "houses_median": 7.0,
+    "connected_end_median": 7.0,
+    "frac_connected_by_quarter_mean": [
+     0.886,
+     0.977,
+     0.997,
+     1.0
+    ],
+    "new_houses_connected_within_60": [
+     114,
+     114
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 24.5,
+    "deliveries_per_plain_add_median": 5.922,
+    "new_house_latency_mean": 5.271929824561403,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9481172214724847,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 135.44444444444446,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9412355600200905,
+    "kind_frequency": {
+     "CONNECT": 0.05876443997990959,
+     "REMOVE": 0.0,
+     "WAIT": 0.9412355600200905
+    },
+    "kind_counts": {
+     "CONNECT": 117,
+     "REMOVE": 0,
+     "WAIT": 1874
+    },
+    "mean_duration": 4.953435042136336,
+    "mean_duration_connect": 4.2555555555555555,
+    "alt_selected_total": 18,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 0,
+    "plans_total": 117,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "D_random_strategic": {
+    "episodes": 18,
+    "return_median": 141.5,
+    "return_mean": 138.44,
+    "deliveries_median": 141.5,
+    "decisions_median": 600.0,
+    "survived_600": 16,
+    "houses_median": 7.0,
+    "connected_end_median": 7.0,
+    "frac_connected_by_quarter_mean": [
+     0.857,
+     0.969,
+     0.996,
+     1.0
+    ],
+    "new_houses_connected_within_60": [
+     114,
+     114
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.748,
+    "new_house_latency_mean": 8.324561403508772,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9467917352382723,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 139.55555555555554,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9425952725518573,
+    "kind_frequency": {
+     "CONNECT": 0.05740472744814279,
+     "REMOVE": 0.0,
+     "WAIT": 0.9425952725518573
+    },
+    "kind_counts": {
+     "CONNECT": 119,
+     "REMOVE": 0,
+     "WAIT": 1954
+    },
+    "mean_duration": 4.9738282307090795,
+    "mean_duration_connect": 4.566951258617926,
+    "alt_selected_total": 39,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 1,
+    "plans_total": 119,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {
+     "spawn_on_route": 1
+    }
+   }
+  },
+  "train": {
+   "WAIT": {
+    "episodes": 54,
+    "return_median": -10.0,
+    "return_mean": -10.0,
+    "deliveries_median": 0.0,
+    "decisions_median": 175.0,
+    "survived_600": 0,
+    "houses_median": 4.0,
+    "connected_end_median": 0.0,
+    "frac_connected_by_quarter_mean": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "new_houses_connected_within_60": [
+     0,
+     147
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 0.0,
+    "deliveries_per_plain_add_median": 0.0,
+    "new_house_latency_mean": null,
+    "new_house_rate_60": 0.0,
+    "wait_primitive_frac_mean": 1.0,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 0.0,
+    "frac_zero_concrete_mean": 0.0
+   },
+   "A_greedy_planner": {
+    "episodes": 54,
+    "return_median": 168.0,
+    "return_mean": 158.52,
+    "deliveries_median": 170.0,
+    "decisions_median": 600.0,
+    "survived_600": 43,
+    "houses_median": 10.0,
+    "connected_end_median": 10.0,
+    "frac_connected_by_quarter_mean": [
+     0.901,
+     0.989,
+     0.993,
+     0.998
+    ],
+    "new_houses_connected_within_60": [
+     460,
+     460
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.683,
+    "new_house_latency_mean": 3.241304347826087,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.934820297890581,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 160.55555555555554,
+    "frac_zero_concrete_mean": 0.0,
+    "abandoned_plans_total": 0,
+    "plans_total": 490,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "B_resource_aware_planner": {
+    "episodes": 54,
+    "return_median": 143.0,
+    "return_mean": 148.74,
+    "deliveries_median": 143.0,
+    "decisions_median": 600.0,
+    "survived_600": 38,
+    "houses_median": 9.5,
+    "connected_end_median": 9.5,
+    "frac_connected_by_quarter_mean": [
+     0.896,
+     0.99,
+     0.994,
+     0.998
+    ],
+    "new_houses_connected_within_60": [
+     448,
+     448
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 24.0,
+    "deliveries_per_plain_add_median": 5.74,
+    "new_house_latency_mean": 3.0401785714285716,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9357027069628553,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 151.7037037037037,
+    "frac_zero_concrete_mean": 0.0,
+    "abandoned_plans_total": 0,
+    "plans_total": 483,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "C_learned_stochastic": {
+    "episodes": 54,
+    "return_median": 141.5,
+    "return_mean": 145.28,
+    "deliveries_median": 146.5,
+    "decisions_median": 600.0,
+    "survived_600": 36,
+    "houses_median": 9.5,
+    "connected_end_median": 9.5,
+    "frac_connected_by_quarter_mean": [
+     0.851,
+     0.981,
+     0.989,
+     0.995
+    ],
+    "new_houses_connected_within_60": [
+     456,
+     456
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.567,
+    "new_house_latency_mean": 5.131578947368421,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9314150702362668,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 148.61111111111111,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9170867373544238,
+    "kind_frequency": {
+     "CONNECT": 0.08291326264557622,
+     "REMOVE": 0.0,
+     "WAIT": 0.9170867373544238
+    },
+    "kind_counts": {
+     "CONNECT": 477,
+     "REMOVE": 0,
+     "WAIT": 5276
+    },
+    "mean_duration": 4.901375246147984,
+    "mean_duration_connect": 4.017470475844659,
+    "alt_selected_total": 131,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 0,
+    "plans_total": 478,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "C_learned_greedy": {
+    "episodes": 54,
+    "return_median": 144.0,
+    "return_mean": 140.26,
+    "deliveries_median": 146.5,
+    "decisions_median": 600.0,
+    "survived_600": 39,
+    "houses_median": 8.5,
+    "connected_end_median": 8.5,
+    "frac_connected_by_quarter_mean": [
+     0.852,
+     0.982,
+     0.991,
+     0.996
+    ],
+    "new_houses_connected_within_60": [
+     429,
+     429
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 22.0,
+    "deliveries_per_plain_add_median": 5.586,
+    "new_house_latency_mean": 4.769230769230769,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9372485127853183,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 143.03703703703704,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9212843086483687,
+    "kind_frequency": {
+     "CONNECT": 0.07871569135163128,
+     "REMOVE": 0.0,
+     "WAIT": 0.9212843086483687
+    },
+    "kind_counts": {
+     "CONNECT": 456,
+     "REMOVE": 0,
+     "WAIT": 5337
+    },
+    "mean_duration": 4.8925595990817365,
+    "mean_duration_connect": 3.8103602552131957,
+    "alt_selected_total": 42,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 0,
+    "plans_total": 457,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "D_random_strategic": {
+    "episodes": 54,
+    "return_median": 152.5,
+    "return_mean": 149.78,
+    "deliveries_median": 152.5,
+    "decisions_median": 600.0,
+    "survived_600": 40,
+    "houses_median": 9.5,
+    "connected_end_median": 9.5,
+    "frac_connected_by_quarter_mean": [
+     0.809,
+     0.974,
+     0.982,
+     0.996
+    ],
+    "new_houses_connected_within_60": [
+     438,
+     438
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.744,
+    "new_house_latency_mean": 9.287671232876713,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9381325639730639,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 152.37037037037038,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9228456913827655,
+    "kind_frequency": {
+     "CONNECT": 0.07715430861723446,
+     "REMOVE": 0.0,
+     "WAIT": 0.9228456913827655
+    },
+    "kind_counts": {
+     "CONNECT": 462,
+     "REMOVE": 0,
+     "WAIT": 5526
+    },
+    "mean_duration": 4.905949040264516,
+    "mean_duration_connect": 4.045831076754279,
+    "alt_selected_total": 145,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 0,
+    "plans_total": 463,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   }
+  },
+  "all": {
+   "WAIT": {
+    "episodes": 108,
+    "return_median": -10.0,
+    "return_mean": -10.0,
+    "deliveries_median": 0.0,
+    "decisions_median": 169.5,
+    "survived_600": 0,
+    "houses_median": 4.0,
+    "connected_end_median": 0.0,
+    "frac_connected_by_quarter_mean": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "new_houses_connected_within_60": [
+     0,
+     277
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 0.0,
+    "deliveries_per_plain_add_median": 0.0,
+    "new_house_latency_mean": null,
+    "new_house_rate_60": 0.0,
+    "wait_primitive_frac_mean": 1.0,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 0.0,
+    "frac_zero_concrete_mean": 0.0
+   },
+   "A_greedy_planner": {
+    "episodes": 108,
+    "return_median": 156.0,
+    "return_mean": 151.45,
+    "deliveries_median": 158.0,
+    "decisions_median": 600.0,
+    "survived_600": 84,
+    "houses_median": 8.0,
+    "connected_end_median": 8.0,
+    "frac_connected_by_quarter_mean": [
+     0.895,
+     0.989,
+     0.995,
+     0.997
+    ],
+    "new_houses_connected_within_60": [
+     852,
+     852
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.799,
+    "new_house_latency_mean": 3.368544600938967,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9364549402366854,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 153.67592592592592,
+    "frac_zero_concrete_mean": 0.0,
+    "abandoned_plans_total": 0,
+    "plans_total": 914,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "B_resource_aware_planner": {
+    "episodes": 108,
+    "return_median": 150.0,
+    "return_mean": 149.24,
+    "deliveries_median": 152.0,
+    "decisions_median": 600.0,
+    "survived_600": 82,
+    "houses_median": 8.0,
+    "connected_end_median": 8.0,
+    "frac_connected_by_quarter_mean": [
+     0.894,
+     0.99,
+     0.995,
+     0.997
+    ],
+    "new_houses_connected_within_60": [
+     855,
+     855
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 24.5,
+    "deliveries_per_plain_add_median": 5.845,
+    "new_house_latency_mean": 3.247953216374269,
+    "new_house_rate_60": 1.0,
+    "wait_primitive_frac_mean": 0.9379161528016647,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 151.64814814814815,
+    "frac_zero_concrete_mean": 0.0,
+    "abandoned_plans_total": 0,
+    "plans_total": 911,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "C_learned_stochastic": {
+    "episodes": 108,
+    "return_median": 148.5,
+    "return_mean": 145.4,
+    "deliveries_median": 148.5,
+    "decisions_median": 600.0,
+    "survived_600": 77,
+    "houses_median": 8.0,
+    "connected_end_median": 8.0,
+    "frac_connected_by_quarter_mean": [
+     0.855,
+     0.978,
+     0.986,
+     0.992
+    ],
+    "new_houses_connected_within_60": [
+     879,
+     881
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 26.0,
+    "deliveries_per_plain_add_median": 5.567,
+    "new_house_latency_mean": 5.447098976109215,
+    "new_house_rate_60": 0.9977298524404086,
+    "wait_primitive_frac_mean": 0.9334983690254819,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 148.2685185185185,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9213377698148623,
+    "kind_frequency": {
+     "CONNECT": 0.0786622301851378,
+     "REMOVE": 0.0,
+     "WAIT": 0.9213377698148623
+    },
+    "kind_counts": {
+     "CONNECT": 922,
+     "REMOVE": 0,
+     "WAIT": 10799
+    },
+    "mean_duration": 4.9202441269188855,
+    "mean_duration_connect": 4.085940954016935,
+    "alt_selected_total": 279,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 0,
+    "plans_total": 923,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "C_learned_greedy": {
+    "episodes": 108,
+    "return_median": 155.5,
+    "return_mean": 145.76,
+    "deliveries_median": 157.0,
+    "decisions_median": 600.0,
+    "survived_600": 79,
+    "houses_median": 8.0,
+    "connected_end_median": 8.0,
+    "frac_connected_by_quarter_mean": [
+     0.859,
+     0.981,
+     0.991,
+     0.993
+    ],
+    "new_houses_connected_within_60": [
+     864,
+     870
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.704,
+    "new_house_latency_mean": 5.229166666666667,
+    "new_house_rate_60": 0.993103448275862,
+    "wait_primitive_frac_mean": 0.9383014898144295,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 148.44444444444446,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9245631720430108,
+    "kind_frequency": {
+     "CONNECT": 0.07543682795698925,
+     "REMOVE": 0.0,
+     "WAIT": 0.9245631720430108
+    },
+    "kind_counts": {
+     "CONNECT": 898,
+     "REMOVE": 0,
+     "WAIT": 11006
+    },
+    "mean_duration": 4.915352144543982,
+    "mean_duration_connect": 3.956363255178615,
+    "alt_selected_total": 103,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 0,
+    "plans_total": 899,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {}
+   },
+   "D_random_strategic": {
+    "episodes": 108,
+    "return_median": 154.5,
+    "return_mean": 149.88,
+    "deliveries_median": 154.5,
+    "decisions_median": 600.0,
+    "survived_600": 86,
+    "houses_median": 8.0,
+    "connected_end_median": 8.0,
+    "frac_connected_by_quarter_mean": [
+     0.811,
+     0.971,
+     0.985,
+     0.996
+    ],
+    "new_houses_connected_within_60": [
+     869,
+     870
+    ],
+    "frac_zero_concrete_median": 0.0,
+    "connections_destroyed_median": 0.0,
+    "connections_destroyed_total": 0,
+    "plain_adds_median": 25.0,
+    "deliveries_per_plain_add_median": 5.554,
+    "new_house_latency_mean": 9.434482758620689,
+    "new_house_rate_60": 0.9988505747126437,
+    "wait_primitive_frac_mean": 0.9372703817471795,
+    "illegal_primitive_total": 0,
+    "deliveries_mean": 151.91666666666666,
+    "frac_zero_concrete_mean": 0.0,
+    "wait_frequency": 0.9250475167341542,
+    "kind_frequency": {
+     "CONNECT": 0.0749524832658458,
+     "REMOVE": 0.0,
+     "WAIT": 0.9250475167341542
+    },
+    "kind_counts": {
+     "CONNECT": 907,
+     "REMOVE": 0,
+     "WAIT": 11194
+    },
+    "mean_duration": 4.926018242599137,
+    "mean_duration_connect": 4.163653542656811,
+    "alt_selected_total": 290,
+    "repeated_keys_total": 0,
+    "illegal_selected_total": 0,
+    "truncated_candidates_total": 0,
+    "abandoned_plans_total": 2,
+    "plans_total": 908,
+    "waits_for_concrete_total": 0,
+    "abandon_reasons": {
+     "spawn_on_route": 2
+    }
+   }
+  }
+ },
+ "paired_test": {
+  "C_learned_stochastic - A_greedy_planner": {
+   "deliveries": {
+    "n": 36,
+    "mean_diff": 5.388888888888889,
+    "mean_ci95": [
+     -18.333333333333332,
+     30.167361111111102
+    ],
+    "median_diff": -0.5,
+    "median_ci95": [
+     -5.0,
+     3.0
+    ],
+    "wins": 17,
+    "losses": 18,
+    "ties": 1
+   },
+   "return": {
+    "n": 36,
+    "mean_diff": 5.944444444444445,
+    "mean_ci95": [
+     -19.334027777777777,
+     32.500694444444434
+    ],
+    "median_diff": -0.5,
+    "median_ci95": [
+     -5.0,
+     3.0
+    ],
+    "wins": 17,
+    "losses": 18,
+    "ties": 1
+   },
+   "survived_600": {
+    "n": 36,
+    "mean_diff": 0.05555555555555555,
+    "mean_ci95": [
+     -0.1388888888888889,
+     0.25
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 7,
+    "losses": 5,
+    "ties": 24
+   },
+   "new_connected_60": {
+    "n": 36,
+    "mean_diff": 0.8611111111111112,
+    "mean_ci95": [
+     -0.3055555555555556,
+     2.1944444444444446
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 5,
+    "losses": 4,
+    "ties": 27
+   },
+   "plain_adds": {
+    "n": 36,
+    "mean_diff": 2.6944444444444446,
+    "mean_ci95": [
+     -0.9166666666666666,
+     6.75
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     1.0
+    ],
+    "wins": 14,
+    "losses": 7,
+    "ties": 15
+   }
+  },
+  "C_learned_stochastic - B_resource_aware_planner": {
+   "deliveries": {
+    "n": 36,
+    "mean_diff": -1.3888888888888888,
+    "mean_ci95": [
+     -24.055555555555557,
+     22.11111111111111
+    ],
+    "median_diff": -1.0,
+    "median_ci95": [
+     -8.0,
+     3.0
+    ],
+    "wins": 15,
+    "losses": 19,
+    "ties": 2
+   },
+   "return": {
+    "n": 36,
+    "mean_diff": -1.6666666666666667,
+    "mean_ci95": [
+     -25.972916666666666,
+     23.5847222222222
+    ],
+    "median_diff": -1.0,
+    "median_ci95": [
+     -8.0,
+     3.0
+    ],
+    "wins": 15,
+    "losses": 19,
+    "ties": 2
+   },
+   "survived_600": {
+    "n": 36,
+    "mean_diff": -0.027777777777777776,
+    "mean_ci95": [
+     -0.2222222222222222,
+     0.16666666666666666
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 6,
+    "losses": 7,
+    "ties": 23
+   },
+   "new_connected_60": {
+    "n": 36,
+    "mean_diff": 0.4444444444444444,
+    "mean_ci95": [
+     -0.6944444444444444,
+     1.7777777777777777
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 4,
+    "losses": 5,
+    "ties": 27
+   },
+   "plain_adds": {
+    "n": 36,
+    "mean_diff": 1.75,
+    "mean_ci95": [
+     -1.861805555555555,
+     5.834027777777767
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.5
+    ],
+    "wins": 12,
+    "losses": 10,
+    "ties": 14
+   }
+  },
+  "C_learned_stochastic - D_random_strategic": {
+   "deliveries": {
+    "n": 36,
+    "mean_diff": -4.0,
+    "mean_ci95": [
+     -22.806250000000002,
+     15.11111111111111
+    ],
+    "median_diff": -0.5,
+    "median_ci95": [
+     -3.0,
+     3.0
+    ],
+    "wins": 15,
+    "losses": 18,
+    "ties": 3
+   },
+   "return": {
+    "n": 36,
+    "mean_diff": -5.111111111111111,
+    "mean_ci95": [
+     -25.029166666666665,
+     15.139583333333324
+    ],
+    "median_diff": -0.5,
+    "median_ci95": [
+     -3.0,
+     3.0
+    ],
+    "wins": 15,
+    "losses": 18,
+    "ties": 3
+   },
+   "survived_600": {
+    "n": 36,
+    "mean_diff": -0.1111111111111111,
+    "mean_ci95": [
+     -0.25,
+     0.027777777777777776
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 2,
+    "losses": 6,
+    "ties": 28
+   },
+   "new_connected_60": {
+    "n": 36,
+    "mean_diff": -0.16666666666666666,
+    "mean_ci95": [
+     -0.9444444444444444,
+     0.6666666666666666
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 3,
+    "losses": 5,
+    "ties": 28
+   },
+   "plain_adds": {
+    "n": 36,
+    "mean_diff": -0.75,
+    "mean_ci95": [
+     -3.4444444444444446,
+     2.139583333333323
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     -1.0,
+     0.0
+    ],
+    "wins": 9,
+    "losses": 13,
+    "ties": 14
+   }
+  },
+  "C_learned_greedy - A_greedy_planner": {
+   "deliveries": {
+    "n": 36,
+    "mean_diff": 15.027777777777779,
+    "mean_ci95": [
+     -1.9444444444444444,
+     34.722916666666656
+    ],
+    "median_diff": 1.5,
+    "median_ci95": [
+     -4.0,
+     7.0
+    ],
+    "wins": 19,
+    "losses": 15,
+    "ties": 2
+   },
+   "return": {
+    "n": 36,
+    "mean_diff": 15.305555555555555,
+    "mean_ci95": [
+     -2.8055555555555554,
+     36.27777777777778
+    ],
+    "median_diff": 1.5,
+    "median_ci95": [
+     -4.0,
+     8.0
+    ],
+    "wins": 19,
+    "losses": 15,
+    "ties": 2
+   },
+   "survived_600": {
+    "n": 36,
+    "mean_diff": 0.027777777777777776,
+    "mean_ci95": [
+     -0.16666666666666666,
+     0.19444444444444445
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 6,
+    "losses": 5,
+    "ties": 25
+   },
+   "new_connected_60": {
+    "n": 36,
+    "mean_diff": 1.1388888888888888,
+    "mean_ci95": [
+     0.16666666666666666,
+     2.3333333333333335
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 5,
+    "losses": 1,
+    "ties": 30
+   },
+   "plain_adds": {
+    "n": 36,
+    "mean_diff": 3.8333333333333335,
+    "mean_ci95": [
+     0.7777777777777778,
+     7.555555555555555
+    ],
+    "median_diff": 1.0,
+    "median_ci95": [
+     0.0,
+     1.5
+    ],
+    "wins": 20,
+    "losses": 3,
+    "ties": 13
+   }
+  },
+  "C_learned_greedy - B_resource_aware_planner": {
+   "deliveries": {
+    "n": 36,
+    "mean_diff": 8.25,
+    "mean_ci95": [
+     -7.167361111111111,
+     26.916666666666668
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     -10.0,
+     3.0
+    ],
+    "wins": 16,
+    "losses": 17,
+    "ties": 3
+   },
+   "return": {
+    "n": 36,
+    "mean_diff": 7.694444444444445,
+    "mean_ci95": [
+     -9.0,
+     27.418055555555537
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     -10.0,
+     3.0
+    ],
+    "wins": 16,
+    "losses": 17,
+    "ties": 3
+   },
+   "survived_600": {
+    "n": 36,
+    "mean_diff": -0.05555555555555555,
+    "mean_ci95": [
+     -0.2222222222222222,
+     0.1111111111111111
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 4,
+    "losses": 6,
+    "ties": 26
+   },
+   "new_connected_60": {
+    "n": 36,
+    "mean_diff": 0.7222222222222222,
+    "mean_ci95": [
+     -0.16666666666666666,
+     1.8611111111111112
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 3,
+    "losses": 2,
+    "ties": 31
+   },
+   "plain_adds": {
+    "n": 36,
+    "mean_diff": 2.888888888888889,
+    "mean_ci95": [
+     -0.3055555555555556,
+     6.583333333333333
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     1.5
+    ],
+    "wins": 17,
+    "losses": 3,
+    "ties": 16
+   }
+  },
+  "C_learned_greedy - D_random_strategic": {
+   "deliveries": {
+    "n": 36,
+    "mean_diff": 5.638888888888889,
+    "mean_ci95": [
+     -8.527777777777779,
+     22.722916666666656
+    ],
+    "median_diff": -2.0,
+    "median_ci95": [
+     -5.0,
+     4.5
+    ],
+    "wins": 14,
+    "losses": 21,
+    "ties": 1
+   },
+   "return": {
+    "n": 36,
+    "mean_diff": 4.25,
+    "mean_ci95": [
+     -11.25,
+     22.305555555555557
+    ],
+    "median_diff": -2.0,
+    "median_ci95": [
+     -5.0,
+     4.0
+    ],
+    "wins": 13,
+    "losses": 22,
+    "ties": 1
+   },
+   "survived_600": {
+    "n": 36,
+    "mean_diff": -0.1388888888888889,
+    "mean_ci95": [
+     -0.3055555555555556,
+     0.027777777777777776
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 3,
+    "losses": 8,
+    "ties": 25
+   },
+   "new_connected_60": {
+    "n": 36,
+    "mean_diff": 0.1111111111111111,
+    "mean_ci95": [
+     -0.4722222222222222,
+     0.8333333333333334
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     0.0
+    ],
+    "wins": 3,
+    "losses": 4,
+    "ties": 29
+   },
+   "plain_adds": {
+    "n": 36,
+    "mean_diff": 0.3888888888888889,
+    "mean_ci95": [
+     -2.0277777777777777,
+     3.0
+    ],
+    "median_diff": 0.0,
+    "median_ci95": [
+     0.0,
+     1.0
+    ],
+    "wins": 14,
+    "losses": 10,
+    "ties": 12
+   }
+  }
+ },
+ "per_game_seed_test": {
+  "WAIT": {
+   "515838": {
+    "episodes": 9,
+    "deliveries_median": 0.0,
+    "survived": 0
+   },
+   "539595": {
+    "episodes": 9,
+    "deliveries_median": 0.0,
+    "survived": 0
+   },
+   "563352": {
+    "episodes": 9,
+    "deliveries_median": 0.0,
+    "survived": 0
+   },
+   "587109": {
+    "episodes": 9,
+    "deliveries_median": 0.0,
+    "survived": 0
+   }
+  },
+  "A_greedy_planner": {
+   "515838": {
+    "episodes": 9,
+    "deliveries_median": 94.0,
+    "survived": 7
+   },
+   "539595": {
+    "episodes": 9,
+    "deliveries_median": 167.0,
+    "survived": 3
+   },
+   "563352": {
+    "episodes": 9,
+    "deliveries_median": 164.0,
+    "survived": 7
+   },
+   "587109": {
+    "episodes": 9,
+    "deliveries_median": 166.0,
+    "survived": 7
+   }
+  },
+  "B_resource_aware_planner": {
+   "515838": {
+    "episodes": 9,
+    "deliveries_median": 94.0,
+    "survived": 7
+   },
+   "539595": {
+    "episodes": 9,
+    "deliveries_median": 196.0,
+    "survived": 6
+   },
+   "563352": {
+    "episodes": 9,
+    "deliveries_median": 164.0,
+    "survived": 6
+   },
+   "587109": {
+    "episodes": 9,
+    "deliveries_median": 175.0,
+    "survived": 8
+   }
+  },
+  "C_learned_stochastic": {
+   "515838": {
+    "episodes": 9,
+    "deliveries_median": 97.0,
+    "survived": 5
+   },
+   "539595": {
+    "episodes": 9,
+    "deliveries_median": 196.0,
+    "survived": 7
+   },
+   "563352": {
+    "episodes": 9,
+    "deliveries_median": 157.0,
+    "survived": 6
+   },
+   "587109": {
+    "episodes": 9,
+    "deliveries_median": 177.0,
+    "survived": 8
+   }
+  },
+  "C_learned_greedy": {
+   "515838": {
+    "episodes": 9,
+    "deliveries_median": 94.0,
+    "survived": 5
+   },
+   "539595": {
+    "episodes": 9,
+    "deliveries_median": 201.0,
+    "survived": 7
+   },
+   "563352": {
+    "episodes": 9,
+    "deliveries_median": 168.0,
+    "survived": 6
+   },
+   "587109": {
+    "episodes": 9,
+    "deliveries_median": 174.0,
+    "survived": 7
+   }
+  },
+  "D_random_strategic": {
+   "515838": {
+    "episodes": 9,
+    "deliveries_median": 76.0,
+    "survived": 5
+   },
+   "539595": {
+    "episodes": 9,
+    "deliveries_median": 217.0,
+    "survived": 8
+   },
+   "563352": {
+    "episodes": 9,
+    "deliveries_median": 166.0,
+    "survived": 9
+   },
+   "587109": {
+    "episodes": 9,
+    "deliveries_median": 182.0,
+    "survived": 8
+   }
+  }
+ },
+ "wall_s": 599.1
+}

@@ -1,0 +1,209 @@
+{
+ "6_logging_does_not_change_native_rollouts": {
+  "passed": true,
+  "detail": "3 seeds x 60 deterministic decisions (frozen S1 CNN argmax), runs: plain env / RecorderEnv+diagnostics / plain again / RecorderEnv without diagnostics: observations, legal masks, actions, rewards, termination and applied actions identical across all four = True; native determinism floor (plain vs plain again) = True; diag_errors=0; episode rows written by the diagnostic run: 0",
+  "per_seed": [
+   {
+    "seed": 182150,
+    "steps": 60,
+    "equal_to_plain": {
+     "plain": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     },
+     "diag": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     },
+     "plain2": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     },
+     "recorder_nodiag": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     }
+    },
+    "per_step_ms": {
+     "plain": 45.06002267201742,
+     "diag": 48.97913535435995,
+     "plain2": 46.91624244054159,
+     "recorder_nodiag": 48.13229640324911
+    },
+    "actions_first20": [
+     0,
+     1241,
+     1237,
+     1245,
+     1233,
+     1239,
+     1387,
+     1385,
+     1391,
+     1385,
+     1391,
+     1385,
+     1391,
+     1385,
+     1391,
+     1385,
+     1391,
+     1385,
+     1391,
+     1385
+    ],
+    "nonzero_rewards": []
+   },
+   {
+    "seed": 205907,
+    "steps": 60,
+    "equal_to_plain": {
+     "plain": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     },
+     "diag": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     },
+     "plain2": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     },
+     "recorder_nodiag": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     }
+    },
+    "per_step_ms": {
+     "plain": 52.024662494659424,
+     "diag": 53.743298848470054,
+     "plain2": 53.02272240320841,
+     "recorder_nodiag": 54.784890015920006
+    },
+    "actions_first20": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2083,
+     1933,
+     1929,
+     1937,
+     1939,
+     1791,
+     1931,
+     2079,
+     2077
+    ],
+    "nonzero_rewards": []
+   },
+   {
+    "seed": 229664,
+    "steps": 60,
+    "equal_to_plain": {
+     "plain": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     },
+     "diag": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     },
+     "plain2": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     },
+     "recorder_nodiag": {
+      "obs": true,
+      "mask": true,
+      "act": true,
+      "rew": true,
+      "term": true,
+      "applied": true
+     }
+    },
+    "per_step_ms": {
+     "plain": 52.82509724299113,
+     "diag": 60.196125507354736,
+     "plain2": 60.5070432027181,
+     "recorder_nodiag": 62.47345209121704
+    },
+    "actions_first20": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2279,
+     2129,
+     2125,
+     2121,
+     1983,
+     2131,
+     1983,
+     2131,
+     1983
+    ],
+    "nonzero_rewards": []
+   }
+  ]
+ }
+}

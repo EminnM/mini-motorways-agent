@@ -1,0 +1,68 @@
+{
+ "B1_native_relabeling_invariance_single_state": {
+  "passed": true,
+  "detail": {
+   "states": 48,
+   "identical": 48
+  }
+ },
+ "B1b_relabeling_invariance_whole_episode": {
+  "passed": true,
+  "detail": {
+   "episodes": 4,
+   "steps_with_different_obs": 0
+  }
+ },
+ "B2_new_houses_receive_their_destination_group_slot": {
+  "passed": true,
+  "detail": {
+   "new_houses": 171,
+   "mismatched": 0
+  }
+ },
+ "B3_multiple_destinations_same_group_share_slot": {
+  "passed": true,
+  "detail": {
+   "group_states_with_several_destinations": 7297,
+   "single_slot": 7297
+  }
+ },
+ "B7_slots_never_reassigned_within_episode": {
+  "passed": true,
+  "detail": {
+   "tile_slot_changes": 0
+  }
+ },
+ "B4_v1_channels_bitwise_unchanged_incl_Active_Mothballed": {
+  "passed": true,
+  "detail": {
+   "steps_mismatched": 0,
+   "mothballed_edge_steps_seen": 709
+  }
+ },
+ "B5_no_future_spawn_information": {
+  "passed": true,
+  "detail": {
+   "steps_compared": 180,
+   "differences": 0
+  }
+ },
+ "B6_native_and_synthetic_encoders_agree_on_equivalent_states": {
+  "passed": true,
+  "detail": {
+   "states": 644,
+   "identical_v2": 644,
+   "identical_v1_part": 644,
+   "mismatch_count_by_channel": {}
+  }
+ },
+ "B8_group_capacity": {
+  "passed": true,
+  "detail": {
+   "K_GROUPS": 6,
+   "max_simultaneous_groups_in_native_logs": 4,
+   "obs_dim_v2": 16328,
+   "tile_features_v2": 21
+  }
+ }
+}

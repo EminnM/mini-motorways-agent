@@ -1,0 +1,2337 @@
+{
+ "task_set": "gap2_test (200 tasks)",
+ "window_decisions": 20,
+ "baselines": {
+  "wait": {
+   "num_tasks": 200,
+   "completion": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "first_useful_action_accuracy": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "partial_progress_at_least_one_edge": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "partial_only_not_completed": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "destructive_failure": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "timeout": {
+    "rate": 1.0,
+    "count": 200,
+    "n": 200,
+    "ci95_wilson": [
+     0.9811539940816791,
+     1.0
+    ]
+   },
+   "median_steps_to_success": null,
+   "mean_steps_to_success": null,
+   "success_with_zero_irrelevant_edits": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "success_with_at_most_2_irrelevant_edits": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "mean_irrelevant_adds_per_episode": 0.0,
+   "mean_removes_per_episode": 0.0,
+   "second_edit_correct_given_first_correct_edit_was_followed": null,
+   "completion_given_first_action_useful": null,
+   "action_fractions": {
+    "WAIT": 1.0,
+    "ADD": 0.0,
+    "REMOVE": 0.0
+   },
+   "rank_of_best_remaining_edge_decision1_median": null,
+   "prob_on_remaining_edges_decision1_mean": null,
+   "rank_of_remaining_edge_after_first_edit_median": null,
+   "prob_on_remaining_edge_after_first_edit_mean": null,
+   "n_with_probs_after_first_edit": 0,
+   "breakdown": {
+    "orientation_pair": {
+     "HH": {
+      "n": 71,
+      "completion": 0.0
+     },
+     "HV": {
+      "n": 83,
+      "completion": 0.0
+     },
+     "VV": {
+      "n": 46,
+      "completion": 0.0
+     }
+    },
+    "path_length": {
+     "12": {
+      "n": 43,
+      "completion": 0.0
+     },
+     "3": {
+      "n": 33,
+      "completion": 0.0
+     },
+     "6": {
+      "n": 61,
+      "completion": 0.0
+     },
+     "9": {
+      "n": 63,
+      "completion": 0.0
+     }
+    },
+    "map_x_of_solution": {
+     "x-18..-10": {
+      "n": 33,
+      "completion": 0.0
+     },
+     "x-9..-1": {
+      "n": 75,
+      "completion": 0.0
+     },
+     "x0..8": {
+      "n": 67,
+      "completion": 0.0
+     },
+     "x9..17": {
+      "n": 25,
+      "completion": 0.0
+     }
+    }
+   }
+  },
+  "oracle": {
+   "num_tasks": 200,
+   "completion": {
+    "rate": 1.0,
+    "count": 200,
+    "n": 200,
+    "ci95_wilson": [
+     0.9811539940816791,
+     1.0
+    ]
+   },
+   "first_useful_action_accuracy": {
+    "rate": 1.0,
+    "count": 200,
+    "n": 200,
+    "ci95_wilson": [
+     0.9811539940816791,
+     1.0
+    ]
+   },
+   "partial_progress_at_least_one_edge": {
+    "rate": 1.0,
+    "count": 200,
+    "n": 200,
+    "ci95_wilson": [
+     0.9811539940816791,
+     1.0
+    ]
+   },
+   "partial_only_not_completed": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "destructive_failure": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "timeout": {
+    "rate": 0.0,
+    "count": 0,
+    "n": 200,
+    "ci95_wilson": [
+     0.0,
+     0.018846005918320894
+    ]
+   },
+   "median_steps_to_success": 2.0,
+   "mean_steps_to_success": 2.0,
+   "success_with_zero_irrelevant_edits": {
+    "rate": 1.0,
+    "count": 200,
+    "n": 200,
+    "ci95_wilson": [
+     0.9811539940816791,
+     1.0
+    ]
+   },
+   "success_with_at_most_2_irrelevant_edits": {
+    "rate": 1.0,
+    "count": 200,
+    "n": 200,
+    "ci95_wilson": [
+     0.9811539940816791,
+     1.0
+    ]
+   },
+   "mean_irrelevant_adds_per_episode": 0.0,
+   "mean_removes_per_episode": 0.0,
+   "second_edit_correct_given_first_correct_edit_was_followed": {
+    "rate": 1.0,
+    "n": 200
+   },
+   "completion_given_first_action_useful": {
+    "rate": 1.0,
+    "count": 200,
+    "n": 200,
+    "ci95_wilson": [
+     0.9811539940816791,
+     1.0
+    ]
+   },
+   "action_fractions": {
+    "WAIT": 0.0,
+    "ADD": 1.0,
+    "REMOVE": 0.0
+   },
+   "rank_of_best_remaining_edge_decision1_median": null,
+   "prob_on_remaining_edges_decision1_mean": null,
+   "rank_of_remaining_edge_after_first_edit_median": null,
+   "prob_on_remaining_edge_after_first_edit_mean": null,
+   "n_with_probs_after_first_edit": 0,
+   "breakdown": {
+    "orientation_pair": {
+     "HH": {
+      "n": 71,
+      "completion": 1.0
+     },
+     "HV": {
+      "n": 83,
+      "completion": 1.0
+     },
+     "VV": {
+      "n": 46,
+      "completion": 1.0
+     }
+    },
+    "path_length": {
+     "12": {
+      "n": 43,
+      "completion": 1.0
+     },
+     "3": {
+      "n": 33,
+      "completion": 1.0
+     },
+     "6": {
+      "n": 61,
+      "completion": 1.0
+     },
+     "9": {
+      "n": 63,
+      "completion": 1.0
+     }
+    },
+    "map_x_of_solution": {
+     "x-18..-10": {
+      "n": 33,
+      "completion": 1.0
+     },
+     "x-9..-1": {
+      "n": 75,
+      "completion": 1.0
+     },
+     "x0..8": {
+      "n": 67,
+      "completion": 1.0
+     },
+     "x9..17": {
+      "n": 25,
+      "completion": 1.0
+     }
+    }
+   }
+  },
+  "random_legal": {
+   "per_seed_completion": [
+    0.015,
+    0.005,
+    0.025
+   ],
+   "seed0_summary": {
+    "num_tasks": 200,
+    "completion": {
+     "rate": 0.015,
+     "count": 3,
+     "n": 200,
+     "ci95_wilson": [
+      0.005114145184492387,
+      0.043166480556278884
+     ]
+    },
+    "first_useful_action_accuracy": {
+     "rate": 0.005,
+     "count": 1,
+     "n": 200,
+     "ci95_wilson": [
+      0.0008831459893662054,
+      0.02777439986977148
+     ]
+    },
+    "partial_progress_at_least_one_edge": {
+     "rate": 0.15,
+     "count": 30,
+     "n": 200,
+     "ci95_wilson": [
+      0.107135265876273,
+      0.20605693826655166
+     ]
+    },
+    "partial_only_not_completed": {
+     "rate": 0.135,
+     "count": 27,
+     "n": 200,
+     "ci95_wilson": [
+      0.09446507976920289,
+      0.18929250455117141
+     ]
+    },
+    "destructive_failure": {
+     "rate": 0.17,
+     "count": 34,
+     "n": 200,
+     "ci95_wilson": [
+      0.12427835351105657,
+      0.22816001039503528
+     ]
+    },
+    "timeout": {
+     "rate": 0.815,
+     "count": 163,
+     "n": 200,
+     "ci95_wilson": [
+      0.7554281794988185,
+      0.8626988367726394
+     ]
+    },
+    "median_steps_to_success": 13,
+    "mean_steps_to_success": 14.0,
+    "success_with_zero_irrelevant_edits": {
+     "rate": 0.0,
+     "count": 0,
+     "n": 200,
+     "ci95_wilson": [
+      0.0,
+      0.018846005918320894
+     ]
+    },
+    "success_with_at_most_2_irrelevant_edits": {
+     "rate": 0.0,
+     "count": 0,
+     "n": 200,
+     "ci95_wilson": [
+      0.0,
+      0.018846005918320894
+     ]
+    },
+    "mean_irrelevant_adds_per_episode": 16.8,
+    "mean_removes_per_episode": 1.42,
+    "second_edit_correct_given_first_correct_edit_was_followed": {
+     "rate": 0.0,
+     "n": 29
+    },
+    "completion_given_first_action_useful": {
+     "rate": 0.0,
+     "count": 0,
+     "n": 1,
+     "ci95_wilson": [
+      0.0,
+      0.7934567085261071
+     ]
+    },
+    "action_fractions": {
+     "WAIT": 0.009166891345376111,
+     "ADD": 0.9142626044755999,
+     "REMOVE": 0.076570504179024
+    },
+    "rank_of_best_remaining_edge_decision1_median": null,
+    "prob_on_remaining_edges_decision1_mean": null,
+    "rank_of_remaining_edge_after_first_edit_median": null,
+    "prob_on_remaining_edge_after_first_edit_mean": null,
+    "n_with_probs_after_first_edit": 0,
+    "breakdown": {
+     "orientation_pair": {
+      "HH": {
+       "n": 71,
+       "completion": 0.014084507042253521
+      },
+      "HV": {
+       "n": 83,
+       "completion": 0.024096385542168676
+      },
+      "VV": {
+       "n": 46,
+       "completion": 0.0
+      }
+     },
+     "path_length": {
+      "12": {
+       "n": 43,
+       "completion": 0.023255813953488372
+      },
+      "3": {
+       "n": 33,
+       "completion": 0.0
+      },
+      "6": {
+       "n": 61,
+       "completion": 0.01639344262295082
+      },
+      "9": {
+       "n": 63,
+       "completion": 0.015873015873015872
+      }
+     },
+     "map_x_of_solution": {
+      "x-18..-10": {
+       "n": 33,
+       "completion": 0.09090909090909091
+      },
+      "x-9..-1": {
+       "n": 75,
+       "completion": 0.0
+      },
+      "x0..8": {
+       "n": 67,
+       "completion": 0.0
+      },
+      "x9..17": {
+       "n": 25,
+       "completion": 0.0
+      }
+     }
+    }
+   },
+   "mean_completion": 0.015
+  }
+ },
+ "checkpoints": {
+  "cnn_s11": {
+   "path": "2026-10-08_140406_syn_s1_cnn_s11/checkpoints/step_050000.zip",
+   "sha256": "c8a7930eb12e9a204be02fa69e98e0dfc6969652555c5e390839bec225186fdc",
+   "deterministic": {
+    "num_tasks": 200,
+    "completion": {
+     "rate": 0.625,
+     "count": 125,
+     "n": 200,
+     "ci95_wilson": [
+      0.5561417515728713,
+      0.6891467469475485
+     ]
+    },
+    "first_useful_action_accuracy": {
+     "rate": 0.515,
+     "count": 103,
+     "n": 200,
+     "ci95_wilson": [
+      0.44610724474630287,
+      0.5833273750761476
+     ]
+    },
+    "partial_progress_at_least_one_edge": {
+     "rate": 0.905,
+     "count": 181,
+     "n": 200,
+     "ci95_wilson": [
+      0.8563973488560237,
+      0.9383373863501365
+     ]
+    },
+    "partial_only_not_completed": {
+     "rate": 0.285,
+     "count": 57,
+     "n": 200,
+     "ci95_wilson": [
+      0.22694905173277297,
+      0.3511547308121051
+     ]
+    },
+    "destructive_failure": {
+     "rate": 0.0,
+     "count": 0,
+     "n": 200,
+     "ci95_wilson": [
+      0.0,
+      0.018846005918320894
+     ]
+    },
+    "timeout": {
+     "rate": 0.375,
+     "count": 75,
+     "n": 200,
+     "ci95_wilson": [
+      0.3108532530524515,
+      0.44385824842712884
+     ]
+    },
+    "median_steps_to_success": 5,
+    "mean_steps_to_success": 6.616,
+    "success_with_zero_irrelevant_edits": {
+     "rate": 0.115,
+     "count": 23,
+     "n": 200,
+     "ci95_wilson": [
+      0.07786317221824318,
+      0.16664825233886393
+     ]
+    },
+    "success_with_at_most_2_irrelevant_edits": {
+     "rate": 0.25,
+     "count": 50,
+     "n": 200,
+     "ci95_wilson": [
+      0.19508076816296532,
+      0.3143422347961952
+     ]
+    },
+    "mean_irrelevant_adds_per_episode": 9.185,
+    "mean_removes_per_episode": 0.0,
+    "second_edit_correct_given_first_correct_edit_was_followed": {
+     "rate": 0.2111111111111111,
+     "n": 180
+    },
+    "completion_given_first_action_useful": {
+     "rate": 0.7572815533980582,
+     "count": 78,
+     "n": 103,
+     "ci95_wilson": [
+      0.6662106865111468,
+      0.829850772695754
+     ]
+    },
+    "action_fractions": {
+     "WAIT": 0.08981521272024065,
+     "ADD": 0.9101847872797594,
+     "REMOVE": 0.0
+    },
+    "rank_of_best_remaining_edge_decision1_median": 1.0,
+    "prob_on_remaining_edges_decision1_mean": 0.3593474615557352,
+    "rank_of_remaining_edge_after_first_edit_median": 5.0,
+    "prob_on_remaining_edge_after_first_edit_mean": 0.14464098304702525,
+    "n_with_probs_after_first_edit": 180,
+    "breakdown": {
+     "orientation_pair": {
+      "HH": {
+       "n": 71,
+       "completion": 0.8028169014084507
+      },
+      "HV": {
+       "n": 83,
+       "completion": 0.5542168674698795
+      },
+      "VV": {
+       "n": 46,
+       "completion": 0.4782608695652174
+      }
+     },
+     "path_length": {
+      "12": {
+       "n": 43,
+       "completion": 0.4418604651162791
+      },
+      "3": {
+       "n": 33,
+       "completion": 0.8181818181818182
+      },
+      "6": {
+       "n": 61,
+       "completion": 0.639344262295082
+      },
+      "9": {
+       "n": 63,
+       "completion": 0.6349206349206349
+      }
+     },
+     "map_x_of_solution": {
+      "x-18..-10": {
+       "n": 33,
+       "completion": 0.696969696969697
+      },
+      "x-9..-1": {
+       "n": 75,
+       "completion": 0.5866666666666667
+      },
+      "x0..8": {
+       "n": 67,
+       "completion": 0.6567164179104478
+      },
+      "x9..17": {
+       "n": 25,
+       "completion": 0.56
+      }
+     }
+    }
+   },
+   "stochastic_seed_summaries": [
+    {
+     "num_tasks": 200,
+     "completion": {
+      "rate": 0.71,
+      "count": 142,
+      "n": 200,
+      "ci95_wilson": [
+       0.6436239464268834,
+       0.7684607310874219
+      ]
+     },
+     "first_useful_action_accuracy": {
+      "rate": 0.32,
+      "count": 64,
+      "n": 200,
+      "ci95_wilson": [
+       0.2592642960770526,
+       0.38752026605354306
+      ]
+     },
+     "partial_progress_at_least_one_edge": {
+      "rate": 0.93,
+      "count": 186,
+      "n": 200,
+      "ci95_wilson": [
+       0.8859442178331628,
+       0.9578482170770813
+      ]
+     },
+     "partial_only_not_completed": {
+      "rate": 0.235,
+      "count": 47,
+      "n": 200,
+      "ci95_wilson": [
+       0.18157345326946356,
+       0.29841492986724655
+      ]
+     },
+     "destructive_failure": {
+      "rate": 0.0,
+      "count": 0,
+      "n": 200,
+      "ci95_wilson": [
+       0.0,
+       0.018846005918320894
+      ]
+     },
+     "timeout": {
+      "rate": 0.29,
+      "count": 58,
+      "n": 200,
+      "ci95_wilson": [
+       0.2315392689125782,
+       0.3563760535731166
+      ]
+     },
+     "median_steps_to_success": 7.0,
+     "mean_steps_to_success": 7.676056338028169,
+     "success_with_zero_irrelevant_edits": {
+      "rate": 0.08,
+      "count": 16,
+      "n": 200,
+      "ci95_wilson": [
+       0.04984015517626642,
+       0.12599048979512317
+      ]
+     },
+     "success_with_at_most_2_irrelevant_edits": {
+      "rate": 0.19,
+      "count": 38,
+      "n": 200,
+      "ci95_wilson": [
+       0.14167093792456506,
+       0.250013585744794
+      ]
+     },
+     "mean_irrelevant_adds_per_episode": 8.805,
+     "mean_removes_per_episode": 0.005,
+     "second_edit_correct_given_first_correct_edit_was_followed": {
+      "rate": 0.14130434782608695,
+      "n": 184
+     },
+     "completion_given_first_action_useful": {
+      "rate": 0.796875,
+      "count": 51,
+      "n": 64,
+      "ci95_wilson": [
+       0.6828613244878341,
+       0.8772669743730419
+      ]
+     },
+     "action_fractions": {
+      "WAIT": 0.084,
+      "ADD": 0.9155555555555556,
+      "REMOVE": 0.00044444444444444447
+     },
+     "rank_of_best_remaining_edge_decision1_median": 1.0,
+     "prob_on_remaining_edges_decision1_mean": 0.3593474615557352,
+     "rank_of_remaining_edge_after_first_edit_median": 4.0,
+     "prob_on_remaining_edge_after_first_edit_mean": 0.16477366059521242,
+     "n_with_probs_after_first_edit": 184,
+     "breakdown": {
+      "orientation_pair": {
+       "HH": {
+        "n": 71,
+        "completion": 0.9154929577464789
+       },
+       "HV": {
+        "n": 83,
+        "completion": 0.6144578313253012
+       },
+       "VV": {
+        "n": 46,
+        "completion": 0.5652173913043478
+       }
+      },
+      "path_length": {
+       "12": {
+        "n": 43,
+        "completion": 0.5116279069767442
+       },
+       "3": {
+        "n": 33,
+        "completion": 0.9090909090909091
+       },
+       "6": {
+        "n": 61,
+        "completion": 0.7704918032786885
+       },
+       "9": {
+        "n": 63,
+        "completion": 0.6825396825396826
+       }
+      },
+      "map_x_of_solution": {
+       "x-18..-10": {
+        "n": 33,
+        "completion": 0.7575757575757576
+       },
+       "x-9..-1": {
+        "n": 75,
+        "completion": 0.64
+       },
+       "x0..8": {
+        "n": 67,
+        "completion": 0.7910447761194029
+       },
+       "x9..17": {
+        "n": 25,
+        "completion": 0.64
+       }
+      }
+     }
+    },
+    {
+     "num_tasks": 200,
+     "completion": {
+      "rate": 0.69,
+      "count": 138,
+      "n": 200,
+      "ci95_wilson": [
+       0.622826945087378,
+       0.75001157266366
+      ]
+     },
+     "first_useful_action_accuracy": {
+      "rate": 0.325,
+      "count": 65,
+      "n": 200,
+      "ci95_wilson": [
+       0.2639146705018621,
+       0.39268143156955027
+      ]
+     },
+     "partial_progress_at_least_one_edge": {
+      "rate": 0.93,
+      "count": 186,
+      "n": 200,
+      "ci95_wilson": [
+       0.8859442178331628,
+       0.9578482170770813
+      ]
+     },
+     "partial_only_not_completed": {
+      "rate": 0.26,
+      "count": 52,
+      "n": 200,
+      "ci95_wilson": [
+       0.20413736892786316,
+       0.32490871391293097
+      ]
+     },
+     "destructive_failure": {
+      "rate": 0.0,
+      "count": 0,
+      "n": 200,
+      "ci95_wilson": [
+       0.0,
+       0.018846005918320894
+      ]
+     },
+     "timeout": {
+      "rate": 0.31,
+      "count": 62,
+      "n": 200,
+      "ci95_wilson": [
+       0.24998842733633997,
+       0.377173054912622
+      ]
+     },
+     "median_steps_to_success": 6.0,
+     "mean_steps_to_success": 7.630434782608695,
+     "success_with_zero_irrelevant_edits": {
+      "rate": 0.06,
+      "count": 12,
+      "n": 200,
+      "ci95_wilson": [
+       0.0346518499012715,
+       0.10193263530685089
+      ]
+     },
+     "success_with_at_most_2_irrelevant_edits": {
+      "rate": 0.205,
+      "count": 41,
+      "n": 200,
+      "ci95_wilson": [
+       0.15486094831106376,
+       0.26625819518074556
+      ]
+     },
+     "mean_irrelevant_adds_per_episode": 9.0,
+     "mean_removes_per_episode": 0.0,
+     "second_edit_correct_given_first_correct_edit_was_followed": {
+      "rate": 0.17032967032967034,
+      "n": 182
+     },
+     "completion_given_first_action_useful": {
+      "rate": 0.7846153846153846,
+      "count": 51,
+      "n": 65,
+      "ci95_wilson": [
+       0.6703320947133157,
+       0.8671336236895105
+      ]
+     },
+     "action_fractions": {
+      "WAIT": 0.085041430440471,
+      "ADD": 0.914958569559529,
+      "REMOVE": 0.0
+     },
+     "rank_of_best_remaining_edge_decision1_median": 1.0,
+     "prob_on_remaining_edges_decision1_mean": 0.3593474615557352,
+     "rank_of_remaining_edge_after_first_edit_median": 5.0,
+     "prob_on_remaining_edge_after_first_edit_mean": 0.16455931907454455,
+     "n_with_probs_after_first_edit": 182,
+     "breakdown": {
+      "orientation_pair": {
+       "HH": {
+        "n": 71,
+        "completion": 0.8169014084507042
+       },
+       "HV": {
+        "n": 83,
+        "completion": 0.6144578313253012
+       },
+       "VV": {
+        "n": 46,
+        "completion": 0.6304347826086957
+       }
+      },
+      "path_length": {
+       "12": {
+        "n": 43,
+        "completion": 0.46511627906976744
+       },
+       "3": {
+        "n": 33,
+        "completion": 0.9393939393939394
+       },
+       "6": {
+        "n": 61,
+        "completion": 0.6885245901639344
+       },
+       "9": {
+        "n": 63,
+        "completion": 0.7142857142857143
+       }
+      },
+      "map_x_of_solution": {
+       "x-18..-10": {
+        "n": 33,
+        "completion": 0.7575757575757576
+       },
+       "x-9..-1": {
+        "n": 75,
+        "completion": 0.6666666666666666
+       },
+       "x0..8": {
+        "n": 67,
+        "completion": 0.7014925373134329
+       },
+       "x9..17": {
+        "n": 25,
+        "completion": 0.64
+       }
+      }
+     }
+    },
+    {
+     "num_tasks": 200,
+     "completion": {
+      "rate": 0.66,
+      "count": 132,
+      "n": 200,
+      "ci95_wilson": [
+       0.5918836703220929,
+       0.7220856077840445
+      ]
+     },
+     "first_useful_action_accuracy": {
+      "rate": 0.395,
+      "count": 79,
+      "n": 200,
+      "ci95_wilson": [
+       0.3298398699878317,
+       0.4641177912550158
+      ]
+     },
+     "partial_progress_at_least_one_edge": {
+      "rate": 0.92,
+      "count": 184,
+      "n": 200,
+      "ci95_wilson": [
+       0.8740095102048769,
+       0.9501598448237337
+      ]
+     },
+     "partial_only_not_completed": {
+      "rate": 0.28,
+      "count": 56,
+      "n": 200,
+      "ci95_wilson": [
+       0.22236792842635128,
+       0.34592431417771
+      ]
+     },
+     "destructive_failure": {
+      "rate": 0.005,
+      "count": 1,
+      "n": 200,
+      "ci95_wilson": [
+       0.0008831459893662054,
+       0.02777439986977148
+      ]
+     },
+     "timeout": {
+      "rate": 0.335,
+      "count": 67,
+      "n": 200,
+      "ci95_wilson": [
+       0.2732398096874265,
+       0.4029793722656195
+      ]
+     },
+     "median_steps_to_success": 7.0,
+     "mean_steps_to_success": 7.628787878787879,
+     "success_with_zero_irrelevant_edits": {
+      "rate": 0.04,
+      "count": 8,
+      "n": 200,
+      "ci95_wilson": [
+       0.02040538715065641,
+       0.07693293829419882
+      ]
+     },
+     "success_with_at_most_2_irrelevant_edits": {
+      "rate": 0.165,
+      "count": 33,
+      "n": 200,
+      "ci95_wilson": [
+       0.11996784122663977,
+       0.22265898273863527
+      ]
+     },
+     "mean_irrelevant_adds_per_episode": 9.365,
+     "mean_removes_per_episode": 0.01,
+     "second_edit_correct_given_first_correct_edit_was_followed": {
+      "rate": 0.13636363636363635,
+      "n": 176
+     },
+     "completion_given_first_action_useful": {
+      "rate": 0.7215189873417721,
+      "count": 57,
+      "n": 79,
+      "ci95_wilson": [
+       0.6141734225170346,
+       0.8083196244545352
+      ]
+     },
+     "action_fractions": {
+      "WAIT": 0.08871989860583017,
+      "ADD": 0.9104351499788762,
+      "REMOVE": 0.0008449514152936206
+     },
+     "rank_of_best_remaining_edge_decision1_median": 1.0,
+     "prob_on_remaining_edges_decision1_mean": 0.3593474615557352,
+     "rank_of_remaining_edge_after_first_edit_median": 4.0,
+     "prob_on_remaining_edge_after_first_edit_mean": 0.16045730137243067,
+     "n_with_probs_after_first_edit": 176,
+     "breakdown": {
+      "orientation_pair": {
+       "HH": {
+        "n": 71,
+        "completion": 0.7887323943661971
+       },
+       "HV": {
+        "n": 83,
+        "completion": 0.5662650602409639
+       },
+       "VV": {
+        "n": 46,
+        "completion": 0.6304347826086957
+       }
+      },
+      "path_length": {
+       "12": {
+        "n": 43,
+        "completion": 0.4418604651162791
+       },
+       "3": {
+        "n": 33,
+        "completion": 0.8787878787878788
+       },
+       "6": {
+        "n": 61,
+        "completion": 0.7049180327868853
+       },
+       "9": {
+        "n": 63,
+        "completion": 0.6507936507936508
+       }
+      },
+      "map_x_of_solution": {
+       "x-18..-10": {
+        "n": 33,
+        "completion": 0.7878787878787878
+       },
+       "x-9..-1": {
+        "n": 75,
+        "completion": 0.68
+       },
+       "x0..8": {
+        "n": 67,
+        "completion": 0.6119402985074627
+       },
+       "x9..17": {
+        "n": 25,
+        "completion": 0.56
+       }
+      }
+     }
+    }
+   ],
+   "stochastic_completion_mean": 0.6866666666666666
+  },
+  "cnn_s12": {
+   "path": "2026-10-08_140406_syn_s1_cnn_s12/checkpoints/step_050000.zip",
+   "sha256": "980f95f7ce28bfebebdb8c60dbd832c7dc12252c2320304d61fd87dcfa8c603c",
+   "deterministic": {
+    "num_tasks": 200,
+    "completion": {
+     "rate": 0.755,
+     "count": 151,
+     "n": 200,
+     "ci95_wilson": [
+      0.6909563161285153,
+      0.809432220853141
+     ]
+    },
+    "first_useful_action_accuracy": {
+     "rate": 0.6,
+     "count": 120,
+     "n": 200,
+     "ci95_wilson": [
+      0.5308354385001253,
+      0.6653953603162106
+     ]
+    },
+    "partial_progress_at_least_one_edge": {
+     "rate": 0.94,
+     "count": 188,
+     "n": 200,
+     "ci95_wilson": [
+      0.8980673646931491,
+      0.9653481500987285
+     ]
+    },
+    "partial_only_not_completed": {
+     "rate": 0.225,
+     "count": 45,
+     "n": 200,
+     "ci95_wilson": [
+      0.17262283786915622,
+      0.28774246538592035
+     ]
+    },
+    "destructive_failure": {
+     "rate": 0.035,
+     "count": 7,
+     "n": 200,
+     "ci95_wilson": [
+      0.017055324637357105,
+      0.07047146086668134
+     ]
+    },
+    "timeout": {
+     "rate": 0.21,
+     "count": 42,
+     "n": 200,
+     "ci95_wilson": [
+      0.15928329527863416,
+      0.271647388153992
+     ]
+    },
+    "median_steps_to_success": 5,
+    "mean_steps_to_success": 6.145695364238411,
+    "success_with_zero_irrelevant_edits": {
+     "rate": 0.125,
+     "count": 25,
+     "n": 200,
+     "ci95_wilson": [
+      0.0861191515921568,
+      0.1780153528465839
+     ]
+    },
+    "success_with_at_most_2_irrelevant_edits": {
+     "rate": 0.295,
+     "count": 59,
+     "n": 200,
+     "ci95_wilson": [
+      0.23613844271901735,
+      0.3615884197074943
+     ]
+    },
+    "mean_irrelevant_adds_per_episode": 7.525,
+    "mean_removes_per_episode": 0.43,
+    "second_edit_correct_given_first_correct_edit_was_followed": {
+     "rate": 0.2185792349726776,
+     "n": 183
+    },
+    "completion_given_first_action_useful": {
+     "rate": 0.8333333333333334,
+     "count": 100,
+     "n": 120,
+     "ci95_wilson": [
+      0.756545606089762,
+      0.8894408798729518
+     ]
+    },
+    "action_fractions": {
+     "WAIT": 0.0,
+     "ADD": 0.9544250132485427,
+     "REMOVE": 0.04557498675145734
+    },
+    "rank_of_best_remaining_edge_decision1_median": 1.0,
+    "prob_on_remaining_edges_decision1_mean": 0.3608285300154239,
+    "rank_of_remaining_edge_after_first_edit_median": 5,
+    "prob_on_remaining_edge_after_first_edit_mean": 0.1455896931886164,
+    "n_with_probs_after_first_edit": 183,
+    "breakdown": {
+     "orientation_pair": {
+      "HH": {
+       "n": 71,
+       "completion": 0.8732394366197183
+      },
+      "HV": {
+       "n": 83,
+       "completion": 0.6385542168674698
+      },
+      "VV": {
+       "n": 46,
+       "completion": 0.782608695652174
+      }
+     },
+     "path_length": {
+      "12": {
+       "n": 43,
+       "completion": 0.5348837209302325
+      },
+      "3": {
+       "n": 33,
+       "completion": 0.9393939393939394
+      },
+      "6": {
+       "n": 61,
+       "completion": 0.8032786885245902
+      },
+      "9": {
+       "n": 63,
+       "completion": 0.7619047619047619
+      }
+     },
+     "map_x_of_solution": {
+      "x-18..-10": {
+       "n": 33,
+       "completion": 0.7878787878787878
+      },
+      "x-9..-1": {
+       "n": 75,
+       "completion": 0.8
+      },
+      "x0..8": {
+       "n": 67,
+       "completion": 0.7014925373134329
+      },
+      "x9..17": {
+       "n": 25,
+       "completion": 0.72
+      }
+     }
+    }
+   },
+   "stochastic_seed_summaries": [
+    {
+     "num_tasks": 200,
+     "completion": {
+      "rate": 0.785,
+      "count": 157,
+      "n": 200,
+      "ci95_wilson": [
+       0.7229757022632792,
+       0.836282074363278
+      ]
+     },
+     "first_useful_action_accuracy": {
+      "rate": 0.345,
+      "count": 69,
+      "n": 200,
+      "ci95_wilson": [
+       0.2825968690139029,
+       0.41324539282077655
+      ]
+     },
+     "partial_progress_at_least_one_edge": {
+      "rate": 0.945,
+      "count": 189,
+      "n": 200,
+      "ci95_wilson": [
+       0.9042120755340645,
+       0.9690149791986299
+      ]
+     },
+     "partial_only_not_completed": {
+      "rate": 0.185,
+      "count": 37,
+      "n": 200,
+      "ci95_wilson": [
+       0.13730116322736063,
+       0.2445718205011816
+      ]
+     },
+     "destructive_failure": {
+      "rate": 0.035,
+      "count": 7,
+      "n": 200,
+      "ci95_wilson": [
+       0.017055324637357105,
+       0.07047146086668134
+      ]
+     },
+     "timeout": {
+      "rate": 0.18,
+      "count": 36,
+      "n": 200,
+      "ci95_wilson": [
+       0.13294550662534108,
+       0.2391159371623843
+      ]
+     },
+     "median_steps_to_success": 7,
+     "mean_steps_to_success": 8.0828025477707,
+     "success_with_zero_irrelevant_edits": {
+      "rate": 0.085,
+      "count": 17,
+      "n": 200,
+      "ci95_wilson": [
+       0.05374529946985246,
+       0.13189688544235392
+      ]
+     },
+     "success_with_at_most_2_irrelevant_edits": {
+      "rate": 0.21,
+      "count": 42,
+      "n": 200,
+      "ci95_wilson": [
+       0.15928329527863416,
+       0.271647388153992
+      ]
+     },
+     "mean_irrelevant_adds_per_episode": 8.675,
+     "mean_removes_per_episode": 0.385,
+     "second_edit_correct_given_first_correct_edit_was_followed": {
+      "rate": 0.1783783783783784,
+      "n": 185
+     },
+     "completion_given_first_action_useful": {
+      "rate": 0.8695652173913043,
+      "count": 60,
+      "n": 69,
+      "ci95_wilson": [
+       0.7703148508859572,
+       0.9298345143119515
+      ]
+     },
+     "action_fractions": {
+      "WAIT": 0.0,
+      "ADD": 0.9635761589403974,
+      "REMOVE": 0.03642384105960265
+     },
+     "rank_of_best_remaining_edge_decision1_median": 1.0,
+     "prob_on_remaining_edges_decision1_mean": 0.3608285300154239,
+     "rank_of_remaining_edge_after_first_edit_median": 4,
+     "prob_on_remaining_edge_after_first_edit_mean": 0.17165598803753587,
+     "n_with_probs_after_first_edit": 185,
+     "breakdown": {
+      "orientation_pair": {
+       "HH": {
+        "n": 71,
+        "completion": 0.9154929577464789
+       },
+       "HV": {
+        "n": 83,
+        "completion": 0.6867469879518072
+       },
+       "VV": {
+        "n": 46,
+        "completion": 0.7608695652173914
+       }
+      },
+      "path_length": {
+       "12": {
+        "n": 43,
+        "completion": 0.627906976744186
+       },
+       "3": {
+        "n": 33,
+        "completion": 0.9090909090909091
+       },
+       "6": {
+        "n": 61,
+        "completion": 0.8032786885245902
+       },
+       "9": {
+        "n": 63,
+        "completion": 0.8095238095238095
+       }
+      },
+      "map_x_of_solution": {
+       "x-18..-10": {
+        "n": 33,
+        "completion": 0.7878787878787878
+       },
+       "x-9..-1": {
+        "n": 75,
+        "completion": 0.8266666666666667
+       },
+       "x0..8": {
+        "n": 67,
+        "completion": 0.7761194029850746
+       },
+       "x9..17": {
+        "n": 25,
+        "completion": 0.68
+       }
+      }
+     }
+    },
+    {
+     "num_tasks": 200,
+     "completion": {
+      "rate": 0.79,
+      "count": 158,
+      "n": 200,
+      "ci95_wilson": [
+       0.7283526118460081,
+       0.8407167047213658
+      ]
+     },
+     "first_useful_action_accuracy": {
+      "rate": 0.35,
+      "count": 70,
+      "n": 200,
+      "ci95_wilson": [
+       0.28728715939415395,
+       0.41836664238134236
+      ]
+     },
+     "partial_progress_at_least_one_edge": {
+      "rate": 0.955,
+      "count": 191,
+      "n": 200,
+      "ci95_wilson": [
+       0.9167024063390322,
+       0.9761477282752958
+      ]
+     },
+     "partial_only_not_completed": {
+      "rate": 0.17,
+      "count": 34,
+      "n": 200,
+      "ci95_wilson": [
+       0.12427835351105657,
+       0.22816001039503528
+      ]
+     },
+     "destructive_failure": {
+      "rate": 0.04,
+      "count": 8,
+      "n": 200,
+      "ci95_wilson": [
+       0.02040538715065641,
+       0.07693293829419882
+      ]
+     },
+     "timeout": {
+      "rate": 0.17,
+      "count": 34,
+      "n": 200,
+      "ci95_wilson": [
+       0.12427835351105657,
+       0.22816001039503528
+      ]
+     },
+     "median_steps_to_success": 7.0,
+     "mean_steps_to_success": 7.531645569620253,
+     "success_with_zero_irrelevant_edits": {
+      "rate": 0.095,
+      "count": 19,
+      "n": 200,
+      "ci95_wilson": [
+       0.06166261364986359,
+       0.14360265114397636
+      ]
+     },
+     "success_with_at_most_2_irrelevant_edits": {
+      "rate": 0.25,
+      "count": 50,
+      "n": 200,
+      "ci95_wilson": [
+       0.19508076816296532,
+       0.3143422347961952
+      ]
+     },
+     "mean_irrelevant_adds_per_episode": 8.1,
+     "mean_removes_per_episode": 0.325,
+     "second_edit_correct_given_first_correct_edit_was_followed": {
+      "rate": 0.22162162162162163,
+      "n": 185
+     },
+     "completion_given_first_action_useful": {
+      "rate": 0.8571428571428571,
+      "count": 60,
+      "n": 70,
+      "ci95_wilson": [
+       0.7566136529849488,
+       0.9205114363955629
+      ]
+     },
+     "action_fractions": {
+      "WAIT": 0.000998502246630055,
+      "ADD": 0.9665501747378932,
+      "REMOVE": 0.032451323015476784
+     },
+     "rank_of_best_remaining_edge_decision1_median": 1.0,
+     "prob_on_remaining_edges_decision1_mean": 0.3608285300154239,
+     "rank_of_remaining_edge_after_first_edit_median": 4,
+     "prob_on_remaining_edge_after_first_edit_mean": 0.17518663348227337,
+     "n_with_probs_after_first_edit": 185,
+     "breakdown": {
+      "orientation_pair": {
+       "HH": {
+        "n": 71,
+        "completion": 0.9014084507042254
+       },
+       "HV": {
+        "n": 83,
+        "completion": 0.7108433734939759
+       },
+       "VV": {
+        "n": 46,
+        "completion": 0.7608695652173914
+       }
+      },
+      "path_length": {
+       "12": {
+        "n": 43,
+        "completion": 0.6511627906976745
+       },
+       "3": {
+        "n": 33,
+        "completion": 0.9090909090909091
+       },
+       "6": {
+        "n": 61,
+        "completion": 0.8688524590163934
+       },
+       "9": {
+        "n": 63,
+        "completion": 0.746031746031746
+       }
+      },
+      "map_x_of_solution": {
+       "x-18..-10": {
+        "n": 33,
+        "completion": 0.8484848484848485
+       },
+       "x-9..-1": {
+        "n": 75,
+        "completion": 0.76
+       },
+       "x0..8": {
+        "n": 67,
+        "completion": 0.8059701492537313
+       },
+       "x9..17": {
+        "n": 25,
+        "completion": 0.76
+       }
+      }
+     }
+    },
+    {
+     "num_tasks": 200,
+     "completion": {
+      "rate": 0.755,
+      "count": 151,
+      "n": 200,
+      "ci95_wilson": [
+       0.6909563161285153,
+       0.809432220853141
+      ]
+     },
+     "first_useful_action_accuracy": {
+      "rate": 0.34,
+      "count": 68,
+      "n": 200,
+      "ci95_wilson": [
+       0.2779143922159556,
+       0.40811632967790723
+      ]
+     },
+     "partial_progress_at_least_one_edge": {
+      "rate": 0.935,
+      "count": 187,
+      "n": 200,
+      "ci95_wilson": [
+       0.8919799625008207,
+       0.9616240123502404
+      ]
+     },
+     "partial_only_not_completed": {
+      "rate": 0.205,
+      "count": 41,
+      "n": 200,
+      "ci95_wilson": [
+       0.15486094831106376,
+       0.26625819518074556
+      ]
+     },
+     "destructive_failure": {
+      "rate": 0.045,
+      "count": 9,
+      "n": 200,
+      "ci95_wilson": [
+       0.023852271724704166,
+       0.08329759366096785
+      ]
+     },
+     "timeout": {
+      "rate": 0.2,
+      "count": 40,
+      "n": 200,
+      "ci95_wilson": [
+       0.15045120743928825,
+       0.26085639611170436
+      ]
+     },
+     "median_steps_to_success": 7,
+     "mean_steps_to_success": 7.768211920529802,
+     "success_with_zero_irrelevant_edits": {
+      "rate": 0.06,
+      "count": 12,
+      "n": 200,
+      "ci95_wilson": [
+       0.0346518499012715,
+       0.10193263530685089
+      ]
+     },
+     "success_with_at_most_2_irrelevant_edits": {
+      "rate": 0.21,
+      "count": 42,
+      "n": 200,
+      "ci95_wilson": [
+       0.15928329527863416,
+       0.271647388153992
+      ]
+     },
+     "mean_irrelevant_adds_per_episode": 8.795,
+     "mean_removes_per_episode": 0.4,
+     "second_edit_correct_given_first_correct_edit_was_followed": {
+      "rate": 0.13186813186813187,
+      "n": 182
+     },
+     "completion_given_first_action_useful": {
+      "rate": 0.8529411764705882,
+      "count": 58,
+      "n": 68,
+      "ci95_wilson": [
+       0.7500238655053635,
+       0.9181127016089545
+      ]
+     },
+     "action_fractions": {
+      "WAIT": 0.0,
+      "ADD": 0.9624413145539906,
+      "REMOVE": 0.03755868544600939
+     },
+     "rank_of_best_remaining_edge_decision1_median": 1.0,
+     "prob_on_remaining_edges_decision1_mean": 0.3608285300154239,
+     "rank_of_remaining_edge_after_first_edit_median": 4.0,
+     "prob_on_remaining_edge_after_first_edit_mean": 0.15880870938641378,
+     "n_with_probs_after_first_edit": 182,
+     "breakdown": {
+      "orientation_pair": {
+       "HH": {
+        "n": 71,
+        "completion": 0.8309859154929577
+       },
+       "HV": {
+        "n": 83,
+        "completion": 0.6987951807228916
+       },
+       "VV": {
+        "n": 46,
+        "completion": 0.7391304347826086
+       }
+      },
+      "path_length": {
+       "12": {
+        "n": 43,
+        "completion": 0.6511627906976745
+       },
+       "3": {
+        "n": 33,
+        "completion": 0.8787878787878788
+       },
+       "6": {
+        "n": 61,
+        "completion": 0.819672131147541
+       },
+       "9": {
+        "n": 63,
+        "completion": 0.6984126984126984
+       }
+      },
+      "map_x_of_solution": {
+       "x-18..-10": {
+        "n": 33,
+        "completion": 0.8181818181818182
+       },
+       "x-9..-1": {
+        "n": 75,
+        "completion": 0.7866666666666666
+       },
+       "x0..8": {
+        "n": 67,
+        "completion": 0.7164179104477612
+       },
+       "x9..17": {
+        "n": 25,
+        "completion": 0.68
+       }
+      }
+     }
+    }
+   ],
+   "stochastic_completion_mean": 0.7766666666666667
+  },
+  "cnn_s13": {
+   "path": "2026-10-08_140406_syn_s1_cnn_s13/checkpoints/final.zip",
+   "sha256": "41c1e085622b8f0d2e70274b2a6f05fedc94266124c1c74f9b39645ade417682",
+   "deterministic": {
+    "num_tasks": 200,
+    "completion": {
+     "rate": 0.885,
+     "count": 177,
+     "n": 200,
+     "ci95_wilson": [
+      0.8333517476611362,
+      0.9221368277817569
+     ]
+    },
+    "first_useful_action_accuracy": {
+     "rate": 0.625,
+     "count": 125,
+     "n": 200,
+     "ci95_wilson": [
+      0.5561417515728713,
+      0.6891467469475485
+     ]
+    },
+    "partial_progress_at_least_one_edge": {
+     "rate": 0.94,
+     "count": 188,
+     "n": 200,
+     "ci95_wilson": [
+      0.8980673646931491,
+      0.9653481500987285
+     ]
+    },
+    "partial_only_not_completed": {
+     "rate": 0.095,
+     "count": 19,
+     "n": 200,
+     "ci95_wilson": [
+      0.06166261364986359,
+      0.14360265114397636
+     ]
+    },
+    "destructive_failure": {
+     "rate": 0.0,
+     "count": 0,
+     "n": 200,
+     "ci95_wilson": [
+      0.0,
+      0.018846005918320894
+     ]
+    },
+    "timeout": {
+     "rate": 0.115,
+     "count": 23,
+     "n": 200,
+     "ci95_wilson": [
+      0.07786317221824318,
+      0.16664825233886393
+     ]
+    },
+    "median_steps_to_success": 4,
+    "mean_steps_to_success": 5.627118644067797,
+    "success_with_zero_irrelevant_edits": {
+     "rate": 0.26,
+     "count": 52,
+     "n": 200,
+     "ci95_wilson": [
+      0.20413736892786316,
+      0.32490871391293097
+     ]
+    },
+    "success_with_at_most_2_irrelevant_edits": {
+     "rate": 0.425,
+     "count": 85,
+     "n": 200,
+     "ci95_wilson": [
+      0.35853495209243025,
+      0.4942919487953179
+     ]
+    },
+    "mean_irrelevant_adds_per_episode": 5.28,
+    "mean_removes_per_episode": 0.0,
+    "second_edit_correct_given_first_correct_edit_was_followed": {
+     "rate": 0.3879781420765027,
+     "n": 183
+    },
+    "completion_given_first_action_useful": {
+     "rate": 0.928,
+     "count": 116,
+     "n": 125,
+     "ci95_wilson": [
+      0.8688158161825682,
+      0.9616612967995742
+     ]
+    },
+    "action_fractions": {
+     "WAIT": 0.057005494505494504,
+     "ADD": 0.9429945054945055,
+     "REMOVE": 0.0
+    },
+    "rank_of_best_remaining_edge_decision1_median": 1.0,
+    "prob_on_remaining_edges_decision1_mean": 0.3838594530709088,
+    "rank_of_remaining_edge_after_first_edit_median": 2,
+    "prob_on_remaining_edge_after_first_edit_mean": 0.1912755972726138,
+    "n_with_probs_after_first_edit": 183,
+    "breakdown": {
+     "orientation_pair": {
+      "HH": {
+       "n": 71,
+       "completion": 0.9577464788732394
+      },
+      "HV": {
+       "n": 83,
+       "completion": 0.8072289156626506
+      },
+      "VV": {
+       "n": 46,
+       "completion": 0.9130434782608695
+      }
+     },
+     "path_length": {
+      "12": {
+       "n": 43,
+       "completion": 0.7674418604651163
+      },
+      "3": {
+       "n": 33,
+       "completion": 1.0
+      },
+      "6": {
+       "n": 61,
+       "completion": 0.8852459016393442
+      },
+      "9": {
+       "n": 63,
+       "completion": 0.9047619047619048
+      }
+     },
+     "map_x_of_solution": {
+      "x-18..-10": {
+       "n": 33,
+       "completion": 0.9393939393939394
+      },
+      "x-9..-1": {
+       "n": 75,
+       "completion": 0.88
+      },
+      "x0..8": {
+       "n": 67,
+       "completion": 0.8507462686567164
+      },
+      "x9..17": {
+       "n": 25,
+       "completion": 0.92
+      }
+     }
+    }
+   },
+   "stochastic_seed_summaries": [
+    {
+     "num_tasks": 200,
+     "completion": {
+      "rate": 0.825,
+      "count": 165,
+      "n": 200,
+      "ci95_wilson": [
+       0.7663545078991807,
+       0.8713955882539106
+      ]
+     },
+     "first_useful_action_accuracy": {
+      "rate": 0.45,
+      "count": 90,
+      "n": 200,
+      "ci95_wilson": [
+       0.38263948633754313,
+       0.519245114254289
+      ]
+     },
+     "partial_progress_at_least_one_edge": {
+      "rate": 0.95,
+      "count": 190,
+      "n": 200,
+      "ci95_wilson": [
+       0.9104209437021562,
+       0.9726176509713551
+      ]
+     },
+     "partial_only_not_completed": {
+      "rate": 0.15,
+      "count": 30,
+      "n": 200,
+      "ci95_wilson": [
+       0.107135265876273,
+       0.20605693826655166
+      ]
+     },
+     "destructive_failure": {
+      "rate": 0.0,
+      "count": 0,
+      "n": 200,
+      "ci95_wilson": [
+       0.0,
+       0.018846005918320894
+      ]
+     },
+     "timeout": {
+      "rate": 0.175,
+      "count": 35,
+      "n": 200,
+      "ci95_wilson": [
+       0.12860441174608936,
+       0.23364549210081922
+      ]
+     },
+     "median_steps_to_success": 5,
+     "mean_steps_to_success": 6.2727272727272725,
+     "success_with_zero_irrelevant_edits": {
+      "rate": 0.135,
+      "count": 27,
+      "n": 200,
+      "ci95_wilson": [
+       0.09446507976920289,
+       0.18929250455117141
+      ]
+     },
+     "success_with_at_most_2_irrelevant_edits": {
+      "rate": 0.33,
+      "count": 66,
+      "n": 200,
+      "ci95_wilson": [
+       0.26857320614303315,
+       0.3978344358691961
+      ]
+     },
+     "mean_irrelevant_adds_per_episode": 6.33,
+     "mean_removes_per_episode": 0.0,
+     "second_edit_correct_given_first_correct_edit_was_followed": {
+      "rate": 0.25806451612903225,
+      "n": 186
+     },
+     "completion_given_first_action_useful": {
+      "rate": 0.9,
+      "count": 81,
+      "n": 90,
+      "ci95_wilson": [
+       0.8207564910060137,
+       0.9464938542566417
+      ]
+     },
+     "action_fractions": {
+      "WAIT": 0.08703170028818444,
+      "ADD": 0.9129682997118156,
+      "REMOVE": 0.0
+     },
+     "rank_of_best_remaining_edge_decision1_median": 1.0,
+     "prob_on_remaining_edges_decision1_mean": 0.3838594530709088,
+     "rank_of_remaining_edge_after_first_edit_median": 3.0,
+     "prob_on_remaining_edge_after_first_edit_mean": 0.19251267569419997,
+     "n_with_probs_after_first_edit": 186,
+     "breakdown": {
+      "orientation_pair": {
+       "HH": {
+        "n": 71,
+        "completion": 0.8169014084507042
+       },
+       "HV": {
+        "n": 83,
+        "completion": 0.7951807228915663
+       },
+       "VV": {
+        "n": 46,
+        "completion": 0.8913043478260869
+       }
+      },
+      "path_length": {
+       "12": {
+        "n": 43,
+        "completion": 0.6511627906976745
+       },
+       "3": {
+        "n": 33,
+        "completion": 0.9696969696969697
+       },
+       "6": {
+        "n": 61,
+        "completion": 0.9016393442622951
+       },
+       "9": {
+        "n": 63,
+        "completion": 0.7936507936507936
+       }
+      },
+      "map_x_of_solution": {
+       "x-18..-10": {
+        "n": 33,
+        "completion": 0.8181818181818182
+       },
+       "x-9..-1": {
+        "n": 75,
+        "completion": 0.8533333333333334
+       },
+       "x0..8": {
+        "n": 67,
+        "completion": 0.7910447761194029
+       },
+       "x9..17": {
+        "n": 25,
+        "completion": 0.84
+       }
+      }
+     }
+    },
+    {
+     "num_tasks": 200,
+     "completion": {
+      "rate": 0.845,
+      "count": 169,
+      "n": 200,
+      "ci95_wilson": [
+       0.7883919410627441,
+       0.8886043148536146
+      ]
+     },
+     "first_useful_action_accuracy": {
+      "rate": 0.41,
+      "count": 82,
+      "n": 200,
+      "ci95_wilson": [
+       0.34415559179081295,
+       0.4792366892744849
+      ]
+     },
+     "partial_progress_at_least_one_edge": {
+      "rate": 0.93,
+      "count": 186,
+      "n": 200,
+      "ci95_wilson": [
+       0.8859442178331628,
+       0.9578482170770813
+      ]
+     },
+     "partial_only_not_completed": {
+      "rate": 0.125,
+      "count": 25,
+      "n": 200,
+      "ci95_wilson": [
+       0.0861191515921568,
+       0.1780153528465839
+      ]
+     },
+     "destructive_failure": {
+      "rate": 0.0,
+      "count": 0,
+      "n": 200,
+      "ci95_wilson": [
+       0.0,
+       0.018846005918320894
+      ]
+     },
+     "timeout": {
+      "rate": 0.155,
+      "count": 31,
+      "n": 200,
+      "ci95_wilson": [
+       0.11139568514638545,
+       0.211608058937256
+      ]
+     },
+     "median_steps_to_success": 6,
+     "mean_steps_to_success": 6.970414201183432,
+     "success_with_zero_irrelevant_edits": {
+      "rate": 0.06,
+      "count": 12,
+      "n": 200,
+      "ci95_wilson": [
+       0.0346518499012715,
+       0.10193263530685089
+      ]
+     },
+     "success_with_at_most_2_irrelevant_edits": {
+      "rate": 0.295,
+      "count": 59,
+      "n": 200,
+      "ci95_wilson": [
+       0.23613844271901735,
+       0.3615884197074943
+      ]
+     },
+     "mean_irrelevant_adds_per_episode": 6.915,
+     "mean_removes_per_episode": 0.0,
+     "second_edit_correct_given_first_correct_edit_was_followed": {
+      "rate": 0.16574585635359115,
+      "n": 181
+     },
+     "completion_given_first_action_useful": {
+      "rate": 0.8658536585365854,
+      "count": 71,
+      "n": 82,
+      "ci95_wilson": [
+       0.7755479364150434,
+       0.9234138723117279
+      ]
+     },
+     "action_fractions": {
+      "WAIT": 0.058954393770856504,
+      "ADD": 0.9410456062291435,
+      "REMOVE": 0.0
+     },
+     "rank_of_best_remaining_edge_decision1_median": 1.0,
+     "prob_on_remaining_edges_decision1_mean": 0.3838594530709088,
+     "rank_of_remaining_edge_after_first_edit_median": 2,
+     "prob_on_remaining_edge_after_first_edit_mean": 0.22055290858724375,
+     "n_with_probs_after_first_edit": 181,
+     "breakdown": {
+      "orientation_pair": {
+       "HH": {
+        "n": 71,
+        "completion": 0.9154929577464789
+       },
+       "HV": {
+        "n": 83,
+        "completion": 0.8313253012048193
+       },
+       "VV": {
+        "n": 46,
+        "completion": 0.7608695652173914
+       }
+      },
+      "path_length": {
+       "12": {
+        "n": 43,
+        "completion": 0.7906976744186046
+       },
+       "3": {
+        "n": 33,
+        "completion": 0.9393939393939394
+       },
+       "6": {
+        "n": 61,
+        "completion": 0.8524590163934426
+       },
+       "9": {
+        "n": 63,
+        "completion": 0.8253968253968254
+       }
+      },
+      "map_x_of_solution": {
+       "x-18..-10": {
+        "n": 33,
+        "completion": 0.8484848484848485
+       },
+       "x-9..-1": {
+        "n": 75,
+        "completion": 0.8266666666666667
+       },
+       "x0..8": {
+        "n": 67,
+        "completion": 0.8656716417910447
+       },
+       "x9..17": {
+        "n": 25,
+        "completion": 0.84
+       }
+      }
+     }
+    },
+    {
+     "num_tasks": 200,
+     "completion": {
+      "rate": 0.88,
+      "count": 176,
+      "n": 200,
+      "ci95_wilson": [
+       0.8276563857409517,
+       0.9180206497611246
+      ]
+     },
+     "first_useful_action_accuracy": {
+      "rate": 0.33,
+      "count": 66,
+      "n": 200,
+      "ci95_wilson": [
+       0.26857320614303315,
+       0.3978344358691961
+      ]
+     },
+     "partial_progress_at_least_one_edge": {
+      "rate": 0.965,
+      "count": 193,
+      "n": 200,
+      "ci95_wilson": [
+       0.9295285391333187,
+       0.9829446753626429
+      ]
+     },
+     "partial_only_not_completed": {
+      "rate": 0.11,
+      "count": 22,
+      "n": 200,
+      "ci95_wilson": [
+       0.07377190160716048,
+       0.16092798300912986
+      ]
+     },
+     "destructive_failure": {
+      "rate": 0.005,
+      "count": 1,
+      "n": 200,
+      "ci95_wilson": [
+       0.0008831459893662054,
+       0.02777439986977148
+      ]
+     },
+     "timeout": {
+      "rate": 0.115,
+      "count": 23,
+      "n": 200,
+      "ci95_wilson": [
+       0.07786317221824318,
+       0.16664825233886393
+      ]
+     },
+     "median_steps_to_success": 6.0,
+     "mean_steps_to_success": 6.778409090909091,
+     "success_with_zero_irrelevant_edits": {
+      "rate": 0.11,
+      "count": 22,
+      "n": 200,
+      "ci95_wilson": [
+       0.07377190160716048,
+       0.16092798300912986
+      ]
+     },
+     "success_with_at_most_2_irrelevant_edits": {
+      "rate": 0.275,
+      "count": 55,
+      "n": 200,
+      "ci95_wilson": [
+       0.21779604313809775,
+       0.3406846595251467
+      ]
+     },
+     "mean_irrelevant_adds_per_episode": 6.225,
+     "mean_removes_per_episode": 0.01,
+     "second_edit_correct_given_first_correct_edit_was_followed": {
+      "rate": 0.25274725274725274,
+      "n": 182
+     },
+     "completion_given_first_action_useful": {
+      "rate": 0.8787878787878788,
+      "count": 58,
+      "n": 66,
+      "ci95_wilson": [
+       0.7786234136612515,
+       0.9372822929663172
+      ]
+     },
+     "action_fractions": {
+      "WAIT": 0.05745062836624776,
+      "ADD": 0.9413524835427888,
+      "REMOVE": 0.0011968880909634949
+     },
+     "rank_of_best_remaining_edge_decision1_median": 1.0,
+     "prob_on_remaining_edges_decision1_mean": 0.3838594530709088,
+     "rank_of_remaining_edge_after_first_edit_median": 2.0,
+     "prob_on_remaining_edge_after_first_edit_mean": 0.21680382001316073,
+     "n_with_probs_after_first_edit": 182,
+     "breakdown": {
+      "orientation_pair": {
+       "HH": {
+        "n": 71,
+        "completion": 0.9295774647887324
+       },
+       "HV": {
+        "n": 83,
+        "completion": 0.8192771084337349
+       },
+       "VV": {
+        "n": 46,
+        "completion": 0.9130434782608695
+       }
+      },
+      "path_length": {
+       "12": {
+        "n": 43,
+        "completion": 0.7441860465116279
+       },
+       "3": {
+        "n": 33,
+        "completion": 0.9696969696969697
+       },
+       "6": {
+        "n": 61,
+        "completion": 0.9344262295081968
+       },
+       "9": {
+        "n": 63,
+        "completion": 0.873015873015873
+       }
+      },
+      "map_x_of_solution": {
+       "x-18..-10": {
+        "n": 33,
+        "completion": 0.9393939393939394
+       },
+       "x-9..-1": {
+        "n": 75,
+        "completion": 0.8533333333333334
+       },
+       "x0..8": {
+        "n": 67,
+        "completion": 0.8656716417910447
+       },
+       "x9..17": {
+        "n": 25,
+        "completion": 0.92
+       }
+      }
+     }
+    }
+   ],
+   "stochastic_completion_mean": 0.85
+  }
+ },
+ "wall_clock_s": 97.67440629005432
+}

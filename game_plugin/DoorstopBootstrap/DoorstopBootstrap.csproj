@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>MiniMotorwaysBootstrap</AssemblyName>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <!-- Phase 3D used zero references beyond the implicit BCL to prove Doorstop alone
+       is sufficient for basic code execution. Phase 4 adds references to the game's
+       own UnityEngine and App assemblies (still no BepInEx, no 0Harmony, no
+       MonoMod) to read, never patch or mutate, the live object graph. -->
+
+  <PropertyGroup>
+    <GameDir>C:\Program Files (x86)\Steam\steamapps\common\Mini Motorways</GameDir>
+    <ManagedDir>$(GameDir)\Mini Motorways_Data\Managed</ManagedDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(ManagedDir)\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="App">
+      <HintPath>$(ManagedDir)\App.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="FixedMath">
+      <HintPath>$(ManagedDir)\FixedMath.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MOAnalytics.Runtime">
+      <HintPath>$(ManagedDir)\MOAnalytics.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

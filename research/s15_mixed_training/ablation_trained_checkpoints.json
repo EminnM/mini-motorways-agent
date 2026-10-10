@@ -1,0 +1,284 @@
+{
+ "5120": {
+  "s7_groups_zeroed": {
+   "k7_det": {
+    "success": 0.75,
+    "wait": 0.1486161251504212
+   },
+   "k7_sto": {
+    "success": 0.8666666666666667,
+    "wait": 0.08057464084946908
+   },
+   "k10_det": {
+    "success": 0.8205128205128205,
+    "wait": 0.2026251025430681
+   },
+   "k10_sto": {
+    "success": 0.7435897435897436,
+    "wait": 0.12290502793296089
+   }
+  },
+  "s13_groups_zeroed": {
+   "episodes": 30,
+   "return_mean": 34.733,
+   "return_median": 8.0,
+   "deliveries_total": 1252,
+   "deliveries_median": 18.0,
+   "deliveries_mean": 41.733,
+   "decisions_median": 283.5,
+   "survived": 9,
+   "new_connected_60": [
+    51,
+    128
+   ],
+   "new_rate_60": 0.398,
+   "latency_median": 38.75,
+   "destroyed_total": 1677,
+   "destroyed_median": 40.0,
+   "frac_zero_concrete_median": 0.607,
+   "wait_frac_while_disconnected_mean": 0.065,
+   "plain_adds_median": 57.0,
+   "deliveries_per_plain_add_median": 0.456,
+   "misrouted_house_steps_total": 1493
+  },
+  "paired_intact_minus_ablated": {
+   "deliveries": {
+    "n": 30,
+    "median_diff": 0.5,
+    "mean_diff": 3.0,
+    "a_higher": 15,
+    "equal": 6,
+    "a_lower": 9,
+    "iqr": [
+     -4.0,
+     14.75
+    ]
+   },
+   "return": {
+    "n": 30,
+    "median_diff": 0.5,
+    "mean_diff": 3.333,
+    "a_higher": 15,
+    "equal": 6,
+    "a_lower": 9,
+    "iqr": [
+     -4.0,
+     14.75
+    ]
+   },
+   "new_connected_60": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": -0.067,
+    "a_higher": 3,
+    "equal": 21,
+    "a_lower": 6,
+    "iqr": [
+     0.0,
+     0.0
+    ]
+   },
+   "destroyed": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": -6.2,
+    "a_higher": 12,
+    "equal": 4,
+    "a_lower": 14,
+    "iqr": [
+     -9.75,
+     10.75
+    ]
+   },
+   "decisions": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": 11.633,
+    "a_higher": 12,
+    "equal": 11,
+    "a_lower": 7,
+    "iqr": [
+     0.0,
+     60.25
+    ]
+   },
+   "frac_zero_concrete": {
+    "n": 30,
+    "median_diff": 0.001147973826196802,
+    "mean_diff": 0.015,
+    "a_higher": 15,
+    "equal": 5,
+    "a_lower": 10,
+    "iqr": [
+     -0.025672127765581428,
+     0.055801551280314304
+    ]
+   },
+   "plain_adds": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": 1.6,
+    "a_higher": 13,
+    "equal": 5,
+    "a_lower": 12,
+    "iqr": [
+     -4.25,
+     5.0
+    ]
+   },
+   "misrouted_house_steps": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": 22.733,
+    "a_higher": 9,
+    "equal": 15,
+    "a_lower": 6,
+    "iqr": [
+     0.0,
+     11.0
+    ]
+   }
+  }
+ },
+ "10240": {
+  "s7_groups_zeroed": {
+   "k7_det": {
+    "success": 0.6833333333333333,
+    "wait": 0.15093333333333334
+   },
+   "k7_sto": {
+    "success": 0.8333333333333334,
+    "wait": 0.08951533135509397
+   },
+   "k10_det": {
+    "success": 0.6923076923076923,
+    "wait": 0.3088942307692308
+   },
+   "k10_sto": {
+    "success": 0.5641025641025641,
+    "wait": 0.20387596899224805
+   }
+  },
+  "s13_groups_zeroed": {
+   "episodes": 30,
+   "return_mean": 11.667,
+   "return_median": -5.0,
+   "deliveries_total": 610,
+   "deliveries_median": 5.0,
+   "deliveries_mean": 20.333,
+   "decisions_median": 201.5,
+   "survived": 4,
+   "new_connected_60": [
+    26,
+    109
+   ],
+   "new_rate_60": 0.239,
+   "latency_median": 58.0,
+   "destroyed_total": 817,
+   "destroyed_median": 18.5,
+   "frac_zero_concrete_median": 0.62,
+   "wait_frac_while_disconnected_mean": 0.131,
+   "plain_adds_median": 57.5,
+   "deliveries_per_plain_add_median": 0.086,
+   "misrouted_house_steps_total": 1661
+  },
+  "paired_intact_minus_ablated": {
+   "deliveries": {
+    "n": 30,
+    "median_diff": 1.0,
+    "mean_diff": 2.9,
+    "a_higher": 16,
+    "equal": 6,
+    "a_lower": 8,
+    "iqr": [
+     -0.75,
+     4.0
+    ]
+   },
+   "return": {
+    "n": 30,
+    "median_diff": 1.0,
+    "mean_diff": 2.567,
+    "a_higher": 16,
+    "equal": 6,
+    "a_lower": 8,
+    "iqr": [
+     -0.75,
+     4.0
+    ]
+   },
+   "new_connected_60": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": 0.333,
+    "a_higher": 9,
+    "equal": 18,
+    "a_lower": 3,
+    "iqr": [
+     0.0,
+     1.0
+    ]
+   },
+   "destroyed": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": 3.533,
+    "a_higher": 14,
+    "equal": 3,
+    "a_lower": 13,
+    "iqr": [
+     -4.75,
+     7.0
+    ]
+   },
+   "decisions": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": 17.133,
+    "a_higher": 12,
+    "equal": 10,
+    "a_lower": 8,
+    "iqr": [
+     -11.25,
+     46.0
+    ]
+   },
+   "frac_zero_concrete": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": -0.013,
+    "a_higher": 14,
+    "equal": 3,
+    "a_lower": 13,
+    "iqr": [
+     -0.046392956690668785,
+     0.025132406732997437
+    ]
+   },
+   "plain_adds": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": 5.433,
+    "a_higher": 13,
+    "equal": 8,
+    "a_lower": 9,
+    "iqr": [
+     -1.0,
+     16.5
+    ]
+   },
+   "misrouted_house_steps": {
+    "n": 30,
+    "median_diff": 0.0,
+    "mean_diff": 20.667,
+    "a_higher": 14,
+    "equal": 8,
+    "a_lower": 8,
+    "iqr": [
+     -3.0,
+     32.0
+    ]
+   }
+  }
+ }
+}

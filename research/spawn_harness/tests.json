@@ -1,0 +1,416 @@
+{
+ "T1_duplicate_restores_are_equivalent_on_pilot_records": {
+  "passed": true,
+  "detail": {
+   "records": 19,
+   "equivalent": 19,
+   "failures": []
+  }
+ },
+ "T2_rng_confounding_detected_on_pilot": {
+  "passed": true,
+  "detail": {
+   "records": 19,
+   "B_confounded": 4,
+   "C_confounded": 3,
+   "C_any_prng_difference": 12,
+   "pilot_notes_claim": "12/19 C branches"
+  }
+ },
+ "T2_rows": [
+  {
+   "seed": 7932,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=60 after the first spawn difference at 45.000000041909516 (downstream shift)",
+   "first_spawn_difference_t": 45.000000041909516
+  },
+  {
+   "seed": 7932,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 7932,
+   "anchor": 60,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=30 after the first spawn difference at 15.000000013969839 (downstream shift)",
+   "first_spawn_difference_t": 15.000000013969839
+  },
+  {
+   "seed": 7932,
+   "anchor": 60,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 31689,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=30 after the first spawn difference at 29.000000027008355 (downstream shift)",
+   "first_spawn_difference_t": 29.000000027008355
+  },
+  {
+   "seed": 31689,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 31689,
+   "anchor": 60,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 31689,
+   "anchor": 60,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 71284,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": true,
+   "evidence": "prng differs at checkpoint t=180 (first spawn difference at None)",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 71284,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": true,
+   "evidence": "prng differs at checkpoint t=180 (first spawn difference at None)",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 71284,
+   "anchor": 60,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=30 after the first spawn difference at 8.00000000745058 (downstream shift)",
+   "first_spawn_difference_t": 8.00000000745058
+  },
+  {
+   "seed": 71284,
+   "anchor": 60,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng first differs at t=180 after the first spawn difference at 97.00000009033829 (downstream shift)",
+   "first_spawn_difference_t": 97.00000009033829
+  },
+  {
+   "seed": 102960,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=180 after the first spawn difference at 123.00000011455268 (downstream shift)",
+   "first_spawn_difference_t": 123.00000011455268
+  },
+  {
+   "seed": 102960,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng first differs at t=180 after the first spawn difference at 123.00000011455268 (downstream shift)",
+   "first_spawn_difference_t": 123.00000011455268
+  },
+  {
+   "seed": 102960,
+   "anchor": 60,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=30 after the first spawn difference at 1.0000000009313226 (downstream shift)",
+   "first_spawn_difference_t": 1.0000000009313226
+  },
+  {
+   "seed": 102960,
+   "anchor": 60,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng first differs at t=180 after the first spawn difference at 93.000000086613 (downstream shift)",
+   "first_spawn_difference_t": 93.000000086613
+  },
+  {
+   "seed": 134636,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=30 after the first spawn difference at 29.000000027008355 (downstream shift)",
+   "first_spawn_difference_t": 29.000000027008355
+  },
+  {
+   "seed": 134636,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng first differs at t=180 after the first spawn difference at 120.00000011175871 (downstream shift)",
+   "first_spawn_difference_t": 120.00000011175871
+  },
+  {
+   "seed": 134636,
+   "anchor": 60,
+   "branch": "B",
+   "confounded": true,
+   "evidence": "prng differs at checkpoint t=90 (first spawn difference at 90.00000008381903)",
+   "first_spawn_difference_t": 90.00000008381903
+  },
+  {
+   "seed": 134636,
+   "anchor": 60,
+   "branch": "C",
+   "confounded": true,
+   "evidence": "prng differs at checkpoint t=90 (first spawn difference at 90.00000008381903)",
+   "first_spawn_difference_t": 90.00000008381903
+  },
+  {
+   "seed": 150474,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=60 after the first spawn difference at 57.00000005308539 (downstream shift)",
+   "first_spawn_difference_t": 57.00000005308539
+  },
+  {
+   "seed": 150474,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng first differs at t=60 after the first spawn difference at 47.00000004377216 (downstream shift)",
+   "first_spawn_difference_t": 47.00000004377216
+  },
+  {
+   "seed": 150474,
+   "anchor": 60,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=30 after the first spawn difference at 17.000000015832484 (downstream shift)",
+   "first_spawn_difference_t": 17.000000015832484
+  },
+  {
+   "seed": 150474,
+   "anchor": 60,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng first differs at t=180 after the first spawn difference at 162.00000015087426 (downstream shift)",
+   "first_spawn_difference_t": 162.00000015087426
+  },
+  {
+   "seed": 166312,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=60 after the first spawn difference at 48.000000044703484 (downstream shift)",
+   "first_spawn_difference_t": 48.000000044703484
+  },
+  {
+   "seed": 166312,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 166312,
+   "anchor": 60,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 166312,
+   "anchor": 60,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 190069,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": true,
+   "evidence": "prng differs at checkpoint t=180 (first spawn difference at None)",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 190069,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": true,
+   "evidence": "prng differs at checkpoint t=180 (first spawn difference at None)",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 190069,
+   "anchor": 60,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=30 after the first spawn difference at 25.000000023283064 (downstream shift)",
+   "first_spawn_difference_t": 25.000000023283064
+  },
+  {
+   "seed": 190069,
+   "anchor": 60,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng first differs at t=180 after the first spawn difference at 168.0000001564622 (downstream shift)",
+   "first_spawn_difference_t": 168.0000001564622
+  },
+  {
+   "seed": 213826,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 213826,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng identical at every checkpoint",
+   "first_spawn_difference_t": null
+  },
+  {
+   "seed": 221745,
+   "anchor": 30,
+   "branch": "B",
+   "confounded": true,
+   "evidence": "prng differs at checkpoint t=60 (first spawn difference at 63.00000005867332)",
+   "first_spawn_difference_t": 63.00000005867332
+  },
+  {
+   "seed": 221745,
+   "anchor": 30,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng first differs at t=60 after the first spawn difference at 53.0000000493601 (downstream shift)",
+   "first_spawn_difference_t": 53.0000000493601
+  },
+  {
+   "seed": 221745,
+   "anchor": 60,
+   "branch": "B",
+   "confounded": false,
+   "evidence": "prng first differs at t=30 after the first spawn difference at 23.00000002142042 (downstream shift)",
+   "first_spawn_difference_t": 23.00000002142042
+  },
+  {
+   "seed": 221745,
+   "anchor": 60,
+   "branch": "C",
+   "confounded": false,
+   "evidence": "prng first differs at t=30 after the first spawn difference at 23.00000002142042 (downstream shift)",
+   "first_spawn_difference_t": 23.00000002142042
+  }
+ ],
+ "T3_synthetic_fixtures": {
+  "passed": true,
+  "detail": {
+   "analysis": {
+    "equivalence": {
+     "equivalent": true,
+     "same_spawns": true,
+     "same_prng": true,
+     "same_score": true,
+     "same_terminal": true
+    },
+    "branches": {
+     "block": {
+      "edits_accepted": 3,
+      "cost": 3,
+      "confound": {
+       "confounded": false,
+       "evidence": "prng first differs at t=60 after the first spawn difference at 40.0 (downstream shift)",
+       "first_spawn_difference_t": 40.0
+      },
+      "score_delta": {
+       "30": 0.0,
+       "60": 0.0
+      },
+      "terminal_step_delta": null
+     },
+     "sham": {
+      "edits_accepted": 3,
+      "cost": 3,
+      "confound": {
+       "confounded": true,
+       "evidence": "prng differs at checkpoint t=30 (first spawn difference at 40.0)",
+       "first_spawn_difference_t": 40.0
+      },
+      "score_delta": {
+       "30": 0.0,
+       "60": 0.0
+      },
+      "terminal_step_delta": null
+     }
+    }
+   },
+   "prng_after_edits_case": {
+    "confounded": true,
+    "evidence": "prng differs immediately after the edits",
+    "first_spawn_difference_t": 40.0
+   },
+   "non_equivalent_detected": true
+  }
+ },
+ "T4_branch_plans_use_only_legal_actions_and_build_valid_requests": {
+  "passed": true,
+  "detail": {
+   "native_states": 24,
+   "plannable": 24,
+   "skipped": [],
+   "example_request": {
+    "op": "DIAG_FORK",
+    "n_pre": 0,
+    "horizon": 120,
+    "checkpoints": [
+     30,
+     60,
+     90,
+     120
+    ],
+    "intervention_seconds": 0.3,
+    "branches": [
+     [
+      "base",
+      0
+     ],
+     [
+      "base2",
+      0
+     ],
+     [
+      "block",
+      3
+     ],
+     [
+      "sham",
+      3
+     ]
+    ]
+   },
+   "sham_far_available": 1,
+   "note": "sham RNG-neutrality is verified post hoc by PRNG equality, never assumed"
+  }
+ }
+}

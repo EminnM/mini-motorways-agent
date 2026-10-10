@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Game process logs, IPC directories, instrumentation logs, decompiled game source (not ours to redistribute)
+logs/
+
+# Large legacy training outputs and checkpoints (hundreds of MB; kept locally)
+runs/
+python/ppo_ckpt*/
+python/ppo_checkpoints*/
+
+# Third-party downloads and tooling binaries
+tools/*download*/
+tools/mscorlib_patcher/
+
+# Build outputs
+game_plugin/**/bin/
+game_plugin/**/obj/
+tools/**/bin/
+tools/**/obj/
+
+# Game binaries / backups of the installed game and decompiled game source files (not ours to redistribute)
+backups/
+/*.cs
+
+# Scratch
+*.tmp
+*.prev

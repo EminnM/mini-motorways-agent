@@ -1,0 +1,31 @@
+19 snapshots analysed, 1 skipped/errored: [(213826, 60, 'no_local_segment')]
+
+================ window: pre-terminal ================
+duplicate-control sanity (A vs independently restored A2): identical spawn identities 19/19; identical spawn TIMES 19/19; identical PRNG at all checkpoints 19/19
+
+B local road: spawn trajectory differs from WAIT in 14/19 snapshots (74%, 95% CI 51%-88%); PRNG state differs at some checkpoint in 16/19
+   time to first divergence (s after intervention): median 29, min 1, max 123; distribution [1, 8, 15, 17, 23, 25, 29, 29, 45, 48, 57, 63, 90, 123]
+   among diverged: spawns at positions not seen in control: mean 3.9 of 5.4; index-matched displacement mean 3.4 tiles, max 18 tiles; displaced spawns per snapshot 3.6
+
+C far road (control): spawn trajectory differs from WAIT in 8/19 snapshots (42%, 95% CI 23%-64%); PRNG state differs at some checkpoint in 12/19
+   time to first divergence (s after intervention): median 93, min 23, max 123; distribution [23, 47, 53, 90, 93, 97, 120, 123]
+   among diverged: spawns at positions not seen in control: mean 3.1 of 5.4; index-matched displacement mean 2.9 tiles, max 14 tiles; displaced spawns per snapshot 3.0
+
+paired B vs C: both diverge 8, only B 6, only C 0, neither 5; exact sign test p=0.0312
+B divergence rate by distance of the segment to the nearest building: {3: '5/6', 4: '7/8', 5: '2/4', 6: '0/1'}
+C segment distances to nearest building: [4, 5, 6]
+
+================ window: full-180 ================
+duplicate-control sanity (A vs independently restored A2): identical spawn identities 19/19; identical spawn TIMES 19/19; identical PRNG at all checkpoints 19/19
+
+B local road: spawn trajectory differs from WAIT in 14/19 snapshots (74%, 95% CI 51%-88%); PRNG state differs at some checkpoint in 16/19
+   time to first divergence (s after intervention): median 29, min 1, max 123; distribution [1, 8, 15, 17, 23, 25, 29, 29, 45, 48, 57, 63, 90, 123]
+   among diverged: spawns at positions not seen in control: mean 4.9 of 6.5; index-matched displacement mean 3.7 tiles, max 18 tiles; displaced spawns per snapshot 4.5
+
+C far road (control): spawn trajectory differs from WAIT in 10/19 snapshots (53%, 95% CI 32%-73%); PRNG state differs at some checkpoint in 12/19
+   time to first divergence (s after intervention): median 97, min 23, max 168; distribution [23, 47, 53, 90, 93, 97, 120, 123, 162, 168]
+   among diverged: spawns at positions not seen in control: mean 4.0 of 7.2; index-matched displacement mean 2.5 tiles, max 14 tiles; displaced spawns per snapshot 3.2
+
+paired B vs C: both diverge 10, only B 4, only C 0, neither 5; exact sign test p=0.1250
+B divergence rate by distance of the segment to the nearest building: {3: '5/6', 4: '7/8', 5: '2/4', 6: '0/1'}
+C segment distances to nearest building: [4, 5, 6]

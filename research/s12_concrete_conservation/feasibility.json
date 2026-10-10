@@ -1,0 +1,92 @@
+{
+ "episodes": 12,
+ "concrete_accounting": {
+  "('ADD_plain', -1, -1)": 866,
+  "('ADD', 'unknown_class', False)": 0,
+  "('ADD_unknown_class', -1)": 26,
+  "('ADD_other', 0, 0)": 2545,
+  "('REMOVE', 1)": 142,
+  "('WAIT', 0)": 162,
+  "('ADD_plain', -1, 0)": 1,
+  "('REMOVE', 0)": 31
+ },
+ "concrete_accounting_match_ADD": [
+  3411,
+  3412
+ ],
+ "concrete_accounting_mismatches": [
+  [
+   500000,
+   314,
+   "new_segment",
+   0,
+   [],
+   []
+  ]
+ ],
+ "mothballed_and_replacement_checks": {
+  "('plain_extension', 'no_change_in_nonfunctional_edges', True)": 821,
+  "('plain_extension', 'exactly_one_functional_edge_added_none_removed', True)": 832,
+  "('house_replacement', 'functional_edge_count_unchanged', True)": 2483,
+  "('plain_extension', 'no_change_in_nonfunctional_edges', False)": 12,
+  "('plain_extension', 'exactly_one_functional_edge_added_none_removed', False)": 1
+ },
+ "legal_add_availability": {
+  "('positive', 'legal_add>=60')": 1338,
+  "('zero', 'legal_add<=30')": 2207,
+  "('zero', 'no_legal_add(upgrade pending or terminal)')": 26,
+  "('positive', 'no_legal_add(upgrade pending or terminal)')": 10,
+  "('zero', 'legal_add>30')": 216
+ },
+ "executed_ADD_classes": {
+  "new_segment": 126,
+  "joins_components": 160,
+  "extension": 535,
+  "unknown_water_endpoint": 24,
+  "house_house_edge_replacement": 2545,
+  "cycle_closing": 46,
+  "unknown_content_endpoint": 2
+ },
+ "executed_ADDs": 3438,
+ "plain_extension_ADDs(concrete consuming)": 867,
+ "cycle_closing_share_of_ADDs": 0.0134,
+ "cycle_closing_share_of_plain_extension_concrete": 0.0531,
+ "steps_total": 3797,
+ "steps_with_a_vetoable_legal_ADD": 1097,
+ "mean_policy_mass_on_cycle_closing_when_vetoable_exists": 0.0582,
+ "legal_ADD_candidate_class_share": {
+  "new_segment": 0.5641,
+  "house_house_edge_replacement": 0.1941,
+  "extension": 0.1724,
+  "unknown_content_endpoint": 0.0214,
+  "unknown_water_endpoint": 0.0189,
+  "cycle_closing": 0.0183,
+  "joins_components": 0.0108
+ },
+ "unknown_share_of_legal_ADD_candidates": 0.0403,
+ "unknown_share_of_executed_ADDs": 0.0076,
+ "concrete_consumed_by_cycle_closing_per_episode": {
+  "500000": 5,
+  "507919": 2,
+  "531676": 7,
+  "539595": 5,
+  "547514": 2,
+  "555433": 4,
+  "563352": 5,
+  "571271": 8,
+  "579190": 5,
+  "587109": 3
+ },
+ "concrete_consumed_by_all_plain_extensions": 866,
+ "redundancy_replay": {
+  "steps_with_cycle_edges_checked": 2928,
+  "steps_where_reachability_partition_differs_without_them": 0,
+  "cycle_closing_edges_added": 46
+ },
+ "route_length_gain_from_cycle_edges_at_house_connection_events": {
+  "events": 515,
+  "events_with_gain>0": 6,
+  "median_gain": 0,
+  "max_gain": 3
+ }
+}

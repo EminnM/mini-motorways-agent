@@ -1,0 +1,11 @@
+run                                     n        return  finalScore    len  term%  1st rew    WAIT/ADD/REM/UPG per ep conn.destroyed  vs WAIT (W/L/T)
+nativeReward_on_CONNECTED_det          10  -0.80±2.61        8.20  186.7   100%     14.9    0.0/130.6/55.3/0.8          0/10            2/7/1
+nativeReward_on_CONNECTED_stoch        10   9.20±3.89       19.20  245.3   100%     15.1   12.0/175.8/56.3/1.2          3/10            5/5/0
+nativeReward_on_NORMAL_det             10  -9.00±0.95        0.00  136.5   100%      nan    0.0/ 91.4/44.8/0.3          0/10            1/0/9
+random_CONNECTED_START                 10   2.90±1.88       12.90  219.2   100%     14.3    7.6/159.6/51.0/1.0          2/10            3/7/0
+random_NORMAL_START                    10  -9.70±0.28        0.30  140.0   100%    105.0    4.8/ 95.0/39.9/0.3          0/10            1/0/9
+shaped_on_CONNECTED_det                10   0.90±2.37        9.90  194.5   100%     15.1    0.0/123.3/70.2/1.0          0/10            4/5/1
+shaped_on_NORMAL_det                   10 -10.00±0.00        0.00  137.7   100%      nan    0.0/ 81.6/55.8/0.3          0/10           0/0/10
+shaped_on_NORMAL_stoch                 10  -9.00±0.95        0.00  133.4   100%      nan    4.5/ 95.1/33.6/0.2          0/10            1/0/9
+wait_CONNECTED_START                   10   7.00±2.23       16.00  220.8   100%     14.2  219.7/  0.0/ 0.0/1.1          0/10                 
+wait_NORMAL_START                      10 -10.00±0.00        0.00  143.1   100%      nan  142.6/  0.0/ 0.0/0.5          0/10                 

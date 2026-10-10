@@ -1,0 +1,46 @@
+HAND-INSPECTABLE EXAMPLE (Gap-1, test task syn_gap1_test_000004)
+window (reach) x=-14..-4 y=-3..5 ; H=house tile, D=destination footprint, C=carpark, '+'=road tile
+y=  5 . . . . . . . . . . .
+                           
+y=  4 . . . . . . . . . . .
+                           
+y=  3 . . . . . . . . . . .
+                           
+y=  2 . . . . . . . . . . .
+                           
+y=  1 . . . D D . . . +-+ .
+                      | |  
+y=  0 . . . D D C-+ +-+ H .
+                           
+y= -1 . . . . . . . . . . .
+                           
+y= -2 . . . . . . . . . . .
+                           
+y= -3 . . . . . . . . . . .
+      x=-14..-4
+house [-5, 0] driveway N -> start tile [-5, 1];  carpark [-9, 0] stub E -> goal tile [-8, 0]
+path (4 edges, 1 left out): (-5,1) (-6,1) (-6,0) (-7,0) (-8,0)
+missing edge: ADD_ROAD(-8,0,E) = action index 1521  (decode -> ('ADD', -8, 0, 'E')); legal now: True
+legal actions: 158 of 3111 (WAIT, 156 ADD, 1 REMOVE)
+non-zero observation features around the gap (tile: feature=value):
+  tile (-8,0) idx 380: {0: 1.0, 7: 0.667}   [4..7 = road N/E/S/W, 10 = content, 11 = group flag]
+  tile (-7,0) idx 381: {0: 1.0, 5: 0.667}   [4..7 = road N/E/S/W, 10 = content, 11 = group flag]
+after ADD_ROAD(-8,0,E): reward 1.0, terminated True, connected True
+y=  5 . . . . . . . . . . .
+                           
+y=  4 . . . . . . . . . . .
+                           
+y=  3 . . . . . . . . . . .
+                           
+y=  2 . . . . . . . . . . .
+                           
+y=  1 . . . D D . . . +-+ .
+                      | |  
+y=  0 . . . D D C-+-+-+ H .
+                           
+y= -1 . . . . . . . . . . .
+                           
+y= -2 . . . . . . . . . . .
+                           
+y= -3 . . . . . . . . . . .
+      x=-14..-4

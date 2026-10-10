@@ -1,0 +1,1 @@
+v1: StrategicExecutor picked the per-house candidate by first-max score instead of planner B's full tie-break key, so even the 'planner+reuse' path could choose an equal-score alternative route; all strategic conditions therefore shared a tie-break artefact (-88 vs planner B). Kept as evidence of tie-break sensitivity; superseded by eval/ (fixed key).

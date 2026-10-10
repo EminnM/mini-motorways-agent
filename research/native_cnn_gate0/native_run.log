@@ -1,0 +1,7 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+seed 182150 steps 60 {'plain': True, 'diag': True, 'plain2': True, 'recorder_nodiag': True}
+seed 205907 steps 60 {'plain': True, 'diag': True, 'plain2': True, 'recorder_nodiag': True}
+seed 229664 steps 60 {'plain': True, 'diag': True, 'plain2': True, 'recorder_nodiag': True}
+[PASS] 6_logging_does_not_change_native_rollouts: 3 seeds x 60 deterministic decisions (frozen S1 CNN argmax), runs: plain env / RecorderEnv+diagnostics / plain again / RecorderEnv without diagnostics: observations, legal masks, actions, rewards, termination and applied actions identical across all four = True; native determinism floor (plain vs plain again) = True; diag_errors=0; episode rows written by the diagnostic run: 0

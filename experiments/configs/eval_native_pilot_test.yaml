@@ -1,0 +1,17 @@
+# Native normal-start evaluation, held-out TEST seeds (final checkpoints only). Explicit env so that WAIT/RANDOM/checkpoints use identical conditions
+# (matches python/phase11a_runner.py defaults used for the frozen baselines: 1.0 s decisions, 600-decision horizon).
+experiment:
+  name: eval_native_pilot_test
+environment:
+  initialization: normal
+  start_gap: 0
+  reward: native_score
+  decision_interval_seconds: 1.0
+  episode_horizon_decisions: 600
+evaluation:
+  seeds: [7932, 31689, 71284, 102960, 134636, 150474, 166312, 190069, 213826, 221745]
+  episodes_per_seed: 1
+  deterministic: true
+  random_seed: 0
+logging:
+  diagnostics: true

@@ -1,0 +1,81 @@
+{
+ "seed": 507919,
+ "injected": {
+  "t": 86,
+  "house": [
+   -4,
+   -3
+  ],
+  "old_driveway": [
+   [
+    -5,
+    -3,
+    "E"
+   ]
+  ],
+  "action": [
+   "ADD",
+   -4,
+   -3,
+   "S"
+  ]
+ },
+ "events": [
+  {
+   "t": 87,
+   "moth_added": [
+    [
+     -5,
+     -3,
+     "E"
+    ]
+   ],
+   "moth_removed": [],
+   "connected": [],
+   "plan": "CONNECT house=(-4, -3) group=1 cost=8 len=9 reuse=1 alt=1 feas=feasible"
+  },
+  {
+   "t": 88,
+   "moth_added": [],
+   "moth_removed": [
+    [
+     -5,
+     -3,
+     "E"
+    ]
+   ],
+   "connected": [
+    [
+     -4,
+     -3
+    ]
+   ],
+   "plan": "CONNECT house=(-4, -3) group=1 cost=0 len=1 reuse=0 alt=0 feas=feasible"
+  }
+ ],
+ "edge_model_mismatch": 0,
+ "connectivity_mismatch": 0,
+ "illegal": 0,
+ "reconnected_at": 88,
+ "reconnect_mode": "old_driveway_reactivated",
+ "executor_stats": {
+  "plans": 3,
+  "completed": 2,
+  "abandoned": 1,
+  "abandon_reasons": {
+   "all_edges_built_but_not_connected": 1
+  },
+  "waits_for_concrete": 0,
+  "compute_s": 0.1016770999704022,
+  "decisions": 148,
+  "illegal_suppressed": 0,
+  "destroy_vetoes": 0
+ },
+ "forced_actions": [
+  [
+   141,
+   3109
+  ]
+ ],
+ "wall_s": 33.2
+}

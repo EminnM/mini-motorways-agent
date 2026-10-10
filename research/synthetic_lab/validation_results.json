@@ -1,0 +1,48 @@
+{
+  "1_oracle_completes_every_generated_task": {
+    "passed": true,
+    "detail": "5200/5200 tasks (Gap-1/2/3, train+validation+test); oracle uses exactly N actions (max steps 3)"
+  },
+  "2_random_policy_substantially_worse_than_oracle": {
+    "passed": true,
+    "detail": "random-legal completion on TEST: {'gap1': 0.1125, 'gap2': 0.01, 'gap3': 0.0} (oracle 1.0)"
+  },
+  "3_every_intended_correct_action_is_legal": {
+    "passed": true,
+    "detail": "0 violations over all tasks; legal actions per state: mean 202, min 128, max 287 (native Gap-1 starts: mean 151)"
+  },
+  "4_observation_and_action_mappings_consistent": {
+    "passed": true,
+    "detail": "synthetic obs == real encode_observation(native-style dict) in 120/120 states; action index<->descriptor bijection over all 3111 indices: True; derived sizes obs 11666, actions 3111"
+  },
+  "5_rewards_and_termination_semantics": {
+    "passed": true,
+    "detail": "WAIT=0, completion +1 & terminates, wrong ADD=0, destructive terminates with 0, timeout truncates at 20, delayed reward arrives 12 WAIT steps after connecting and terminates, native-like stream delivers 3 sparse +1; problems=[]"
+  },
+  "6_train_and_test_layouts_disjoint": {
+    "passed": true,
+    "detail": "overlaps=[] (checked base layouts and full configurations for Gap-1/2/3)"
+  },
+  "7_no_correct_action_labels_in_observation": {
+    "passed": true,
+    "detail": "obs unchanged when the stored solution is overwritten: True; shape (11666,) (native-identical); the solution only exists in env.task/info metadata"
+  },
+  "8_observation_contains_enough_information": {
+    "passed": true,
+    "detail": "a solver that sees ONLY the observation vector + legal mask (component contraction + BFS) solves 800/800 test tasks (Gap-1/2/3)"
+  },
+  "_info_unconstrained_generator_obs_only_solver_gap1": {
+    "solved": 255,
+    "of": 300,
+    "note": "when roads may pass beside the destination, the carpark is not identifiable from the native-compatible observation"
+  },
+  "9_synthetic_to_native_adapter_has_explicit_tested_mappings": {
+    "passed": true,
+    "detail": "mapping table below verified against the real encode_observation (check 4); neutral fields asserted constant: {\"buildable (0)\": \"1 on every tile (neutral; no terrain modelled)\", \"water/mountain/rail (1-3)\": \"0 (not modelled)\", \"road N/E/S/W (4-7)\": \"Active/3 = 0.667 on live edges, 0 otherwise (both endpoint tiles)\", \"traffic light / roundabout (8-9)\": \"0 (not modelled)\", \"contentType (10)\": \"House 0.5, Destination 1.0 (4 footprint tiles); carpark tile is content 0 exactly as native (unknown content -> 0)\", \"hasGroupIndex (11)\": \"1 on house and destination tiles\", \"dest demand / overcrowding (12-13)\": \"0 (not modelled)\", \"visibleVehicleCount (14)\": \"0 (no traffic)\", \"globals hour/day/week/score\": \"hour=1.2*t mod 24 /24, day, week=0, score/1000\", \"globals concrete ratio\": \"(25 - built edges - added edges)/25\", \"globals other resources, pending upgrades\": \"0 (not modelled)\"}"
+  },
+  "10_throughput_without_the_game": {
+    "passed": true,
+    "detail": "9001 env steps/s (single process, random legal actions incl. mask + 11,666-float observation per step); native game ~4-5 steps/s"
+  },
+  "_throughput_steps_per_second": 9000.737778517698
+}

@@ -1,0 +1,12 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[wait] seed 182150: len 143 score 0.0 return 0.0 deliveries 0.0 conn_max 0 adds 0 removes 0 (32s)
+[wait] seed 205907: len 142 score 0.0 return -10.0 deliveries 0.0 conn_max 0 adds 0 removes 0 (52s)
+[wait] seed 229664: len 153 score 0.0 return -10.0 deliveries 0.0 conn_max 0 adds 0 removes 0 (82s)
+[wait] seed 253421: len 144 score 0.0 return -10.0 deliveries 0.0 conn_max 0 adds 0 removes 0 (102s)
+[random] seed 182150: len 146 score 0.0 return -10.0 deliveries 0.0 conn_max 0 adds 95 removes 42 (138s)
+[random] seed 205907: len 130 score 0.0 return 0.0 deliveries 0.0 conn_max 0 adds 92 removes 35 (162s)
+[random] seed 229664: len 154 score 0.0 return -10.0 deliveries 0.0 conn_max 0 adds 108 removes 43 (187s)
+[random] seed 253421: len 137 score 0.0 return 0.0 deliveries 0.0 conn_max 0 adds 86 removes 45 (219s)
+wall seconds 220

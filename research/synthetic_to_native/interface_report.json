@@ -1,0 +1,297 @@
+{
+  "n_native_states": 156,
+  "n_tasks_captured": 120,
+  "checks": {
+    "1_observation_length_11666": {
+      "passed": true,
+      "observed_lengths": [
+        11666
+      ]
+    },
+    "2_action_space_3111": {
+      "passed": true,
+      "max_native_legal_index": 2875,
+      "note": "Discrete(3111) is read from HELLO by MiniMotorwaysEnv (actionSpaceSize); every native legal index < 3111"
+    },
+    "3_grid_37x21_bounds": {
+      "passed": true,
+      "observed": [
+        "{\"height\": 21, \"width\": 37, \"xMin\": -18, \"yMin\": -10}"
+      ]
+    },
+    "4_all_15_tile_features_mapped_to_correct_tile_and_channel": {
+      "passed": true,
+      "tiles_checked": 121212,
+      "channel_mismatches": 0,
+      "per_channel": {}
+    },
+    "6_tile_coordinate_convention_row_major_y_outer_x_inner": {
+      "passed": true,
+      "mismatching_tiles": 0
+    },
+    "5_all_11_global_features_consistent": {
+      "passed": true,
+      "mismatches": 0,
+      "native_value_ranges": {
+        "0": [
+          0.0,
+          0.208
+        ],
+        "1": [
+          0.0,
+          0.0
+        ],
+        "2": [
+          0.0,
+          0.0
+        ],
+        "3": [
+          0.0,
+          0.0
+        ],
+        "4": [
+          0.56,
+          0.88
+        ],
+        "5": [
+          0.0,
+          1.0
+        ],
+        "6": [
+          0.0,
+          0.0
+        ],
+        "7": [
+          0.0,
+          0.0
+        ],
+        "8": [
+          0.0,
+          0.0
+        ],
+        "9": [
+          0.0,
+          0.0
+        ],
+        "10": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "7_south_is_y_minus_1": {
+      "passed": true,
+      "south_edges_checked": 480,
+      "mismatches_if_south_is_y_minus_1": 0,
+      "mismatches_if_south_is_y_plus_1": 416
+    },
+    "8_ADD_REMOVE_index_mapping_live": {
+      "passed": true,
+      "ADD_tests_ok": [
+        12,
+        12
+      ],
+      "REMOVE_tests_ok": [
+        7,
+        12
+      ],
+      "REMOVE_failures_on_carpark_tiles": 5,
+      "REMOVE_failures_other": 0,
+      "interpretation": "index -> (tile, direction, kind) is correct in every case where the action acts; the failing REMOVE tests all target a CARPARK tile: the native mask lists REMOVE there, the game reports it applied, and the carpark stub road stays Active (legal-but-ineffective).",
+      "carpark_remove_examples": [
+        {
+          "test": "REMOVE(-9,7,S)_index2556",
+          "task_id": "gap1_validation_000007",
+          "tile_content": "Carpark",
+          "applied": "REMOVE_ROAD(-9,7,S)"
+        },
+        {
+          "test": "REMOVE(-11,-2,S)_index1216",
+          "task_id": "gap1_validation_000008",
+          "tile_content": "Carpark",
+          "applied": "REMOVE_ROAD(-11,-2,S)"
+        },
+        {
+          "test": "REMOVE(-11,-2,S)_index1216",
+          "task_id": "gap1_validation_000009",
+          "tile_content": "Carpark",
+          "applied": "REMOVE_ROAD(-11,-2,S)"
+        },
+        {
+          "test": "REMOVE(-11,-2,S)_index1216",
+          "task_id": "gap1_validation_000010",
+          "tile_content": "Carpark",
+          "applied": "REMOVE_ROAD(-11,-2,S)"
+        },
+        {
+          "test": "REMOVE(-11,-2,S)_index1216",
+          "task_id": "gap1_validation_000012",
+          "tile_content": "Carpark",
+          "applied": "REMOVE_ROAD(-11,-2,S)"
+        }
+      ],
+      "other_failures": []
+    },
+    "9_WAIT_index0_live": {
+      "passed": true,
+      "tests": [
+        12,
+        12
+      ]
+    },
+    "10_legal_mask_meaning_and_ordering": {
+      "passed": true,
+      "wait_legal_in_all_reset_states": true,
+      "note": "index -> (kind, tile, dir) mapping is validated live by checks 8/9; the set-level comparison below measures RULE differences between the sandbox and the native game, not ordering/meaning",
+      "totals_over_states": {
+        "native_add": 17847,
+        "synthetic_add": 21308,
+        "add_both": 17536,
+        "native_only_add": 311,
+        "synthetic_only_add": 3772,
+        "native_rem": 154,
+        "synthetic_rem": 96,
+        "rem_both": 93,
+        "native_only_rem": 61,
+        "synthetic_only_rem": 3,
+        "states": 120
+      },
+      "add_precision_synth_vs_native": 0.8229772855265628,
+      "add_recall_synth_vs_native": 0.9825741020899871,
+      "remove_precision": 0.96875,
+      "remove_recall": 0.6038961038961039,
+      "synthetic_only_add_reasons_endpoint_counts": {
+        "unexplained_by_terrain_content": 1637,
+        "endpoint_over_water": 2062,
+        "endpoint_content_Tree": 73
+      }
+    }
+  },
+  "encoding_mismatches": [],
+  "state_differences": {
+    "native_remove_on_carpark_is_ineffective": {
+      "count": 5,
+      "of_remove_tests": 12,
+      "sandbox_rule": "stub edges can never be removed and REMOVE is never offered there"
+    },
+    "tile_channel_nonzero_fraction": {
+      "buildable": {
+        "native": 1.0,
+        "sandbox": 1.0
+      },
+      "overWater": {
+        "native": 0.1634,
+        "sandbox": 0.0
+      },
+      "underMountain": {
+        "native": 0.0,
+        "sandbox": 0.0
+      },
+      "overRail": {
+        "native": 0.0,
+        "sandbox": 0.0
+      },
+      "roadN": {
+        "native": 0.004,
+        "sandbox": 0.0051
+      },
+      "roadE": {
+        "native": 0.0084,
+        "sandbox": 0.0064
+      },
+      "roadS": {
+        "native": 0.004,
+        "sandbox": 0.0051
+      },
+      "roadW": {
+        "native": 0.0084,
+        "sandbox": 0.0064
+      },
+      "trafficLight": {
+        "native": 0.0,
+        "sandbox": 0.0
+      },
+      "roundabout": {
+        "native": 0.0,
+        "sandbox": 0.0
+      },
+      "content": {
+        "native": 0.0064,
+        "sandbox": 0.0064
+      },
+      "groupFlag": {
+        "native": 0.0064,
+        "sandbox": 0.0064
+      },
+      "destDemand": {
+        "native": 0.0003,
+        "sandbox": 0.0
+      },
+      "overcrowding": {
+        "native": 0.0,
+        "sandbox": 0.0
+      },
+      "vehicles": {
+        "native": 0.0,
+        "sandbox": 0.0
+      }
+    },
+    "global_features": {
+      "native_ranges": {
+        "0": [
+          0.0,
+          0.208
+        ],
+        "1": [
+          0.0,
+          0.0
+        ],
+        "2": [
+          0.0,
+          0.0
+        ],
+        "3": [
+          0.0,
+          0.0
+        ],
+        "4": [
+          0.56,
+          0.88
+        ],
+        "5": [
+          0.0,
+          1.0
+        ],
+        "6": [
+          0.0,
+          0.0
+        ],
+        "7": [
+          0.0,
+          0.0
+        ],
+        "8": [
+          0.0,
+          0.0
+        ],
+        "9": [
+          0.0,
+          0.0
+        ],
+        "10": [
+          0.0,
+          0.0
+        ]
+      },
+      "note": "sandbox: hour/day from t, week 0, concrete ratio, other resource ratios 0, pending upgrades 0"
+    },
+    "legal_action_count": {
+      "native_mean_at_reset": 151.00833333333333,
+      "sandbox_mean": 202
+    }
+  },
+  "verdict": {
+    "encoding_mismatches": 0,
+    "all_checks_passed": true
+  }
+}

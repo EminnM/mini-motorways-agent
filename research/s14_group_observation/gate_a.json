@@ -1,0 +1,109 @@
+{
+ "plugin_emits_groupIndex_on_houses_and_destinations": {
+  "passed": true,
+  "detail": {
+   "states": 48,
+   "house_tiles_with_group": 24,
+   "house_tiles_without": 0,
+   "dest_tiles_with_group": 192,
+   "dest_tiles_without": 0
+  }
+ },
+ "every_house_has_a_same_group_destination_at_capture": {
+  "passed": true,
+  "detail": {
+   "houses": 24,
+   "matched": 24
+  }
+ },
+ "group_identity_stable_within_episode": {
+  "passed": true,
+  "detail": {
+   "house_group_reassignments": 0,
+   "destination_group_changes": 0,
+   "decisions": 3867
+  }
+ },
+ "new_house_group_matches_an_existing_destination_group": {
+  "passed": true,
+  "detail": {
+   "house_spawns": 120,
+   "matched_at_spawn": 120
+  }
+ },
+ "native_ids_are_arbitrary_labels_not_appearance_order": {
+  "passed": true,
+  "detail": {
+   "order_of_first_appearance_per_seed": [
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     3,
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     2,
+     3
+    ],
+    [
+     0,
+     1,
+     2,
+     3
+    ],
+    [
+     0,
+     1,
+     3,
+     2
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "max_simultaneous_groups": 4,
+   "K_GROUPS": 6,
+   "destination_tiles_without_model(groupIndex null)": 8
+  }
+ },
+ "_source_evidence": {
+  "plugin": "game_plugin/DoorstopBootstrap/Entrypoint.cs:3211-3223 (HouseModel.GroupIndex / DestinationModel.GroupIndex -> JSON groupIndex per tile)",
+  "python_v1_loss": "python/mini_motorways_env.py:114  out[base+11] = 1.0 if groupIndex is not None  (identity collapsed to a flag)",
+  "meaning": "GroupIndex indexes the theme colour group (research/static_recon: MotorwaysThemeDatabase.MAX_THEME_COLOR_GROUPS; GenerateDemandProcess._allocatedColorGroups = new bool[6]; Motorways.Themes.ColorGroup); demand generation and vehicle trips match house.GroupIndex == destination.GroupIndex (GenerateDemandProcess.cs:216-323)",
+  "human_visible": "the colour of the building sprite (PerGroupMaterialBindings.RenderersWithColor) -- the core visual rule of the game",
+  "not_exposed": "scheduled future buildings (CityPlanModel.scheduledBuildings), demand assignment internals, RNG"
+ }
+}

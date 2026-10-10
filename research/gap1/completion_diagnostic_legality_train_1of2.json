@@ -1,0 +1,6 @@
+{
+  "7_correct_action_legal_and_rewarded_in_every_initial_state[train shard 1/2]": {
+    "passed": true,
+    "detail": "300 configurations checked; failures=[]"
+  }
+}

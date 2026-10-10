@@ -1,0 +1,62 @@
+[
+ {
+  "test": "test_1_replacement_that_destroys_a_connection_is_vetoed",
+  "passed": true,
+  "detail": "would_disconnect_1_connected_house(s)"
+ },
+ {
+  "test": "test_2_replacement_that_preserves_connectivity_is_allowed",
+  "passed": true,
+  "detail": "house_edge_replacement_preserves_connectivity"
+ },
+ {
+  "test": "test_3_extension_of_an_existing_route_is_allowed",
+  "passed": true,
+  "detail": "plain_extension"
+ },
+ {
+  "test": "test_4_adding_the_edge_that_connects_a_new_house_is_allowed_and_connects_it",
+  "passed": true,
+  "detail": "ADD that links the second house is allowed and the post-ADD graph connects both houses"
+ },
+ {
+  "test": "test_5_an_add_that_would_disconnect_several_houses_protects_all",
+  "passed": true,
+  "detail": "veto lists both houses [(2, 3), (3, 4)]"
+ },
+ {
+  "test": "test_6_water_terrain_follows_native_legality_and_adds_no_extra_rule",
+  "passed": true,
+  "detail": "water-endpoint ADD not touching a house is a plain extension; legality is left to the native mask"
+ },
+ {
+  "test": "test_7_unknown_counterfactuals_are_not_vetoed",
+  "passed": true,
+  "detail": "multi-edge house, house-house edge and carpark endpoint -> 'unknown' (not vetoed)"
+ },
+ {
+  "test": "test_8_no_connected_houses_means_no_restriction",
+  "passed": true,
+  "detail": "permitted == native mask"
+ },
+ {
+  "test": "test_9_wait_remove_and_upgrade_are_never_vetoed",
+  "passed": true,
+  "detail": "only the destroying ADD is removed"
+ },
+ {
+  "test": "test_10_real_saved_native_states_have_no_connections_so_no_restriction",
+  "passed": true,
+  "detail": "24 real native states: permitted == native mask, vetoes 0; raw observation and mask untouched"
+ },
+ {
+  "test": "test_11_stochastic_conditional_sampling_matches_the_renormalised_policy",
+  "passed": true,
+  "detail": "mass removed by vetoing the top-5 actions 0.799; sampled distribution vs analytic conditional: total variation 0.0410 (3000 draws); no vetoed action ever drawn; empty-veto sampling identical to control sampling"
+ },
+ {
+  "test": "test_12_mothballed_edges_are_not_functional_connections",
+  "passed": true,
+  "detail": "mothballed edges excluded from functional connectivity; reactivation allowed; replacement toward a dead end vetoed"
+ }
+]

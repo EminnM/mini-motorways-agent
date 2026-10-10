@@ -1,0 +1,43 @@
+# S14 (PREPARED, NOT RUN, NOT AUTHORISED). Synthetic multi-house continued training of the frozen S8-C policy. No native game is started at any point.
+name: s14_multi_house_s8c_continuation
+init_checkpoint:                       # frozen S8-C = final checkpoint of S8 arm C, the policy used in S9-S13
+  path: research/s8_long_route_training/runs/arm_C_s11/checkpoints/step_0099840.zip
+  sha256_prefix: 85a9cb75cf287d24      # full sha is verified by train_ppo.init_from_checkpoint(strict)
+  network: SpatialMaskablePolicy (S1 architecture, 73,416 parameters, unchanged)
+environment: python/synthetic_rl/s13_env.py  (MultiHouseEnv, horizon 600, reward = +1 per delivery, -10 at game over, no shaping)
+ppo:                                   # unchanged from S1/S3/S8
+  n_steps: 512
+  batch_size: 256
+  n_epochs: 4
+  target_kl: 0.03
+  learning_rate: 3.0e-4
+  ent_coef: 0.01
+  gamma: 0.99
+training:
+  seed: 14                             # single seed
+  total_decisions: 100352              # 196 updates x 512, <= 100k decisions as authorised for pilots
+  wall_clock_cap_min: 45               # training + periodic evaluation; the run stops at the cap and the last evaluated checkpoint is used
+  n_envs: 1                            # same as S8 (parallelism not used for the training run itself)
+  eval_every_decisions: 10240
+data_splits:                           # scenario = game seed x realised native spawn timeline (3 timelines per game seed); split by GAME SEED (map + initial structures never shared)
+  train_game_seeds: [500000, 523757, 531676, 547514, 555433, 571271]       # 18 scenarios, resampled uniformly each episode; env randomness (demand, deliveries) is fresh every episode
+  validation_game_seeds: [507919, 579190]                                  # 6 scenarios x 5 evaluation seeds, stochastic policy -> checkpoint selection ONLY
+  test_game_seeds: [515838, 539595, 563352, 587109]                        # 12 scenarios x 5 evaluation seeds; evaluated ONCE on the selected checkpoint and on step 0 (frozen S8-C)
+s7_regression:                         # separate synthetic S7 suite (frozen S7 code and manifests), evaluated at every checkpoint
+  validation_gap7_gap10: "S7 validation manifest, k=7 and k=10, stochastic policy, eval seed 0 (as in S8)"
+  test_gap7_gap10: "S7 test manifest, once, on the selected checkpoint and on step 0"
+checkpoint_selection_rule_PREREGISTERED:   # applied to VALIDATION data only, in this order, written before any S14 training
+  eligibility: "S7 validation success (mean of k=7 and k=10) >= 0.90 x the same value for the step-0 checkpoint; otherwise the checkpoint is ineligible"
+  1: "maximise the pooled fraction of newly spawned houses connected within 60 decisions"
+  2: "tie within 0.02: higher median deliveries per episode"
+  3: "tie: fewer connections destroyed per episode (median)"
+  4: "tie: earlier checkpoint"
+  note: "if step 0 is selected the outcome is reported as 'no learning'"
+success_criteria_on_TEST_split:        # selected checkpoint vs step 0, paired by scenario (12 scenarios x 5 seeds, scenario-level medians)
+  primary:   "fraction of newly spawned houses connected within 60 decisions improves by >= 0.10 absolute AND improves in >= 9 of 12 scenarios"
+  secondary: ["median deliveries per episode improves by >= 25% and in >= 9 of 12 scenarios", "median connections destroyed per episode does not increase", "fraction of decisions with zero concrete during the 60 decisions after a spawn does not increase",
+              "S7 test success (mean k=7,k=10) >= 0.90 x step 0"]
+  interpretation_limits: "improvements are synthetic-environment improvements; native transfer is a separate approval. Native variability (S13a) shows single-seed aggregates are not reliable evidence."
+abort_conditions: ["non-finite loss or approx_kl > 0.2 for 3 consecutive updates", "S7 regression check fails (eligibility) at two consecutive evaluations -> stop and keep the last eligible checkpoint", "wall-clock cap reached"]
+forbidden: ["native game", "reward changes after the preregistration", "observation or mask changes", "inference-time guards", "second seed", "budget extension without approval"]
+estimated_cost: {rollout_inference_only_min: 5.2, ppo_updates_min_estimate: 28, validation_and_regression_evals_min_estimate: 8, total_min_estimate: "~41-45", basis: "throughput.json (324 env+inference steps/s, 1 thread) and the S8 benchmark (ppo_minibatch_256_update_ms ~1090 under 3-way parallel load)"}

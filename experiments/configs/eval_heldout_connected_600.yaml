@@ -1,0 +1,10 @@
+# Same held-out seeds with an explicit environment matching the frozen connected-start baselines.
+environment:
+  initialization: connected
+  decision_interval_seconds: 1.0
+  episode_horizon_decisions: 600
+evaluation:
+  seeds: [7932, 31689, 71284, 102960, 134636, 150474, 166312, 190069, 213826, 221745]
+  episodes_per_seed: 1
+  deterministic: true
+  random_seed: 0

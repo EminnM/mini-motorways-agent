@@ -1,0 +1,23 @@
+{
+ "definition": "window_boundary = an endpoint has a 4-neighbour outside the window that is not destination/carpark (v2, corrected after S8 pilot: v1 also counted tiles next to the destination)",
+ "classes": {
+  "window_boundary": {
+   "native_legal": 1045,
+   "native_illegal": 277,
+   "frac_native_legal": 0.7905,
+   "n": 1322
+  },
+  "water_endpoint": {
+   "native_legal": 169,
+   "native_illegal": 69,
+   "frac_native_legal": 0.7101,
+   "n": 238
+  },
+  "interior_dry": {
+   "native_legal": 2513,
+   "native_illegal": 0,
+   "frac_native_legal": 1.0,
+   "n": 2513
+  }
+ }
+}

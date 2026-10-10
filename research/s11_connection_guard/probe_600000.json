@@ -1,0 +1,829 @@
+[
+ {
+  "i": 0,
+  "action": [
+   "ADD",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 1,
+  "action": [
+   "ADD",
+   -13,
+   -2,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-2,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 2,
+  "action": [
+   "ADD",
+   -13,
+   -3,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-3,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 3,
+  "action": [
+   "ADD",
+   -5,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-5,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 4,
+  "action": [
+   "ADD",
+   -4,
+   -3,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-4,-3,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 5,
+  "action": [
+   "ADD",
+   -13,
+   -4,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-4,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 6,
+  "action": [
+   "ADD",
+   -13,
+   -4,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-13,-4,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 7,
+  "action": [
+   "ADD",
+   -12,
+   -4,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-12,-4,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 8,
+  "action": [
+   "ADD",
+   -14,
+   -1,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-14,-1,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 9,
+  "action": [
+   "ADD",
+   -11,
+   -4,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-11,-4,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 10,
+  "action": [
+   "ADD",
+   -10,
+   -4,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-10,-4,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 11,
+  "action": [
+   "ADD",
+   -6,
+   -2,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-6,-2,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 12,
+  "action": [
+   "ADD",
+   -5,
+   -2,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-5,-2,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 13,
+  "action": [
+   "ADD",
+   -3,
+   -3,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-3,-3,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 14,
+  "action": [
+   "ADD",
+   -9,
+   -4,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-9,-4,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 15,
+  "action": [
+   "ADD",
+   -14,
+   -2,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-14,-2,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 16,
+  "action": [
+   "ADD",
+   -7,
+   -2,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-7,-2,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 17,
+  "action": [
+   "ADD",
+   -8,
+   -4,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-8,-4,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 18,
+  "action": [
+   "ADD",
+   -7,
+   -4,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-7,-4,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 19,
+  "action": [
+   "ADD",
+   -6,
+   -4,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-6,-4,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 20,
+  "action": [
+   "ADD",
+   -6,
+   -3,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-6,-3,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 21,
+  "action": [
+   "ADD",
+   -6,
+   -2,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-6,-2,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 22,
+  "action": [
+   "ADD",
+   -8,
+   -4,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-8,-4,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 23,
+  "action": [
+   "ADD",
+   -10,
+   -3,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-10,-3,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 24,
+  "action": [
+   "ADD",
+   -8,
+   -3,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-8,-3,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 25,
+  "action": [
+   "REMOVE",
+   -14,
+   -1,
+   "E"
+  ],
+  "applied": "REMOVE_ROAD(-14,-1,E)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 26,
+  "action": [
+   "ADD",
+   -6,
+   -3,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-6,-3,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 27,
+  "action": [
+   "REMOVE",
+   -8,
+   -3,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-8,-3,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 28,
+  "action": [
+   "ADD",
+   -8,
+   -3,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-8,-3,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 29,
+  "action": [
+   "REMOVE",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 30,
+  "action": [
+   "ADD",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 31,
+  "action": [
+   "REMOVE",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 32,
+  "action": [
+   "ADD",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 33,
+  "action": [
+   "REMOVE",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 34,
+  "action": [
+   "ADD",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 35,
+  "action": [
+   "REMOVE",
+   -8,
+   -3,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-8,-3,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 36,
+  "action": [
+   "ADD",
+   -5,
+   -3,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-5,-3,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 37,
+  "action": [
+   "REMOVE",
+   -7,
+   -2,
+   "E"
+  ],
+  "applied": "REMOVE_ROAD(-7,-2,E)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 38,
+  "action": [
+   "REMOVE",
+   -14,
+   -2,
+   "E"
+  ],
+  "applied": "REMOVE_ROAD(-14,-2,E)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 39,
+  "action": [
+   "ADD",
+   -8,
+   -3,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-8,-3,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 40,
+  "action": [
+   "REMOVE",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 41,
+  "action": [
+   "ADD",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 42,
+  "action": [
+   "ADD",
+   -14,
+   -4,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-14,-4,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 43,
+  "action": [
+   "REMOVE",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 44,
+  "action": [
+   "ADD",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 45,
+  "action": [
+   "WAIT"
+  ],
+  "applied": "WAIT",
+  "applyInfo": "WAIT (no-op)",
+  "accepted": true
+ },
+ {
+  "i": 46,
+  "action": [
+   "REMOVE",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 47,
+  "action": [
+   "ADD",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 48,
+  "action": [
+   "REMOVE",
+   -14,
+   -4,
+   "E"
+  ],
+  "applied": "REMOVE_ROAD(-14,-4,E)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 49,
+  "action": [
+   "ADD",
+   -6,
+   -1,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-6,-1,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 50,
+  "action": [
+   "REMOVE",
+   -8,
+   -3,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-8,-3,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 51,
+  "action": [
+   "ADD",
+   -6,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-6,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 52,
+  "action": [
+   "REMOVE",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 53,
+  "action": [
+   "ADD",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 54,
+  "action": [
+   "ADD",
+   -4,
+   -2,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-4,-2,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true,
+  "house": [
+   -4,
+   -2
+  ],
+  "house_states_before": {
+   "W": "Active"
+  },
+  "nbr_states_before": {
+   "-4,-1": {
+    "W": "Active"
+   },
+   "-3,-2": {},
+   "-4,-3": {
+    "E": "Active"
+   },
+   "-5,-2": {
+    "N": "Active",
+    "E": "Active",
+    "S": "Active",
+    "W": "Active"
+   }
+  },
+  "house_states_after": {
+   "S": "Active",
+   "W": "Mothballed"
+  },
+  "nbr_states_after": {
+   "-4,-1": {
+    "W": "Active"
+   },
+   "-3,-2": {},
+   "-4,-3": {
+    "N": "Active",
+    "E": "Active"
+   },
+   "-5,-2": {
+    "N": "Active",
+    "E": "Mothballed",
+    "S": "Active",
+    "W": "Active"
+   }
+  }
+ },
+ {
+  "i": 55,
+  "action": [
+   "ADD",
+   -5,
+   -2,
+   "E"
+  ],
+  "applied": "ADD_ROAD(-5,-2,E)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true,
+  "house": [
+   -4,
+   -2
+  ],
+  "house_states_before": {
+   "S": "Active",
+   "W": "Mothballed"
+  },
+  "nbr_states_before": {
+   "-4,-1": {
+    "W": "Active"
+   },
+   "-3,-2": {},
+   "-4,-3": {
+    "N": "Active",
+    "E": "Active"
+   },
+   "-5,-2": {
+    "N": "Active",
+    "E": "Mothballed",
+    "S": "Active",
+    "W": "Active"
+   }
+  },
+  "house_states_after": {
+   "W": "Active"
+  },
+  "nbr_states_after": {
+   "-4,-1": {
+    "W": "Active"
+   },
+   "-3,-2": {},
+   "-4,-3": {
+    "E": "Active"
+   },
+   "-5,-2": {
+    "N": "Active",
+    "E": "Active",
+    "S": "Active",
+    "W": "Active"
+   }
+  }
+ },
+ {
+  "i": 56,
+  "action": [
+   "REMOVE",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "REMOVE_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 57,
+  "action": [
+   "ADD",
+   -13,
+   -1,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-13,-1,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ },
+ {
+  "i": 58,
+  "action": [
+   "ADD",
+   -14,
+   -5,
+   "S"
+  ],
+  "applied": "ADD_ROAD(-14,-5,S)",
+  "applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true,
+  "house": [
+   -14,
+   -6
+  ],
+  "house_states_before": {
+   "E": "Active"
+  },
+  "nbr_states_before": {
+   "-14,-5": {},
+   "-13,-6": {
+    "W": "Active"
+   },
+   "-14,-7": {},
+   "-15,-6": {}
+  },
+  "house_states_after": {
+   "N": "Active"
+  },
+  "nbr_states_after": {
+   "-14,-5": {
+    "S": "Active"
+   },
+   "-13,-6": {},
+   "-14,-7": {},
+   "-15,-6": {}
+  }
+ },
+ {
+  "i": 59,
+  "action": [
+   "REMOVE",
+   -8,
+   -3,
+   "E"
+  ],
+  "applied": "REMOVE_ROAD(-8,-3,E)",
+  "applyInfo": "TileEditor.ClearTileExplicit succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+  "accepted": true
+ }
+]

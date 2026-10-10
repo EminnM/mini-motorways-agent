@@ -1,0 +1,387 @@
+{
+ "split": "test",
+ "n_tasks": 409,
+ "runs": {
+  "deterministic": {
+   "2": {
+    "n": 88,
+    "success": 0.5454545454545454,
+    "success_ci95": [
+     0.44169880685506685,
+     0.6454076895474348
+    ],
+    "exact_k_adds_success": 0.11363636363636363,
+    "first_add_useful": 0.42592592592592593,
+    "episodes_with_any_useful_add": 0.5795454545454546,
+    "mean_max_progress": 0.5511363636363636,
+    "frac_reaching_half_route": 0.5568181818181818,
+    "mean_irrelevant_adds": 2.1363636363636362,
+    "irrelevant_share_of_adds": 0.6123778501628665,
+    "mean_removes": 0.0,
+    "mean_house_edge_replacements": 0.9204545454545454,
+    "mean_efficiency_on_success": 0.5482142857142857,
+    "median_steps_on_success": 4.0,
+    "action_share": {
+     "WAIT": 0.694831013916501,
+     "ADD": 0.305168986083499,
+     "REMOVE": 0.0
+    }
+   },
+   "3": {
+    "n": 100,
+    "success": 0.42,
+    "success_ci95": [
+     0.327982249185113,
+     0.5179369200110473
+    ],
+    "exact_k_adds_success": 0.1,
+    "first_add_useful": 0.7291666666666666,
+    "episodes_with_any_useful_add": 0.48,
+    "mean_max_progress": 0.43666666666666665,
+    "frac_reaching_half_route": 0.42,
+    "mean_irrelevant_adds": 3.36,
+    "irrelevant_share_of_adds": 0.6829268292682927,
+    "mean_removes": 0.0,
+    "mean_house_edge_replacements": 1.14,
+    "mean_efficiency_on_success": 0.5156547817262103,
+    "median_steps_on_success": 8.5,
+    "action_share": {
+     "WAIT": 0.7613967022308439,
+     "ADD": 0.23860329776915615,
+     "REMOVE": 0.0
+    }
+   },
+   "5": {
+    "n": 100,
+    "success": 0.07,
+    "success_ci95": [
+     0.034318824364064096,
+     0.13749671006529757
+    ],
+    "exact_k_adds_success": 0.0,
+    "first_add_useful": 0.7857142857142857,
+    "episodes_with_any_useful_add": 0.14,
+    "mean_max_progress": 0.11599999999999999,
+    "frac_reaching_half_route": 0.13,
+    "mean_irrelevant_adds": 2.32,
+    "irrelevant_share_of_adds": 0.7412140575079872,
+    "mean_removes": 0.0,
+    "mean_house_edge_replacements": 0.53,
+    "mean_efficiency_on_success": 0.3951530925215136,
+    "median_steps_on_success": 19,
+    "action_share": {
+     "WAIT": 0.9342851144236826,
+     "ADD": 0.06571488557631745,
+     "REMOVE": 0.0
+    }
+   },
+   "7": {
+    "n": 93,
+    "success": 0.0967741935483871,
+    "success_ci95": [
+     0.05175108300166125,
+     0.17378835459540445
+    ],
+    "exact_k_adds_success": 0.0,
+    "first_add_useful": 0.9523809523809523,
+    "episodes_with_any_useful_add": 0.21505376344086022,
+    "mean_max_progress": 0.16897081413210444,
+    "frac_reaching_half_route": 0.20430107526881722,
+    "mean_irrelevant_adds": 4.935483870967742,
+    "irrelevant_share_of_adds": 0.7688442211055276,
+    "mean_removes": 0.0,
+    "mean_house_edge_replacements": 1.2903225806451613,
+    "mean_efficiency_on_success": 0.30561451877877,
+    "median_steps_on_success": 22,
+    "action_share": {
+     "WAIT": 0.9019221291276491,
+     "ADD": 0.09807787087235091,
+     "REMOVE": 0.0
+    }
+   },
+   "10": {
+    "n": 28,
+    "success": 0.0,
+    "success_ci95": [
+     0.0,
+     0.12064720365810762
+    ],
+    "exact_k_adds_success": 0.0,
+    "first_add_useful": 1.0,
+    "episodes_with_any_useful_add": 0.2857142857142857,
+    "mean_max_progress": 0.1392857142857143,
+    "frac_reaching_half_route": 0.17857142857142858,
+    "mean_irrelevant_adds": 8.428571428571429,
+    "irrelevant_share_of_adds": 0.8581818181818182,
+    "mean_removes": 0.0,
+    "mean_house_edge_replacements": 3.142857142857143,
+    "mean_efficiency_on_success": null,
+    "median_steps_on_success": null,
+    "action_share": {
+     "WAIT": 0.9017857142857143,
+     "ADD": 0.09821428571428571,
+     "REMOVE": 0.0
+    }
+   },
+   "all": {
+    "n": 409,
+    "success": 0.2591687041564792
+   }
+  },
+  "stochastic_seed0": {
+   "2": {
+    "n": 88,
+    "success": 0.8181818181818182,
+    "success_ci95": [
+     0.7248754936722209,
+     0.884869981145291
+    ],
+    "exact_k_adds_success": 0.125,
+    "first_add_useful": 0.36363636363636365,
+    "episodes_with_any_useful_add": 0.9204545454545454,
+    "mean_max_progress": 0.8636363636363636,
+    "frac_reaching_half_route": 0.9090909090909091,
+    "mean_irrelevant_adds": 6.2727272727272725,
+    "irrelevant_share_of_adds": 0.7688022284122563,
+    "mean_removes": 0.011363636363636364,
+    "mean_house_edge_replacements": 1.2386363636363635,
+    "mean_efficiency_on_success": 0.4768527496468673,
+    "median_steps_on_success": 6.0,
+    "action_share": {
+     "WAIT": 0.05519053876478318,
+     "ADD": 0.9434954007884363,
+     "REMOVE": 0.001314060446780552
+    }
+   },
+   "3": {
+    "n": 100,
+    "success": 0.79,
+    "success_ci95": [
+     0.7001985069803768,
+     0.8583445046835422
+    ],
+    "exact_k_adds_success": 0.08,
+    "first_add_useful": 0.42,
+    "episodes_with_any_useful_add": 0.93,
+    "mean_max_progress": 0.8366666666666667,
+    "frac_reaching_half_route": 0.8,
+    "mean_irrelevant_adds": 10.49,
+    "irrelevant_share_of_adds": 0.7863568215892054,
+    "mean_removes": 0.0,
+    "mean_house_edge_replacements": 1.92,
+    "mean_efficiency_on_success": 0.4257012279845949,
+    "median_steps_on_success": 9,
+    "action_share": {
+     "WAIT": 0.06908583391486392,
+     "ADD": 0.9309141660851361,
+     "REMOVE": 0.0
+    }
+   },
+   "5": {
+    "n": 100,
+    "success": 0.38,
+    "success_ci95": [
+     0.2909744920013438,
+     0.47790426179289663
+    ],
+    "exact_k_adds_success": 0.0,
+    "first_add_useful": 0.34,
+    "episodes_with_any_useful_add": 0.94,
+    "mean_max_progress": 0.72,
+    "frac_reaching_half_route": 0.81,
+    "mean_irrelevant_adds": 24.06,
+    "irrelevant_share_of_adds": 0.8222829801777171,
+    "mean_removes": 0.08,
+    "mean_house_edge_replacements": 7.17,
+    "mean_efficiency_on_success": 0.30937090317371174,
+    "median_steps_on_success": 22.0,
+    "action_share": {
+     "WAIT": 0.24264326277749096,
+     "ADD": 0.7552916881775942,
+     "REMOVE": 0.002065049044914817
+    }
+   },
+   "7": {
+    "n": 93,
+    "success": 0.10752688172043011,
+    "success_ci95": [
+     0.059462429584426144,
+     0.1867292896767178
+    ],
+    "exact_k_adds_success": 0.0,
+    "first_add_useful": 0.3118279569892473,
+    "episodes_with_any_useful_add": 0.978494623655914,
+    "mean_max_progress": 0.5453149001536098,
+    "frac_reaching_half_route": 0.5161290322580645,
+    "mean_irrelevant_adds": 35.12903225806452,
+    "irrelevant_share_of_adds": 0.8262518968133535,
+    "mean_removes": 0.10752688172043011,
+    "mean_house_edge_replacements": 18.0752688172043,
+    "mean_efficiency_on_success": 0.2806926755102799,
+    "median_steps_on_success": 26.0,
+    "action_share": {
+     "WAIT": 0.3479190656357954,
+     "ADD": 0.6504359269616713,
+     "REMOVE": 0.0016450074025333114
+    }
+   },
+   "10": {
+    "n": 28,
+    "success": 0.0,
+    "success_ci95": [
+     0.0,
+     0.12064720365810762
+    ],
+    "exact_k_adds_success": 0.0,
+    "first_add_useful": 0.4642857142857143,
+    "episodes_with_any_useful_add": 1.0,
+    "mean_max_progress": 0.42857142857142855,
+    "frac_reaching_half_route": 0.35714285714285715,
+    "mean_irrelevant_adds": 33.642857142857146,
+    "irrelevant_share_of_adds": 0.8010204081632653,
+    "mean_removes": 0.14285714285714285,
+    "mean_house_edge_replacements": 16.928571428571427,
+    "mean_efficiency_on_success": null,
+    "median_steps_on_success": null,
+    "action_share": {
+     "WAIT": 0.5785714285714286,
+     "ADD": 0.42,
+     "REMOVE": 0.0014285714285714286
+    }
+   },
+   "all": {
+    "n": 409,
+    "success": 0.48655256723716384
+   }
+  },
+  "stochastic_seed1": {
+   "2": {
+    "n": 88,
+    "success": 0.8295454545454546,
+    "success_ci95": [
+     0.7376293870111583,
+     0.893892711906979
+    ],
+    "exact_k_adds_success": 0.11363636363636363,
+    "first_add_useful": 0.3522727272727273,
+    "episodes_with_any_useful_add": 0.9204545454545454,
+    "mean_max_progress": 0.8579545454545454,
+    "frac_reaching_half_route": 0.8863636363636364,
+    "mean_irrelevant_adds": 5.954545454545454,
+    "irrelevant_share_of_adds": 0.7627365356622998,
+    "mean_removes": 0.0,
+    "mean_house_edge_replacements": 1.0454545454545454,
+    "mean_efficiency_on_success": 0.4801498349443555,
+    "median_steps_on_success": 5,
+    "action_share": {
+     "WAIT": 0.060191518467852256,
+     "ADD": 0.9398084815321477,
+     "REMOVE": 0.0
+    }
+   },
+   "3": {
+    "n": 100,
+    "success": 0.74,
+    "success_ci95": [
+     0.6462882736813838,
+     0.8159542187301354
+    ],
+    "exact_k_adds_success": 0.06,
+    "first_add_useful": 0.37,
+    "episodes_with_any_useful_add": 0.9,
+    "mean_max_progress": 0.7866666666666667,
+    "frac_reaching_half_route": 0.76,
+    "mean_irrelevant_adds": 11.57,
+    "irrelevant_share_of_adds": 0.8057103064066853,
+    "mean_removes": 0.01,
+    "mean_house_edge_replacements": 2.06,
+    "mean_efficiency_on_success": 0.43171293134528427,
+    "median_steps_on_success": 9.0,
+    "action_share": {
+     "WAIT": 0.06688311688311688,
+     "ADD": 0.9324675324675324,
+     "REMOVE": 0.0006493506493506494
+    }
+   },
+   "5": {
+    "n": 100,
+    "success": 0.4,
+    "success_ci95": [
+     0.3093997461136028,
+     0.4979992153815976
+    ],
+    "exact_k_adds_success": 0.0,
+    "first_add_useful": 0.34,
+    "episodes_with_any_useful_add": 0.97,
+    "mean_max_progress": 0.718,
+    "frac_reaching_half_route": 0.79,
+    "mean_irrelevant_adds": 23.99,
+    "irrelevant_share_of_adds": 0.8263864967275233,
+    "mean_removes": 0.03,
+    "mean_house_edge_replacements": 7.09,
+    "mean_efficiency_on_success": 0.29724743907748336,
+    "median_steps_on_success": 22.0,
+    "action_share": {
+     "WAIT": 0.2424400417101147,
+     "ADD": 0.7567778936392076,
+     "REMOVE": 0.0007820646506777894
+    }
+   },
+   "7": {
+    "n": 93,
+    "success": 0.10752688172043011,
+    "success_ci95": [
+     0.059462429584426144,
+     0.1867292896767178
+    ],
+    "exact_k_adds_success": 0.0,
+    "first_add_useful": 0.3225806451612903,
+    "episodes_with_any_useful_add": 0.956989247311828,
+    "mean_max_progress": 0.576036866359447,
+    "frac_reaching_half_route": 0.6236559139784946,
+    "mean_irrelevant_adds": 31.440860215053764,
+    "irrelevant_share_of_adds": 0.8104212860310421,
+    "mean_removes": 0.08602150537634409,
+    "mean_house_edge_replacements": 14.204301075268818,
+    "mean_efficiency_on_success": 0.32383925626030885,
+    "median_steps_on_success": 24.0,
+    "action_share": {
+     "WAIT": 0.4017207147584381,
+     "ADD": 0.5969556585043018,
+     "REMOVE": 0.0013236267372600927
+    }
+   },
+   "10": {
+    "n": 28,
+    "success": 0.0,
+    "success_ci95": [
+     0.0,
+     0.12064720365810762
+    ],
+    "exact_k_adds_success": 0.0,
+    "first_add_useful": 0.39285714285714285,
+    "episodes_with_any_useful_add": 0.9642857142857143,
+    "mean_max_progress": 0.3821428571428571,
+    "frac_reaching_half_route": 0.42857142857142855,
+    "mean_irrelevant_adds": 37.25,
+    "irrelevant_share_of_adds": 0.845904298459043,
+    "mean_removes": 0.25,
+    "mean_house_edge_replacements": 18.785714285714285,
+    "mean_efficiency_on_success": null,
+    "median_steps_on_success": null,
+    "action_share": {
+     "WAIT": 0.5571428571428572,
+     "ADD": 0.44035714285714284,
+     "REMOVE": 0.0025
+    }
+   },
+   "all": {
+    "n": 409,
+    "success": 0.48166259168704156
+   }
+  }
+ },
+ "checkpoint": "2026-10-08_140406_syn_s1_cnn_s11/checkpoints/step_050000.zip",
+ "sha256": "c8a7930eb12e9a204be02fa69e98e0dfc6969652555c5e390839bec225186fdc",
+ "wall_s": 189.9
+}

@@ -1,0 +1,2317 @@
+{
+ "seed": 1007922,
+ "at": 446,
+ "trace": [
+  {
+   "t": 434,
+   "score": 91.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 435,
+   "score": 92.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 436,
+   "score": 92.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 437,
+   "score": 92.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 438,
+   "score": 93.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 439,
+   "score": 94.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 440,
+   "score": 95.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 441,
+   "score": 96.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 442,
+   "score": 96.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 443,
+   "score": 97.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 444,
+   "score": 97.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 445,
+   "score": 97.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 446,
+   "score": 98.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 447,
+   "score": 98.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 448,
+   "score": 98.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 3,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  },
+  {
+   "t": 449,
+   "score": 99.0,
+   "concrete": 47,
+   "houses": 12,
+   "connected": 12,
+   "plan": null,
+   "dests": [
+    {
+     "tiles": [
+      [
+       -1,
+       -2
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       1,
+       -2
+      ]
+     ],
+     "group": null,
+     "demand": 0,
+     "over": false,
+     "houses_of_group_in_component": 0
+    },
+    {
+     "tiles": [
+      [
+       -13,
+       -1
+      ]
+     ],
+     "group": 3,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    },
+    {
+     "tiles": [
+      [
+       -12,
+       3
+      ]
+     ],
+     "group": 1,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 3
+    },
+    {
+     "tiles": [
+      [
+       -11,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 1,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -7,
+       7
+      ]
+     ],
+     "group": 0,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 5
+    },
+    {
+     "tiles": [
+      [
+       -2,
+       7
+      ]
+     ],
+     "group": 2,
+     "demand": 2,
+     "over": false,
+     "houses_of_group_in_component": 2
+    }
+   ],
+   "action": [
+    "WAIT"
+   ]
+  }
+ ],
+ "globals": {
+  "hour": 535,
+  "day": 22,
+  "week": 3,
+  "score": 98,
+  "concreteAvailable": 47,
+  "concreteTotal": 85,
+  "bridgesAvailable": 1,
+  "bridgesTotal": 1,
+  "tunnelsAvailable": 0,
+  "tunnelsTotal": 0,
+  "motorwaysAvailable": 1,
+  "motorwaysTotal": 1,
+  "trafficLightsAvailable": 2,
+  "trafficLightsTotal": 2,
+  "roundaboutsAvailable": 0,
+  "roundaboutsTotal": 0,
+  "pendingUpgradeChoices": 0,
+  "totalClaimedPackages": 3,
+  "motorwaysAvailableOrDraft": 1
+ },
+ "globals_lists": {
+  "pendingUpgradeTypes": [],
+  "motorways": [],
+  "playableAreaAtTime": [
+   -17,
+   -4,
+   7,
+   8
+  ]
+ },
+ "houses": [
+  {
+   "tile": [
+    -15,
+    4
+   ],
+   "group": 0,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -14,
+    2
+   ],
+   "group": 0,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -14,
+    3
+   ],
+   "group": 0,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -9,
+    1
+   ],
+   "group": 2,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -8,
+    1
+   ],
+   "group": 2,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -5,
+    -1
+   ],
+   "group": 3,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -5,
+    0
+   ],
+   "group": 3,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -5,
+    5
+   ],
+   "group": 1,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -4,
+    3
+   ],
+   "group": 1,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -4,
+    6
+   ],
+   "group": 1,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    -2,
+    2
+   ],
+   "group": 0,
+   "connected": true,
+   "component": "(-1, 8)"
+  },
+  {
+   "tile": [
+    0,
+    2
+   ],
+   "group": 0,
+   "connected": true,
+   "component": "(-1, 8)"
+  }
+ ],
+ "dests_full": [
+  {
+   "tiles": [
+    [
+     -1,
+     -2
+    ],
+    [
+     -1,
+     -1
+    ],
+    [
+     0,
+     -2
+    ],
+    [
+     0,
+     -1
+    ]
+   ],
+   "group": 1,
+   "demand": 1,
+   "over": false,
+   "carparks": [
+    [
+     -1,
+     -3
+    ],
+    [
+     0,
+     -3
+    ]
+   ],
+   "component": "(2, -1)",
+   "groups_in_component": [
+    1
+   ]
+  },
+  {
+   "tiles": [
+    [
+     1,
+     -2
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     2,
+     -2
+    ],
+    [
+     2,
+     -1
+    ]
+   ],
+   "group": null,
+   "demand": 0,
+   "over": false,
+   "carparks": [
+    [
+     1,
+     -3
+    ],
+    [
+     2,
+     -3
+    ]
+   ],
+   "component": "(2, -1)",
+   "groups_in_component": [
+    1
+   ]
+  },
+  {
+   "tiles": [
+    [
+     -13,
+     -1
+    ],
+    [
+     -13,
+     0
+    ],
+    [
+     -12,
+     -1
+    ],
+    [
+     -12,
+     0
+    ]
+   ],
+   "group": 3,
+   "demand": 2,
+   "over": false,
+   "carparks": [
+    [
+     -14,
+     -1
+    ],
+    [
+     -14,
+     0
+    ]
+   ],
+   "component": "(-1, 8)",
+   "groups_in_component": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "tiles": [
+    [
+     -12,
+     3
+    ],
+    [
+     -12,
+     4
+    ],
+    [
+     -11,
+     3
+    ],
+    [
+     -11,
+     4
+    ]
+   ],
+   "group": 1,
+   "demand": 1,
+   "over": false,
+   "carparks": [
+    [
+     -12,
+     2
+    ],
+    [
+     -11,
+     2
+    ]
+   ],
+   "component": "(-1, 8)",
+   "groups_in_component": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "tiles": [
+    [
+     -11,
+     7
+    ],
+    [
+     -11,
+     8
+    ],
+    [
+     -10,
+     7
+    ],
+    [
+     -10,
+     8
+    ]
+   ],
+   "group": 0,
+   "demand": 1,
+   "over": false,
+   "carparks": [
+    [
+     -12,
+     7
+    ],
+    [
+     -12,
+     8
+    ]
+   ],
+   "component": "(-1, 8)",
+   "groups_in_component": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "tiles": [
+    [
+     -7,
+     7
+    ],
+    [
+     -7,
+     8
+    ],
+    [
+     -6,
+     7
+    ],
+    [
+     -6,
+     8
+    ]
+   ],
+   "group": 0,
+   "demand": 1,
+   "over": false,
+   "carparks": [
+    [
+     -8,
+     7
+    ],
+    [
+     -8,
+     8
+    ]
+   ],
+   "component": "(-1, 8)",
+   "groups_in_component": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "tiles": [
+    [
+     -2,
+     7
+    ],
+    [
+     -2,
+     8
+    ],
+    [
+     -1,
+     7
+    ],
+    [
+     -1,
+     8
+    ]
+   ],
+   "group": 2,
+   "demand": 3,
+   "over": false,
+   "carparks": [
+    [
+     -2,
+     6
+    ],
+    [
+     -1,
+     6
+    ]
+   ],
+   "component": "(-1, 8)",
+   "groups_in_component": [
+    0,
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "kind": "WAIT",
+   "desc": "WAIT",
+   "score": 0.0,
+   "terms": {
+    "wait": 0.0
+   },
+   "feasibility": "feasible",
+   "confidence": 1.0,
+   "would_destroy": false,
+   "prereq": []
+  }
+ ],
+ "executor": {
+  "stats": {
+   "plans": 10,
+   "completed": 10,
+   "abandoned": 0,
+   "abandon_reasons": {},
+   "waits_for_concrete": 0,
+   "compute_s": 0.4234456004342064,
+   "decisions": 443,
+   "illegal_suppressed": 0,
+   "destroy_vetoes": 0
+  },
+  "plan": null,
+  "forced_actions": [
+   [
+    141,
+    3109
+   ],
+   [
+    281,
+    3109
+   ],
+   [
+    421,
+    3109
+   ]
+  ]
+ },
+ "reach_probes": [
+  {
+   "dest": [
+    -1,
+    -2
+   ],
+   "group": 1,
+   "house": [
+    -4,
+    3
+   ],
+   "house_connected": true,
+   "path_len": 10,
+   "new_edges": 4
+  },
+  {
+   "dest": [
+    -1,
+    -2
+   ],
+   "group": 1,
+   "house": [
+    -5,
+    5
+   ],
+   "house_connected": true,
+   "path_len": 9,
+   "new_edges": 4
+  },
+  {
+   "dest": [
+    -1,
+    -2
+   ],
+   "group": 1,
+   "house": [
+    -4,
+    6
+   ],
+   "house_connected": true,
+   "path_len": 9,
+   "new_edges": 3
+  },
+  {
+   "dest": [
+    -13,
+    -1
+   ],
+   "group": 3,
+   "house": [
+    -5,
+    -1
+   ],
+   "house_connected": true,
+   "path_len": 22,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -13,
+    -1
+   ],
+   "group": 3,
+   "house": [
+    -5,
+    0
+   ],
+   "house_connected": true,
+   "path_len": 21,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -12,
+    3
+   ],
+   "group": 1,
+   "house": [
+    -4,
+    3
+   ],
+   "house_connected": true,
+   "path_len": 18,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -12,
+    3
+   ],
+   "group": 1,
+   "house": [
+    -5,
+    5
+   ],
+   "house_connected": true,
+   "path_len": 19,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -12,
+    3
+   ],
+   "group": 1,
+   "house": [
+    -4,
+    6
+   ],
+   "house_connected": true,
+   "path_len": 21,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -11,
+    7
+   ],
+   "group": 0,
+   "house": [
+    -14,
+    2
+   ],
+   "house_connected": true,
+   "path_len": 9,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -11,
+    7
+   ],
+   "group": 0,
+   "house": [
+    -2,
+    2
+   ],
+   "house_connected": true,
+   "path_len": 18,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -11,
+    7
+   ],
+   "group": 0,
+   "house": [
+    0,
+    2
+   ],
+   "house_connected": true,
+   "path_len": 20,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -11,
+    7
+   ],
+   "group": 0,
+   "house": [
+    -14,
+    3
+   ],
+   "house_connected": true,
+   "path_len": 6,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -11,
+    7
+   ],
+   "group": 0,
+   "house": [
+    -15,
+    4
+   ],
+   "house_connected": true,
+   "path_len": 6,
+   "new_edges": 0
+  },
+  {
+   "dest": [
+    -7,
+    7
+   ],
+   "group": 0,
+   "house": [
+    -14,
+    2
+   ],
+   "house_connected": true,
+   "path_len": 13,
+   "new_edges": 1
+  },
+  {
+   "dest": [
+    -7,
+    7
+   ],
+   "group": 0,
+   "house": [
+    -2,
+    2
+   ],
+   "house_connected": true,
+   "path_len": 17,
+   "new_edges": 1
+  },
+  {
+   "dest": [
+    -7,
+    7
+   ],
+   "group": 0,
+   "house": [
+    0,
+    2
+   ],
+   "house_connected": true,
+   "path_len": 19,
+   "new_edges": 1
+  },
+  {
+   "dest": [
+    -7,
+    7
+   ],
+   "group": 0,
+   "house": [
+    -14,
+    3
+   ],
+   "house_connected": true,
+   "path_len": 10,
+   "new_edges": 1
+  },
+  {
+   "dest": [
+    -7,
+    7
+   ],
+   "group": 0,
+   "house": [
+    -15,
+    4
+   ],
+   "house_connected": true,
+   "path_len": 10,
+   "new_edges": 1
+  },
+  {
+   "dest": [
+    -2,
+    7
+   ],
+   "group": 2,
+   "house": [
+    -9,
+    1
+   ],
+   "house_connected": true,
+   "path_len": 12,
+   "new_edges": 1
+  },
+  {
+   "dest": [
+    -2,
+    7
+   ],
+   "group": 2,
+   "house": [
+    -8,
+    1
+   ],
+   "house_connected": true,
+   "path_len": 11,
+   "new_edges": 1
+  }
+ ],
+ "n_water_tiles": 127,
+ "legal_adds_touching_water": 12,
+ "legal_adds_total": 407,
+ "tiles_sample_keys": [
+  "buildable",
+  "contentType",
+  "coord",
+  "destination",
+  "groupIndex",
+  "hasRoundabout",
+  "hasTrafficLight",
+  "motorwayDirections",
+  "overRail",
+  "overWater",
+  "road",
+  "underMountain",
+  "visibleVehicleCount"
+ ]
+}

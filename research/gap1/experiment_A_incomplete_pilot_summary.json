@@ -1,0 +1,26 @@
+{
+  "2026-10-08_104850_gap1_native_s101": {
+    "steps": 5632,
+    "episodes": 274,
+    "train_success_last200": 0.095,
+    "destructive_last200": 0.125,
+    "timeout_last200": 0.78,
+    "first_action_correct_last200": 0.005
+  },
+  "2026-10-08_104900_gap1_native_s102": {
+    "steps": 5632,
+    "episodes": 277,
+    "train_success_last200": 0.1,
+    "destructive_last200": 0.155,
+    "timeout_last200": 0.745,
+    "first_action_correct_last200": 0.0
+  },
+  "2026-10-08_104916_gap1_native_s103": {
+    "steps": 7168,
+    "episodes": 329,
+    "train_success_last200": 0.12,
+    "destructive_last200": 0.13,
+    "timeout_last200": 0.75,
+    "first_action_correct_last200": 0.005
+  }
+}

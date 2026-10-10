@@ -1,0 +1,544 @@
+{
+ "1_splits_disjoint_by_scene_house": {
+  "passed": true,
+  "detail": "{'train': 2167, 'validation': 277, 'test': 409} tasks; per-length test counts {2: 88, 3: 100, 5: 100, 7: 93, 10: 28}; no (scene,house) pair or task id shared; overlaps=[]",
+  "stats": {
+   "2": {
+    "enumerated": 548,
+    "train": {
+     "available": 367,
+     "used": 367
+    },
+    "validation": {
+     "available": 93,
+     "used": 60
+    },
+    "test": {
+     "available": 88,
+     "used": 88
+    }
+   },
+   "3": {
+    "enumerated": 728,
+    "train": {
+     "available": 493,
+     "used": 493
+    },
+    "validation": {
+     "available": 124,
+     "used": 60
+    },
+    "test": {
+     "available": 111,
+     "used": 100
+    }
+   },
+   "5": {
+    "enumerated": 988,
+    "train": {
+     "available": 687,
+     "used": 600
+    },
+    "validation": {
+     "available": 139,
+     "used": 60
+    },
+    "test": {
+     "available": 162,
+     "used": 100
+    }
+   },
+   "7": {
+    "enumerated": 740,
+    "train": {
+     "available": 528,
+     "used": 528
+    },
+    "validation": {
+     "available": 119,
+     "used": 60
+    },
+    "test": {
+     "available": 93,
+     "used": 93
+    }
+   },
+   "10": {
+    "enumerated": 244,
+    "train": {
+     "available": 179,
+     "used": 179
+    },
+    "validation": {
+     "available": 37,
+     "used": 37
+    },
+    "test": {
+     "available": 28,
+     "used": 28
+    }
+   }
+  }
+ },
+ "2_every_task_solvable_min_k_correct_any_order": {
+  "passed": true,
+  "detail": "2853 tasks: independent networkx min-edits (live mask + observation) == stored k == generator Dijkstra == route length; the shortest route succeeds in 8559 replays (forward/reverse/random order) with reward 0,...,0,1 and termination exactly at the k-th ADD (13s); violations=[]",
+  "per_k": {
+   "2": 515,
+   "3": 653,
+   "5": 760,
+   "7": 681,
+   "10": 244
+  }
+ },
+ "3_exhaustive_search_confirms_minimum_on_small_tasks": {
+  "passed": true,
+  "detail": "k=2: exhaustive depth<=2 search (all legal actions incl. WAIT/REMOVE) finds the minimum 2 on 30/30 tasks; k=3: no action sequence of length <=2 wins on 4 tasks (68,107 env steps). Larger k rely on the shortest-path lower bound (every successful sequence must add every non-initial edge of a house-carpark path)"
+ },
+ "4_no_single_action_shortcut": {
+  "passed": true,
+  "detail": "472,481 single legal actions (WAIT/ADD/REMOVE) from the start state of all 2853 tasks: 0 reward or terminate (57s)"
+ },
+ "5_partial_routes_and_timeouts_give_zero_reward": {
+  "passed": true,
+  "detail": "4662 routes with one required edge withheld: reward 0, not terminal, not connected; WAIT-only episodes truncate at 10*k with reward 0; violations=[]"
+ },
+ "6_connectivity_detected_independently_of_generator": {
+  "passed": true,
+  "detail": "52,178 visited states: env.connected == observation-only BFS == networkx components == (reward>0) in all; route-minus-one-edge never connects (0 false positives) (67s)"
+ },
+ "7_synthetic_masks_vs_native_masks_on_24_captured_states": {
+  "passed": true,
+  "detail": "ADD recall 95.2% (native-legal edges also legal here), precision 93.1% (synthetic mask is a superset on window-boundary edges); REMOVE sets identical on 24/24 states; WAIT legal 24/24, upgrade slots illegal 24/24; mean legal ADD native 155.3 vs synthetic 159.8",
+  "per_state": [
+   {
+    "seed": 182150,
+    "native_add": 136,
+    "synth_add": 128,
+    "recall": 0.9117647058823529,
+    "precision": 0.96875,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 4
+   },
+   {
+    "seed": 205907,
+    "native_add": 166,
+    "synth_add": 182,
+    "recall": 0.9939759036144579,
+    "precision": 0.9065934065934066,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1783
+    ],
+    "extra_synth_n": 17
+   },
+   {
+    "seed": 229664,
+    "native_add": 176,
+    "synth_add": 183,
+    "recall": 0.9659090909090909,
+    "precision": 0.9289617486338798,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1639,
+     1685,
+     1783
+    ],
+    "extra_synth_n": 13
+   },
+   {
+    "seed": 253421,
+    "native_add": 144,
+    "synth_add": 139,
+    "recall": 0.9097222222222222,
+    "precision": 0.9424460431654677,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 8
+   },
+   {
+    "seed": 261340,
+    "native_add": 154,
+    "synth_add": 158,
+    "recall": 0.9545454545454546,
+    "precision": 0.930379746835443,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1495,
+     1537,
+     1685
+    ],
+    "extra_synth_n": 11
+   },
+   {
+    "seed": 269259,
+    "native_add": 165,
+    "synth_add": 179,
+    "recall": 0.9878787878787879,
+    "precision": 0.9106145251396648,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1783,
+     1927
+    ],
+    "extra_synth_n": 16
+   },
+   {
+    "seed": 311000,
+    "native_add": 172,
+    "synth_add": 175,
+    "recall": 0.9534883720930233,
+    "precision": 0.9371428571428572,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1495,
+     1537,
+     1639
+    ],
+    "extra_synth_n": 11
+   },
+   {
+    "seed": 318919,
+    "native_add": 144,
+    "synth_add": 139,
+    "recall": 0.9097222222222222,
+    "precision": 0.9424460431654677,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 8
+   },
+   {
+    "seed": 326838,
+    "native_add": 148,
+    "synth_add": 144,
+    "recall": 0.9121621621621622,
+    "precision": 0.9375,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 9
+   },
+   {
+    "seed": 334757,
+    "native_add": 162,
+    "synth_add": 176,
+    "recall": 0.9876543209876543,
+    "precision": 0.9090909090909091,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1639,
+     1783
+    ],
+    "extra_synth_n": 16
+   },
+   {
+    "seed": 342676,
+    "native_add": 148,
+    "synth_add": 143,
+    "recall": 0.9054054054054054,
+    "precision": 0.9370629370629371,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 9
+   },
+   {
+    "seed": 350595,
+    "native_add": 135,
+    "synth_add": 127,
+    "recall": 0.9111111111111111,
+    "precision": 0.968503937007874,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 4
+   },
+   {
+    "seed": 358514,
+    "native_add": 165,
+    "synth_add": 179,
+    "recall": 0.9878787878787879,
+    "precision": 0.9106145251396648,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1639,
+     1783
+    ],
+    "extra_synth_n": 16
+   },
+   {
+    "seed": 366433,
+    "native_add": 137,
+    "synth_add": 128,
+    "recall": 0.9051094890510949,
+    "precision": 0.96875,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 4
+   },
+   {
+    "seed": 374352,
+    "native_add": 166,
+    "synth_add": 184,
+    "recall": 1.0,
+    "precision": 0.9021739130434783,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 382271,
+    "native_add": 161,
+    "synth_add": 171,
+    "recall": 0.9751552795031055,
+    "precision": 0.9181286549707602,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1833,
+     1981,
+     2129
+    ],
+    "extra_synth_n": 14
+   },
+   {
+    "seed": 390190,
+    "native_add": 167,
+    "synth_add": 179,
+    "recall": 0.9820359281437125,
+    "precision": 0.9162011173184358,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1833,
+     1981,
+     2129
+    ],
+    "extra_synth_n": 15
+   },
+   {
+    "seed": 398109,
+    "native_add": 164,
+    "synth_add": 182,
+    "recall": 1.0,
+    "precision": 0.9010989010989011,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 406028,
+    "native_add": 137,
+    "synth_add": 128,
+    "recall": 0.9051094890510949,
+    "precision": 0.96875,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 4
+   },
+   {
+    "seed": 413947,
+    "native_add": 166,
+    "synth_add": 184,
+    "recall": 1.0,
+    "precision": 0.9021739130434783,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 421866,
+    "native_add": 147,
+    "synth_add": 143,
+    "recall": 0.9115646258503401,
+    "precision": 0.9370629370629371,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 9
+   },
+   {
+    "seed": 429785,
+    "native_add": 166,
+    "synth_add": 184,
+    "recall": 1.0,
+    "precision": 0.9021739130434783,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [],
+    "extra_synth_n": 18
+   },
+   {
+    "seed": 437704,
+    "native_add": 137,
+    "synth_add": 128,
+    "recall": 0.9051094890510949,
+    "precision": 0.96875,
+    "remove_equal": true,
+    "synth_remove": 1,
+    "native_remove": 1,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     475,
+     479,
+     483
+    ],
+    "extra_synth_n": 4
+   },
+   {
+    "seed": 445623,
+    "native_add": 164,
+    "synth_add": 172,
+    "recall": 0.9695121951219512,
+    "precision": 0.9244186046511628,
+    "remove_equal": true,
+    "synth_remove": 0,
+    "native_remove": 0,
+    "wait": true,
+    "upgrade_legal": false,
+    "missed_native": [
+     1639,
+     1685,
+     1833
+    ],
+    "extra_synth_n": 13
+   }
+  ]
+ },
+ "8_house_edge_replacement_stub_quirk_and_road_budget": {
+  "passed": true,
+  "detail": "ADD on another house edge replaces the driveway (edge count and concrete unchanged: True); house edges not removable: True; stub REMOVE legal iff action tile is the carpark (True/True) and has no effect (True); budget 25: after 25 non-house ADDs concrete=0, then ADD only where it replaces the house edge"
+ },
+ "9_no_privileged_path_labels_in_observation": {
+  "passed": true,
+  "detail": "obs unchanged when k/task_id/split metadata change: True; obs is bit-identical to an independent rebuild from the scene file + (house, driveway) alone: True; non-native channels all zero: True; changing only the driveway direction changes 4 entries, all road channels: True; the env stores no route/solution field"
+ },
+ "10_alternative_valid_routes_are_accepted": {
+  "passed": true,
+  "detail": "571 tasks: a route that avoids one edge of the shortest route (length >= k) completes with reward +1 on 571/571 (0 further tasks have no alternative because every route edge is a bridge of the legal graph); tasks with >= 2 distinct shortest routes: 100% (median count 6, cap 60)"
+ },
+ "11_horizon_rule_preregistered_and_env_speed": {
+  "passed": true,
+  "detail": "horizon(k)=10k: {2: 20, 3: 30, 5: 50, 7: 70, 10: 100} written to PREREGISTERED_PROTOCOL.json with manifest hashes; random-policy env speed 7557 steps/s",
+  "env_steps_per_s": 7556.610113304903
+ }
+}

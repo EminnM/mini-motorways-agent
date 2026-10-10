@@ -1,0 +1,37 @@
+# Gap-1, Experiment A: native reward only (no shaping, no completion bonus, no penalties).
+experiment:
+  name: gap1_native_s101
+  description: "MaskablePPO on Gap-1 tasks with the native score reward only"
+  hypothesis: "Reducing the task to one missing edge makes the existing native reward sufficient."
+  tags: [gap1, native]
+
+environment:
+  task: gap1
+  initialization: connected
+  reward: native_score
+  decision_interval_seconds: 1.0
+  gap1:
+    manifest_dir: C:/Users/TKA/Desktop/mini moto/research/gap1/manifests
+    construction_window: 20
+    continuation_decisions: 40
+
+policy:
+  algorithm: maskable_ppo
+  network: mlp
+  hyperparameters:            # identical to the frozen Baseline-0 native run
+    n_steps: 512
+    batch_size: 256
+    n_epochs: 4
+    target_kl: 0.03
+    gamma: 0.99
+
+training:
+  total_timesteps: 100000
+  seeds: [101]
+  checkpoint_every: 20000
+  eval_every: 20000
+  n_envs: 1
+  headless: true
+
+evaluation:                    # TEST is NOT used inside the run; see experiments.gap1.final_test
+  seeds: [1]

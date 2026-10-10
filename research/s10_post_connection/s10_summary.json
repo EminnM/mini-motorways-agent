@@ -1,0 +1,1890 @@
+{
+ "replay": {
+  "563352": {
+   "steps": 463,
+   "first_connection": 20,
+   "first_delivery": 35,
+   "deliveries": 85.0,
+   "concrete_at_first_connection": 5,
+   "concrete_at_first_delivery": 1,
+   "concrete_at_house_spawns": [
+    14,
+    1,
+    1,
+    5,
+    0,
+    0,
+    18,
+    9,
+    9,
+    9,
+    8,
+    18
+   ],
+   "house_spawn_steps": [
+    10,
+    83,
+    93,
+    156,
+    166,
+    204,
+    323,
+    333,
+    387,
+    404,
+    414,
+    424
+   ],
+   "destination_spawn_steps": [
+    83,
+    155,
+    323,
+    333,
+    404
+   ],
+   "concrete_at_destination_spawns": [
+    1,
+    6,
+    18,
+    9,
+    9
+   ],
+   "concrete_end": 15,
+   "concrete_min": 0,
+   "concrete_total_start_end": [
+    25,
+    85
+   ],
+   "concrete_topups(step,+total,before,after)": [
+    [
+     141,
+     20,
+     0,
+     20
+    ],
+    [
+     281,
+     30,
+     0,
+     30
+    ],
+    [
+     421,
+     10,
+     8,
+     18
+    ]
+   ],
+   "decisions_with_zero_concrete": 167,
+   "fraction_zero_concrete": 0.361,
+   "zero_concrete_spells": [
+    47,
+    120
+   ],
+   "longest_zero_spell": 120,
+   "legal_add_median_when_concrete_0": 12,
+   "legal_add_median_when_concrete_pos": 242.0,
+   "ADDs": 419,
+   "productive_ADDs(net growth)": 186,
+   "replacement_ADDs(removed>=1)": 219,
+   "noop_ADDs": 14,
+   "REMOVEs": 0,
+   "edges_start_end": [
+    3,
+    90
+   ],
+   "connections_lost_events(step,kind,touched_house,n)": [
+    [
+     25,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     27,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     29,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     31,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     33,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     35,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     91,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     93,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     96,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     98,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     414,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     416,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     418,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     420,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     423,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     425,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     427,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     429,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     431,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     436,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     438,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     440,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     442,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     444,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     446,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     448,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     450,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     452,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     454,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     456,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     458,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     460,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     462,
+     "ADD",
+     true,
+     1
+    ]
+   ],
+   "houses_end": 14,
+   "connected_end": 7,
+   "destinations_end": 6,
+   "overcrowding_destinations_end": [
+    [
+     3,
+     3,
+     false
+    ],
+    [
+     1,
+     10,
+     true
+    ],
+    [
+     1,
+     1,
+     false
+    ],
+    [
+     0,
+     4,
+     false
+    ],
+    [
+     0,
+     4,
+     false
+    ],
+    [
+     2,
+     4,
+     false
+    ]
+   ],
+   "decisions_with_unconnected_houses_and_concrete>0": 219,
+   "decisions_with_unconnected_houses_and_concrete=0": 167,
+   "route_checks": [
+    {
+     "i": 9,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      6
+     ]
+    },
+    {
+     "i": 19,
+     "concrete": 6,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1
+     ]
+    },
+    {
+     "i": 29,
+     "concrete": 1,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1
+     ]
+    },
+    {
+     "i": 99,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1
+     ]
+    },
+    {
+     "i": 109,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1
+     ]
+    },
+    {
+     "i": 119,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1
+     ]
+    },
+    {
+     "i": 129,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1
+     ]
+    },
+    {
+     "i": 139,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1
+     ]
+    },
+    {
+     "i": 159,
+     "concrete": 2,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      3
+     ]
+    },
+    {
+     "i": 169,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1
+     ]
+    },
+    {
+     "i": 179,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1
+     ]
+    },
+    {
+     "i": 189,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1
+     ]
+    },
+    {
+     "i": 199,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1
+     ]
+    },
+    {
+     "i": 209,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      null
+     ]
+    },
+    {
+     "i": 219,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      null
+     ]
+    },
+    {
+     "i": 229,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      null
+     ]
+    },
+    {
+     "i": 239,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      null
+     ]
+    },
+    {
+     "i": 249,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      null
+     ]
+    },
+    {
+     "i": 259,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      null
+     ]
+    },
+    {
+     "i": 269,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      null
+     ]
+    },
+    {
+     "i": 279,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      null
+     ]
+    },
+    {
+     "i": 289,
+     "concrete": 23,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      4
+     ]
+    },
+    {
+     "i": 299,
+     "concrete": 18,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      4
+     ]
+    },
+    {
+     "i": 309,
+     "concrete": 18,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      4
+     ]
+    },
+    {
+     "i": 319,
+     "concrete": 18,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      4
+     ]
+    },
+    {
+     "i": 329,
+     "concrete": 13,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      2,
+      1
+     ]
+    },
+    {
+     "i": 339,
+     "concrete": 9,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      4,
+      1
+     ]
+    },
+    {
+     "i": 349,
+     "concrete": 9,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      4,
+      1
+     ]
+    },
+    {
+     "i": 359,
+     "concrete": 9,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      4,
+      1
+     ]
+    },
+    {
+     "i": 369,
+     "concrete": 9,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      4,
+      1
+     ]
+    },
+    {
+     "i": 379,
+     "concrete": 9,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      4,
+      1
+     ]
+    },
+    {
+     "i": 389,
+     "concrete": 9,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      4,
+      1
+     ]
+    },
+    {
+     "i": 399,
+     "concrete": 9,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      4,
+      1
+     ]
+    },
+    {
+     "i": 409,
+     "concrete": 8,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      4,
+      2,
+      9
+     ]
+    },
+    {
+     "i": 419,
+     "concrete": 8,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      4,
+      1,
+      9,
+      9
+     ]
+    },
+    {
+     "i": 429,
+     "concrete": 18,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      4,
+      1,
+      9,
+      11,
+      9
+     ]
+    },
+    {
+     "i": 439,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      4,
+      1,
+      9,
+      11,
+      9
+     ]
+    },
+    {
+     "i": 449,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      4,
+      1,
+      9,
+      11,
+      9
+     ]
+    },
+    {
+     "i": 459,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      4,
+      1,
+      9,
+      11,
+      9
+     ]
+    }
+   ],
+   "final_reward": -10.0,
+   "terminated": true,
+   "last_delivery": 460,
+   "decisions_first_connection_to_termination": 442,
+   "vehicles_max": 12,
+   "demand_max_over_episode": 10
+  },
+  "523757": {
+   "steps": 153,
+   "first_connection": null,
+   "first_delivery": null,
+   "deliveries": 0.0,
+   "concrete_at_first_connection": null,
+   "concrete_at_first_delivery": null,
+   "concrete_at_house_spawns": [
+    17,
+    17,
+    17
+   ],
+   "house_spawn_steps": [
+    10,
+    67,
+    77
+   ],
+   "destination_spawn_steps": [
+    67
+   ],
+   "concrete_at_destination_spawns": [
+    17
+   ],
+   "concrete_end": 35,
+   "concrete_min": 15,
+   "concrete_total_start_end": [
+    25,
+    45
+   ],
+   "concrete_topups(step,+total,before,after)": [
+    [
+     141,
+     20,
+     15,
+     35
+    ]
+   ],
+   "decisions_with_zero_concrete": 0,
+   "fraction_zero_concrete": 0.0,
+   "zero_concrete_spells": [],
+   "longest_zero_spell": 0,
+   "legal_add_median_when_concrete_0": null,
+   "legal_add_median_when_concrete_pos": 156,
+   "ADDs": 152,
+   "productive_ADDs(net growth)": 10,
+   "replacement_ADDs(removed>=1)": 142,
+   "noop_ADDs": 0,
+   "REMOVEs": 0,
+   "edges_start_end": [
+    3,
+    16
+   ],
+   "connections_lost_events(step,kind,touched_house,n)": [],
+   "houses_end": 4,
+   "connected_end": 0,
+   "destinations_end": 2,
+   "overcrowding_destinations_end": [
+    [
+     1,
+     7,
+     true
+    ],
+    [
+     0,
+     10,
+     true
+    ]
+   ],
+   "decisions_with_unconnected_houses_and_concrete>0": 153,
+   "decisions_with_unconnected_houses_and_concrete=0": 0,
+   "route_checks": [
+    {
+     "i": 9,
+     "concrete": 17,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      9
+     ]
+    },
+    {
+     "i": 19,
+     "concrete": 17,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      7,
+      7
+     ]
+    },
+    {
+     "i": 29,
+     "concrete": 17,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      7,
+      7
+     ]
+    },
+    {
+     "i": 39,
+     "concrete": 17,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      7,
+      7
+     ]
+    },
+    {
+     "i": 49,
+     "concrete": 17,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      7,
+      7
+     ]
+    },
+    {
+     "i": 59,
+     "concrete": 17,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      7,
+      7
+     ]
+    },
+    {
+     "i": 69,
+     "concrete": 17,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      7,
+      7,
+      6
+     ]
+    },
+    {
+     "i": 79,
+     "concrete": 16,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      8,
+      7,
+      7,
+      6
+     ]
+    },
+    {
+     "i": 89,
+     "concrete": 16,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      8,
+      7,
+      7,
+      6
+     ]
+    },
+    {
+     "i": 99,
+     "concrete": 16,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      8,
+      7,
+      7,
+      6
+     ]
+    },
+    {
+     "i": 109,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      6,
+      6,
+      6,
+      5
+     ]
+    },
+    {
+     "i": 119,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      6,
+      6,
+      6,
+      5
+     ]
+    },
+    {
+     "i": 129,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      6,
+      6,
+      6,
+      5
+     ]
+    },
+    {
+     "i": 139,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      6,
+      6,
+      6,
+      5
+     ]
+    },
+    {
+     "i": 149,
+     "concrete": 35,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      7,
+      6,
+      6,
+      5
+     ]
+    }
+   ],
+   "final_reward": -10.0,
+   "terminated": true,
+   "last_delivery": null,
+   "decisions_first_connection_to_termination": null,
+   "vehicles_max": 0,
+   "demand_max_over_episode": 10
+  },
+  "539595": {
+   "steps": 150,
+   "first_connection": 144,
+   "first_delivery": null,
+   "deliveries": 0.0,
+   "concrete_at_first_connection": 17,
+   "concrete_at_first_delivery": null,
+   "concrete_at_house_spawns": [
+    14,
+    12,
+    3
+   ],
+   "house_spawn_steps": [
+    10,
+    78,
+    88
+   ],
+   "destination_spawn_steps": [
+    78
+   ],
+   "concrete_at_destination_spawns": [
+    12
+   ],
+   "concrete_end": 12,
+   "concrete_min": 0,
+   "concrete_total_start_end": [
+    25,
+    45
+   ],
+   "concrete_topups(step,+total,before,after)": [
+    [
+     141,
+     20,
+     0,
+     20
+    ]
+   ],
+   "decisions_with_zero_concrete": 50,
+   "fraction_zero_concrete": 0.333,
+   "zero_concrete_spells": [
+    50
+   ],
+   "longest_zero_spell": 50,
+   "legal_add_median_when_concrete_0": 12.0,
+   "legal_add_median_when_concrete_pos": 160,
+   "ADDs": 149,
+   "productive_ADDs(net growth)": 33,
+   "replacement_ADDs(removed>=1)": 116,
+   "noop_ADDs": 0,
+   "REMOVEs": 0,
+   "edges_start_end": [
+    3,
+    39
+   ],
+   "connections_lost_events(step,kind,touched_house,n)": [],
+   "houses_end": 4,
+   "connected_end": 4,
+   "destinations_end": 2,
+   "overcrowding_destinations_end": [
+    [
+     1,
+     6,
+     false
+    ],
+    [
+     0,
+     10,
+     true
+    ]
+   ],
+   "decisions_with_unconnected_houses_and_concrete>0": 95,
+   "decisions_with_unconnected_houses_and_concrete=0": 50,
+   "route_checks": [
+    {
+     "i": 9,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      6
+     ]
+    },
+    {
+     "i": 19,
+     "concrete": 12,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      5,
+      5
+     ]
+    },
+    {
+     "i": 29,
+     "concrete": 12,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      5,
+      5
+     ]
+    },
+    {
+     "i": 39,
+     "concrete": 12,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      5,
+      5
+     ]
+    },
+    {
+     "i": 49,
+     "concrete": 12,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      5,
+      5
+     ]
+    },
+    {
+     "i": 59,
+     "concrete": 12,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      5,
+      5
+     ]
+    },
+    {
+     "i": 69,
+     "concrete": 12,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      5,
+      5
+     ]
+    },
+    {
+     "i": 79,
+     "concrete": 11,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      5,
+      5,
+      3
+     ]
+    },
+    {
+     "i": 89,
+     "concrete": 2,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      2,
+      2,
+      2,
+      2
+     ]
+    },
+    {
+     "i": 99,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "i": 109,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "i": 119,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "i": 129,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "i": 139,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "final_reward": -10.0,
+   "terminated": true,
+   "last_delivery": null,
+   "decisions_first_connection_to_termination": 5,
+   "vehicles_max": 4,
+   "demand_max_over_episode": 10
+  },
+  "587109": {
+   "steps": 212,
+   "first_connection": 11,
+   "first_delivery": 22,
+   "deliveries": 16.0,
+   "concrete_at_first_connection": 13,
+   "concrete_at_first_delivery": 2,
+   "concrete_at_house_spawns": [
+    14,
+    0,
+    0,
+    20,
+    10
+   ],
+   "house_spawn_steps": [
+    10,
+    67,
+    77,
+    162,
+    172
+   ],
+   "destination_spawn_steps": [
+    67,
+    162
+   ],
+   "concrete_at_destination_spawns": [
+    0,
+    20
+   ],
+   "concrete_end": 7,
+   "concrete_min": 0,
+   "concrete_total_start_end": [
+    25,
+    45
+   ],
+   "concrete_topups(step,+total,before,after)": [
+    [
+     141,
+     20,
+     0,
+     20
+    ]
+   ],
+   "decisions_with_zero_concrete": 96,
+   "fraction_zero_concrete": 0.453,
+   "zero_concrete_spells": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    75
+   ],
+   "longest_zero_spell": 75,
+   "legal_add_median_when_concrete_0": 10.0,
+   "legal_add_median_when_concrete_pos": 150,
+   "ADDs": 189,
+   "productive_ADDs(net growth)": 89,
+   "replacement_ADDs(removed>=1)": 31,
+   "noop_ADDs": 69,
+   "REMOVEs": 21,
+   "edges_start_end": [
+    3,
+    47
+   ],
+   "connections_lost_events(step,kind,touched_house,n)": [
+    [
+     118,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     120,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     141,
+     "UPGRADE",
+     false,
+     1
+    ],
+    [
+     143,
+     "ADD",
+     true,
+     1
+    ],
+    [
+     179,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     181,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     183,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     185,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     187,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     189,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     191,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     193,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     195,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     197,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     199,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     201,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     203,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     205,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     207,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     209,
+     "ADD",
+     true,
+     2
+    ],
+    [
+     211,
+     "ADD",
+     true,
+     2
+    ]
+   ],
+   "houses_end": 6,
+   "connected_end": 3,
+   "destinations_end": 3,
+   "overcrowding_destinations_end": [
+    [
+     1,
+     8,
+     true
+    ],
+    [
+     0,
+     1,
+     false
+    ],
+    [
+     0,
+     1,
+     false
+    ]
+   ],
+   "decisions_with_unconnected_houses_and_concrete>0": 87,
+   "decisions_with_unconnected_houses_and_concrete=0": 74,
+   "route_checks": [
+    {
+     "i": 9,
+     "concrete": 15,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      4
+     ]
+    },
+    {
+     "i": 69,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      2
+     ]
+    },
+    {
+     "i": 79,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      2,
+      null
+     ]
+    },
+    {
+     "i": 89,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      null
+     ]
+    },
+    {
+     "i": 99,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      null
+     ]
+    },
+    {
+     "i": 109,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      null
+     ]
+    },
+    {
+     "i": 119,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      null
+     ]
+    },
+    {
+     "i": 129,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      null
+     ]
+    },
+    {
+     "i": 139,
+     "concrete": 0,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      null
+     ]
+    },
+    {
+     "i": 149,
+     "concrete": 20,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1
+     ]
+    },
+    {
+     "i": 159,
+     "concrete": 20,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1
+     ]
+    },
+    {
+     "i": 169,
+     "concrete": 13,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      2,
+      2
+     ]
+    },
+    {
+     "i": 179,
+     "concrete": 7,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      2
+     ]
+    },
+    {
+     "i": 189,
+     "concrete": 7,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      2
+     ]
+    },
+    {
+     "i": 199,
+     "concrete": 7,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      2
+     ]
+    },
+    {
+     "i": 209,
+     "concrete": 7,
+     "min_adds_per_unconnected_house_under_current_mask": [
+      1,
+      1,
+      2
+     ]
+    }
+   ],
+   "final_reward": -10.0,
+   "terminated": true,
+   "last_delivery": 204,
+   "decisions_first_connection_to_termination": 200,
+   "vehicles_max": 2,
+   "demand_max_over_episode": 8
+  }
+ },
+ "proxy_validation": {
+  "decisions": 978,
+  "legal_total_in_5_40_and_concrete0": 288,
+  "legal_in_5_40_but_concrete_positive": 21,
+  "concrete0_but_legal_outside_5_40": 25
+ },
+ "s9_p2_proxy": {
+  "p2det_500000": {
+   "steps": 317,
+   "proxy_zero_concrete_decisions": 116,
+   "proxy_zero_concrete_fraction": 0.366,
+   "first_connection": 8,
+   "deliveries": 45.0,
+   "houses_end": 9,
+   "connected_end": 7,
+   "ADDs": 153,
+   "replacement_ADD_share": 0.575,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 88,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 2
+  },
+  "p2det_507919": {
+   "steps": 151,
+   "proxy_zero_concrete_decisions": 62,
+   "proxy_zero_concrete_fraction": 0.411,
+   "first_connection": 145,
+   "deliveries": 0.0,
+   "houses_end": 4,
+   "connected_end": 2,
+   "ADDs": 123,
+   "replacement_ADD_share": 0.52,
+   "late_first_connection(>=100 or none)": true,
+   "oscillation_steps": 109,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": null
+  },
+  "p2det_515838": {
+   "steps": 145,
+   "proxy_zero_concrete_decisions": 0,
+   "proxy_zero_concrete_fraction": 0.0,
+   "first_connection": 75,
+   "deliveries": 4.0,
+   "houses_end": 4,
+   "connected_end": 2,
+   "ADDs": 140,
+   "replacement_ADD_share": 0.629,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 123,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 3
+  },
+  "p2det_523757": {
+   "steps": 153,
+   "proxy_zero_concrete_decisions": 0,
+   "proxy_zero_concrete_fraction": 0.0,
+   "first_connection": null,
+   "deliveries": 0.0,
+   "houses_end": 4,
+   "connected_end": 0,
+   "ADDs": 152,
+   "replacement_ADD_share": 0.934,
+   "late_first_connection(>=100 or none)": true,
+   "oscillation_steps": 132,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": null
+  },
+  "p2det_531676": {
+   "steps": 361,
+   "proxy_zero_concrete_decisions": 172,
+   "proxy_zero_concrete_fraction": 0.476,
+   "first_connection": 11,
+   "deliveries": 55.0,
+   "houses_end": 11,
+   "connected_end": 6,
+   "ADDs": 359,
+   "replacement_ADD_share": 0.61,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 264,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 0
+  },
+  "p2det_539595": {
+   "steps": 150,
+   "proxy_zero_concrete_decisions": 49,
+   "proxy_zero_concrete_fraction": 0.327,
+   "first_connection": 145,
+   "deliveries": 0.0,
+   "houses_end": 4,
+   "connected_end": 4,
+   "ADDs": 149,
+   "replacement_ADD_share": 0.779,
+   "late_first_connection(>=100 or none)": true,
+   "oscillation_steps": 111,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": null
+  },
+  "p2det_547514": {
+   "steps": 154,
+   "proxy_zero_concrete_decisions": 0,
+   "proxy_zero_concrete_fraction": 0.0,
+   "first_connection": 84,
+   "deliveries": 4.0,
+   "houses_end": 4,
+   "connected_end": 1,
+   "ADDs": 153,
+   "replacement_ADD_share": 0.556,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 121,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 1
+  },
+  "p2det_555433": {
+   "steps": 140,
+   "proxy_zero_concrete_decisions": 0,
+   "proxy_zero_concrete_fraction": 0.0,
+   "first_connection": 72,
+   "deliveries": 2.0,
+   "houses_end": 4,
+   "connected_end": 1,
+   "ADDs": 140,
+   "replacement_ADD_share": 0.843,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 110,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 29
+  },
+  "p2det_563352": {
+   "steps": 463,
+   "proxy_zero_concrete_decisions": 165,
+   "proxy_zero_concrete_fraction": 0.356,
+   "first_connection": 21,
+   "deliveries": 85.0,
+   "houses_end": 14,
+   "connected_end": 7,
+   "ADDs": 419,
+   "replacement_ADD_share": 0.523,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 313,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 2
+  },
+  "p2det_571271": {
+   "steps": 392,
+   "proxy_zero_concrete_decisions": 0,
+   "proxy_zero_concrete_fraction": 0.0,
+   "first_connection": 11,
+   "deliveries": 61.0,
+   "houses_end": 13,
+   "connected_end": 9,
+   "ADDs": 386,
+   "replacement_ADD_share": 0.521,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 276,
+   "penalty_missing": true,
+   "terminal_on_entry": true,
+   "final_applyInfo": "terminal state (not applied)",
+   "last_delivery_to_end": 7
+  },
+  "p2det_579190": {
+   "steps": 205,
+   "proxy_zero_concrete_decisions": 114,
+   "proxy_zero_concrete_fraction": 0.556,
+   "first_connection": 10,
+   "deliveries": 15.0,
+   "houses_end": 5,
+   "connected_end": 2,
+   "ADDs": 154,
+   "replacement_ADD_share": 0.805,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 116,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 7
+  },
+  "p2det_587109": {
+   "steps": 211,
+   "proxy_zero_concrete_decisions": 116,
+   "proxy_zero_concrete_fraction": 0.55,
+   "first_connection": 16,
+   "deliveries": 13.0,
+   "houses_end": 5,
+   "connected_end": 2,
+   "ADDs": 167,
+   "replacement_ADD_share": 0.234,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 132,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 6
+  },
+  "p2sto_500000": {
+   "steps": 315,
+   "proxy_zero_concrete_decisions": 214,
+   "proxy_zero_concrete_fraction": 0.679,
+   "first_connection": 23,
+   "deliveries": 42.0,
+   "houses_end": 9,
+   "connected_end": 9,
+   "ADDs": 280,
+   "replacement_ADD_share": 0.593,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 82,
+   "penalty_missing": true,
+   "terminal_on_entry": true,
+   "final_applyInfo": "terminal state (not applied)",
+   "last_delivery_to_end": 7
+  },
+  "p2sto_507919": {
+   "steps": 300,
+   "proxy_zero_concrete_decisions": 215,
+   "proxy_zero_concrete_fraction": 0.717,
+   "first_connection": 23,
+   "deliveries": 31.0,
+   "houses_end": 8,
+   "connected_end": 4,
+   "ADDs": 222,
+   "replacement_ADD_share": 0.586,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 101,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 4
+  },
+  "p2sto_515838": {
+   "steps": 145,
+   "proxy_zero_concrete_decisions": 69,
+   "proxy_zero_concrete_fraction": 0.476,
+   "first_connection": 65,
+   "deliveries": 4.0,
+   "houses_end": 4,
+   "connected_end": 2,
+   "ADDs": 142,
+   "replacement_ADD_share": 0.796,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 92,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 15
+  },
+  "p2sto_523757": {
+   "steps": 153,
+   "proxy_zero_concrete_decisions": 78,
+   "proxy_zero_concrete_fraction": 0.51,
+   "first_connection": null,
+   "deliveries": 0.0,
+   "houses_end": 4,
+   "connected_end": 0,
+   "ADDs": 135,
+   "replacement_ADD_share": 0.711,
+   "late_first_connection(>=100 or none)": true,
+   "oscillation_steps": 33,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": null
+  },
+  "p2sto_531676": {
+   "steps": 600,
+   "proxy_zero_concrete_decisions": 261,
+   "proxy_zero_concrete_fraction": 0.435,
+   "first_connection": 16,
+   "deliveries": 146.0,
+   "houses_end": 17,
+   "connected_end": 12,
+   "ADDs": 531,
+   "replacement_ADD_share": 0.618,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 223,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 1
+  },
+  "p2sto_539595": {
+   "steps": 453,
+   "proxy_zero_concrete_decisions": 234,
+   "proxy_zero_concrete_fraction": 0.517,
+   "first_connection": 29,
+   "deliveries": 61.0,
+   "houses_end": 13,
+   "connected_end": 6,
+   "ADDs": 428,
+   "replacement_ADD_share": 0.563,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 195,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 7
+  },
+  "p2sto_547514": {
+   "steps": 154,
+   "proxy_zero_concrete_decisions": 98,
+   "proxy_zero_concrete_fraction": 0.636,
+   "first_connection": 81,
+   "deliveries": 4.0,
+   "houses_end": 4,
+   "connected_end": 2,
+   "ADDs": 133,
+   "replacement_ADD_share": 0.594,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 53,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 15
+  },
+  "p2sto_555433": {
+   "steps": 349,
+   "proxy_zero_concrete_decisions": 199,
+   "proxy_zero_concrete_fraction": 0.57,
+   "first_connection": 28,
+   "deliveries": 45.0,
+   "houses_end": 11,
+   "connected_end": 8,
+   "ADDs": 322,
+   "replacement_ADD_share": 0.382,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 177,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 0
+  },
+  "p2sto_563352": {
+   "steps": 312,
+   "proxy_zero_concrete_decisions": 189,
+   "proxy_zero_concrete_fraction": 0.606,
+   "first_connection": 32,
+   "deliveries": 36.0,
+   "houses_end": 8,
+   "connected_end": 5,
+   "ADDs": 286,
+   "replacement_ADD_share": 0.325,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 153,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 6
+  },
+  "p2sto_571271": {
+   "steps": 331,
+   "proxy_zero_concrete_decisions": 210,
+   "proxy_zero_concrete_fraction": 0.634,
+   "first_connection": 12,
+   "deliveries": 40.0,
+   "houses_end": 10,
+   "connected_end": 10,
+   "ADDs": 312,
+   "replacement_ADD_share": 0.529,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 97,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 4
+  },
+  "p2sto_579190": {
+   "steps": 256,
+   "proxy_zero_concrete_decisions": 198,
+   "proxy_zero_concrete_fraction": 0.773,
+   "first_connection": 18,
+   "deliveries": 21.0,
+   "houses_end": 7,
+   "connected_end": 2,
+   "ADDs": 230,
+   "replacement_ADD_share": 0.596,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 102,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 0
+  },
+  "p2sto_587109": {
+   "steps": 354,
+   "proxy_zero_concrete_decisions": 248,
+   "proxy_zero_concrete_fraction": 0.701,
+   "first_connection": 23,
+   "deliveries": 52.0,
+   "houses_end": 9,
+   "connected_end": 6,
+   "ADDs": 330,
+   "replacement_ADD_share": 0.473,
+   "late_first_connection(>=100 or none)": false,
+   "oscillation_steps": 108,
+   "penalty_missing": false,
+   "terminal_on_entry": false,
+   "final_applyInfo": "TileEditor.AddRoad succeeded (resultCode=Success); EditTileCommand scheduled=True.",
+   "last_delivery_to_end": 3
+  }
+ }
+}

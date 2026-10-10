@@ -1,0 +1,44 @@
+# S4 native pilot arm (NOT EXECUTED until approved). Seeds 11 and 12; one run per arm.
+experiment:
+  name: native_pilot_a1_mlp
+  description: "A1: randomly initialised flat MlpPolicy, native NORMAL_START, native reward only"
+  hypothesis: "A1 MLP scratch: compute-matched control"
+  tags: [native_pilot, S4, normal_start, native_reward_only]
+
+environment:            # identical for A1/A2/A3 and for the frozen baselines (python/phase11a_runner.py defaults: 1.0 s, 600 decisions)
+  initialization: normal
+  start_gap: 0
+  reward: native_score
+  decision_interval_seconds: 1.0
+  episode_horizon_decisions: 600
+
+policy:
+  algorithm: maskable_ppo
+  network: mlp
+  hyperparameters:      # = Baseline-0 / S1 synthetic hyperparameters; gae_lambda 0.95 and clip_range 0.2 are fixed inside train_ppo.py
+    n_steps: 512
+    batch_size: 256
+    n_epochs: 4
+    target_kl: 0.03
+    learning_rate: 3.0e-4
+    ent_coef: 0.01
+    gamma: 0.99
+
+training:
+  total_timesteps: 10240   # 20 PPO rollouts of 512 decisions
+  seeds: [11, 12]
+  checkpoint_every: 5120
+  eval_every: 5120
+  n_envs: 1
+  headless: true
+
+evaluation:              # VALIDATION seeds (python/eval_seeds.py VAL_SEEDS) - used for the learning curve; TEST seeds only once, at the end
+  seeds: [182150, 205907, 229664, 253421, 261340, 269259]
+  episodes_per_seed: 1
+  deterministic: true
+
+logging:
+  action_distribution: true
+  training_curve: true
+  episode_metrics: true
+  diagnostics: true      # measurement-only (experiments/diagnostics.py)

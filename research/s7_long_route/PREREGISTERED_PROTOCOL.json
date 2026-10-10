@@ -1,0 +1,17 @@
+{
+ "horizon_rule": "horizon(k) = 10 * k decisions (k = minimum required construction edits)",
+ "horizons": {
+  "2": 20,
+  "3": 30,
+  "5": 50,
+  "7": 70,
+  "10": 100
+ },
+ "reward": "+1 exactly at house-carpark connectivity (terminates), 0 otherwise",
+ "frozen_before": "any S7 baseline or training result",
+ "manifest_sha256": {
+  "s7_train.jsonl": "55fe4300a70432d16bd2a10978cd835ff69cd5cb0e13f9d8e8fe12f3d5882926",
+  "s7_validation.jsonl": "eadd67121e2b4781fd196c7359184c08e0d90ee7e393b7304247ddb0f28d0e91",
+  "s7_test.jsonl": "6a9e8cd96af830868f3aa927d2be9a4e5ecc14fdd32045414ae1819cb8cee622"
+ }
+}

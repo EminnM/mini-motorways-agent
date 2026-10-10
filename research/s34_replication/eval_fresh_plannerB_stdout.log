@@ -1,0 +1,8 @@
+[fresh plannerB r0] seed 900000: t 304 score 40.0 term True plan/edit/wait 302/0/0 destroyed 0 (26s)
+[fresh plannerB r0] seed 907919: t 290 score 35.0 term True plan/edit/wait 288/0/0 destroyed 0 (65s)
+[fresh plannerB r0] seed 915838: t 315 score 39.0 term True plan/edit/wait 313/0/0 destroyed 0 (112s)
+[fresh plannerB r0] seed 923757: t 326 score 47.0 term True plan/edit/wait 324/0/0 destroyed 0 (160s)
+[fresh plannerB r0] seed 931676: t 448 score 85.0 term True plan/edit/wait 445/0/0 destroyed 0 (228s)
+[fresh plannerB r0] seed 939595: t 500 score 122.0 term True plan/edit/wait 497/0/0 destroyed 0 (304s)
+[fresh plannerB r0] seed 947514: t 528 score 126.0 term True plan/edit/wait 525/0/0 destroyed 0 (387s)
+[fresh plannerB r0] seed 955433: t 405 score 73.0 term True plan/edit/wait 403/0/0 destroyed 0 (455s)

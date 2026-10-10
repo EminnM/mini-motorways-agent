@@ -1,0 +1,10 @@
+Entrypoint.cs.pre_fork sha256 d8a54cc1ab36d7317c5b276d6a476a6620d4488c7a0d5c1480b6a0e0e0823c4c bytes 401649 ('DIAG_FORK' present: False)
+MiniMotorwaysBootstrap.dll.deployed_pre_fork sha256 7ba7147eceb1fdeed7d5d2ab01db18af155a67905550c4a3a97caf3e581d7137 bytes 191488 mtime 2026-10-08 02:36
+deployed_fork_build sha256 d97e8642001ab5afd9bb98ad84b4534f81e103d0202cbe850943543cde5b3e4f bytes 196096 deployed 2026-10-09 09:29
+deployed_fork_build_v2(restoreDiff diagnostic) sha256 2c029e2d2515196daf7764241725c297fa5bdddd1fe6868abd0386293ec04eb2 bytes 196608 deployed 2026-10-09 09:35
+deployed_fork_build_v3(tilesEqualExceptClock) sha256 ea28c10d6bb580700c7a8771dabaadefd57da6a39846ac454bb7a4c66c4a19a9 bytes 197120 deployed 2026-10-09 09:45
+deployed_fork_build_v4(include_obs) sha256 e289914d242c5af6bed4d7f950b836551be6c9aaab4d15c34968751e1c553c00 bytes 197632 deployed 2026-10-09 09:56
+deployed_build_v5(pendingUpgradeTypes export) sha256 72503023b908b5710aadc2a2b96cbff43b640b13369bee3ef959908eedd54a67 bytes 198144 deployed 2026-10-09 12:33
+deployed_build_v6(motorway STEP field, MOTORWAY_CHECK, motorways export) sha256 7240934bb937538702cbc9bce701554683636d21bc6a9a6f91307c1b130d35b8 bytes 202240 deployed 2026-10-09 12:57
+deployed_build_v7(motorway field passed to the STEP coroutine) sha256 33e30b3315396c026b636793583618e981ca4e9062e260bade147c350eaf4da2 bytes 202752 deployed 2026-10-09 13:02
+deployed_build_v8(S32/S33 playable-area two-endpoint check in EnumerateLegalActions/TryAddRoad/TryAddMotorway; playableAreaAtTime export) sha256 2aa42367cbb14babce31a6063038f50be9b3535bd7bc23d8dbbdbb65533aa00a bytes 203776 deployed 2026-10-09 18:11; v7 backup = MiniMotorwaysBootstrap.dll.deployed_v7_prefix

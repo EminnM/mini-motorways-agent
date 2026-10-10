@@ -1,0 +1,1706 @@
+{
+ "summary": {
+  "p1det": {
+   "episodes": 12,
+   "ge1_connection": 1,
+   "ge1_delivery": 1,
+   "connections_max": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.17,
+    "max": 2
+   },
+   "deliveries": {
+    "n": 12,
+    "min": 0.0,
+    "median": 0.0,
+    "mean": 0.33,
+    "max": 4.0
+   },
+   "first_connection_step": {
+    "n": 1,
+    "min": 86,
+    "median": 86,
+    "mean": 86.0,
+    "max": 86
+   },
+   "adds_before_first_connection": {
+    "n": 1,
+    "min": 9,
+    "median": 9,
+    "mean": 9.0,
+    "max": 9
+   },
+   "irrelevant_adds_before_first_connection": null,
+   "first_delivery_step": {
+    "n": 1,
+    "min": 96,
+    "median": 96,
+    "mean": 96.0,
+    "max": 96
+   },
+   "survival": {
+    "n": 12,
+    "min": 140,
+    "median": 149.5,
+    "mean": 147.67,
+    "max": 154
+   },
+   "native_score": {
+    "n": 12,
+    "min": 0.0,
+    "median": 0.0,
+    "mean": 0.33,
+    "max": 4.0
+   },
+   "penalty_missing": 0,
+   "distinct_edges": {
+    "n": 12,
+    "min": 2,
+    "median": 11.5,
+    "mean": 12.0,
+    "max": 34
+   },
+   "n_add": {
+    "n": 12,
+    "min": 34,
+    "median": 132.0,
+    "mean": 111.92,
+    "max": 147
+   },
+   "n_remove": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.0,
+    "max": 0
+   },
+   "house_swaps": {
+    "n": 12,
+    "min": 0,
+    "median": 128.0,
+    "mean": 100.17,
+    "max": 141
+   },
+   "noop_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 1.25,
+    "max": 15
+   },
+   "water_endpoint_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.92,
+    "max": 6
+   },
+   "dest_adjacent_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.0,
+    "max": 0
+   },
+   "oscillation_steps": {
+    "n": 12,
+    "min": 0,
+    "median": 121.0,
+    "mean": 97.08,
+    "max": 135
+   },
+   "two_state_cycles": {
+    "n": 12,
+    "min": 0,
+    "median": 3.5,
+    "mean": 3.0,
+    "max": 5
+   },
+   "revisits": {
+    "n": 12,
+    "min": 0,
+    "median": 121.5,
+    "mean": 97.75,
+    "max": 136
+   },
+   "mean_unmasked_mass_on_illegal": {
+    "n": 12,
+    "min": 0.8157374874439115,
+    "median": 0.960433726327017,
+    "mean": 0.94,
+    "max": 0.9889967540242025
+   },
+   "frac_steps_unmasked_top1_illegal": {
+    "n": 12,
+    "min": 0.5424836601307189,
+    "median": 0.9931455399061033,
+    "mean": 0.9,
+    "max": 1.0
+   },
+   "houses_max": {
+    "n": 12,
+    "min": 4,
+    "median": 4.0,
+    "mean": 4.0,
+    "max": 4
+   },
+   "k_required": {
+    "n": 9,
+    "min": 5,
+    "median": 8,
+    "mean": 8.33,
+    "max": 11
+   },
+   "remaining_min_reached": {
+    "n": 9,
+    "min": 4,
+    "median": 7,
+    "mean": 7.22,
+    "max": 10
+   },
+   "legal_mean": {
+    "n": 12,
+    "min": 100.17218543046357,
+    "median": 144.93506493506493,
+    "mean": 145.29,
+    "max": 176.87142857142857
+   },
+   "cut": 0,
+   "action_fractions": {
+    "wait": 0.23645598194130926,
+    "add": 0.7579006772009029,
+    "remove": 0.0,
+    "upgrade": 0.0056433408577878106
+   },
+   "policy_entropy_mean": {
+    "n": 12,
+    "min": 2.318326249218627,
+    "median": 2.8974656702510924,
+    "mean": 2.87,
+    "max": 3.3562419942447117
+   },
+   "wall_s_total": 211.8
+  },
+  "p1sto": {
+   "episodes": 12,
+   "ge1_connection": 3,
+   "ge1_delivery": 3,
+   "connections_max": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 1.0,
+    "max": 5
+   },
+   "deliveries": {
+    "n": 12,
+    "min": 0.0,
+    "median": 0.0,
+    "mean": 5.5,
+    "max": 36.0
+   },
+   "first_connection_step": {
+    "n": 3,
+    "min": 17,
+    "median": 26,
+    "mean": 23.33,
+    "max": 27
+   },
+   "adds_before_first_connection": {
+    "n": 3,
+    "min": 16,
+    "median": 26,
+    "mean": 23.0,
+    "max": 27
+   },
+   "irrelevant_adds_before_first_connection": {
+    "n": 1,
+    "min": 19,
+    "median": 19,
+    "mean": 19.0,
+    "max": 19
+   },
+   "first_delivery_step": {
+    "n": 3,
+    "min": 26,
+    "median": 36,
+    "mean": 34.33,
+    "max": 41
+   },
+   "survival": {
+    "n": 12,
+    "min": 128,
+    "median": 152.0,
+    "mean": 170.17,
+    "max": 293
+   },
+   "native_score": {
+    "n": 12,
+    "min": 0.0,
+    "median": 0.0,
+    "mean": 5.5,
+    "max": 36.0
+   },
+   "penalty_missing": 0,
+   "distinct_edges": {
+    "n": 12,
+    "min": 33,
+    "median": 43.5,
+    "mean": 45.58,
+    "max": 71
+   },
+   "n_add": {
+    "n": 12,
+    "min": 127,
+    "median": 146.0,
+    "mean": 163.67,
+    "max": 280
+   },
+   "n_remove": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.0,
+    "max": 0
+   },
+   "house_swaps": {
+    "n": 12,
+    "min": 58,
+    "median": 113.5,
+    "mean": 111.83,
+    "max": 167
+   },
+   "noop_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 6.42,
+    "max": 68
+   },
+   "water_endpoint_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 1.5,
+    "mean": 1.42,
+    "max": 3
+   },
+   "dest_adjacent_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.0,
+    "max": 0
+   },
+   "oscillation_steps": {
+    "n": 12,
+    "min": 20,
+    "median": 56.5,
+    "mean": 59.0,
+    "max": 98
+   },
+   "two_state_cycles": {
+    "n": 12,
+    "min": 3,
+    "median": 8.0,
+    "mean": 8.42,
+    "max": 13
+   },
+   "revisits": {
+    "n": 12,
+    "min": 53,
+    "median": 81.0,
+    "mean": 86.92,
+    "max": 133
+   },
+   "mean_unmasked_mass_on_illegal": {
+    "n": 12,
+    "min": 0.9323913288580907,
+    "median": 0.9807972053588905,
+    "mean": 0.98,
+    "max": 0.9936755403316876
+   },
+   "frac_steps_unmasked_top1_illegal": {
+    "n": 12,
+    "min": 0.9735099337748344,
+    "median": 0.9925726232394366,
+    "mean": 0.99,
+    "max": 1.0
+   },
+   "houses_max": {
+    "n": 12,
+    "min": 4,
+    "median": 4.0,
+    "mean": 4.92,
+    "max": 9
+   },
+   "k_required": {
+    "n": 11,
+    "min": 5,
+    "median": 8,
+    "mean": 8.55,
+    "max": 11
+   },
+   "remaining_min_reached": {
+    "n": 11,
+    "min": 0,
+    "median": 4,
+    "mean": 4.36,
+    "max": 11
+   },
+   "legal_mean": {
+    "n": 12,
+    "min": 35.328859060402685,
+    "median": 46.438401875901874,
+    "mean": 54.52,
+    "max": 95.81168831168831
+   },
+   "cut": 0,
+   "action_fractions": {
+    "wait": 0.03232125367286973,
+    "add": 0.9618021547502449,
+    "remove": 0.0,
+    "upgrade": 0.005876591576885406
+   },
+   "policy_entropy_mean": {
+    "n": 12,
+    "min": 0.9758403715214982,
+    "median": 1.498970065894839,
+    "mean": 1.53,
+    "max": 2.0731845419605572
+   },
+   "wall_s_total": 239.0
+  },
+  "p2det": {
+   "episodes": 12,
+   "ge1_connection": 11,
+   "ge1_delivery": 9,
+   "connections_max": {
+    "n": 12,
+    "min": 0,
+    "median": 2.0,
+    "mean": 3.67,
+    "max": 9
+   },
+   "deliveries": {
+    "n": 12,
+    "min": 0.0,
+    "median": 8.5,
+    "mean": 23.67,
+    "max": 85.0
+   },
+   "first_connection_step": {
+    "n": 11,
+    "min": 8,
+    "median": 21,
+    "mean": 54.36,
+    "max": 145
+   },
+   "adds_before_first_connection": {
+    "n": 11,
+    "min": 8,
+    "median": 21,
+    "mean": 51.36,
+    "max": 144
+   },
+   "irrelevant_adds_before_first_connection": {
+    "n": 6,
+    "min": 2,
+    "median": 4.0,
+    "mean": 5.83,
+    "max": 11
+   },
+   "first_delivery_step": {
+    "n": 9,
+    "min": 19,
+    "median": 27,
+    "mean": 46.11,
+    "max": 95
+   },
+   "survival": {
+    "n": 12,
+    "min": 140,
+    "median": 179.5,
+    "mean": 236.83,
+    "max": 463
+   },
+   "native_score": {
+    "n": 12,
+    "min": 0.0,
+    "median": 8.5,
+    "mean": 23.67,
+    "max": 85.0
+   },
+   "penalty_missing": 1,
+   "distinct_edges": {
+    "n": 12,
+    "min": 13,
+    "median": 36.0,
+    "mean": 40.33,
+    "max": 79
+   },
+   "n_add": {
+    "n": 12,
+    "min": 123,
+    "median": 153.0,
+    "mean": 207.92,
+    "max": 419
+   },
+   "n_remove": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 2.67,
+    "max": 27
+   },
+   "house_swaps": {
+    "n": 12,
+    "min": 39,
+    "median": 117.0,
+    "mean": 125.25,
+    "max": 219
+   },
+   "noop_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 17.0,
+    "max": 61
+   },
+   "water_endpoint_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.67,
+    "max": 2
+   },
+   "dest_adjacent_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.0,
+    "max": 0
+   },
+   "oscillation_steps": {
+    "n": 12,
+    "min": 88,
+    "median": 122.0,
+    "mean": 157.92,
+    "max": 313
+   },
+   "two_state_cycles": {
+    "n": 12,
+    "min": 2,
+    "median": 4.5,
+    "mean": 7.67,
+    "max": 20
+   },
+   "revisits": {
+    "n": 12,
+    "min": 88,
+    "median": 123.5,
+    "mean": 161.0,
+    "max": 316
+   },
+   "mean_unmasked_mass_on_illegal": {
+    "n": 12,
+    "min": 0.8633854606293685,
+    "median": 0.9898088870649249,
+    "mean": 0.98,
+    "max": 0.9995397882802146
+   },
+   "frac_steps_unmasked_top1_illegal": {
+    "n": 12,
+    "min": 0.8211920529801324,
+    "median": 1.0,
+    "mean": 0.98,
+    "max": 1.0
+   },
+   "houses_max": {
+    "n": 12,
+    "min": 4,
+    "median": 4.5,
+    "mean": 6.75,
+    "max": 14
+   },
+   "k_required": {
+    "n": 9,
+    "min": 5,
+    "median": 7,
+    "mean": 8.11,
+    "max": 11
+   },
+   "remaining_min_reached": {
+    "n": 9,
+    "min": 0,
+    "median": 0,
+    "mean": 0.78,
+    "max": 6
+   },
+   "legal_mean": {
+    "n": 12,
+    "min": 79.97630331753554,
+    "median": 114.1247619047619,
+    "mean": 121.21,
+    "max": 169.48812095032397
+   },
+   "cut": 0,
+   "action_fractions": {
+    "wait": 0.10520760028149191,
+    "add": 0.8779028852920479,
+    "remove": 0.011259676284306826,
+    "upgrade": 0.005629838142153413
+   },
+   "policy_entropy_mean": {
+    "n": 12,
+    "min": 1.0137521274993637,
+    "median": 1.647215848304563,
+    "mean": 1.76,
+    "max": 2.8586869227937908
+   },
+   "wall_s_total": 307.2
+  },
+  "p2sto": {
+   "episodes": 12,
+   "ge1_connection": 11,
+   "ge1_delivery": 11,
+   "connections_max": {
+    "n": 12,
+    "min": 0,
+    "median": 5.5,
+    "mean": 5.83,
+    "max": 13
+   },
+   "deliveries": {
+    "n": 12,
+    "min": 0.0,
+    "median": 38.0,
+    "mean": 40.17,
+    "max": 146.0
+   },
+   "first_connection_step": {
+    "n": 11,
+    "min": 12,
+    "median": 23,
+    "mean": 31.82,
+    "max": 81
+   },
+   "adds_before_first_connection": {
+    "n": 11,
+    "min": 12,
+    "median": 23,
+    "mean": 30.36,
+    "max": 72
+   },
+   "irrelevant_adds_before_first_connection": {
+    "n": 9,
+    "min": 4,
+    "median": 15,
+    "mean": 13.22,
+    "max": 18
+   },
+   "first_delivery_step": {
+    "n": 11,
+    "min": 24,
+    "median": 39,
+    "mean": 46.18,
+    "max": 97
+   },
+   "survival": {
+    "n": 12,
+    "min": 145,
+    "median": 313.5,
+    "mean": 310.17,
+    "max": 600
+   },
+   "native_score": {
+    "n": 12,
+    "min": 0.0,
+    "median": 38.0,
+    "mean": 40.17,
+    "max": 146.0
+   },
+   "penalty_missing": 1,
+   "distinct_edges": {
+    "n": 12,
+    "min": 30,
+    "median": 81.5,
+    "mean": 79.17,
+    "max": 132
+   },
+   "n_add": {
+    "n": 12,
+    "min": 133,
+    "median": 283.0,
+    "mean": 279.25,
+    "max": 531
+   },
+   "n_remove": {
+    "n": 12,
+    "min": 2,
+    "median": 12.0,
+    "mean": 15.08,
+    "max": 37
+   },
+   "house_swaps": {
+    "n": 12,
+    "min": 79,
+    "median": 133.5,
+    "mean": 151.17,
+    "max": 326
+   },
+   "noop_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 2.0,
+    "mean": 13.75,
+    "max": 74
+   },
+   "water_endpoint_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 2.0,
+    "mean": 2.08,
+    "max": 6
+   },
+   "dest_adjacent_adds": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.0,
+    "max": 0
+   },
+   "oscillation_steps": {
+    "n": 12,
+    "min": 33,
+    "median": 101.5,
+    "mean": 118.0,
+    "max": 223
+   },
+   "two_state_cycles": {
+    "n": 12,
+    "min": 3,
+    "median": 15.0,
+    "mean": 17.58,
+    "max": 40
+   },
+   "revisits": {
+    "n": 12,
+    "min": 48,
+    "median": 143.0,
+    "mean": 151.33,
+    "max": 305
+   },
+   "mean_unmasked_mass_on_illegal": {
+    "n": 12,
+    "min": 0.9789434405975044,
+    "median": 0.9916735777688162,
+    "mean": 0.99,
+    "max": 0.998769210124838
+   },
+   "frac_steps_unmasked_top1_illegal": {
+    "n": 12,
+    "min": 0.96484375,
+    "median": 0.9919455544455544,
+    "mean": 0.99,
+    "max": 1.0
+   },
+   "houses_max": {
+    "n": 12,
+    "min": 4,
+    "median": 8.5,
+    "mean": 8.67,
+    "max": 17
+   },
+   "k_required": {
+    "n": 12,
+    "min": 2,
+    "median": 6.5,
+    "mean": 7.0,
+    "max": 11
+   },
+   "remaining_min_reached": {
+    "n": 12,
+    "min": 0,
+    "median": 0.0,
+    "mean": 0.33,
+    "max": 2
+   },
+   "legal_mean": {
+    "n": 12,
+    "min": 46.3671875,
+    "median": 69.32604714591857,
+    "mean": 71.4,
+    "max": 100.97
+   },
+   "cut": 0,
+   "action_fractions": {
+    "wait": 0.04486835034927458,
+    "add": 0.900322407307899,
+    "remove": 0.04862976894142934,
+    "upgrade": 0.006179473401397098
+   },
+   "policy_entropy_mean": {
+    "n": 12,
+    "min": 0.8189597408319341,
+    "median": 1.30506383753302,
+    "mean": 1.32,
+    "max": 1.7157565073347558
+   },
+   "wall_s_total": 362.5
+  }
+ },
+ "paired": {
+  "det": {
+   "connections_max_diff_P2_minus_P1": [
+    7,
+    2,
+    2,
+    0,
+    6,
+    4,
+    1,
+    1,
+    8,
+    9,
+    0,
+    2
+   ],
+   "deliveries_diff": [
+    45.0,
+    0.0,
+    4.0,
+    0.0,
+    55.0,
+    0.0,
+    4.0,
+    2.0,
+    85.0,
+    61.0,
+    11.0,
+    13.0
+   ],
+   "first_connection_step_diff_where_both": [
+    -76
+   ],
+   "adds_before_conn_diff_where_both": [
+    1
+   ],
+   "survival_diff": [
+    166,
+    0,
+    0,
+    0,
+    218,
+    0,
+    0,
+    0,
+    309,
+    243,
+    65,
+    69
+   ],
+   "distinct_edges_diff": [
+    49,
+    3,
+    8,
+    11,
+    50,
+    30,
+    24,
+    13,
+    62,
+    48,
+    20,
+    22
+   ],
+   "seeds_P2_connects_P1_not": [
+    500000,
+    507919,
+    515838,
+    531676,
+    539595,
+    547514,
+    555433,
+    563352,
+    571271,
+    587109
+   ],
+   "seeds_P1_connects_P2_not": [],
+   "seeds_P2_delivers_P1_not": [
+    500000,
+    515838,
+    531676,
+    547514,
+    555433,
+    563352,
+    571271,
+    587109
+   ],
+   "seeds_P1_delivers_P2_not": [],
+   "median_diffs": {
+    "deliveries_diff": 7.5,
+    "first_connection_step_diff_where_both": -76,
+    "adds_before_conn_diff_where_both": 1,
+    "survival_diff": 32.5,
+    "distinct_edges_diff": 23.0
+   }
+  },
+  "sto": {
+   "connections_max_diff_P2_minus_P1": [
+    4,
+    4,
+    2,
+    0,
+    11,
+    6,
+    2,
+    9,
+    5,
+    10,
+    -1,
+    6
+   ],
+   "deliveries_diff": [
+    6.0,
+    31.0,
+    4.0,
+    0.0,
+    135.0,
+    61.0,
+    4.0,
+    45.0,
+    36.0,
+    40.0,
+    2.0,
+    52.0
+   ],
+   "first_connection_step_diff_where_both": [
+    -3,
+    -11,
+    1
+   ],
+   "adds_before_conn_diff_where_both": [
+    -3,
+    -11,
+    2
+   ],
+   "survival_diff": [
+    22,
+    149,
+    0,
+    0,
+    393,
+    303,
+    0,
+    221,
+    158,
+    182,
+    40,
+    212
+   ],
+   "distinct_edges_diff": [
+    21,
+    36,
+    -6,
+    -1,
+    76,
+    67,
+    3,
+    57,
+    33,
+    51,
+    1,
+    65
+   ],
+   "seeds_P2_connects_P1_not": [
+    507919,
+    515838,
+    539595,
+    547514,
+    555433,
+    563352,
+    571271,
+    587109
+   ],
+   "seeds_P1_connects_P2_not": [],
+   "seeds_P2_delivers_P1_not": [
+    507919,
+    515838,
+    539595,
+    547514,
+    555433,
+    563352,
+    571271,
+    587109
+   ],
+   "seeds_P1_delivers_P2_not": [],
+   "median_diffs": {
+    "deliveries_diff": 33.5,
+    "first_connection_step_diff_where_both": -3,
+    "adds_before_conn_diff_where_both": -3,
+    "survival_diff": 153.5,
+    "distinct_edges_diff": 34.5
+   }
+  }
+ },
+ "per_seed": [
+  {
+   "seed": 500000,
+   "p1det": {
+    "k_req": 7,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 151,
+    "adds": 139,
+    "swaps": 130,
+    "distinct": 13,
+    "osc": 122,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 5
+   },
+   "p1sto": {
+    "k_req": 7,
+    "conn": 5,
+    "first_conn": 26,
+    "deliv": 36.0,
+    "first_deliv": 36,
+    "steps": 293,
+    "adds": 280,
+    "swaps": 167,
+    "distinct": 71,
+    "osc": 68,
+    "houses_max": 9,
+    "pen_missing": false,
+    "rem_min": 0
+   },
+   "p2det": {
+    "k_req": 6,
+    "conn": 7,
+    "first_conn": 8,
+    "deliv": 45.0,
+    "first_deliv": 19,
+    "steps": 317,
+    "adds": 153,
+    "swaps": 88,
+    "distinct": 62,
+    "osc": 88,
+    "houses_max": 9,
+    "pen_missing": false,
+    "rem_min": 0
+   },
+   "p2sto": {
+    "k_req": 6,
+    "conn": 9,
+    "first_conn": 23,
+    "deliv": 42.0,
+    "first_deliv": 39,
+    "steps": 315,
+    "adds": 280,
+    "swaps": 165,
+    "distinct": 92,
+    "osc": 82,
+    "houses_max": 9,
+    "pen_missing": true,
+    "rem_min": 0
+   }
+  },
+  {
+   "seed": 507919,
+   "p1det": {
+    "k_req": null,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 151,
+    "adds": 34,
+    "swaps": 0,
+    "distinct": 34,
+    "osc": 0,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": null
+   },
+   "p1sto": {
+    "k_req": 8,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 151,
+    "adds": 144,
+    "swaps": 115,
+    "distinct": 37,
+    "osc": 88,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 1
+   },
+   "p2det": {
+    "k_req": null,
+    "conn": 2,
+    "first_conn": 145,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 151,
+    "adds": 123,
+    "swaps": 64,
+    "distinct": 37,
+    "osc": 109,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": null
+   },
+   "p2sto": {
+    "k_req": 2,
+    "conn": 4,
+    "first_conn": 23,
+    "deliv": 31.0,
+    "first_deliv": 34,
+    "steps": 300,
+    "adds": 222,
+    "swaps": 130,
+    "distinct": 73,
+    "osc": 101,
+    "houses_max": 8,
+    "pen_missing": false,
+    "rem_min": 0
+   }
+  },
+  {
+   "seed": 515838,
+   "p1det": {
+    "k_req": null,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 145,
+    "adds": 133,
+    "swaps": 130,
+    "distinct": 9,
+    "osc": 122,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": null
+   },
+   "p1sto": {
+    "k_req": null,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 145,
+    "adds": 138,
+    "swaps": 111,
+    "distinct": 36,
+    "osc": 52,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": null
+   },
+   "p2det": {
+    "k_req": null,
+    "conn": 2,
+    "first_conn": 75,
+    "deliv": 4.0,
+    "first_deliv": 87,
+    "steps": 145,
+    "adds": 140,
+    "swaps": 88,
+    "distinct": 17,
+    "osc": 123,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": null
+   },
+   "p2sto": {
+    "k_req": 5,
+    "conn": 2,
+    "first_conn": 65,
+    "deliv": 4.0,
+    "first_deliv": 86,
+    "steps": 145,
+    "adds": 142,
+    "swaps": 113,
+    "distinct": 30,
+    "osc": 92,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 1
+   }
+  },
+  {
+   "seed": 523757,
+   "p1det": {
+    "k_req": 10,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 153,
+    "adds": 141,
+    "swaps": 141,
+    "distinct": 2,
+    "osc": 135,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 9
+   },
+   "p1sto": {
+    "k_req": 10,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 153,
+    "adds": 148,
+    "swaps": 116,
+    "distinct": 45,
+    "osc": 35,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 6
+   },
+   "p2det": {
+    "k_req": 10,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 153,
+    "adds": 152,
+    "swaps": 142,
+    "distinct": 13,
+    "osc": 132,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 6
+   },
+   "p2sto": {
+    "k_req": 10,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 153,
+    "adds": 135,
+    "swaps": 96,
+    "distinct": 44,
+    "osc": 33,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 2
+   }
+  },
+  {
+   "seed": 531676,
+   "p1det": {
+    "k_req": 7,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 143,
+    "adds": 131,
+    "swaps": 125,
+    "distinct": 10,
+    "osc": 119,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 6
+   },
+   "p1sto": {
+    "k_req": 7,
+    "conn": 2,
+    "first_conn": 27,
+    "deliv": 11.0,
+    "first_deliv": 41,
+    "steps": 207,
+    "adds": 203,
+    "swaps": 112,
+    "distinct": 56,
+    "osc": 92,
+    "houses_max": 7,
+    "pen_missing": false,
+    "rem_min": 1
+   },
+   "p2det": {
+    "k_req": 7,
+    "conn": 6,
+    "first_conn": 11,
+    "deliv": 55.0,
+    "first_deliv": 24,
+    "steps": 361,
+    "adds": 359,
+    "swaps": 219,
+    "distinct": 60,
+    "osc": 264,
+    "houses_max": 11,
+    "pen_missing": false,
+    "rem_min": 0
+   },
+   "p2sto": {
+    "k_req": 7,
+    "conn": 13,
+    "first_conn": 16,
+    "deliv": 146.0,
+    "first_deliv": 27,
+    "steps": 600,
+    "adds": 531,
+    "swaps": 326,
+    "distinct": 132,
+    "osc": 223,
+    "houses_max": 17,
+    "pen_missing": false,
+    "rem_min": 0
+   }
+  },
+  {
+   "seed": 539595,
+   "p1det": {
+    "k_req": 11,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 150,
+    "adds": 70,
+    "swaps": 64,
+    "distinct": 8,
+    "osc": 59,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 10
+   },
+   "p1sto": {
+    "k_req": 11,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 150,
+    "adds": 143,
+    "swaps": 111,
+    "distinct": 45,
+    "osc": 20,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 6
+   },
+   "p2det": {
+    "k_req": 11,
+    "conn": 4,
+    "first_conn": 145,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 150,
+    "adds": 149,
+    "swaps": 116,
+    "distinct": 38,
+    "osc": 111,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 0
+   },
+   "p2sto": {
+    "k_req": 11,
+    "conn": 6,
+    "first_conn": 29,
+    "deliv": 61.0,
+    "first_deliv": 48,
+    "steps": 453,
+    "adds": 428,
+    "swaps": 236,
+    "distinct": 112,
+    "osc": 195,
+    "houses_max": 13,
+    "pen_missing": false,
+    "rem_min": 0
+   }
+  },
+  {
+   "seed": 547514,
+   "p1det": {
+    "k_req": null,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 154,
+    "adds": 142,
+    "swaps": 141,
+    "distinct": 3,
+    "osc": 135,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": null
+   },
+   "p1sto": {
+    "k_req": 11,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 154,
+    "adds": 150,
+    "swaps": 115,
+    "distinct": 47,
+    "osc": 61,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 11
+   },
+   "p2det": {
+    "k_req": null,
+    "conn": 1,
+    "first_conn": 84,
+    "deliv": 4.0,
+    "first_deliv": 95,
+    "steps": 154,
+    "adds": 153,
+    "swaps": 85,
+    "distinct": 27,
+    "osc": 121,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": null
+   },
+   "p2sto": {
+    "k_req": 3,
+    "conn": 2,
+    "first_conn": 81,
+    "deliv": 4.0,
+    "first_deliv": 97,
+    "steps": 154,
+    "adds": 133,
+    "swaps": 79,
+    "distinct": 50,
+    "osc": 53,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 1
+   }
+  },
+  {
+   "seed": 555433,
+   "p1det": {
+    "k_req": 11,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 140,
+    "adds": 71,
+    "swaps": 61,
+    "distinct": 13,
+    "osc": 56,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 10
+   },
+   "p1sto": {
+    "k_req": 11,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 128,
+    "adds": 127,
+    "swaps": 102,
+    "distinct": 33,
+    "osc": 43,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 8
+   },
+   "p2det": {
+    "k_req": 11,
+    "conn": 1,
+    "first_conn": 72,
+    "deliv": 2.0,
+    "first_deliv": 84,
+    "steps": 140,
+    "adds": 140,
+    "swaps": 118,
+    "distinct": 26,
+    "osc": 110,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 1
+   },
+   "p2sto": {
+    "k_req": 11,
+    "conn": 9,
+    "first_conn": 28,
+    "deliv": 45.0,
+    "first_deliv": 44,
+    "steps": 349,
+    "adds": 322,
+    "swaps": 123,
+    "distinct": 90,
+    "osc": 177,
+    "houses_max": 11,
+    "pen_missing": false,
+    "rem_min": 0
+   }
+  },
+  {
+   "seed": 563352,
+   "p1det": {
+    "k_req": 10,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 154,
+    "adds": 142,
+    "swaps": 129,
+    "distinct": 17,
+    "osc": 120,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 10
+   },
+   "p1sto": {
+    "k_req": 10,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 154,
+    "adds": 150,
+    "swaps": 122,
+    "distinct": 38,
+    "osc": 49,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 9
+   },
+   "p2det": {
+    "k_req": 10,
+    "conn": 8,
+    "first_conn": 21,
+    "deliv": 85.0,
+    "first_deliv": 35,
+    "steps": 463,
+    "adds": 419,
+    "swaps": 219,
+    "distinct": 79,
+    "osc": 313,
+    "houses_max": 14,
+    "pen_missing": false,
+    "rem_min": 0
+   },
+   "p2sto": {
+    "k_req": 10,
+    "conn": 5,
+    "first_conn": 32,
+    "deliv": 36.0,
+    "first_deliv": 51,
+    "steps": 312,
+    "adds": 286,
+    "swaps": 91,
+    "distinct": 71,
+    "osc": 153,
+    "houses_max": 8,
+    "pen_missing": false,
+    "rem_min": 0
+   }
+  },
+  {
+   "seed": 571271,
+   "p1det": {
+    "k_req": 8,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 149,
+    "adds": 147,
+    "swaps": 137,
+    "distinct": 15,
+    "osc": 127,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 7
+   },
+   "p1sto": {
+    "k_req": 8,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 149,
+    "adds": 130,
+    "swaps": 98,
+    "distinct": 42,
+    "osc": 38,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 4
+   },
+   "p2det": {
+    "k_req": 7,
+    "conn": 9,
+    "first_conn": 11,
+    "deliv": 61.0,
+    "first_deliv": 23,
+    "steps": 392,
+    "adds": 386,
+    "swaps": 201,
+    "distinct": 63,
+    "osc": 276,
+    "houses_max": 13,
+    "pen_missing": true,
+    "rem_min": 0
+   },
+   "p2sto": {
+    "k_req": 8,
+    "conn": 10,
+    "first_conn": 12,
+    "deliv": 40.0,
+    "first_deliv": 24,
+    "steps": 331,
+    "adds": 312,
+    "swaps": 164,
+    "distinct": 93,
+    "osc": 97,
+    "houses_max": 10,
+    "pen_missing": false,
+    "rem_min": 0
+   }
+  },
+  {
+   "seed": 579190,
+   "p1det": {
+    "k_req": 6,
+    "conn": 2,
+    "first_conn": 86,
+    "deliv": 4.0,
+    "first_deliv": 96,
+    "steps": 140,
+    "adds": 63,
+    "swaps": 17,
+    "distinct": 15,
+    "osc": 48,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 4
+   },
+   "p1sto": {
+    "k_req": 6,
+    "conn": 5,
+    "first_conn": 17,
+    "deliv": 19.0,
+    "first_deliv": 26,
+    "steps": 216,
+    "adds": 211,
+    "swaps": 58,
+    "distinct": 62,
+    "osc": 98,
+    "houses_max": 7,
+    "pen_missing": false,
+    "rem_min": 0
+   },
+   "p2det": {
+    "k_req": 6,
+    "conn": 2,
+    "first_conn": 10,
+    "deliv": 15.0,
+    "first_deliv": 21,
+    "steps": 205,
+    "adds": 154,
+    "swaps": 124,
+    "distinct": 35,
+    "osc": 116,
+    "houses_max": 5,
+    "pen_missing": false,
+    "rem_min": 0
+   },
+   "p2sto": {
+    "k_req": 6,
+    "conn": 4,
+    "first_conn": 18,
+    "deliv": 21.0,
+    "first_deliv": 27,
+    "steps": 256,
+    "adds": 230,
+    "swaps": 137,
+    "distinct": 63,
+    "osc": 102,
+    "houses_max": 7,
+    "pen_missing": false,
+    "rem_min": 0
+   }
+  },
+  {
+   "seed": 587109,
+   "p1det": {
+    "k_req": 5,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 142,
+    "adds": 130,
+    "swaps": 127,
+    "distinct": 5,
+    "osc": 122,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 4
+   },
+   "p1sto": {
+    "k_req": 5,
+    "conn": 0,
+    "first_conn": null,
+    "deliv": 0.0,
+    "first_deliv": null,
+    "steps": 142,
+    "adds": 140,
+    "swaps": 115,
+    "distinct": 35,
+    "osc": 64,
+    "houses_max": 4,
+    "pen_missing": false,
+    "rem_min": 2
+   },
+   "p2det": {
+    "k_req": 5,
+    "conn": 2,
+    "first_conn": 16,
+    "deliv": 13.0,
+    "first_deliv": 27,
+    "steps": 211,
+    "adds": 167,
+    "swaps": 39,
+    "distinct": 27,
+    "osc": 132,
+    "houses_max": 5,
+    "pen_missing": false,
+    "rem_min": 0
+   },
+   "p2sto": {
+    "k_req": 5,
+    "conn": 6,
+    "first_conn": 23,
+    "deliv": 52.0,
+    "first_deliv": 31,
+    "steps": 354,
+    "adds": 330,
+    "swaps": 154,
+    "distinct": 100,
+    "osc": 108,
+    "houses_max": 9,
+    "pen_missing": false,
+    "rem_min": 0
+   }
+  }
+ ]
+}

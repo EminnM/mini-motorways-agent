@@ -1,0 +1,27 @@
+# Tiny end-to-end check of the harness (config -> train -> checkpoint -> metrics -> evaluation -> plots -> metadata).
+# NOT an experiment: 512 timesteps, one seed.
+experiment:
+  name: smoke_test
+  description: "harness smoke test (very short run)"
+  hypothesis: ""
+  tags: [smoke]
+
+environment:
+  initialization: normal
+  reward: native_score
+  decision_interval_seconds: 0.3
+  episode_horizon_decisions: 20
+
+policy:
+  algorithm: maskable_ppo
+
+training:
+  total_timesteps: 512
+  seeds: [101]
+  checkpoint_every: 256
+  eval_every: 256
+
+evaluation:
+  seeds: [10001, 10002]
+  episodes_per_seed: 1
+  deterministic: true

@@ -1,0 +1,86 @@
+{
+ "S8C_det": {
+  "success": 0.833,
+  "exact_k_adds_success": 0.0,
+  "first_add_useful": 0.433,
+  "episodes_with_any_useful_add": 0.983,
+  "action_share": {
+   "WAIT": 0.14729829755736493,
+   "ADD": 0.7920059215396003,
+   "REMOVE": 0.06069578090303479
+  },
+  "mean_wait": 3.3,
+  "mean_add": 17.8,
+  "mean_steps": 22.5
+ },
+ "S8C_sto": {
+  "success": 0.933,
+  "exact_k_adds_success": 0.017,
+  "first_add_useful": 0.433,
+  "episodes_with_any_useful_add": 1.0,
+  "action_share": {
+   "WAIT": 0.07398568019093078,
+   "ADD": 0.8544152744630071,
+   "REMOVE": 0.07159904534606205
+  },
+  "mean_wait": 1.6,
+  "mean_add": 17.9,
+  "mean_steps": 20.9
+ },
+ "t5120_det": {
+  "success": 0.017,
+  "exact_k_adds_success": 0.0,
+  "first_add_useful": 0.444,
+  "episodes_with_any_useful_add": 0.25,
+  "action_share": {
+   "WAIT": 0.8963267278878685,
+   "ADD": 0.0625906234896085,
+   "REMOVE": 0.041082648622522956
+  },
+  "mean_wait": 61.8,
+  "mean_add": 4.3,
+  "mean_steps": 69.0
+ },
+ "t5120_sto": {
+  "success": 0.733,
+  "exact_k_adds_success": 0.017,
+  "first_add_useful": 0.517,
+  "episodes_with_any_useful_add": 1.0,
+  "action_share": {
+   "WAIT": 0.3780487804878049,
+   "ADD": 0.48577235772357724,
+   "REMOVE": 0.13617886178861788
+  },
+  "mean_wait": 15.5,
+  "mean_add": 19.9,
+  "mean_steps": 41.0
+ },
+ "t10240_det": {
+  "success": 0.017,
+  "exact_k_adds_success": 0.0,
+  "first_add_useful": 0.394,
+  "episodes_with_any_useful_add": 0.35,
+  "action_share": {
+   "WAIT": 0.8782020299661673,
+   "ADD": 0.08023199613339778,
+   "REMOVE": 0.04156597390043499
+  },
+  "mean_wait": 60.6,
+  "mean_add": 5.5,
+  "mean_steps": 69.0
+ },
+ "t10240_sto": {
+  "success": 0.683,
+  "exact_k_adds_success": 0.0,
+  "first_add_useful": 0.417,
+  "episodes_with_any_useful_add": 1.0,
+  "action_share": {
+   "WAIT": 0.38649851632047477,
+   "ADD": 0.4198813056379822,
+   "REMOVE": 0.19362017804154302
+  },
+  "mean_wait": 17.4,
+  "mean_add": 18.9,
+  "mean_steps": 44.9
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "written_before_any_S8_training": true,
+ "selection_data": "VALIDATION manifest only (279 tasks); TEST is evaluated once, on the selected checkpoint, after training",
+ "policy_mode_used_for_selection": "stochastic (the PPO policy being trained; validation eval seed 0). Deterministic results are reported but not used",
+ "candidates": "every evaluated checkpoint: step 0, 10,240, 25,088, 50,176, 75,264, 99,840 decisions (or the last one reached at the wall-clock cap)",
+ "rule_in_order": [
+  "1. maximise mean(validation success at k=7, validation success at k=10)",
+  "2. tie: higher mean construction efficiency (required edges / total ADDs on successful episodes), averaged over k=7 and k=10",
+  "3. tie: lower mean road churn (REMOVEs + house-edge replacements per episode), averaged over k=7 and k=10",
+  "4. tie: the earlier checkpoint"
+ ],
+ "note": "if no checkpoint improves on step 0 the rule can select step 0; that outcome will be reported as 'no learning', not hidden",
+ "budget": {"max_decisions_per_arm": 100000, "actual_cap": 99840, "arms": 3, "seeds_per_arm": 1, "wall_clock_cap_min": 75},
+ "training_seed_all_arms": 11,
+ "validation_eval_seed": 0,
+ "test_eval_seed": 0
+}

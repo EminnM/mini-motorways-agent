@@ -1,0 +1,38 @@
+{
+  "1_correct_action_reward1_terminates": {
+    "passed": true,
+    "detail": "10 tasks; failures=[]"
+  },
+  "2_incorrect_legal_road_gives_0": {
+    "passed": true,
+    "detail": "10 tasks; failures=[]"
+  },
+  "3_wait_gives_0": {
+    "passed": true,
+    "detail": "10 tasks; failures=[]"
+  },
+  "4_destructive_action_zero_and_terminates": {
+    "passed": true,
+    "detail": "8 destructive removals tested; failures=[]"
+  },
+  "5_timeout_zero_and_truncates_at_20": {
+    "passed": true,
+    "detail": "5 tasks; failures=[]"
+  },
+  "6_no_native_reward_or_terminal_penalty": {
+    "passed": true,
+    "detail": "leaks=[]; live reward values over 30 random episodes=[0.0, 1.0]"
+  },
+  "8_observation_is_the_unchanged_policy_observation": {
+    "passed": true,
+    "detail": "obs shape (11666,); equals encode_observation(native observation): True; task fields only in info: ['task_id', 'task_index']"
+  },
+  "9_layouts_and_correct_action_vary": {
+    "passed": false,
+    "detail": "20 live resets: 9 distinct houses, 18 distinct a*, orientations ['horizontal', 'vertical']; distinct a* per split {'train': 173, 'validation': 76, 'test': 115}; top single-index share {'train': 0.025, 'validation': 0.05, 'test': 0.046}"
+  },
+  "10_identical_task_and_actions_reproduce_identical_results": {
+    "passed": true,
+    "detail": "3 tasks x 2 replays; mismatching tasks=[]"
+  }
+}

@@ -1,0 +1,110 @@
+{
+ "stochastic_A_vs_B_k5": {
+  "n": 100,
+  "A_only": 0,
+  "B_only": 20,
+  "both": 0
+ },
+ "stochastic_A_vs_B_k7": {
+  "n": 93,
+  "A_only": 0,
+  "B_only": 17,
+  "both": 0
+ },
+ "stochastic_A_vs_B_k10": {
+  "n": 32,
+  "A_only": 0,
+  "B_only": 0,
+  "both": 0
+ },
+ "stochastic_A_vs_C_k5": {
+  "n": 100,
+  "A_only": 0,
+  "C_only": 99,
+  "both": 0
+ },
+ "stochastic_A_vs_C_k7": {
+  "n": 93,
+  "A_only": 0,
+  "C_only": 85,
+  "both": 0
+ },
+ "stochastic_A_vs_C_k10": {
+  "n": 32,
+  "A_only": 0,
+  "C_only": 23,
+  "both": 0
+ },
+ "stochastic_B_vs_C_k5": {
+  "n": 100,
+  "B_only": 0,
+  "C_only": 79,
+  "both": 20
+ },
+ "stochastic_B_vs_C_k7": {
+  "n": 93,
+  "B_only": 0,
+  "C_only": 68,
+  "both": 17
+ },
+ "stochastic_B_vs_C_k10": {
+  "n": 32,
+  "B_only": 0,
+  "C_only": 23,
+  "both": 0
+ },
+ "deterministic_A_vs_B_k5": {
+  "n": 100,
+  "A_only": 0,
+  "B_only": 22,
+  "both": 0
+ },
+ "deterministic_A_vs_B_k7": {
+  "n": 93,
+  "A_only": 0,
+  "B_only": 12,
+  "both": 0
+ },
+ "deterministic_A_vs_B_k10": {
+  "n": 32,
+  "A_only": 0,
+  "B_only": 0,
+  "both": 0
+ },
+ "deterministic_A_vs_C_k5": {
+  "n": 100,
+  "A_only": 0,
+  "C_only": 91,
+  "both": 0
+ },
+ "deterministic_A_vs_C_k7": {
+  "n": 93,
+  "A_only": 0,
+  "C_only": 85,
+  "both": 0
+ },
+ "deterministic_A_vs_C_k10": {
+  "n": 32,
+  "A_only": 0,
+  "C_only": 22,
+  "both": 0
+ },
+ "deterministic_B_vs_C_k5": {
+  "n": 100,
+  "B_only": 3,
+  "C_only": 72,
+  "both": 19
+ },
+ "deterministic_B_vs_C_k7": {
+  "n": 93,
+  "B_only": 1,
+  "C_only": 74,
+  "both": 11
+ },
+ "deterministic_B_vs_C_k10": {
+  "n": 32,
+  "B_only": 0,
+  "C_only": 22,
+  "both": 0
+ }
+}

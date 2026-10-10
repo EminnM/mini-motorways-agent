@@ -1,0 +1,59 @@
+{
+ "arm": "B",
+ "seed": 11,
+ "smoke": true,
+ "total_decisions": 512,
+ "stages": [
+  [
+   2
+  ],
+  [
+   3
+  ],
+  [
+   5
+  ],
+  [
+   7
+  ],
+  [
+   7,
+   10
+  ]
+ ],
+ "advance": {
+  "window": 100,
+  "success_threshold": 0.7,
+  "min_stage_decisions": 4096,
+  "max_stage_decisions": 12000
+ },
+ "init_checkpoint": null,
+ "eval_at": [
+  0,
+  512
+ ],
+ "n_params": 73416,
+ "ppo": {
+  "n_steps": 512,
+  "batch_size": 256,
+  "n_epochs": 4,
+  "target_kl": 0.03,
+  "learning_rate": 0.0003,
+  "ent_coef": 0.01,
+  "gamma": 0.99
+ },
+ "threads": 1,
+ "deadline_min": 75.0,
+ "reserve_min": 7.0,
+ "manifest_sha256": "55fe4300a70432d16bd2a10978cd835ff69cd5cb0e13f9d8e8fe12f3d5882926 *s7_train.jsonl\neadd67121e2b4781fd196c7359184c08e0d90ee7e393b7304247ddb0f28d0e91 *s7_validation.jsonl\n6a9e8cd96af830868f3aa927d2be9a4e5ecc14fdd32045414ae1819cb8cee622 *s7_test.jsonl\n",
+ "config_sha256": "2d8568425ecd8ac47031604a83660e56482d19e892acb3863463b52e4571304d",
+ "source_sha256": {
+  "experiments/s8_train.py": "1eb312ca08199d06ad9a79c8a13f7b3b5534997122f23308a20cf79ba7c07bcf",
+  "experiments/s7_train.py": "045b88aaacdbf0cffe0739e7fc8494e95480543671f7df2d840be62b2d7e873a",
+  "python/synthetic_rl/s7.py": "ff494440fee96915bae4a1b833e616473ef7c2246349be74322067ab51d8c125",
+  "python/synthetic_rl/s8_eval.py": "ebfcb5084f5610e9f836cf09fab35fca2e37d65305d2c7b92882fcc720eca965",
+  "python/synthetic_rl/models.py": "b35d69c9c15915f75489fcbfa87457b611d1676ffa3d51097f09d53289c2c893"
+ },
+ "validation_eval": "deterministic + stochastic (seed 0), all validation tasks",
+ "selection_rule": "see PREREGISTERED_SELECTION.json"
+}

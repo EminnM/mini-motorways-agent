@@ -1,0 +1,6 @@
+{
+  "9_layouts_and_correct_action_vary[random20]": {
+    "passed": true,
+    "detail": "random20: 20 live resets -> 15 distinct houses, 19 base layouts, 16 distinct a*, orientations ['horizontal', 'vertical']; whole splits: distinct a* {'train': 173, 'validation': 76, 'test': 115}, base layouts {'train': 342, 'validation': 70, 'test': 125}, top single-index share {'train': 0.025, 'validation': 0.05, 'test': 0.046}"
+  }
+}

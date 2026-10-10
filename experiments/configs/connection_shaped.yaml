@@ -1,0 +1,31 @@
+experiment:
+  name: connection_shaped
+  description: "MaskablePPO with potential-based connection shaping (houses connected to a same-colour destination)"
+  hypothesis: ""
+  tags:
+    - shaping
+    - experiment
+
+environment:
+  initialization: normal
+  reward: connection_shaped
+  shaping_coefficient: 1.0
+  decision_interval_seconds: 1.0
+  episode_horizon_decisions: 600
+
+policy:
+  algorithm: maskable_ppo
+  hyperparameters:
+    gamma: 0.995
+
+training:
+  total_timesteps: 122880
+  seeds:
+    - 7
+  checkpoint_every: 16384
+  eval_every: 16384
+
+evaluation:
+  seeds: [7932, 31689, 71284, 102960, 134636, 150474, 166312, 190069, 213826, 221745]
+  episodes_per_seed: 1
+  deterministic: true

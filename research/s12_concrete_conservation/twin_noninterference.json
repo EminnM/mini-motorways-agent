@@ -1,0 +1,7 @@
+{
+ "steps": 60,
+ "plain_vs_instrumented_guard_dry_identical": false,
+ "plain_vs_plain_identical": true,
+ "plain_vs_plain_first_divergence_step": null,
+ "wall_s": 39.4
+}

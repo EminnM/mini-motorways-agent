@@ -1,0 +1,13 @@
+{
+ "label": "mlp",
+ "checkpointSteps": 3000,
+ "checkpoint": "ppo_ckpt_connected_mlp\\checkpoint_3000.zip",
+ "evaluatedAt": 1791387442.4552205,
+ "evalSeconds": 263.1,
+ "valMeanReturn": 5.5,
+ "valMeanScore": 15.5,
+ "valMeanLength": 223.5,
+ "valTerminalRate": 1.0,
+ "valFractionPositive": 1.0,
+ "zip": "C:\\Users\\TKA\\Desktop\\mini moto\\python\\best_models\\overall_best.zip"
+}

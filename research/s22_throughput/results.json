@@ -1,0 +1,2458 @@
+{
+ "T0": 60,
+ "seeds": {
+  "500000": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": 447,
+    "V1_vs_V0_first_hash_divergence": 61,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": 73,
+    "V2": 73
+   },
+   "episode": {
+    "V0": {
+     "decisions": 498,
+     "deliveries": 105.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 14,
+     "houses_end": 14,
+     "concrete_spent_after_T0": 5,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 498,
+     "deliveries": 105.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 14,
+     "houses_end": 14,
+     "concrete_spent_after_T0": 5,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 309,
+     "deliveries": 40.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 5,
+     "edits_total": 5,
+     "lost_total": 0,
+     "connected_end": 8,
+     "houses_end": 10,
+     "concrete_spent_after_T0": 10,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 309,
+     "deliveries": 41.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 8,
+     "houses_end": 10,
+     "concrete_spent_after_T0": 12,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     497
+    ],
+    "V1": [
+     61,
+     73
+    ],
+    "V2": [
+     61,
+     73
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 437,
+     "deliveries": 102.0,
+     "exposure": 3074,
+     "R": 0.03318152244632401,
+     "vehicles_per_decision": 3.054919908466819,
+     "vehicles_per_connected": 0.4342875731945348,
+     "overcrowded_fraction": 0.11212814645308924,
+     "first_overcrowding": 449,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 18,
+     "n_func_mean": 37.80549199084668,
+     "connected_mean": 7.034324942791762
+    },
+    "V1": {
+     "n": 13,
+     "deliveries": 1.0,
+     "exposure": 26,
+     "R": 0.038461538461538464,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 11,
+     "n_func_mean": 16.384615384615383,
+     "connected_mean": 2.0
+    },
+    "V2": {
+     "n": 13,
+     "deliveries": 1.0,
+     "exposure": 26,
+     "R": 0.038461538461538464,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 8,
+     "n_func_mean": 18.0,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V0dup": {
+     "n": 437,
+     "deliveries": 102.0,
+     "exposure": 3074,
+     "R": 0.03318152244632401,
+     "vehicles_per_decision": 3.0526315789473686,
+     "vehicles_per_connected": 0.4339622641509434,
+     "overcrowded_fraction": 0.11212814645308924,
+     "first_overcrowding": 449,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 18,
+     "n_func_mean": 37.80549199084668,
+     "connected_mean": 7.034324942791762
+    },
+    "V0_vs_V1": {
+     "n": 13,
+     "deliveries": 1.0,
+     "exposure": 26,
+     "R": 0.038461538461538464,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 16,
+     "n_func_mean": 12.153846153846153,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V2": {
+     "n": 13,
+     "deliveries": 1.0,
+     "exposure": 26,
+     "R": 0.038461538461538464,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 16,
+     "n_func_mean": 12.153846153846153,
+     "connected_mean": 2.0
+    }
+   }
+  },
+  "507919": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": null,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": null,
+    "V2": 78
+   },
+   "episode": {
+    "V0": {
+     "decisions": 151,
+     "deliveries": 5.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 151,
+     "deliveries": 5.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 151,
+     "deliveries": 5.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 151,
+     "deliveries": 5.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 3,
+     "edits_total": 3,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 12,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     150
+    ],
+    "V1": [
+     61,
+     150
+    ],
+    "V2": [
+     61,
+     78
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 90,
+     "deliveries": 5.0,
+     "exposure": 126,
+     "R": 0.03968253968253968,
+     "vehicles_per_decision": 0.12222222222222222,
+     "vehicles_per_connected": 0.0873015873015873,
+     "overcrowded_fraction": 0.5555555555555556,
+     "first_overcrowding": 101,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 36,
+     "n_func_mean": 12.088888888888889,
+     "connected_mean": 1.4
+    },
+    "V1": {
+     "n": 90,
+     "deliveries": 5.0,
+     "exposure": 126,
+     "R": 0.03968253968253968,
+     "vehicles_per_decision": 0.12222222222222222,
+     "vehicles_per_connected": 0.0873015873015873,
+     "overcrowded_fraction": 0.5555555555555556,
+     "first_overcrowding": 101,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 36,
+     "n_func_mean": 12.088888888888889,
+     "connected_mean": 1.4
+    },
+    "V2": {
+     "n": 18,
+     "deliveries": 0.0,
+     "exposure": 0,
+     "R": null,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": null,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 5,
+     "lost": 0,
+     "concrete_end": 22,
+     "n_func_mean": 5.944444444444445,
+     "connected_mean": 0.0
+    },
+    "V0_vs_V0dup": {
+     "n": 90,
+     "deliveries": 5.0,
+     "exposure": 126,
+     "R": 0.03968253968253968,
+     "vehicles_per_decision": 0.12222222222222222,
+     "vehicles_per_connected": 0.0873015873015873,
+     "overcrowded_fraction": 0.5555555555555556,
+     "first_overcrowding": 101,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 36,
+     "n_func_mean": 12.088888888888889,
+     "connected_mean": 1.4
+    },
+    "V0_vs_V1": {
+     "n": 90,
+     "deliveries": 5.0,
+     "exposure": 126,
+     "R": 0.03968253968253968,
+     "vehicles_per_decision": 0.12222222222222222,
+     "vehicles_per_connected": 0.0873015873015873,
+     "overcrowded_fraction": 0.5555555555555556,
+     "first_overcrowding": 101,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 36,
+     "n_func_mean": 12.088888888888889,
+     "connected_mean": 1.4
+    },
+    "V0_vs_V2": {
+     "n": 18,
+     "deliveries": 0.0,
+     "exposure": 0,
+     "R": null,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": null,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 5,
+     "lost": 0,
+     "concrete_end": 25,
+     "n_func_mean": 3.111111111111111,
+     "connected_mean": 0.0
+    }
+   }
+  },
+  "515838": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": null,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": null,
+    "V2": 65
+   },
+   "episode": {
+    "V0": {
+     "decisions": 145,
+     "deliveries": 6.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 145,
+     "deliveries": 6.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 145,
+     "deliveries": 6.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 145,
+     "deliveries": 3.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 3,
+     "edits_total": 3,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 10,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     144
+    ],
+    "V1": [
+     61,
+     144
+    ],
+    "V2": [
+     61,
+     65
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 84,
+     "deliveries": 6.0,
+     "exposure": 139,
+     "R": 0.04316546762589928,
+     "vehicles_per_decision": 0.11904761904761904,
+     "vehicles_per_connected": 0.07194244604316546,
+     "overcrowded_fraction": 0.5952380952380952,
+     "first_overcrowding": 95,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 36,
+     "n_func_mean": 13.595238095238095,
+     "connected_mean": 1.6547619047619047
+    },
+    "V1": {
+     "n": 84,
+     "deliveries": 6.0,
+     "exposure": 139,
+     "R": 0.04316546762589928,
+     "vehicles_per_decision": 0.11904761904761904,
+     "vehicles_per_connected": 0.07194244604316546,
+     "overcrowded_fraction": 0.5952380952380952,
+     "first_overcrowding": 95,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 36,
+     "n_func_mean": 13.595238095238095,
+     "connected_mean": 1.6547619047619047
+    },
+    "V2": {
+     "n": 5,
+     "deliveries": 0.0,
+     "exposure": 0,
+     "R": null,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": null,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 4,
+     "lost": 0,
+     "concrete_end": 22,
+     "n_func_mean": 5.8,
+     "connected_mean": 0.0
+    },
+    "V0_vs_V0dup": {
+     "n": 84,
+     "deliveries": 6.0,
+     "exposure": 139,
+     "R": 0.04316546762589928,
+     "vehicles_per_decision": 0.11904761904761904,
+     "vehicles_per_connected": 0.07194244604316546,
+     "overcrowded_fraction": 0.5952380952380952,
+     "first_overcrowding": 95,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 36,
+     "n_func_mean": 13.595238095238095,
+     "connected_mean": 1.6547619047619047
+    },
+    "V0_vs_V1": {
+     "n": 84,
+     "deliveries": 6.0,
+     "exposure": 139,
+     "R": 0.04316546762589928,
+     "vehicles_per_decision": 0.11904761904761904,
+     "vehicles_per_connected": 0.07194244604316546,
+     "overcrowded_fraction": 0.5952380952380952,
+     "first_overcrowding": 95,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 36,
+     "n_func_mean": 13.595238095238095,
+     "connected_mean": 1.6547619047619047
+    },
+    "V0_vs_V2": {
+     "n": 5,
+     "deliveries": 0.0,
+     "exposure": 0,
+     "R": null,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": null,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 4,
+     "lost": 0,
+     "concrete_end": 25,
+     "n_func_mean": 3.4,
+     "connected_mean": 0.0
+    }
+   }
+  },
+  "523757": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": 61,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": 68,
+    "V2": 68
+   },
+   "episode": {
+    "V0": {
+     "decisions": 310,
+     "deliveries": 40.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 9,
+     "houses_end": 9,
+     "concrete_spent_after_T0": 1,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 310,
+     "deliveries": 40.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 9,
+     "houses_end": 9,
+     "concrete_spent_after_T0": 1,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 310,
+     "deliveries": 41.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 9,
+     "houses_end": 9,
+     "concrete_spent_after_T0": 12,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 310,
+     "deliveries": 42.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 9,
+     "houses_end": 9,
+     "concrete_spent_after_T0": 10,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     309
+    ],
+    "V1": [
+     61,
+     68
+    ],
+    "V2": [
+     61,
+     68
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 249,
+     "deliveries": 37.0,
+     "exposure": 1462,
+     "R": 0.0253077975376197,
+     "vehicles_per_decision": 0.8875502008032129,
+     "vehicles_per_connected": 0.1511627906976744,
+     "overcrowded_fraction": 0.20080321285140562,
+     "first_overcrowding": 260,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 45,
+     "n_func_mean": 24.526104417670684,
+     "connected_mean": 5.871485943775101
+    },
+    "V1": {
+     "n": 8,
+     "deliveries": 1.0,
+     "exposure": 16,
+     "R": 0.0625,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 6,
+     "n_func_mean": 18.75,
+     "connected_mean": 2.0
+    },
+    "V2": {
+     "n": 8,
+     "deliveries": 0.0,
+     "exposure": 16,
+     "R": 0.0,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 6,
+     "n_func_mean": 18.75,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V0dup": {
+     "n": 249,
+     "deliveries": 37.0,
+     "exposure": 1462,
+     "R": 0.0253077975376197,
+     "vehicles_per_decision": 0.8875502008032129,
+     "vehicles_per_connected": 0.1511627906976744,
+     "overcrowded_fraction": 0.20080321285140562,
+     "first_overcrowding": 260,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 45,
+     "n_func_mean": 24.526104417670684,
+     "connected_mean": 5.871485943775101
+    },
+    "V0_vs_V1": {
+     "n": 8,
+     "deliveries": 1.0,
+     "exposure": 16,
+     "R": 0.0625,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 14,
+     "n_func_mean": 14.25,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V2": {
+     "n": 8,
+     "deliveries": 1.0,
+     "exposure": 16,
+     "R": 0.0625,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 14,
+     "n_func_mean": 14.25,
+     "connected_mean": 2.0
+    }
+   }
+  },
+  "531676": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": 61,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": 78,
+    "V2": 78
+   },
+   "episode": {
+    "V0": {
+     "decisions": 295,
+     "deliveries": 38.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 4,
+     "houses_end": 7,
+     "concrete_spent_after_T0": 3,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 295,
+     "deliveries": 38.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 4,
+     "houses_end": 7,
+     "concrete_spent_after_T0": 3,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 293,
+     "deliveries": 39.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 6,
+     "edits_total": 6,
+     "lost_total": 0,
+     "connected_end": 6,
+     "houses_end": 8,
+     "concrete_spent_after_T0": 7,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 464,
+     "deliveries": 82.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 4,
+     "houses_end": 14,
+     "concrete_spent_after_T0": 10,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     294
+    ],
+    "V1": [
+     61,
+     78
+    ],
+    "V2": [
+     61,
+     78
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 234,
+     "deliveries": 35.0,
+     "exposure": 887,
+     "R": 0.03945885005636979,
+     "vehicles_per_decision": 0.6709401709401709,
+     "vehicles_per_connected": 0.17700112739571588,
+     "overcrowded_fraction": 0.21367521367521367,
+     "first_overcrowding": 245,
+     "max_demand": 9,
+     "lost": 0,
+     "concrete_end": 52,
+     "n_func_mean": 20.78205128205128,
+     "connected_mean": 3.7905982905982905
+    },
+    "V1": {
+     "n": 18,
+     "deliveries": 2.0,
+     "exposure": 36,
+     "R": 0.05555555555555555,
+     "vehicles_per_decision": 0.05555555555555555,
+     "vehicles_per_connected": 0.027777777777777776,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 9,
+     "n_func_mean": 18.27777777777778,
+     "connected_mean": 2.0
+    },
+    "V2": {
+     "n": 18,
+     "deliveries": 2.0,
+     "exposure": 36,
+     "R": 0.05555555555555555,
+     "vehicles_per_decision": 0.2222222222222222,
+     "vehicles_per_connected": 0.1111111111111111,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 7,
+     "n_func_mean": 19.555555555555557,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V0dup": {
+     "n": 234,
+     "deliveries": 35.0,
+     "exposure": 887,
+     "R": 0.03945885005636979,
+     "vehicles_per_decision": 0.6709401709401709,
+     "vehicles_per_connected": 0.17700112739571588,
+     "overcrowded_fraction": 0.21367521367521367,
+     "first_overcrowding": 245,
+     "max_demand": 9,
+     "lost": 0,
+     "concrete_end": 52,
+     "n_func_mean": 20.78205128205128,
+     "connected_mean": 3.7905982905982905
+    },
+    "V0_vs_V1": {
+     "n": 18,
+     "deliveries": 2.0,
+     "exposure": 36,
+     "R": 0.05555555555555555,
+     "vehicles_per_decision": 0.05555555555555555,
+     "vehicles_per_connected": 0.027777777777777776,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 15,
+     "n_func_mean": 13.11111111111111,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V2": {
+     "n": 18,
+     "deliveries": 2.0,
+     "exposure": 36,
+     "R": 0.05555555555555555,
+     "vehicles_per_decision": 0.05555555555555555,
+     "vehicles_per_connected": 0.027777777777777776,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 15,
+     "n_func_mean": 13.11111111111111,
+     "connected_mean": 2.0
+    }
+   }
+  },
+  "539595": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": 61,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": 79,
+    "V2": 79
+   },
+   "episode": {
+    "V0": {
+     "decisions": 323,
+     "deliveries": 43.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 9,
+     "houses_end": 9,
+     "concrete_spent_after_T0": 1,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 323,
+     "deliveries": 43.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 9,
+     "houses_end": 9,
+     "concrete_spent_after_T0": 1,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 323,
+     "deliveries": 41.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 9,
+     "houses_end": 10,
+     "concrete_spent_after_T0": 10,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 323,
+     "deliveries": 41.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 10,
+     "houses_end": 10,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     322
+    ],
+    "V1": [
+     61,
+     79
+    ],
+    "V2": [
+     61,
+     79
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 262,
+     "deliveries": 39.0,
+     "exposure": 1365,
+     "R": 0.02857142857142857,
+     "vehicles_per_decision": 1.3549618320610688,
+     "vehicles_per_connected": 0.2600732600732601,
+     "overcrowded_fraction": 0.19083969465648856,
+     "first_overcrowding": 273,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 49,
+     "n_func_mean": 24.625954198473284,
+     "connected_mean": 5.209923664122138
+    },
+    "V1": {
+     "n": 19,
+     "deliveries": 1.0,
+     "exposure": 38,
+     "R": 0.02631578947368421,
+     "vehicles_per_decision": 0.10526315789473684,
+     "vehicles_per_connected": 0.05263157894736842,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 7,
+     "n_func_mean": 19.63157894736842,
+     "connected_mean": 2.0
+    },
+    "V2": {
+     "n": 19,
+     "deliveries": 0.0,
+     "exposure": 38,
+     "R": 0.0,
+     "vehicles_per_decision": 0.3684210526315789,
+     "vehicles_per_connected": 0.18421052631578946,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 7,
+     "n_func_mean": 19.63157894736842,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V0dup": {
+     "n": 262,
+     "deliveries": 39.0,
+     "exposure": 1365,
+     "R": 0.02857142857142857,
+     "vehicles_per_decision": 1.3549618320610688,
+     "vehicles_per_connected": 0.2600732600732601,
+     "overcrowded_fraction": 0.19083969465648856,
+     "first_overcrowding": 273,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 49,
+     "n_func_mean": 24.625954198473284,
+     "connected_mean": 5.209923664122138
+    },
+    "V0_vs_V1": {
+     "n": 19,
+     "deliveries": 1.0,
+     "exposure": 39,
+     "R": 0.02564102564102564,
+     "vehicles_per_decision": 0.10526315789473684,
+     "vehicles_per_connected": 0.05128205128205128,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 15,
+     "n_func_mean": 13.105263157894736,
+     "connected_mean": 2.0526315789473686
+    },
+    "V0_vs_V2": {
+     "n": 19,
+     "deliveries": 1.0,
+     "exposure": 39,
+     "R": 0.02564102564102564,
+     "vehicles_per_decision": 0.10526315789473684,
+     "vehicles_per_connected": 0.05128205128205128,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 15,
+     "n_func_mean": 13.105263157894736,
+     "connected_mean": 2.0526315789473686
+    }
+   }
+  },
+  "547514": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": null,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": null,
+    "V2": null
+   },
+   "episode": {
+    "V0": {
+     "decisions": 154,
+     "deliveries": 5.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 12,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 154,
+     "deliveries": 5.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 12,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 154,
+     "deliveries": 5.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 12,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 154,
+     "deliveries": 5.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 3,
+     "edits_total": 3,
+     "lost_total": 0,
+     "connected_end": 2,
+     "houses_end": 4,
+     "concrete_spent_after_T0": 15,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     153
+    ],
+    "V1": [
+     61,
+     153
+    ],
+    "V2": [
+     61,
+     153
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 93,
+     "deliveries": 5.0,
+     "exposure": 124,
+     "R": 0.04032258064516129,
+     "vehicles_per_decision": 0.0967741935483871,
+     "vehicles_per_connected": 0.07258064516129033,
+     "overcrowded_fraction": 0.5268817204301075,
+     "first_overcrowding": 105,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 33,
+     "n_func_mean": 13.666666666666666,
+     "connected_mean": 1.3333333333333333
+    },
+    "V1": {
+     "n": 93,
+     "deliveries": 5.0,
+     "exposure": 124,
+     "R": 0.04032258064516129,
+     "vehicles_per_decision": 0.0967741935483871,
+     "vehicles_per_connected": 0.07258064516129033,
+     "overcrowded_fraction": 0.5268817204301075,
+     "first_overcrowding": 105,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 33,
+     "n_func_mean": 13.666666666666666,
+     "connected_mean": 1.3333333333333333
+    },
+    "V2": {
+     "n": 93,
+     "deliveries": 5.0,
+     "exposure": 124,
+     "R": 0.04032258064516129,
+     "vehicles_per_decision": 0.0967741935483871,
+     "vehicles_per_connected": 0.07258064516129033,
+     "overcrowded_fraction": 0.5268817204301075,
+     "first_overcrowding": 105,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 30,
+     "n_func_mean": 16.634408602150536,
+     "connected_mean": 1.3333333333333333
+    },
+    "V0_vs_V0dup": {
+     "n": 93,
+     "deliveries": 5.0,
+     "exposure": 124,
+     "R": 0.04032258064516129,
+     "vehicles_per_decision": 0.0967741935483871,
+     "vehicles_per_connected": 0.07258064516129033,
+     "overcrowded_fraction": 0.5268817204301075,
+     "first_overcrowding": 105,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 33,
+     "n_func_mean": 13.666666666666666,
+     "connected_mean": 1.3333333333333333
+    },
+    "V0_vs_V1": {
+     "n": 93,
+     "deliveries": 5.0,
+     "exposure": 124,
+     "R": 0.04032258064516129,
+     "vehicles_per_decision": 0.0967741935483871,
+     "vehicles_per_connected": 0.07258064516129033,
+     "overcrowded_fraction": 0.5268817204301075,
+     "first_overcrowding": 105,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 33,
+     "n_func_mean": 13.666666666666666,
+     "connected_mean": 1.3333333333333333
+    },
+    "V0_vs_V2": {
+     "n": 93,
+     "deliveries": 5.0,
+     "exposure": 124,
+     "R": 0.04032258064516129,
+     "vehicles_per_decision": 0.0967741935483871,
+     "vehicles_per_connected": 0.07258064516129033,
+     "overcrowded_fraction": 0.5268817204301075,
+     "first_overcrowding": 105,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 33,
+     "n_func_mean": 13.666666666666666,
+     "connected_mean": 1.3333333333333333
+    }
+   }
+  },
+  "555433": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": 61,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": 69,
+    "V2": 69
+   },
+   "episode": {
+    "V0": {
+     "decisions": 318,
+     "deliveries": 40.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 10,
+     "houses_end": 10,
+     "concrete_spent_after_T0": 2,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 318,
+     "deliveries": 40.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 10,
+     "houses_end": 10,
+     "concrete_spent_after_T0": 2,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 484,
+     "deliveries": 102.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 14,
+     "houses_end": 14,
+     "concrete_spent_after_T0": 8,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 318,
+     "deliveries": 41.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 9,
+     "houses_end": 10,
+     "concrete_spent_after_T0": 10,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     317
+    ],
+    "V1": [
+     61,
+     69
+    ],
+    "V2": [
+     61,
+     69
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 257,
+     "deliveries": 36.0,
+     "exposure": 1498,
+     "R": 0.02403204272363151,
+     "vehicles_per_decision": 1.2957198443579767,
+     "vehicles_per_connected": 0.22229639519359146,
+     "overcrowded_fraction": 0.19066147859922178,
+     "first_overcrowding": 269,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 50,
+     "n_func_mean": 26.715953307392997,
+     "connected_mean": 5.828793774319066
+    },
+    "V1": {
+     "n": 9,
+     "deliveries": 1.0,
+     "exposure": 18,
+     "R": 0.05555555555555555,
+     "vehicles_per_decision": 0.1111111111111111,
+     "vehicles_per_connected": 0.05555555555555555,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 6,
+     "n_func_mean": 19.11111111111111,
+     "connected_mean": 2.0
+    },
+    "V2": {
+     "n": 9,
+     "deliveries": 0.0,
+     "exposure": 18,
+     "R": 0.0,
+     "vehicles_per_decision": 0.3333333333333333,
+     "vehicles_per_connected": 0.16666666666666666,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 6,
+     "n_func_mean": 19.11111111111111,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V0dup": {
+     "n": 257,
+     "deliveries": 36.0,
+     "exposure": 1498,
+     "R": 0.02403204272363151,
+     "vehicles_per_decision": 1.2957198443579767,
+     "vehicles_per_connected": 0.22229639519359146,
+     "overcrowded_fraction": 0.19066147859922178,
+     "first_overcrowding": 269,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 50,
+     "n_func_mean": 26.715953307392997,
+     "connected_mean": 5.828793774319066
+    },
+    "V0_vs_V1": {
+     "n": 9,
+     "deliveries": 1.0,
+     "exposure": 19,
+     "R": 0.05263157894736842,
+     "vehicles_per_decision": 0.1111111111111111,
+     "vehicles_per_connected": 0.05263157894736842,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 14,
+     "n_func_mean": 14.222222222222221,
+     "connected_mean": 2.111111111111111
+    },
+    "V0_vs_V2": {
+     "n": 9,
+     "deliveries": 1.0,
+     "exposure": 19,
+     "R": 0.05263157894736842,
+     "vehicles_per_decision": 0.1111111111111111,
+     "vehicles_per_connected": 0.05263157894736842,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 14,
+     "n_func_mean": 14.222222222222221,
+     "connected_mean": 2.111111111111111
+    }
+   }
+  },
+  "563352": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": 61,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": 84,
+    "V2": 84
+   },
+   "episode": {
+    "V0": {
+     "decisions": 600,
+     "deliveries": 172.0,
+     "terminated": false,
+     "survived_600": true,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 16,
+     "houses_end": 16,
+     "concrete_spent_after_T0": 3,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 600,
+     "deliveries": 172.0,
+     "terminated": false,
+     "survived_600": true,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 16,
+     "houses_end": 16,
+     "concrete_spent_after_T0": 3,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 304,
+     "deliveries": 39.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 8,
+     "houses_end": 8,
+     "concrete_spent_after_T0": 10,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 304,
+     "deliveries": 36.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 8,
+     "houses_end": 8,
+     "concrete_spent_after_T0": 13,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     599
+    ],
+    "V1": [
+     61,
+     84
+    ],
+    "V2": [
+     61,
+     84
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 539,
+     "deliveries": 169.0,
+     "exposure": 5140,
+     "R": 0.032879377431906616,
+     "vehicles_per_decision": 3.293135435992579,
+     "vehicles_per_connected": 0.3453307392996109,
+     "overcrowded_fraction": 0.09833024118738404,
+     "first_overcrowding": 379,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 47,
+     "n_func_mean": 43.3543599257885,
+     "connected_mean": 9.536178107606679
+    },
+    "V1": {
+     "n": 24,
+     "deliveries": 1.0,
+     "exposure": 48,
+     "R": 0.020833333333333332,
+     "vehicles_per_decision": 0.125,
+     "vehicles_per_connected": 0.0625,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 6,
+     "n_func_mean": 20.916666666666668,
+     "connected_mean": 2.0
+    },
+    "V2": {
+     "n": 24,
+     "deliveries": 1.0,
+     "exposure": 48,
+     "R": 0.020833333333333332,
+     "vehicles_per_decision": 0.4583333333333333,
+     "vehicles_per_connected": 0.22916666666666666,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 6,
+     "n_func_mean": 20.916666666666668,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V0dup": {
+     "n": 539,
+     "deliveries": 169.0,
+     "exposure": 5140,
+     "R": 0.032879377431906616,
+     "vehicles_per_decision": 3.293135435992579,
+     "vehicles_per_connected": 0.3453307392996109,
+     "overcrowded_fraction": 0.09833024118738404,
+     "first_overcrowding": 379,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 47,
+     "n_func_mean": 43.3543599257885,
+     "connected_mean": 9.536178107606679
+    },
+    "V0_vs_V1": {
+     "n": 24,
+     "deliveries": 1.0,
+     "exposure": 48,
+     "R": 0.020833333333333332,
+     "vehicles_per_decision": 0.08333333333333333,
+     "vehicles_per_connected": 0.041666666666666664,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 14,
+     "n_func_mean": 14.083333333333334,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V2": {
+     "n": 24,
+     "deliveries": 1.0,
+     "exposure": 48,
+     "R": 0.020833333333333332,
+     "vehicles_per_decision": 0.08333333333333333,
+     "vehicles_per_connected": 0.041666666666666664,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 14,
+     "n_func_mean": 14.083333333333334,
+     "connected_mean": 2.0
+    }
+   }
+  },
+  "571271": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": 61,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": 65,
+    "V2": 65
+   },
+   "episode": {
+    "V0": {
+     "decisions": 290,
+     "deliveries": 35.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 4,
+     "houses_end": 7,
+     "concrete_spent_after_T0": 5,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 290,
+     "deliveries": 35.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 4,
+     "houses_end": 7,
+     "concrete_spent_after_T0": 5,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 422,
+     "deliveries": 79.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 11,
+     "houses_end": 14,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 290,
+     "deliveries": 35.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 4,
+     "houses_end": 7,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     289
+    ],
+    "V1": [
+     61,
+     65
+    ],
+    "V2": [
+     61,
+     65
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 229,
+     "deliveries": 32.0,
+     "exposure": 892,
+     "R": 0.03587443946188341,
+     "vehicles_per_decision": 1.1266375545851528,
+     "vehicles_per_connected": 0.289237668161435,
+     "overcrowded_fraction": 0.2183406113537118,
+     "first_overcrowding": 240,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 50,
+     "n_func_mean": 22.72052401746725,
+     "connected_mean": 3.8951965065502185
+    },
+    "V1": {
+     "n": 5,
+     "deliveries": 0.0,
+     "exposure": 10,
+     "R": 0.0,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 10,
+     "n_func_mean": 16.4,
+     "connected_mean": 2.0
+    },
+    "V2": {
+     "n": 5,
+     "deliveries": 0.0,
+     "exposure": 10,
+     "R": 0.0,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 10,
+     "n_func_mean": 16.4,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V0dup": {
+     "n": 229,
+     "deliveries": 32.0,
+     "exposure": 892,
+     "R": 0.03587443946188341,
+     "vehicles_per_decision": 1.1266375545851528,
+     "vehicles_per_connected": 0.289237668161435,
+     "overcrowded_fraction": 0.2183406113537118,
+     "first_overcrowding": 240,
+     "max_demand": 10,
+     "lost": 0,
+     "concrete_end": 50,
+     "n_func_mean": 22.72052401746725,
+     "connected_mean": 3.8951965065502185
+    },
+    "V0_vs_V1": {
+     "n": 5,
+     "deliveries": 0.0,
+     "exposure": 10,
+     "R": 0.0,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 15,
+     "n_func_mean": 13.4,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V2": {
+     "n": 5,
+     "deliveries": 0.0,
+     "exposure": 10,
+     "R": 0.0,
+     "vehicles_per_decision": 0.0,
+     "vehicles_per_connected": 0.0,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 15,
+     "n_func_mean": 13.4,
+     "connected_mean": 2.0
+    }
+   }
+  },
+  "579190": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": 61,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": 77,
+    "V2": 77
+   },
+   "episode": {
+    "V0": {
+     "decisions": 442,
+     "deliveries": 88.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 15,
+     "houses_end": 15,
+     "concrete_spent_after_T0": 10,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 442,
+     "deliveries": 88.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 15,
+     "houses_end": 15,
+     "concrete_spent_after_T0": 10,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 292,
+     "deliveries": 34.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 5,
+     "edits_total": 5,
+     "lost_total": 0,
+     "connected_end": 7,
+     "houses_end": 7,
+     "concrete_spent_after_T0": 15,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 258,
+     "deliveries": 28.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 8,
+     "houses_end": 9,
+     "concrete_spent_after_T0": 9,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     441
+    ],
+    "V1": [
+     61,
+     77
+    ],
+    "V2": [
+     61,
+     77
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 381,
+     "deliveries": 84.0,
+     "exposure": 2844,
+     "R": 0.029535864978902954,
+     "vehicles_per_decision": 2.8241469816272966,
+     "vehicles_per_connected": 0.37834036568213786,
+     "overcrowded_fraction": 0.14173228346456693,
+     "first_overcrowding": 233,
+     "max_demand": 9,
+     "lost": 0,
+     "concrete_end": 33,
+     "n_func_mean": 38.35958005249344,
+     "connected_mean": 7.464566929133858
+    },
+    "V1": {
+     "n": 17,
+     "deliveries": 1.0,
+     "exposure": 34,
+     "R": 0.029411764705882353,
+     "vehicles_per_decision": 0.47058823529411764,
+     "vehicles_per_connected": 0.23529411764705882,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 14,
+     "n_func_mean": 13.529411764705882,
+     "connected_mean": 2.0
+    },
+    "V2": {
+     "n": 17,
+     "deliveries": 1.0,
+     "exposure": 34,
+     "R": 0.029411764705882353,
+     "vehicles_per_decision": 0.5882352941176471,
+     "vehicles_per_connected": 0.29411764705882354,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 11,
+     "n_func_mean": 15.411764705882353,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V0dup": {
+     "n": 381,
+     "deliveries": 84.0,
+     "exposure": 2844,
+     "R": 0.029535864978902954,
+     "vehicles_per_decision": 2.8241469816272966,
+     "vehicles_per_connected": 0.37834036568213786,
+     "overcrowded_fraction": 0.14173228346456693,
+     "first_overcrowding": 233,
+     "max_demand": 9,
+     "lost": 0,
+     "concrete_end": 33,
+     "n_func_mean": 38.35958005249344,
+     "connected_mean": 7.464566929133858
+    },
+    "V0_vs_V1": {
+     "n": 17,
+     "deliveries": 1.0,
+     "exposure": 34,
+     "R": 0.029411764705882353,
+     "vehicles_per_decision": 0.29411764705882354,
+     "vehicles_per_connected": 0.14705882352941177,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 19,
+     "n_func_mean": 9.117647058823529,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V2": {
+     "n": 17,
+     "deliveries": 1.0,
+     "exposure": 34,
+     "R": 0.029411764705882353,
+     "vehicles_per_decision": 0.29411764705882354,
+     "vehicles_per_connected": 0.14705882352941177,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 19,
+     "n_func_mean": 9.117647058823529,
+     "connected_mean": 2.0
+    }
+   }
+  },
+  "587109": {
+   "equivalence_through_T0": true,
+   "hash_divergence": {
+    "V0dup_vs_V0_first_hash_divergence": null,
+    "V1_vs_V0_first_hash_divergence": 61,
+    "V2_vs_V0_first_hash_divergence": 61
+   },
+   "spawn_divergence_vs_V0": {
+    "V0dup": null,
+    "V1": 78,
+    "V2": 68
+   },
+   "episode": {
+    "V0": {
+     "decisions": 301,
+     "deliveries": 38.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 8,
+     "houses_end": 8,
+     "concrete_spent_after_T0": 6,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V0dup": {
+     "decisions": 301,
+     "deliveries": 38.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 0,
+     "edits_total": 0,
+     "lost_total": 0,
+     "connected_end": 8,
+     "houses_end": 8,
+     "concrete_spent_after_T0": 6,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V1": {
+     "decisions": 301,
+     "deliveries": 40.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 4,
+     "edits_total": 4,
+     "lost_total": 0,
+     "connected_end": 8,
+     "houses_end": 8,
+     "concrete_spent_after_T0": 8,
+     "illegal": 0,
+     "abandoned": 0
+    },
+    "V2": {
+     "decisions": 515,
+     "deliveries": 128.0,
+     "terminated": true,
+     "survived_600": false,
+     "edits_legal": 8,
+     "edits_total": 8,
+     "lost_total": 0,
+     "connected_end": 15,
+     "houses_end": 15,
+     "concrete_spent_after_T0": 13,
+     "illegal": 0,
+     "abandoned": 0
+    }
+   },
+   "matched_window": {
+    "V0dup": [
+     61,
+     300
+    ],
+    "V1": [
+     61,
+     78
+    ],
+    "V2": [
+     61,
+     68
+    ]
+   },
+   "window": {
+    "V0dup": {
+     "n": 240,
+     "deliveries": 35.0,
+     "exposure": 1230,
+     "R": 0.028455284552845527,
+     "vehicles_per_decision": 0.9375,
+     "vehicles_per_connected": 0.18292682926829268,
+     "overcrowded_fraction": 0.20416666666666666,
+     "first_overcrowding": 252,
+     "max_demand": 9,
+     "lost": 0,
+     "concrete_end": 41,
+     "n_func_mean": 22.279166666666665,
+     "connected_mean": 5.125
+    },
+    "V1": {
+     "n": 18,
+     "deliveries": 2.0,
+     "exposure": 43,
+     "R": 0.046511627906976744,
+     "vehicles_per_decision": 0.3888888888888889,
+     "vehicles_per_connected": 0.16279069767441862,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 12,
+     "n_func_mean": 15.277777777777779,
+     "connected_mean": 2.388888888888889
+    },
+    "V2": {
+     "n": 8,
+     "deliveries": 1.0,
+     "exposure": 16,
+     "R": 0.0625,
+     "vehicles_per_decision": 0.125,
+     "vehicles_per_connected": 0.0625,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 11,
+     "n_func_mean": 13.75,
+     "connected_mean": 2.0
+    },
+    "V0_vs_V0dup": {
+     "n": 240,
+     "deliveries": 35.0,
+     "exposure": 1230,
+     "R": 0.028455284552845527,
+     "vehicles_per_decision": 0.9375,
+     "vehicles_per_connected": 0.18292682926829268,
+     "overcrowded_fraction": 0.20416666666666666,
+     "first_overcrowding": 252,
+     "max_demand": 9,
+     "lost": 0,
+     "concrete_end": 41,
+     "n_func_mean": 22.279166666666665,
+     "connected_mean": 5.125
+    },
+    "V0_vs_V1": {
+     "n": 18,
+     "deliveries": 2.0,
+     "exposure": 43,
+     "R": 0.046511627906976744,
+     "vehicles_per_decision": 0.3888888888888889,
+     "vehicles_per_connected": 0.16279069767441862,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 16,
+     "n_func_mean": 11.61111111111111,
+     "connected_mean": 2.388888888888889
+    },
+    "V0_vs_V2": {
+     "n": 8,
+     "deliveries": 1.0,
+     "exposure": 16,
+     "R": 0.0625,
+     "vehicles_per_decision": 0.25,
+     "vehicles_per_connected": 0.125,
+     "overcrowded_fraction": 0.0,
+     "first_overcrowding": null,
+     "max_demand": 1,
+     "lost": 0,
+     "concrete_end": 19,
+     "n_func_mean": 9.25,
+     "connected_mean": 2.0
+    }
+   }
+  }
+ },
+ "excluded": {},
+ "primary": {
+  "matched_seeds": 12,
+  "rows": [
+   {
+    "seed": 500000,
+    "dR_V2": 0.0,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 13,
+    "window_len_V1": 13,
+    "window_len_dup": 437,
+    "R_V0": 0.038461538461538464,
+    "R_V2": 0.038461538461538464,
+    "R_V1": 0.038461538461538464,
+    "R_dup": 0.03318152244632401
+   },
+   {
+    "seed": 507919,
+    "dR_V2": null,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 18,
+    "window_len_V1": 90,
+    "window_len_dup": 90,
+    "R_V0": null,
+    "R_V2": null,
+    "R_V1": 0.03968253968253968,
+    "R_dup": 0.03968253968253968
+   },
+   {
+    "seed": 515838,
+    "dR_V2": null,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 5,
+    "window_len_V1": 84,
+    "window_len_dup": 84,
+    "R_V0": null,
+    "R_V2": null,
+    "R_V1": 0.04316546762589928,
+    "R_dup": 0.04316546762589928
+   },
+   {
+    "seed": 523757,
+    "dR_V2": -0.0625,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 8,
+    "window_len_V1": 8,
+    "window_len_dup": 249,
+    "R_V0": 0.0625,
+    "R_V2": 0.0,
+    "R_V1": 0.0625,
+    "R_dup": 0.0253077975376197
+   },
+   {
+    "seed": 531676,
+    "dR_V2": 0.0,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 18,
+    "window_len_V1": 18,
+    "window_len_dup": 234,
+    "R_V0": 0.05555555555555555,
+    "R_V2": 0.05555555555555555,
+    "R_V1": 0.05555555555555555,
+    "R_dup": 0.03945885005636979
+   },
+   {
+    "seed": 539595,
+    "dR_V2": -0.02564102564102564,
+    "dR_V1": 0.0006747638326585689,
+    "dR_dup": 0.0,
+    "window_len_V2": 19,
+    "window_len_V1": 19,
+    "window_len_dup": 262,
+    "R_V0": 0.02564102564102564,
+    "R_V2": 0.0,
+    "R_V1": 0.02631578947368421,
+    "R_dup": 0.02857142857142857
+   },
+   {
+    "seed": 547514,
+    "dR_V2": 0.0,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 93,
+    "window_len_V1": 93,
+    "window_len_dup": 93,
+    "R_V0": 0.04032258064516129,
+    "R_V2": 0.04032258064516129,
+    "R_V1": 0.04032258064516129,
+    "R_dup": 0.04032258064516129
+   },
+   {
+    "seed": 555433,
+    "dR_V2": -0.05263157894736842,
+    "dR_V1": 0.0029239766081871343,
+    "dR_dup": 0.0,
+    "window_len_V2": 9,
+    "window_len_V1": 9,
+    "window_len_dup": 257,
+    "R_V0": 0.05263157894736842,
+    "R_V2": 0.0,
+    "R_V1": 0.05555555555555555,
+    "R_dup": 0.02403204272363151
+   },
+   {
+    "seed": 563352,
+    "dR_V2": 0.0,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 24,
+    "window_len_V1": 24,
+    "window_len_dup": 539,
+    "R_V0": 0.020833333333333332,
+    "R_V2": 0.020833333333333332,
+    "R_V1": 0.020833333333333332,
+    "R_dup": 0.032879377431906616
+   },
+   {
+    "seed": 571271,
+    "dR_V2": 0.0,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 5,
+    "window_len_V1": 5,
+    "window_len_dup": 229,
+    "R_V0": 0.0,
+    "R_V2": 0.0,
+    "R_V1": 0.0,
+    "R_dup": 0.03587443946188341
+   },
+   {
+    "seed": 579190,
+    "dR_V2": 0.0,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 17,
+    "window_len_V1": 17,
+    "window_len_dup": 381,
+    "R_V0": 0.029411764705882353,
+    "R_V2": 0.029411764705882353,
+    "R_V1": 0.029411764705882353,
+    "R_dup": 0.029535864978902954
+   },
+   {
+    "seed": 587109,
+    "dR_V2": 0.0,
+    "dR_V1": 0.0,
+    "dR_dup": 0.0,
+    "window_len_V2": 8,
+    "window_len_V1": 18,
+    "window_len_dup": 240,
+    "R_V0": 0.0625,
+    "R_V2": 0.0625,
+    "R_V1": 0.046511627906976744,
+    "R_dup": 0.028455284552845527
+   }
+  ],
+  "V2_minus_V0_dR": {
+   "values": [
+    0.0,
+    -0.0625,
+    0.0,
+    -0.02564102564102564,
+    0.0,
+    -0.05263157894736842,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "median": 0.0,
+   "positive": 0,
+   "negative": 3,
+   "median_abs": 0.0
+  },
+  "V1_minus_V0_dR": {
+   "values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0006747638326585689,
+    0.0,
+    0.0029239766081871343,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "median": 0.0,
+   "positive": 2,
+   "negative": 0,
+   "median_abs": 0.0
+  },
+  "duplicate_control_abs_dR": {
+   "values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "median": 0.0,
+   "max": 0.0
+  },
+  "decision_rule": {
+   "(a)_sign_agreement_>=9": false,
+   "(b)_median_abs_>_2x_duplicate": false,
+   "topology_effect_claimed": false
+  }
+ },
+ "secondary": {
+  "V0": {
+   "n": 12,
+   "deliveries_total": 615.0,
+   "deliveries_median": 39.0,
+   "decisions_median": 305.5,
+   "survived_600": 1,
+   "edits_legal_total": 0,
+   "lost_total": 0,
+   "illegal_total": 0,
+   "concrete_spent_after_T0_median": 5.0
+  },
+  "V0dup": {
+   "n": 12,
+   "deliveries_total": 615.0,
+   "deliveries_median": 39.0,
+   "decisions_median": 305.5,
+   "survived_600": 1,
+   "edits_legal_total": 0,
+   "lost_total": 0,
+   "illegal_total": 0,
+   "concrete_spent_after_T0_median": 5.0
+  },
+  "V1": {
+   "n": 12,
+   "deliveries_total": 471.0,
+   "deliveries_median": 39.5,
+   "decisions_median": 302.5,
+   "survived_600": 0,
+   "edits_legal_total": 60,
+   "lost_total": 0,
+   "illegal_total": 0,
+   "concrete_spent_after_T0_median": 9.5
+  },
+  "V2": {
+   "n": 12,
+   "deliveries_total": 487.0,
+   "deliveries_median": 38.5,
+   "decisions_median": 306.5,
+   "survived_600": 0,
+   "edits_legal_total": 81,
+   "lost_total": 0,
+   "illegal_total": 0,
+   "concrete_spent_after_T0_median": 10.0
+  },
+  "V0dup_minus_V0_episode_deliveries": {
+   "sum": 0.0,
+   "median": 0.0,
+   "higher": 0,
+   "lower": 0,
+   "values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "V1_minus_V0_episode_deliveries": {
+   "sum": -144.0,
+   "median": 0.0,
+   "higher": 5,
+   "lower": 4,
+   "values": [
+    -65.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    -2.0,
+    0.0,
+    62.0,
+    -133.0,
+    44.0,
+    -54.0,
+    2.0
+   ]
+  },
+  "V2_minus_V0_episode_deliveries": {
+   "sum": -128.0,
+   "median": 0.0,
+   "higher": 4,
+   "lower": 5,
+   "values": [
+    -64.0,
+    0.0,
+    -3.0,
+    2.0,
+    44.0,
+    -2.0,
+    0.0,
+    1.0,
+    -136.0,
+    0.0,
+    -60.0,
+    90.0
+   ]
+  }
+ }
+}

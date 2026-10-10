@@ -1,0 +1,42 @@
+# S33 — Playable-area legality fix: deployment, tests and corrected-environment regression
+
+**Environment versions.** `prefix_v7` = plugin DLL sha 33e30b33… (all S31 results, `research/s31_hybrid_native_rl/eval/`). `postfix_v8` = DLL sha 2aa42367… deployed 2026-10-09 18:11 after S31 training and all S31 evaluations had finished (no running instance was touched; one orphaned headless instance from an earlier evaluation, started 14:34, was closed before deployment so the DLL file was not locked). Backups: `research/spawn_harness/backup/MiniMotorwaysBootstrap.dll.deployed_v7_prefix` (+ copy in `research/s33_playable_area_fix/`), hash log `research/spawn_harness/backup/SHA256.txt`. Rollback = copy the v7 backup back to `…/Mini Motorways/Bootstrap/MiniMotorwaysBootstrap.dll`. Post-fix results: `research/s33_playable_area_fix/{test_fix.json,eval_postfix/}`.
+
+## 1. Patch (Entrypoint.cs, source + v8 build) — exactly the approved change, nothing else
+1. `EnumerateLegalActions`: an ADD(coord, E|S) is probed only if the far tile `TileUtilities.GetAdjacentCoordinates(coord, dir)` is also inside the loop rectangle derived from `City.GetSimulationPlayableAreaAtTime(ExpansionTime, ForceWholeTiles)`.
+2. `TryAddRoad`: new `TilesInPlayableArea(game, origin, far)` using the stock `City.IsTileInPlayableArea(tile, ClockModel.ExpansionTime)` for both tiles, evaluated before the native editor, independent of the mask; rejection text "outside playable area at expansion time (origin inside=…, far inside=…)".
+3. `TryAddMotorway`: the same two-endpoint check on both the dry-run (`MOTORWAY_CHECK` / legality) path and the real placement path.
+4. Observation export gains `globals.playableAreaAtTime = [xMin, yMin, xMax, yMax]` (the loop rectangle) so the Python side can log boundary events. No other field changed.
+
+## 2. Tests (`code/test_fix.py`, run twice; final `test_fix.json`: 5 / 5 pass, 151 s)
+* **T1 geometry + expansion**: on seeds 500000 / 507919 / 563352 at decisions 0, 60, 150, 250, every legal ADD has both endpoints inside the rectangle; no East edge originates on the rectangle's last column and no South edge on its first row; corner origins only carry edges pointing inward; the rectangle grows monotonically with expansion time (e.g. seed 500000: [−15,−7,−3,−1] → [−15,−7,−2,0] by decision 150). North/west are covered by construction (those crossings would be the outside neighbour's S/E edge, whose origin is outside the loop) and by the "both endpoints inside" assertion.
+* **T2 interior preserved**: on the 12 pre-fix S7 reset captures, post-fix legal set == pre-fix legal set − boundary-crossing ADDs, exactly, 12/12 (no interior action removed, none added). The first run showed 2/12 mismatches that disappeared on re-running (3/3 clean repeats): the known reset transient (S21), not the patch; the test now re-resets once on mismatch and records the retry (0 retries in the final run).
+* **T3 TryAddRoad defence**: a South crossing index sent directly, bypassing the mask (`ADD(−11,−7,S)`, far row −8), is rejected with "outside playable area"; a valid interior ADD is accepted. (See §3 for why the East case is different.)
+* **T4 TryAddMotorway**: dry-run with an endpoint outside the rectangle → "rejected: outside playable area at expansion time"; with both endpoints inside the check passes and the pre-existing native result (`NotEnoughUpgrades`) is returned unchanged.
+* **T5 interfaces**: `Discrete(3111)`, v1 observation 11,666 floats, v2 16,328 floats, `HybridNativeEnv` 3,112 actions; the frozen checkpoint `step_0100352.zip` loads and predicts; 100 hybrid decisions (87 PLAN / 12 EDIT / 1 WAIT) with 0 illegal actions. Checkpoint format untouched.
+
+## 3. Finding during testing: the stock boundary rule is *inclusive* at the max edge
+`City.IsTileInPlayableArea` = `RectFixed.Contains`, which is `xMin ≤ x ≤ xMax && yMin ≤ y ≤ yMax` on the `ForceWholeTiles` rectangle (`RectFixed.cs:192–198`, `City.cs:161–186, 237–240`). The plugin's enumeration loop (pre-existing, unchanged by S32/S33) uses `[floor(xMin), ceil(xMax) − 1] × [floor(yMin), ceil(yMax) − 1]`, i.e. one column and one row *narrower* than the stock rule on the max side. Consequences:
+* Pre-fix, the East "crossing" edges (last loop column → column + 1) were in fact **stock-legal** (tile xMax is inside under the stock rule); the South crossing edges (first loop row → row − 1) were **genuine stock violations**. The S32 audit's "east and south" statement is therefore corrected to: genuine violations were possible only on the south edge; the east edges were legal in the stock game but outside the plugin's own rectangle. (T3 confirms: the East edge from the export's last column is passed by the stock check and fails only on terrain, `CannotCreateBridge`.)
+* Post-fix, the mask is self-consistent and strictly a subset of the pre-fix mask (T2), and is **conservative** relative to the stock game by that one column/row (as origins — pre-existing — and now also as far endpoints). The defence-in-depth check in `TryAddRoad`/`TryAddMotorway` implements the stock rule exactly, so it is slightly looser than the mask; nothing the mask offers can fail it.
+* **Decision for the user (not made):** keep the conservative mask (current v8; no new actions ever offered, pre/post comparisons remain "pre minus crossings"), or align the loop/export rectangle to the stock inclusive rule (would *add* the column x = xMax and row y = yMax as origins/endpoints — actions that were never offered to any policy so far, so every baseline would need re-running). Nothing was changed pending that decision.
+
+## 4. Corrected-environment regression (`code/regression.py`, 12 designated seeds, 600-decision cap, `postfix_v8`)
+Per decision the script checks every executed ADD against the rectangle (violations) and, for the checkpoint, the probability mass the policy would have put on the pre-fix crossing candidates had they still been offered (south = genuine violations; east = export-column edges), and whether its unmasked argmax would have been one.
+
+| policy | env | deliveries | survived | destroyed | illegal | violations | PLAN/EDIT/WAIT |
+|---|---|---|---|---|---|---|---|
+| planner B | prefix_v7 | 615 | 1 | 0 | 0 | n/a | 0.99/0/0 |
+| planner B | postfix_v8 | **615** | 1 | 0 | 0 | **0** | 0.99/0/0 |
+| ck 50k sto (pre-fix best) | prefix_v7 | 1269 | 4 | 137 | 0 | n/a | 0.57/0.42/0.00 |
+| ck 50k sto | postfix_v8 | **1206** | 3 | 184 | 0 | **0** | 0.59/0.40/0.00 |
+
+* **Planner B is bit-for-bit identical pre/post on all 12 seeds** (same score and episode length on each) — its Dijkstra never selected a crossing edge, so the fix changes nothing for the baseline.
+* **ck 50k stochastic: 8 / 12 seeds identical** (same score and length under the same torch seed), 2 seeds ±1, one +9 (563352: 85 → 94), one −72 (523757: 169 → 97). Per-seed post − pre: Σ −63, bootstrap CI on the mean [−18, +2]. Because the same RNG draws are applied to a slightly different masked distribution, a trajectory can diverge without the pre-fix episode ever having executed a crossing edge; the 523757 divergence is therefore an *upper bound* on the effect of the fix on this seed, not evidence that a crossing edge was used. (The pre-fix hybrid logs do not record action coordinates, so executed pre-fix crossings cannot be counted directly — unchanged from the S32 caveat.)
+* **Attempted crossings post-fix**: 0 argmax-would-cross decisions in 5,400 decisions; mean probability mass on all crossing candidates 0.0028 per decision, of which **south (genuine) 0.000005** and east (stock-legal export-column) 0.0028. The policy essentially never wanted the south edges; the small east mass is on edges the stock game would allow.
+* **Paired comparison on the corrected environment**: ck 50k sto − planner B = +591 total, 8 higher / 2 equal / 2 lower, CI on the per-seed mean [+18, +78] (pre-fix: +654, 8/2/2, [+18, +86]).
+
+**Answer to item 7: the policy's native performance does not change materially under the corrected mask** — the total moves by −5 % (1269 → 1206), well inside the stochastic noise floor (SD ≈ 55 per seed, ≈ ±190 per 12-seed total), with 10 of 12 seeds unchanged to within ±1, and the paired advantage over planner B is retained with an almost identical CI. The S31 go/no-go assessment stands under `postfix_v8`.
+
+## 5. Not done (by instruction)
+No retraining; no change to the loop rectangle (see §3 decision); no architecture or mechanics work. All pre-fix S31 artifacts are untouched and labelled `prefix_v7` in `HYBRID_NATIVE_RL_S31.md`.

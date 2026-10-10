@@ -1,0 +1,40 @@
+{
+  "1_two_edges_required_and_no_single_action_solves_it": {
+    "passed": true,
+    "detail": "1300/1300 tasks have exactly two solution edges; brute force over every legal ADD from the start state (259,039 single actions, 44s): 0 complete the connection"
+  },
+  "2_both_orders_legal_first_edit_zero_reward_completion_exactly_plus_one": {
+    "passed": true,
+    "detail": "1300 tasks x 2 orders: first useful edit -> reward 0 / non-terminal; second -> reward exactly +1 and terminal; violations=[]"
+  },
+  "3_oracle_and_observation_only_solver_complete_every_task": {
+    "passed": true,
+    "detail": "validation+test (300 tasks): oracle completes 300/300 in exactly 2 actions; a solver that sees only the observation vector + legal mask completes 300/300"
+  },
+  "4_no_privileged_solution_labels_in_observation": {
+    "passed": true,
+    "detail": "observation is unchanged when the stored solution is overwritten; shape (11666,)"
+  },
+  "5_random_much_worse_on_gap2_than_gap1": {
+    "passed": true,
+    "detail": "RANDOM LEGAL completion over 5 seeds on TEST: Gap-1 9.8% +- 1.8, Gap-2 2.0% +- 1.0 (oracle 100%, WAIT 0%)"
+  },
+  "_random_rates": {
+    "gap1": [
+      0.0975,
+      0.01781852968120546
+    ],
+    "gap2": [
+      0.02,
+      0.01
+    ]
+  },
+  "6_train_validation_test_layouts_disjoint": {
+    "passed": true,
+    "detail": "overlaps=[]; sizes {'train': 1000, 'validation': 100, 'test': 200}"
+  },
+  "7_solution_edge_pair_diversity": {
+    "passed": true,
+    "detail": "TEST solution-edge orientation pairs {'HV': 83, 'HH': 71, 'VV': 46}; adjacent-gap tasks (two consecutive missing edges) 37/200; distinct first solution indices 182"
+  }
+}

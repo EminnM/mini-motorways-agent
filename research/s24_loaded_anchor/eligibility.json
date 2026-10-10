@@ -1,0 +1,274 @@
+{
+ "500000": {
+  "E1_connected>=2": true,
+  "E2_traffic>=10": true,
+  "E3_structurally_valid": {
+   "parallel": false,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": true,
+   "dense": false
+  },
+  "eligible": false,
+  "primary_branches": [],
+  "connected": 4,
+  "houses": 6,
+  "traffic": 25,
+  "n_edits": {
+   "parallel": 7,
+   "dense": 8
+  },
+  "terminated": false
+ },
+ "507919": {
+  "E1_connected>=2": false,
+  "E2_traffic>=10": false,
+  "E3_structurally_valid": {
+   "parallel": false,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": false,
+   "dense": false
+  },
+  "eligible": false,
+  "primary_branches": [],
+  "connected": 2,
+  "houses": 4,
+  "traffic": 0,
+  "n_edits": {
+   "parallel": 0,
+   "dense": 0
+  },
+  "terminated": true
+ },
+ "515838": {
+  "E1_connected>=2": false,
+  "E2_traffic>=10": false,
+  "E3_structurally_valid": {
+   "parallel": false,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": false,
+   "dense": false
+  },
+  "eligible": false,
+  "primary_branches": [],
+  "connected": 2,
+  "houses": 4,
+  "traffic": 0,
+  "n_edits": {
+   "parallel": 0,
+   "dense": 0
+  },
+  "terminated": true
+ },
+ "523757": {
+  "E1_connected>=2": true,
+  "E2_traffic>=10": true,
+  "E3_structurally_valid": {
+   "parallel": false,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": false,
+   "dense": false
+  },
+  "eligible": false,
+  "primary_branches": [],
+  "connected": 6,
+  "houses": 7,
+  "traffic": 28,
+  "n_edits": {
+   "parallel": 7,
+   "dense": 8
+  },
+  "terminated": false
+ },
+ "531676": {
+  "E1_connected>=2": true,
+  "E2_traffic>=10": true,
+  "E3_structurally_valid": {
+   "parallel": false,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": true,
+   "dense": true
+  },
+  "eligible": false,
+  "primary_branches": [],
+  "connected": 4,
+  "houses": 5,
+  "traffic": 18,
+  "n_edits": {
+   "parallel": 8,
+   "dense": 8
+  },
+  "terminated": false
+ },
+ "539595": {
+  "E1_connected>=2": true,
+  "E2_traffic>=10": true,
+  "E3_structurally_valid": {
+   "parallel": false,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": false,
+   "dense": false
+  },
+  "eligible": false,
+  "primary_branches": [],
+  "connected": 5,
+  "houses": 5,
+  "traffic": 39,
+  "n_edits": {
+   "parallel": 5,
+   "dense": 8
+  },
+  "terminated": false
+ },
+ "547514": {
+  "E1_connected>=2": false,
+  "E2_traffic>=10": false,
+  "E3_structurally_valid": {
+   "parallel": false,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": false,
+   "dense": false
+  },
+  "eligible": false,
+  "primary_branches": [],
+  "connected": 2,
+  "houses": 4,
+  "traffic": 0,
+  "n_edits": {
+   "parallel": 0,
+   "dense": 0
+  },
+  "terminated": true
+ },
+ "555433": {
+  "E1_connected>=2": true,
+  "E2_traffic>=10": true,
+  "E3_structurally_valid": {
+   "parallel": true,
+   "dense": true
+  },
+  "E4_usable": {
+   "parallel": true,
+   "dense": true
+  },
+  "eligible": true,
+  "primary_branches": [
+   "parallel",
+   "dense"
+  ],
+  "connected": 6,
+  "houses": 6,
+  "traffic": 42,
+  "n_edits": {
+   "parallel": 8,
+   "dense": 8
+  },
+  "terminated": false
+ },
+ "563352": {
+  "E1_connected>=2": true,
+  "E2_traffic>=10": true,
+  "E3_structurally_valid": {
+   "parallel": false,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": false,
+   "dense": true
+  },
+  "eligible": false,
+  "primary_branches": [],
+  "connected": 6,
+  "houses": 6,
+  "traffic": 44,
+  "n_edits": {
+   "parallel": 6,
+   "dense": 8
+  },
+  "terminated": false
+ },
+ "571271": {
+  "E1_connected>=2": true,
+  "E2_traffic>=10": true,
+  "E3_structurally_valid": {
+   "parallel": true,
+   "dense": true
+  },
+  "E4_usable": {
+   "parallel": true,
+   "dense": true
+  },
+  "eligible": true,
+  "primary_branches": [
+   "parallel",
+   "dense"
+  ],
+  "connected": 4,
+  "houses": 6,
+  "traffic": 15,
+  "n_edits": {
+   "parallel": 6,
+   "dense": 8
+  },
+  "terminated": false
+ },
+ "579190": {
+  "E1_connected>=2": true,
+  "E2_traffic>=10": true,
+  "E3_structurally_valid": {
+   "parallel": true,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": true,
+   "dense": false
+  },
+  "eligible": true,
+  "primary_branches": [
+   "parallel"
+  ],
+  "connected": 5,
+  "houses": 5,
+  "traffic": 22,
+  "n_edits": {
+   "parallel": 8,
+   "dense": 8
+  },
+  "terminated": false
+ },
+ "587109": {
+  "E1_connected>=2": true,
+  "E2_traffic>=10": true,
+  "E3_structurally_valid": {
+   "parallel": false,
+   "dense": false
+  },
+  "E4_usable": {
+   "parallel": false,
+   "dense": false
+  },
+  "eligible": false,
+  "primary_branches": [],
+  "connected": 5,
+  "houses": 5,
+  "traffic": 26,
+  "n_edits": {
+   "parallel": 6,
+   "dense": 8
+  },
+  "terminated": false
+ }
+}

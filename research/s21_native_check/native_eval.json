@@ -1,0 +1,736 @@
+{
+ "policies": {
+  "s8c": {
+   "episodes": 12,
+   "deliveries_total": 533.0,
+   "deliveries_median": 45.0,
+   "steps_median": 340.0,
+   "survived_600": 0,
+   "terminated": 12,
+   "cut_by_deadline": 0,
+   "illegal_total": 0,
+   "destroyed_total": 676,
+   "spawned_connected_60": [
+    39,
+    99
+   ],
+   "latency_median_of_medians": 10.5,
+   "frac_zero_concrete_median": 0.5886897805479807,
+   "concrete_spent_median": 81.0,
+   "connected_end_median": 6.0,
+   "houses_end_median": 10.0,
+   "abandoned_total": 0,
+   "plans_total": 0,
+   "abandon_reasons": {},
+   "action_share_mean": {
+    "WAIT": 0.04391080314959744,
+    "ADD": 0.8930588789134131,
+    "REMOVE": 0.05729324866196406,
+    "UPGRADE": 0.005737069275025508
+   }
+  },
+  "A": {
+   "episodes": 12,
+   "deliveries_total": 383.0,
+   "deliveries_median": 36.5,
+   "steps_median": 298.0,
+   "survived_600": 0,
+   "terminated": 12,
+   "cut_by_deadline": 0,
+   "illegal_total": 0,
+   "destroyed_total": 0,
+   "spawned_connected_60": [
+    66,
+    80
+   ],
+   "latency_median_of_medians": 3.75,
+   "frac_zero_concrete_median": 0.0,
+   "concrete_spent_median": 21.0,
+   "connected_end_median": 7.5,
+   "houses_end_median": 7.5,
+   "abandoned_total": 0,
+   "plans_total": 72,
+   "abandon_reasons": {},
+   "action_share_mean": {
+    "WAIT": 0.90839504452782,
+    "ADD": 0.08512538234543952,
+    "REMOVE": 0.0,
+    "UPGRADE": 0.006479573126740478
+   }
+  },
+  "B": {
+   "episodes": 12,
+   "deliveries_total": 615.0,
+   "deliveries_median": 39.0,
+   "steps_median": 305.5,
+   "survived_600": 1,
+   "terminated": 11,
+   "cut_by_deadline": 0,
+   "illegal_total": 0,
+   "destroyed_total": 0,
+   "spawned_connected_60": [
+    84,
+    98
+   ],
+   "latency_median_of_medians": 3.0,
+   "frac_zero_concrete_median": 0.0,
+   "concrete_spent_median": 22.0,
+   "connected_end_median": 8.5,
+   "houses_end_median": 8.5,
+   "abandoned_total": 0,
+   "plans_total": 88,
+   "abandon_reasons": {},
+   "action_share_mean": {
+    "WAIT": 0.9073824758006749,
+    "ADD": 0.0860555016409816,
+    "REMOVE": 0.0,
+    "UPGRADE": 0.006562022558343482
+   }
+  }
+ },
+ "per_seed": {
+  "500000": {
+   "s8c": {
+    "deliveries": 98.0,
+    "steps": 489,
+    "connected_end": 6,
+    "houses_end": 16,
+    "spawned_connected_60": 5,
+    "spawned": 16,
+    "destroyed": 114,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.7075664621676891
+   },
+   "A": {
+    "deliveries": 64.0,
+    "steps": 413,
+    "connected_end": 12,
+    "houses_end": 14,
+    "spawned_connected_60": 8,
+    "spawned": 14,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 105.0,
+    "steps": 498,
+    "connected_end": 14,
+    "houses_end": 14,
+    "spawned_connected_60": 12,
+    "spawned": 14,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    42.0,
+    42.0,
+    40.0
+   ]
+  },
+  "507919": {
+   "s8c": {
+    "deliveries": 0.0,
+    "steps": 151,
+    "connected_end": 0,
+    "houses_end": 4,
+    "spawned_connected_60": 0,
+    "spawned": 4,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.5695364238410596
+   },
+   "A": {
+    "deliveries": 5.0,
+    "steps": 151,
+    "connected_end": 2,
+    "houses_end": 4,
+    "spawned_connected_60": 2,
+    "spawned": 4,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 5.0,
+    "steps": 151,
+    "connected_end": 2,
+    "houses_end": 4,
+    "spawned_connected_60": 2,
+    "spawned": 4,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    32.0,
+    31.0,
+    14.0
+   ]
+  },
+  "515838": {
+   "s8c": {
+    "deliveries": 74.0,
+    "steps": 397,
+    "connected_end": 8,
+    "houses_end": 14,
+    "spawned_connected_60": 4,
+    "spawned": 14,
+    "destroyed": 104,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.48614609571788414
+   },
+   "A": {
+    "deliveries": 6.0,
+    "steps": 145,
+    "connected_end": 2,
+    "houses_end": 4,
+    "spawned_connected_60": 2,
+    "spawned": 4,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 6.0,
+    "steps": 145,
+    "connected_end": 2,
+    "houses_end": 4,
+    "spawned_connected_60": 2,
+    "spawned": 4,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    4.0,
+    4.0,
+    74.0
+   ]
+  },
+  "523757": {
+   "s8c": {
+    "deliveries": 0.0,
+    "steps": 153,
+    "connected_end": 0,
+    "houses_end": 4,
+    "spawned_connected_60": 0,
+    "spawned": 4,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.6078431372549019
+   },
+   "A": {
+    "deliveries": 43.0,
+    "steps": 310,
+    "connected_end": 9,
+    "houses_end": 9,
+    "spawned_connected_60": 8,
+    "spawned": 9,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 40.0,
+    "steps": 310,
+    "connected_end": 9,
+    "houses_end": 9,
+    "spawned_connected_60": 8,
+    "spawned": 9,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "531676": {
+   "s8c": {
+    "deliveries": 46.0,
+    "steps": 359,
+    "connected_end": 6,
+    "houses_end": 11,
+    "spawned_connected_60": 8,
+    "spawned": 11,
+    "destroyed": 87,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.7270194986072424
+   },
+   "A": {
+    "deliveries": 38.0,
+    "steps": 295,
+    "connected_end": 4,
+    "houses_end": 7,
+    "spawned_connected_60": 4,
+    "spawned": 7,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 38.0,
+    "steps": 295,
+    "connected_end": 4,
+    "houses_end": 7,
+    "spawned_connected_60": 4,
+    "spawned": 7,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    146.0,
+    146.0,
+    67.0
+   ]
+  },
+  "539595": {
+   "s8c": {
+    "deliveries": 44.0,
+    "steps": 339,
+    "connected_end": 6,
+    "houses_end": 10,
+    "spawned_connected_60": 2,
+    "spawned": 10,
+    "destroyed": 39,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.528023598820059
+   },
+   "A": {
+    "deliveries": 39.0,
+    "steps": 323,
+    "connected_end": 9,
+    "houses_end": 9,
+    "spawned_connected_60": 7,
+    "spawned": 9,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 43.0,
+    "steps": 323,
+    "connected_end": 9,
+    "houses_end": 9,
+    "spawned_connected_60": 7,
+    "spawned": 9,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    101.0,
+    61.0,
+    138.0
+   ]
+  },
+  "547514": {
+   "s8c": {
+    "deliveries": 4.0,
+    "steps": 154,
+    "connected_end": 0,
+    "houses_end": 4,
+    "spawned_connected_60": 1,
+    "spawned": 4,
+    "destroyed": 17,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.3116883116883117
+   },
+   "A": {
+    "deliveries": 5.0,
+    "steps": 154,
+    "connected_end": 2,
+    "houses_end": 4,
+    "spawned_connected_60": 2,
+    "spawned": 4,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 5.0,
+    "steps": 154,
+    "connected_end": 2,
+    "houses_end": 4,
+    "spawned_connected_60": 2,
+    "spawned": 4,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    4.0,
+    4.0,
+    129.0
+   ]
+  },
+  "555433": {
+   "s8c": {
+    "deliveries": 25.0,
+    "steps": 268,
+    "connected_end": 3,
+    "houses_end": 10,
+    "spawned_connected_60": 2,
+    "spawned": 10,
+    "destroyed": 45,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.7014925373134329
+   },
+   "A": {
+    "deliveries": 42.0,
+    "steps": 318,
+    "connected_end": 10,
+    "houses_end": 10,
+    "spawned_connected_60": 8,
+    "spawned": 10,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 40.0,
+    "steps": 318,
+    "connected_end": 10,
+    "houses_end": 10,
+    "spawned_connected_60": 8,
+    "spawned": 10,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    45.0,
+    37.0,
+    13.0
+   ]
+  },
+  "563352": {
+   "s8c": {
+    "deliveries": 72.0,
+    "steps": 436,
+    "connected_end": 7,
+    "houses_end": 14,
+    "spawned_connected_60": 5,
+    "spawned": 14,
+    "destroyed": 136,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.5458715596330275
+   },
+   "A": {
+    "deliveries": 36.0,
+    "steps": 304,
+    "connected_end": 8,
+    "houses_end": 8,
+    "spawned_connected_60": 7,
+    "spawned": 8,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 172.0,
+    "steps": 600,
+    "connected_end": 16,
+    "houses_end": 16,
+    "spawned_connected_60": 16,
+    "spawned": 16,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    38.0,
+    38.0,
+    40.0
+   ]
+  },
+  "571271": {
+   "s8c": {
+    "deliveries": 107.0,
+    "steps": 519,
+    "connected_end": 12,
+    "houses_end": 16,
+    "spawned_connected_60": 7,
+    "spawned": 16,
+    "destroyed": 72,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.5664739884393064
+   },
+   "A": {
+    "deliveries": 35.0,
+    "steps": 290,
+    "connected_end": 4,
+    "houses_end": 7,
+    "spawned_connected_60": 4,
+    "spawned": 7,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 35.0,
+    "steps": 290,
+    "connected_end": 4,
+    "houses_end": 7,
+    "spawned_connected_60": 4,
+    "spawned": 7,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    68.0,
+    68.0,
+    28.0
+   ]
+  },
+  "579190": {
+   "s8c": {
+    "deliveries": 16.0,
+    "steps": 233,
+    "connected_end": 2,
+    "houses_end": 8,
+    "spawned_connected_60": 3,
+    "spawned": 8,
+    "destroyed": 39,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.6738197424892703
+   },
+   "A": {
+    "deliveries": 33.0,
+    "steps": 283,
+    "connected_end": 7,
+    "houses_end": 7,
+    "spawned_connected_60": 7,
+    "spawned": 7,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 88.0,
+    "steps": 442,
+    "connected_end": 15,
+    "houses_end": 15,
+    "spawned_connected_60": 12,
+    "spawned": 15,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    20.0,
+    20.0,
+    21.0
+   ]
+  },
+  "587109": {
+   "s8c": {
+    "deliveries": 47.0,
+    "steps": 341,
+    "connected_end": 6,
+    "houses_end": 9,
+    "spawned_connected_60": 2,
+    "spawned": 9,
+    "destroyed": 23,
+    "illegal": 0,
+    "abandoned": null,
+    "frac_zero_concrete": 0.6656891495601173
+   },
+   "A": {
+    "deliveries": 37.0,
+    "steps": 301,
+    "connected_end": 8,
+    "houses_end": 8,
+    "spawned_connected_60": 7,
+    "spawned": 8,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "B": {
+    "deliveries": 38.0,
+    "steps": 301,
+    "connected_end": 8,
+    "houses_end": 8,
+    "spawned_connected_60": 7,
+    "spawned": 8,
+    "destroyed": 0,
+    "illegal": 0,
+    "abandoned": 0,
+    "frac_zero_concrete": 0.0
+   },
+   "s8c_control_realisations_S11_S12_S13": [
+    52.0,
+    52.0,
+    13.0
+   ]
+  }
+ },
+ "paired": {
+  "A_minus_s8c": {
+   "n": 12,
+   "sum": -150.0,
+   "median": -6.5,
+   "higher": 5,
+   "equal": 0,
+   "lower": 7,
+   "diffs": [
+    -34.0,
+    5.0,
+    -68.0,
+    43.0,
+    -8.0,
+    -5.0,
+    1.0,
+    17.0,
+    -36.0,
+    -72.0,
+    17.0,
+    -10.0
+   ],
+   "steps_diff_median": -28.0
+  },
+  "B_minus_s8c": {
+   "n": 12,
+   "sum": 82.0,
+   "median": 3.0,
+   "higher": 7,
+   "equal": 0,
+   "lower": 5,
+   "diffs": [
+    7.0,
+    5.0,
+    -68.0,
+    40.0,
+    -8.0,
+    -1.0,
+    1.0,
+    15.0,
+    100.0,
+    -72.0,
+    72.0,
+    -9.0
+   ],
+   "steps_diff_median": 0.0
+  },
+  "A_minus_B": {
+   "n": 12,
+   "sum": -232.0,
+   "median": 0.0,
+   "higher": 2,
+   "equal": 5,
+   "lower": 5,
+   "diffs": [
+    -41.0,
+    0.0,
+    0.0,
+    3.0,
+    0.0,
+    -4.0,
+    0.0,
+    2.0,
+    -136.0,
+    0.0,
+    -55.0,
+    -1.0
+   ],
+   "steps_diff_median": 0.0
+  }
+ },
+ "noise_floor": {
+  "A": {
+   "seeds_above_all_three_S8C_controls": [
+    500000,
+    523757,
+    579190
+   ],
+   "seeds_below_all_three": [
+    507919,
+    531676,
+    539595,
+    563352
+   ],
+   "n": 3,
+   "expected_above_if_exchangeable": "~3 of 12 (25 %)"
+  },
+  "B": {
+   "seeds_above_all_three_S8C_controls": [
+    500000,
+    523757,
+    563352,
+    579190
+   ],
+   "seeds_below_all_three": [
+    507919,
+    531676,
+    539595
+   ],
+   "n": 4,
+   "expected_above_if_exchangeable": "~3 of 12 (25 %)"
+  },
+  "s8c": {
+   "seeds_above_all_three_S8C_controls": [
+    500000,
+    563352,
+    571271
+   ],
+   "seeds_below_all_three": [
+    507919,
+    531676,
+    539595,
+    579190
+   ],
+   "n": 3,
+   "expected_above_if_exchangeable": "~3 of 12 (25 %)"
+  },
+  "reference": {
+   "S8C_control_totals_S11_S12_S13": [
+    552,
+    503,
+    577
+   ],
+   "replicate_vs_control_delivery_diff_sd_per_seed": 54.9,
+   "sd_of_12_seed_sum": 190
+  }
+ }
+}

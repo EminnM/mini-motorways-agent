@@ -1,0 +1,194 @@
+{
+ "native_decisions": 3867,
+ "decisions_with_>=2_destination_groups_and_>=1_house": 2954,
+ "fraction": 0.764,
+ "median_log_assignments_consistent_with_v1_when_ambiguous": 4.16,
+ "median_assignments_consistent_with_v1": 64.0,
+ "distinguishable_under_v2": 1,
+ "synthetic_counterfactual_pairs": 22,
+ "v1_observation_identical": 22,
+ "v2_observation_different": 22,
+ "construction_target_changed": 22,
+ "first_planned_edge_changed": 11,
+ "examples": [
+  {
+   "scenario": "500000_s12_conserve",
+   "t": 78,
+   "house": [
+    -13,
+    0
+   ],
+   "real_group": 1,
+   "counterfactual_group": 0,
+   "target_real": [
+    -8,
+    -6
+   ],
+   "target_cf": [
+    -12,
+    -1
+   ],
+   "first_edge_real": [
+    [
+     -13,
+     0
+    ],
+    [
+     -13,
+     -1
+    ]
+   ],
+   "first_edge_cf": [
+    [
+     -13,
+     0
+    ],
+    [
+     -13,
+     -1
+    ]
+   ]
+  },
+  {
+   "scenario": "507919_replicate",
+   "t": 168,
+   "house": [
+    -1,
+    0
+   ],
+   "real_group": 0,
+   "counterfactual_group": 1,
+   "target_real": [
+    -9,
+    -3
+   ],
+   "target_cf": [
+    -8,
+    -3
+   ],
+   "first_edge_real": [
+    [
+     -1,
+     0
+    ],
+    [
+     -2,
+     0
+    ]
+   ],
+   "first_edge_cf": [
+    [
+     -1,
+     0
+    ],
+    [
+     -2,
+     0
+    ]
+   ]
+  },
+  {
+   "scenario": "507919_s12_control",
+   "t": 84,
+   "house": [
+    -10,
+    -6
+   ],
+   "real_group": 1,
+   "counterfactual_group": 0,
+   "target_real": [
+    -8,
+    -3
+   ],
+   "target_cf": [
+    -9,
+    -3
+   ],
+   "first_edge_real": [
+    [
+     -10,
+     -6
+    ],
+    [
+     -10,
+     -5
+    ]
+   ],
+   "first_edge_cf": [
+    [
+     -10,
+     -6
+    ],
+    [
+     -10,
+     -5
+    ]
+   ]
+  },
+  {
+   "scenario": "515838_replicate",
+   "t": 83,
+   "house": [
+    -14,
+    -5
+   ],
+   "real_group": 1,
+   "counterfactual_group": 0,
+   "target_real": [
+    -6,
+    -8
+   ],
+   "target_cf": [
+    -9,
+    -3
+   ],
+   "first_edge_real": [
+    [
+     -14,
+     -5
+    ],
+    [
+     -13,
+     -5
+    ]
+   ],
+   "first_edge_cf": [
+    [
+     -14,
+     -5
+    ],
+    [
+     -13,
+     -5
+    ]
+   ]
+  },
+  {
+   "scenario": "523757_s12_control",
+   "t": 182,
+   "house": [
+    -9,
+    2
+   ],
+   "real_group": 1,
+   "counterfactual_group": 0,
+   "target_real": null,
+   "target_cf": [
+    -8,
+    6
+   ],
+   "first_edge_real": null,
+   "first_edge_cf": [
+    [
+     -9,
+     2
+    ],
+    [
+     -9,
+     3
+    ]
+   ]
+  }
+ ],
+ "note": "v2 resolves the house<->group assignment ambiguity exactly (one assignment per observation). It does NOT remove other partial observability: hidden demand internals, vehicle trips, future spawns, upgrade packages, and the model-less destination tiles stay unobserved."
+}

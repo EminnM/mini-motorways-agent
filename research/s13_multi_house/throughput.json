@@ -1,0 +1,8 @@
+{
+ "env_steps_per_s_random_policy": 1807.1,
+ "env_plus_frozen_S8C_inference_steps_per_s": 323.9,
+ "batched_inference_only_obs_per_s": 779.1,
+ "threads": 1,
+ "projected_rollout_wall_for_100k_decisions_s": 309.0,
+ "note": "optimizer time (4 epochs x 512 samples / batch 256 per update) NOT included;"
+}

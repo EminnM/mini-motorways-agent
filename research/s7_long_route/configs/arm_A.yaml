@@ -1,0 +1,16 @@
+# S7 arm A: direct: random init, trained only on the target distribution T = uniform over required lengths {7,10}   (PREPARED, NOT RUN; needs approval)
+name: arm_A
+description: "direct: random init, trained only on the target distribution T = uniform over required lengths {7,10}"
+ppo:                       # = S1 / S3 / Baseline-0 hyperparameters (no change)
+  n_steps: 512
+  batch_size: 256
+  n_epochs: 4
+  target_kl: 0.03
+  learning_rate: 3.0e-4
+  ent_coef: 0.01
+  gamma: 0.99
+training:
+  total_decisions: 100000    # PROPOSED pilot budget per run (identical for A/B/C); see SYNTHETIC_LONG_ROUTE_S7.md section 8
+  eval_every: 10000          # validation manifest, deterministic policy; TEST only once on the final checkpoint
+  stages: [[7, 10]]
+reward: "+1 at full house-carpark connectivity, 0 otherwise (no intermediate, no demonstrations, no privileged observation)"

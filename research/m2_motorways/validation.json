@@ -1,0 +1,151 @@
+{
+ "1_normal_path_unchanged_and_exports_present": {
+  "passed": true,
+  "detail": {
+   "mismatch_indices": [],
+   "motorways_key": [],
+   "available": 0
+  }
+ },
+ "2_dry_run_rejections": {
+  "passed": true,
+  "detail": {
+   "no_upgrade_yet": "AddUnbuiltMotorway((-14, -4)) failed: resultCode=NotEnoughUpgrades",
+   "too_short": "AddUnbuiltMotorway((-14, -4)) failed: resultCode=NotEnoughUpgrades",
+   "water_endpoint": "AddUnbuiltMotorway((-18, -10)) failed: resultCode=InvalidTileCoordinate"
+  }
+ },
+ "3_placement": {
+  "passed": true,
+  "detail": {
+   "request": {
+    "op": "add",
+    "x1": 6,
+    "y1": -6,
+    "d1": "N",
+    "x2": -14,
+    "y2": -4,
+    "d2": "N"
+   },
+   "motorwayInfo": "motorway id=1 number=1 (6, -6)/North -> (-14, -4)/North: unbuilt scheduled=True, motorway scheduled=True",
+   "before": {
+    "avail": 1,
+    "total": 1,
+    "concrete": 33,
+    "n_models": 0
+   },
+   "after": {
+    "avail": 0,
+    "total": 1,
+    "concrete_after_1": null
+   },
+   "models": [
+    {
+     "id": 1,
+     "number": 1,
+     "state": "Active",
+     "start": [
+      6,
+      -6
+     ],
+     "end": [
+      -14,
+      -4
+     ],
+     "startDir": "North",
+     "endDir": "North"
+    }
+   ],
+   "state_timeline": [
+    [
+     "Active"
+    ],
+    [
+     "Active"
+    ],
+    [
+     "Active"
+    ],
+    [
+     "Active"
+    ],
+    [
+     "Active"
+    ],
+    [
+     "Active"
+    ]
+   ],
+   "ramp_tiles": {
+    "6,-6": [
+     "North"
+    ],
+    "-14,-4": [
+     "North"
+    ]
+   },
+   "endpoint_roads_kept": true,
+   "connected_before_after": [
+    12,
+    12
+   ],
+   "vehicle_count_at_endpoints_60dec": 6
+  }
+ },
+ "4_removal_and_refund": {
+  "passed": true,
+  "detail": {
+   "motorwayInfo": "RemoveMotorways at (6, -6): scheduled=True",
+   "motorwayOk": true,
+   "timeline": [
+    [
+     [],
+     1
+    ],
+    [
+     [],
+     1
+    ],
+    [
+     [],
+     1
+    ],
+    [
+     [],
+     1
+    ],
+    [
+     [],
+     1
+    ],
+    [
+     [],
+     1
+    ],
+    [
+     [],
+     1
+    ]
+   ],
+   "avail_before": 0
+  }
+ },
+ "5_fork_with_motorway": {
+  "passed": false,
+  "detail": {
+   "equivalent": {
+    "equivalent": false,
+    "same_spawns": false,
+    "same_prng": false,
+    "same_score": true,
+    "same_terminal": true
+   },
+   "motorway_states_at_checkpoints": [
+    [],
+    [],
+    []
+   ]
+  }
+ },
+ "_wall_s": 45.9
+}

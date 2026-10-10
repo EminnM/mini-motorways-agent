@@ -1,0 +1,34 @@
+{
+  "checkpoint": "C:\\Users\\TKA\\Desktop\\mini moto\\runs\\2026-10-08_140406_syn_s1_cnn_s12\\checkpoints\\step_050000.zip",
+  "sha256": "980f95f7ce28bfebebdb8c60dbd832c7dc12252c2320304d61fd87dcfa8c603c",
+  "source_num_timesteps": 50000,
+  "n_tensors_loaded": 16,
+  "n_parameters_loaded": 73416,
+  "loaded": [
+    "mlp_extractor.global_branch.0.bias",
+    "mlp_extractor.global_branch.0.weight",
+    "mlp_extractor.tile_head.bias",
+    "mlp_extractor.tile_head.weight",
+    "mlp_extractor.trunk.0.bias",
+    "mlp_extractor.trunk.0.weight",
+    "mlp_extractor.trunk.2.bias",
+    "mlp_extractor.trunk.2.weight",
+    "mlp_extractor.trunk.4.bias",
+    "mlp_extractor.trunk.4.weight",
+    "mlp_extractor.value_head.0.bias",
+    "mlp_extractor.value_head.0.weight",
+    "mlp_extractor.value_head.2.bias",
+    "mlp_extractor.value_head.2.weight",
+    "mlp_extractor.wait_upg_head.bias",
+    "mlp_extractor.wait_upg_head.weight"
+  ],
+  "reset_fresh": [
+    "optimizer (new Adam, no moments)",
+    "learning-rate schedule (constant, from args)",
+    "num_timesteps=0",
+    "rollout buffer",
+    "logger",
+    "RNG state"
+  ],
+  "incompatible": []
+}

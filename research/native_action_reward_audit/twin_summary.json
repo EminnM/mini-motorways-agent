@@ -1,0 +1,16 @@
+{
+ "twin_equal": {
+  "obs": true,
+  "rew": true,
+  "term": true,
+  "mask": true
+ },
+ "steps": 143,
+ "plain_return": 0.0,
+ "diag_return": 0.0,
+ "recorder_row_return": 0.0,
+ "recorder_row_length": 143,
+ "recorder_row_diag_errors": 0,
+ "recorder_row_terminal_reward_sum": 0.0,
+ "same_as_first_trace": false
+}

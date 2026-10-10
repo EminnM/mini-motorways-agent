@@ -1,0 +1,70 @@
+# S12 — Native concrete-conservation causal probe
+
+**Result in one paragraph.** A defensible concrete-waste class exists but it is small: the only concrete-consuming action is a non-house extension ADD (−1 concrete, 99.97 % of 3,412 checked ADDs; house-edge replacements are free), and the only provably redundant subclass is the **cycle-closing extension** (both endpoints already in one functional road component): 46 of 3,438 executed ADDs (1.3 %), 5.3 % of the concrete spent on extensions, ≈ 4 concrete per episode. Removing the edges leaves reachability identical at every one of 2,928 checked decisions. The guard passed my pre-registered gate (narrowly on frequency) and was run on the 12 paired S9 seeds. It eliminated cycle-closing ADDs (46 → 0) but **did not conserve concrete**: concrete-consuming ADDs rose 867 → 949, the zero-concrete fraction is unchanged (0.636 vs 0.631 median), the empty-budget spell shortened only slightly (median longest 90 → 71.5 decisions), and fewer houses ended unconnected (52 → 45). Deliveries still rose (503 → 646 in total, median +6; 7 seeds higher, 3 equal, 2 lower) and newly spawned houses connected within 60 decisions 41 % → 45 % of the time — but because the guard did not save concrete and altered 16 % of the policy's decisions, these differences cannot be credited to conservation. **Simple concrete waste is a safely isolatable but not a meaningful bottleneck; the policy has to learn resource allocation across competing routes (H12c); the delivery change is better read as an effect of the whole filtering intervention, and a perturbation-noise control is missing.** Inference-only, exploratory; no training, no reward / mask / observation / checkpoint / game change; no connection-preservation guard; S1–S11 untouched. Native-active time ≈ 6.1 min of the 10 allowed (side-effect twin 39 s, control capture ≈ 160 s, treatment 166 s).
+
+## 1. Guard definition (`experiments/s12_guard.py`, pre-registered in `FEASIBILITY_PREREGISTRATION.md` before any S12 native run)
+Veto an ADD iff **all** hold: (1) no endpoint is a House, Destination or Carpark tile and neither is over water (water / bridge-like edges and tree tiles → unknown, allowed); (2) the edge is not present in any non-None state (a Mothballed / Pending edge would be a re-activation → unknown, allowed); (3) the ADD would create a new functional (Active / VisiblyActive) edge (an already-active edge consumes nothing and is allowed); (4) both endpoints already lie in the **same** component of the current functional road graph (components from road edges only, not via destination adjacency → conservative). Why this is permanently redundant for connectivity: non-house edges are only removable by REMOVE, which native offers only on a tile with exactly one road edge; both endpoints of a cycle edge have degree ≥ 2, so the edge and the alternative path stay in place. Not claimed: that the edge is useless for travel time (measured below: in 515 house-connection events the cycle edges shortened a route in only 6, by ≤ 3 tiles).
+Never vetoed: spurs and dead ends, edges between components, edges to unconnected tiles, anything on or toward a long route, house-edge replacements, REMOVE / WAIT / upgrade, re-activations, anything unknown. Distance-to-destination is not used. Stochastic action = sampling from the original masked policy distribution conditioned on permitted actions (same RNG stream as control). Never combined with the S11 connection guard.
+
+## 2. Feasibility gate (results; criteria fixed in advance)
+| criterion | result |
+|---|---|
+| 1. Transition-model fidelity on a held-out capture (12 control episodes, 3,797 decisions) | **Concrete balance:** predicted −1 for plain extensions / 0 for house-edge replacements matched in **3,411/3,412** ADDs; REMOVE +1 (142) or 0 (31); WAIT 0 (162). **Active edges:** house replacement kept the functional edge count unchanged in 2,483/2,483; a plain extension added exactly one functional edge and removed none in 832/833. **Mothballed state:** a plain extension created or altered no non-functional edge in 821/833; the other 12 coincided with the removal of a non-functional edge elsewhere (examples are non-adjacent; background expiry, not caused by the ADD). **Legal availability:** with concrete > 0 there were ≥ 60 legal ADDs in 1,338/1,338 decisions (10 had none, upgrade-pending); with concrete = 0 there were ≤ 30 in 2,207 of 2,423 (91 %), the rest probably many house-touching replacements (not verified). **Functional connectivity:** see criterion 2. |
+| 2. Redundancy replay (46 cycle-closing edges, 2,928 decisions with at least one) | reachability partition identical with and without them at **every** step (0 differences). My first replay reported 10 differences; all were an attribution bug (a house spawned in the same step and its free driveway edge was counted as a cycle edge); fixed by using the executed action's own edge. |
+| 3. Non-trivial class | cycle-closing = **1.34 %** of executed ADDs, **5.31 %** of extension concrete (passes the "≥ 5 % of concrete" clause narrowly), present as a legal option in 29 % of decisions (1,097/3,797) with 5.6 % policy mass when present |
+| 4. Regression tests | **11/11 pass** (`offline_test_results.json`): necessary first edge, intermediate edge, final connecting edge → allowed; harmless preparatory spur / isolated segment → allowed; existing active edge (no resource effect) → allowed, new cycle-closing edge → vetoed; house replacement and Mothballed re-activation classified, not vetoed; verdicts use only the current graph (re-activation of a non-functional edge → unknown); the same candidate edge is allowed before and vetoed after the network changes (no stale connectivity); zero-concrete masks never gain actions; house-house / carpark / water edges → unknown |
+Unknown classifications: 4.0 % of legal ADD candidates and 0.8 % of executed ADDs (water 24, content/tree 2, re-activation 1 cases); never vetoed. Known limit of the gate: the redundancy proof covers connectivity only, not traffic.
+
+## 3. Native experiment (12 S9 seeds, paired, stochastic S8-C `step_0099840.zip`, SHA 85a9cb75cf287d24)
+Control = the instrumented capture (guard evaluated, never applied); treatment = same code with the guard applied. Same torch seed (1000 + i) in both. All 24 episodes completed, 6 processes in parallel. Control reproducibility: the S12 control equals the S11 control (deliveries) exactly on 9/12 seeds and differs on 3 (−1, −40, −8): same-seed reruns are mostly but not always identical (native non-determinism). The side-effect twin (guard computed, not applied) was *not* identical to the plain rollout this time while plain-vs-plain was identical (last time (S11) it was the other way round) — consistent with run-to-run native non-determinism, not an instrumentation effect, but it is weak evidence.
+
+| metric | control | conserve | paired (higher / equal / lower) |
+|---|---|---|---|
+| deliveries, median (total) | 37.5 (503) | 48 (646) | median +6 (7 / 3 / 2) |
+| survival, median decisions (total) | 313 (3,797) | 348 (4,053) | median +18.5 (7 / 3 / 2) |
+| episodes with ≥ 1 delivery / reaching horizon | 11 / 1 | 11 / 1 | |
+| fraction of decisions with zero concrete, median | 0.636 | 0.631 | −0.003 (3 / 3 / 6) |
+| longest zero-concrete spell, median (decisions) | 90 | 71.5 | −0.5 (4 / 2 / 6) |
+| concrete-consuming ADDs, total | 867 | **949** | +5 median (7 / 2 / 3) |
+| executed cycle-closing ADDs, total | 46 | **0** | |
+| concrete recovered by REMOVE / weekly top-ups, total | 142 / 530 | 183 / 540 | |
+| peak functional connections, median (total) | 5.5 (62) | 7.5 (80) | +1.5 (7 / 3 / 2) |
+| unconnected houses at termination, total | 52 | 45 | −2 (3 / 2 / 7) |
+| newly spawned houses connected within 60 decisions (uncensored) | 39/96 = 41 % | 45/101 = 45 % | |
+| median concrete at a house spawn (share of spawns with ≤ 1 concrete) | 0 (59 %) | 0 (56 %) | |
+| new-house connection latency, median decisions (houses ever connected) | 23 (64/107) | 28 (78/117) | |
+| connection-destruction events (not guarded) | 526 | 545 | |
+| house-edge replacements, total | 2,545 | 2,650 | |
+| repeated functional-graph states, total | 2,149 | 2,207 | |
+| guard-blocked intended draws (sum of vetoed probability mass) | – | ≈ 659 (648 decisions changed = 16 % of 4,053) | |
+| decisions where only WAIT remained | – | 0 | |
+| executed-ADD class share: extension 15.6 → 17.8 %, house replacement 74.0 → 73.1 % | | | |
+Mean concrete over the five fifths of an episode: control 7.2 / 1.8 / 2.9 / 2.6 / 5.7; conserve 6.9 / 2.1 / 2.9 / 3.7 / 4.4 (the budget is empty through the middle of every episode in both).
+Per-seed deliveries (control → conserve): 500000 42 → 87; 507919 31 → 50; 515838 4 → 4; 523757 0 → 0; 531676 146 → **54**; 539595 61 → **154**; 547514 4 → 4; 555433 37 → 43; 563352 38 → 81; 571271 68 → 97; 579190 20 → 26; 587109 52 → 46. Three seeds are unaffected (the episode ends before a connection exists); two are worse (−92 on 531676, whose control was the exceptional 600-decision success; −6); the total gain (+143) is dominated by 539595 (+93), 500000 (+45) and 563352 (+43); without the three largest gains the other nine seeds sum to −38.
+**Exposure is not predictive:** the number of cycle-closing ADDs a control episode executed (0–8) correlates +0.02 with the delivery change, while the number of decisions the guard altered correlates +0.45 (small n).
+
+## 4. Examples
+* Accepted: extending the first segment of a route, a spur off a route, an isolated preparatory segment, the edge that joins the house component to the carpark component, a re-activation of a Mothballed house edge (tests 1–4, 6, 7).
+* Vetoed: a new edge between two tiles already linked by a path (tests 5, 8, 11); in the data, the 46 executed cycle-closing edges (e.g. seed 539595 decision 156), each costing 1 concrete and changing no reachability.
+
+## 5. Interpretation
+* **H12a (concrete inefficiency is a causal bottleneck): not supported as a conservation effect.** The guard did not reduce exhaustion (same zero-concrete fraction, slightly shorter longest spell) and *increased* concrete-consuming ADDs; the improvement in spawned-house connectivity (41 → 45 %) and deliveries is not accompanied by saved budget.
+* **H12b (saves concrete but insufficient): not applicable** — no net saving was realised; the freed probability mass went to other construction (extension share up), i.e. the saving was *redirected/delayed*, not realised.
+* **H12c (resource allocation, not simple waste, dominates): best supported.** Provably redundant spending is ≈ 1 % of ADDs and ≈ 4 concrete per episode against a budget that is exhausted for ≈ 63 % of decisions in every episode; most concrete is spent on edges the model cannot prove wasteful (spurs, parallel segments, long-route preparation) and on early over-building (S10).
+* **H12d (adverse effects): possible on 2/12 seeds**, not established.
+Caveats that matter: (i) 12 seeds, one realisation per seed; trajectories diverge after the first intervention, and the guard changed 16 % of decisions, so the delivery difference is an effect of the whole filtering intervention, probably including generic divergence of a chaotic stochastic process; the control-vs-control reruns (identical seeds) cannot measure that sensitivity — **a re-seeded control replicate (about 3 min native) is the missing noise floor**, and it also bears on S11's +33 %. (ii) Two different guards (S11 connection-preservation, S12 cycle-closing) produced similar total gains (+33 %, +28 %) on partly different seeds, which fits a perturbation effect no less than two specific mechanisms. (iii) "Functional" connectivity is inferred from road states; it is consistent with S11's separation of losses but was not validated against traffic.
+
+## 6. Decision gate
+**Is simple concrete waste a meaningful and safely isolatable failure mechanism?** Safely isolatable — yes (reachability-preserving, validated, 0 observed differences); meaningful — no: it is ≈ 1 % of ADDs and ≈ 5 % of extension spending, and removing it did not conserve concrete. The policy needs to learn **resource allocation across competing routes and spawning houses**, not to avoid a narrow class of redundant edges.
+**Recommended next learning experiment (needs approval, not started):** the single-seed synthetic continuation of S8-C in an *extended S7* world proposed after S11, built from the mechanics now measured natively: several houses spawning on the native schedule, a finite road budget that refills weekly (observed pattern +20 / +30 / +10, amounts unexplained), free house-edge replacement with Active / Mothballed states, and a continuing delivery stream as the only reward; ≈ 100k decisions (≈ 45 min), then the S9 protocol on fresh native seeds. Concrete scarcity and destroyed connections then cost deliveries naturally, so resource-aware, multi-house construction can be learned without an inference-time restriction. Smallest measurement that would sharpen the interpretation of S11–S12 beforehand: a re-seeded control replicate on the same 12 seeds (≈ 3 min native).
+
+## 7. Artifacts, hashes, reproduction
+`research/s12_concrete_conservation/`: `FEASIBILITY_PREREGISTRATION.md`, `feasibility.json`, `offline_test_results.json`, `s12_summary.json`, `twin_noninterference.json`, edge-level per-decision logs `raw/{control,conserve}_<seed>.json.gz`, logs. Source hashes (prefix): `s12_guard.py d4deed8d`, `s12_runner.py 256e1876`, `s12_offline_tests.py e971f6dd`, `s12_feasibility.py ae95a59b`, `s12_analyze.py faa74fd4`; reused unchanged: `s11_guard.py 66960e92`. Checkpoint `step_0099840.zip` SHA-256 `85a9cb75cf287d24…`.
+```
+python experiments/s12_offline_tests.py
+python experiments/s12_runner.py --twin
+python experiments/s12_runner.py --cond control  --idx 0,1     # (and 2,3 / 4,5 / 6,7 / 8,9 / 10,11), parallel
+python experiments/s12_feasibility.py
+python experiments/s12_runner.py --cond conserve --idx 0,1     # same grouping
+python experiments/s12_analyze.py
+```

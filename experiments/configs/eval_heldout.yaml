@@ -1,0 +1,8 @@
+# Held-out evaluation seeds (python/eval_seeds.py EVAL_SEEDS). The environment section is omitted on purpose:
+# for --run / --checkpoint of a harness run the run's own environment is used; for --policy wait|random the
+# existing code defaults apply (normal start, 0.3 s decisions, 30-decision horizon) and are echoed in results.json.
+evaluation:
+  seeds: [7932, 31689, 71284, 102960, 134636, 150474, 166312, 190069, 213826, 221745]
+  episodes_per_seed: 1
+  deterministic: true
+  random_seed: 0

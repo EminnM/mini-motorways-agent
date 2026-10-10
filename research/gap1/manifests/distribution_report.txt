@@ -1,0 +1,38 @@
+candidates: 1400  verified ok: 1380  unique configurations: 1106  base layouts: 612
+rejection reasons: {'ok': 1380, 'a_star_does_not_connect': 20}
+test: 240 configurations -> research\gap1\manifests\test.jsonl
+validation: 120 configurations -> research\gap1\manifests\validation.jsonl
+train: 600 configurations -> research\gap1\manifests\train.jsonl
+overlap train/validation: configurations 0, base layouts 0, game seeds 0
+overlap train/test: configurations 0, base layouts 0, game seeds 0
+overlap validation/test: configurations 0, base layouts 0, game seeds 0
+
+[test] n=240
+  distinct a* action indices: 115; top-5 shares: 2097:4.6%, 2085:2.5%, 2407:2.5%, 2093:2.5%, 1081:2.1%
+  orientation: {'horizontal': 168, 'vertical': 72}
+  gap x range -17..-3 (distinct 14); gap y range -6..7 (distinct 13)
+  gap x histogram: {-17: 3, -16: 5, -15: 11, -14: 11, -13: 18, -12: 36, -11: 26, -10: 31, -9: 37, -8: 26, -7: 16, -6: 13, -5: 6, -3: 1}
+  gap y histogram: {-6: 6, -5: 5, -4: 18, -3: 19, -2: 22, -1: 26, 1: 6, 2: 5, 3: 28, 4: 53, 5: 28, 6: 21, 7: 3}
+  path length (edits): {4: 7, 5: 3, 6: 28, 7: 55, 8: 23, 9: 35, 10: 41, 11: 20, 12: 14, 13: 9, 14: 2, 15: 3}
+  gap position along path (edit index): {0: 27, 1: 23, 2: 25, 3: 35, 4: 27, 5: 29, 6: 21, 7: 22, 8: 13, 9: 8, 10: 6, 11: 2, 12: 1, 14: 1}
+  house x range -17..-2, house y range -6..7
+
+[validation] n=120
+  distinct a* action indices: 76; top-5 shares: 2089:5.0%, 2241:4.2%, 2101:4.2%, 2097:3.3%, 2251:2.5%
+  orientation: {'horizontal': 93, 'vertical': 27}
+  gap x range -17..-3 (distinct 14); gap y range -5..7 (distinct 12)
+  gap x histogram: {-17: 2, -16: 3, -15: 5, -14: 12, -13: 15, -12: 15, -11: 16, -10: 12, -9: 13, -8: 5, -7: 4, -6: 11, -5: 3, -3: 4}
+  gap y histogram: {-5: 3, -4: 10, -3: 14, -2: 7, -1: 3, 1: 1, 2: 1, 3: 11, 4: 30, 5: 23, 6: 16, 7: 1}
+  path length (edits): {4: 6, 5: 8, 6: 10, 7: 22, 8: 9, 9: 15, 10: 22, 11: 11, 12: 17}
+  gap position along path (edit index): {0: 17, 1: 15, 2: 16, 3: 19, 4: 13, 5: 11, 6: 5, 7: 6, 8: 7, 9: 7, 10: 3, 11: 1}
+  house x range -17..-2, house y range -6..7
+
+[train] n=600
+  distinct a* action indices: 173; top-5 shares: 2101:2.5%, 2097:2.2%, 2237:2.2%, 1225:2.2%, 1237:2.0%
+  orientation: {'horizontal': 457, 'vertical': 143}
+  gap x range -17..-3 (distinct 15); gap y range -6..9 (distinct 16)
+  gap x histogram: {-17: 5, -16: 23, -15: 24, -14: 36, -13: 50, -12: 63, -11: 71, -10: 77, -9: 73, -8: 68, -7: 33, -6: 29, -5: 34, -4: 1, -3: 13}
+  gap y histogram: {-6: 9, -5: 16, -4: 84, -3: 71, -2: 69, -1: 24, 0: 2, 1: 7, 2: 11, 3: 44, 4: 100, 5: 88, 6: 59, 7: 14, 8: 1, 9: 1}
+  path length (edits): {3: 2, 4: 25, 5: 18, 6: 63, 7: 60, 8: 74, 9: 93, 10: 96, 11: 75, 12: 58, 13: 25, 14: 8, 15: 3}
+  gap position along path (edit index): {0: 65, 1: 63, 2: 91, 3: 72, 4: 61, 5: 67, 6: 55, 7: 29, 8: 30, 9: 31, 10: 26, 11: 6, 12: 2, 13: 2}
+  house x range -17..-2, house y range -6..7

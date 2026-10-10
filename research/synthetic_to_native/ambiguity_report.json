@@ -1,0 +1,71 @@
+{
+  "definition": {
+    "affected": "more than one road tile touches the destination footprint, so the (encoded) observation does not mark which one is the carpark entry",
+    "resolvable_by_leaf_rule": "affected, but exactly one touching road tile is a dead end (degree 1) and it is the true entry (a rule a policy could learn from the observation)",
+    "unresolvable_by_leaf_rule": "affected and the leaf rule does not single out the true entry",
+    "where_the_information_is": "the raw native PolicyObservation JSON carries contentType 'Carpark' on the carpark tiles; python/mini_motorways_env.py::_CONTENT_TYPE_ORDINAL has only None/House/Destination, so Carpark (like Tree) is encoded as 0 by .get(..., 0)"
+  },
+  "validation": {
+    "n": 120,
+    "categories": {
+      "unique": 85,
+      "resolvable_by_leaf_rule": 22,
+      "unresolvable_by_leaf_rule": 13
+    },
+    "affected_fraction": 0.29166666666666663,
+    "unresolvable_fraction": 0.10833333333333334,
+    "raw_json_has_carpark_tile_in_all": true,
+    "encoded_obs_marks_carpark_in_any": false,
+    "mean_adjacent_road_tiles": 1.8333333333333333,
+    "n_carpark_tiles_in_raw_mean": 2.0,
+    "true_entry_tiles_counts": {
+      "1": 120
+    },
+    "by_orientation": {
+      "horizontal": {
+        "unique": 64,
+        "resolvable_by_leaf_rule": 21,
+        "unresolvable_by_leaf_rule": 8
+      },
+      "vertical": {
+        "unique": 21,
+        "unresolvable_by_leaf_rule": 5,
+        "resolvable_by_leaf_rule": 1
+      }
+    },
+    "a_star_legal_native_all": true,
+    "house_connected_at_reset_any": false
+  },
+  "test": {
+    "n": 240,
+    "categories": {
+      "unique": 145,
+      "resolvable_by_leaf_rule": 50,
+      "unresolvable_by_leaf_rule": 45
+    },
+    "affected_fraction": 0.39583333333333337,
+    "unresolvable_fraction": 0.1875,
+    "raw_json_has_carpark_tile_in_all": true,
+    "encoded_obs_marks_carpark_in_any": false,
+    "mean_adjacent_road_tiles": 1.9916666666666667,
+    "n_carpark_tiles_in_raw_mean": 2.0,
+    "true_entry_tiles_counts": {
+      "1": 240
+    },
+    "by_orientation": {
+      "horizontal": {
+        "resolvable_by_leaf_rule": 46,
+        "unresolvable_by_leaf_rule": 21,
+        "unique": 101
+      },
+      "vertical": {
+        "unique": 44,
+        "unresolvable_by_leaf_rule": 24,
+        "resolvable_by_leaf_rule": 4
+      }
+    },
+    "a_star_legal_native_all": true,
+    "house_connected_at_reset_any": false
+  },
+  "verdict": "The ambiguity exists in the live native observations as encoded for the policy. It is an ENCODING omission, not missing game information: the native observation JSON identifies carpark tiles, the python encoder discards that. Whether the encoded observation still suffices depends on the leaf rule (see categories)."
+}

@@ -1,0 +1,53 @@
+{
+ "0_saved_native_states": {
+  "passed": true,
+  "detail": "120 saved raw native states (the S2 interface check covered 156 = these 120 + 36 post-action states whose raw observations were not persisted); obs (120, 11666), legal counts 121..176"
+ },
+ "1_s1_cnn_seed11_pipeline_equals_original_inference": {
+  "passed": true,
+  "detail": "max|dlogit|=0 max|dvalue|=0 max|dprob|=0; deterministic actions equal 120/120; chosen actions all legal=True; max probability mass on illegal actions=0; 16 tensors / 73416 params loaded bitwise-equal; optimizer fresh=True",
+  "max_abs_diff": {
+   "logits": 0.0,
+   "values": 0.0,
+   "masked_probs": 0.0
+  },
+  "sha256": "c8a7930eb12e9a204be02fa69e98e0dfc6969652555c5e390839bec225186fdc"
+ },
+ "1_s1_cnn_seed12_pipeline_equals_original_inference": {
+  "passed": true,
+  "detail": "max|dlogit|=0 max|dvalue|=0 max|dprob|=0; deterministic actions equal 120/120; chosen actions all legal=True; max probability mass on illegal actions=0; 16 tensors / 73416 params loaded bitwise-equal; optimizer fresh=True",
+  "max_abs_diff": {
+   "logits": 0.0,
+   "values": 0.0,
+   "masked_probs": 0.0
+  },
+  "sha256": "980f95f7ce28bfebebdb8c60dbd832c7dc12252c2320304d61fd87dcfa8c603c"
+ },
+ "1_s1_cnn_seed13_pipeline_equals_original_inference": {
+  "passed": true,
+  "detail": "max|dlogit|=0 max|dvalue|=0 max|dprob|=0; deterministic actions equal 120/120; chosen actions all legal=True; max probability mass on illegal actions=0; 16 tensors / 73416 params loaded bitwise-equal; optimizer fresh=True",
+  "max_abs_diff": {
+   "logits": 0.0,
+   "values": 0.0,
+   "masked_probs": 0.0
+  },
+  "sha256": "41c1e085622b8f0d2e70274b2a6f05fedc94266124c1c74f9b39645ade417682"
+ },
+ "2_incompatible_checkpoints_fail_loudly": {
+  "passed": true,
+  "detail": "{\"wrong_sha\": \"ValueError: init checkpoint SHA-256 mismatch: c8a7930eb12e9a204be02fa69e98e0dfc6969652555c5e390839bec2\", \"mlp_checkpoint_into_spatial\": \"ValueError: incompatible init checkpoint: policy class MaskableActorCriticPolicy != SpatialMaskablePol\", \"net_mlp_with_init\": \"ValueError: --init-checkpoint is only supported with --net spatial\"}"
+ },
+ "3_existing_mlp_path_unchanged": {
+  "passed": true,
+  "detail": "build_model('mlp'/'cnn', seed 7) initial weights bitwise equal to the pre-S4 construction: mlp=True, cnn=True; frozen MLP checkpoint (sha 96278bb340) loads, strict-loads into a freshly built MLP with identical logits=True; its 120 deterministic actions are all legal"
+ },
+ "4_random_spatial_cnn_forward_backward": {
+  "passed": true,
+  "detail": "random-init spatial CNN on 32 saved native states: loss 5.5958, entropy 4.969 nats, all 16 parameter grads finite, 16/16 tensors have non-zero grad, no optimizer step (weights unchanged), fwd+bwd 278 ms/32 states",
+  "n_params": 73416
+ },
+ "5_s1_checkpoints_unmodified": {
+  "passed": true,
+  "detail": "SHA-256 of the three selected S1 checkpoints equal their recorded values"
+ }
+}

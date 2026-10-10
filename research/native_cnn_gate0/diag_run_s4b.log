@@ -1,0 +1,8 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[mlp] seed 182150: len 146 score 0.0 return -10.0 deliveries 0.0 conn_max 0 adds 49 removes 96 (72s)
+[mlp] seed 205907: len 129 score 0.0 return -10.0 deliveries 0.0 conn_max 0 adds 84 removes 45 (125s)
+[mlp] seed 229664: len 153 score 0.0 return -10.0 deliveries 0.0 conn_max 0 adds 86 removes 66 (182s)
+[mlp] seed 253421: len 144 score 0.0 return -10.0 deliveries 0.0 conn_max 0 adds 78 removes 65 (236s)
+wall seconds 236

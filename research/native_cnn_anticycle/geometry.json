@@ -1,0 +1,166 @@
+{
+ "182150": {
+  "content_types": {
+   "None": 763,
+   "Tree": 8,
+   "Carpark": 2,
+   "Destination": 4
+  },
+  "tile_keys": [
+   "buildable",
+   "contentType",
+   "coord",
+   "destination",
+   "groupIndex",
+   "hasRoundabout",
+   "hasTrafficLight",
+   "motorwayDirections",
+   "overRail",
+   "overWater",
+   "road",
+   "underMountain",
+   "visibleVehicleCount"
+  ],
+  "houses": [],
+  "destinations": [
+   [
+    -12,
+    -2,
+    0
+   ],
+   [
+    -11,
+    -2,
+    0
+   ],
+   [
+    -12,
+    -1,
+    0
+   ],
+   [
+    -11,
+    -1,
+    0
+   ]
+  ],
+  "carparks": [
+   [
+    -13,
+    -2
+   ],
+   [
+    -13,
+    -1
+   ]
+  ],
+  "initial_road_edges": [
+   [
+    -13,
+    -2,
+    "S"
+   ]
+  ],
+  "arm_A": {
+   "distinct_edges_ever_added": 10,
+   "min_manhattan_to_destination_or_carpark": 5,
+   "median_to_destination": 6,
+   "min_to_house": 1000000,
+   "median_to_house": 1000000,
+   "edges_within_2_of_destination": 0,
+   "edges_within_2_of_a_house": 0
+  },
+  "arm_B": {
+   "distinct_edges_ever_added": 13,
+   "min_manhattan_to_destination_or_carpark": 4,
+   "median_to_destination": 7,
+   "min_to_house": 1000000,
+   "median_to_house": 1000000,
+   "edges_within_2_of_destination": 0,
+   "edges_within_2_of_a_house": 0
+  },
+  "min_house_to_dest_manhattan": null
+ },
+ "205907": {
+  "content_types": {
+   "None": 763,
+   "Tree": 8,
+   "Carpark": 2,
+   "Destination": 4
+  },
+  "tile_keys": [
+   "buildable",
+   "contentType",
+   "coord",
+   "destination",
+   "groupIndex",
+   "hasRoundabout",
+   "hasTrafficLight",
+   "motorwayDirections",
+   "overRail",
+   "overWater",
+   "road",
+   "underMountain",
+   "visibleVehicleCount"
+  ],
+  "houses": [],
+  "destinations": [
+   [
+    -8,
+    7,
+    0
+   ],
+   [
+    -7,
+    7,
+    0
+   ],
+   [
+    -8,
+    8,
+    0
+   ],
+   [
+    -7,
+    8,
+    0
+   ]
+  ],
+  "carparks": [
+   [
+    -8,
+    6
+   ],
+   [
+    -7,
+    6
+   ]
+  ],
+  "initial_road_edges": [
+   [
+    -7,
+    6,
+    "E"
+   ]
+  ],
+  "arm_A": {
+   "distinct_edges_ever_added": 22,
+   "min_manhattan_to_destination_or_carpark": 7,
+   "median_to_destination": 10,
+   "min_to_house": 1000000,
+   "median_to_house": 1000000,
+   "edges_within_2_of_destination": 0,
+   "edges_within_2_of_a_house": 0
+  },
+  "arm_B": {
+   "distinct_edges_ever_added": 25,
+   "min_manhattan_to_destination_or_carpark": 7,
+   "median_to_destination": 10,
+   "min_to_house": 1000000,
+   "median_to_house": 1000000,
+   "edges_within_2_of_destination": 0,
+   "edges_within_2_of_a_house": 0
+  },
+  "min_house_to_dest_manhattan": null
+ }
+}

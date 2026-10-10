@@ -1,0 +1,2 @@
+time/time_elapsed,rollout/ep_len_mean,rollout/ep_rew_mean,time/total_timesteps,time/iterations,time/fps
+1,20.0,0.0,512,1,287

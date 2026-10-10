@@ -1,0 +1,8 @@
+{
+ "tag": "solo_t6",
+ "env_random_steps_per_s": 7350.822548074164,
+ "env_plus_cnn_inference_steps_per_s": 400.94136324585634,
+ "ppo_minibatch_256_update_ms": 387.5194787979126,
+ "predicted_ppo_training_steps_per_s": 116.97107404527549,
+ "predicted_s_per_100k_decisions": 854.9122149745623
+}

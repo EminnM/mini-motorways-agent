@@ -1,0 +1,57 @@
+[
+ {
+  "test": "t01_necessary_first_edge_of_a_long_route_is_allowed",
+  "passed": true,
+  "detail": "extension of the first segment and a fresh segment are allowed"
+ },
+ {
+  "test": "t02_necessary_intermediate_edge_is_allowed",
+  "passed": true,
+  "detail": "tip and mid-route extensions allowed (extension, extension)"
+ },
+ {
+  "test": "t03_final_connecting_edge_is_allowed",
+  "passed": true,
+  "detail": "joins the house component to the carpark component and connects the house"
+ },
+ {
+  "test": "t04_harmless_preparatory_edge_is_not_vetoed",
+  "passed": true,
+  "detail": "spur and isolated preparatory segment: extension / new_segment"
+ },
+ {
+  "test": "t05_noop_add_is_vetoed_only_with_a_resource_effect",
+  "passed": true,
+  "detail": "existing active edge -> allow (no resource effect); new cycle-closing edge -> veto"
+ },
+ {
+  "test": "t06_house_edge_replacement_with_mothballed_effects_is_classified_not_vetoed",
+  "passed": true,
+  "detail": "reactivation / replacement: house_house_edge_replacement, house_house_edge_replacement"
+ },
+ {
+  "test": "t07_history_and_inventory_do_not_create_redundancy",
+  "passed": true,
+  "detail": "verdicts use only the current functional graph; re-activation of a non-functional edge -> unknown"
+ },
+ {
+  "test": "t08_stale_connectivity_is_never_reused",
+  "passed": true,
+  "detail": "same candidate edge: allow before the network changed, veto after (components rebuilt from the current observation on every call)"
+ },
+ {
+  "test": "t09_zero_concrete_state_never_adds_actions",
+  "passed": true,
+  "detail": "permitted is always a subset of the native mask; WAIT / upgrade untouched; at zero concrete (house-touching ADDs only) nothing changes"
+ },
+ {
+  "test": "t10_unknown_transitions_are_allowed",
+  "passed": true,
+  "detail": "house-house, carpark and water edges -> unknown (not vetoed)"
+ },
+ {
+  "test": "t11_redundancy_means_identical_connectivity_with_or_without_the_cycle_edge",
+  "passed": true,
+  "detail": "connected set identical with and without the vetoed edge"
+ }
+]

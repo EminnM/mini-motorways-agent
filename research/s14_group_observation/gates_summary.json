@@ -1,0 +1,14 @@
+{
+ "A": {
+  "passed": 5,
+  "total": 5
+ },
+ "B": {
+  "passed": 9,
+  "total": 9
+ },
+ "C": {
+  "passed": 2,
+  "total": 2
+ }
+}

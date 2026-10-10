@@ -1,0 +1,487 @@
+{
+ "T1_content_and_groups_match_S11_Ctx": {
+  "passed": true,
+  "detail": {
+   "states": 48,
+   "ok": 48
+  }
+ },
+ "T1_edges_match_S11_functional_model": {
+  "passed": true,
+  "detail": {
+   "states": 48,
+   "ok": 48
+  }
+ },
+ "T1_connectivity_matches_S11": {
+  "passed": true,
+  "detail": {
+   "states": 48,
+   "ok": 48
+  }
+ },
+ "T1_planner_first_action_legal_on_native_states": {
+  "passed": true,
+  "detail": {
+   "first_house_states": 24,
+   "legal_first_actions": 24
+  }
+ },
+ "T2_adapter_driven_executor_matches_direct_executor": {
+  "passed": true,
+  "detail": {
+   "decisions": 40287,
+   "identical_actions": 40287,
+   "illegal_actions": 0,
+   "episodes_diverged": 0,
+   "examples": []
+  }
+ },
+ "T2_per_scenario": {
+  "A": {
+   "500000_replicate": {
+    "direct_deliveries": 190,
+    "adapter_deliveries": 190,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "500000_s12_control": {
+    "direct_deliveries": 156,
+    "adapter_deliveries": 156,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "500000_s12_conserve": {
+    "direct_deliveries": 230,
+    "adapter_deliveries": 230,
+    "abandoned_adapter": 0,
+    "plans": 13
+   },
+   "507919_replicate": {
+    "direct_deliveries": 114,
+    "adapter_deliveries": 114,
+    "abandoned_adapter": 0,
+    "plans": 5
+   },
+   "507919_s12_control": {
+    "direct_deliveries": 178,
+    "adapter_deliveries": 178,
+    "abandoned_adapter": 0,
+    "plans": 8
+   },
+   "507919_s12_conserve": {
+    "direct_deliveries": 132,
+    "adapter_deliveries": 132,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "515838_replicate": {
+    "direct_deliveries": 253,
+    "adapter_deliveries": 253,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "515838_s12_control": {
+    "direct_deliveries": 66,
+    "adapter_deliveries": 66,
+    "abandoned_adapter": 0,
+    "plans": 3
+   },
+   "515838_s12_conserve": {
+    "direct_deliveries": 105,
+    "adapter_deliveries": 105,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "523757_replicate": {
+    "direct_deliveries": 97,
+    "adapter_deliveries": 97,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "523757_s12_control": {
+    "direct_deliveries": 91,
+    "adapter_deliveries": 91,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "523757_s12_conserve": {
+    "direct_deliveries": 93,
+    "adapter_deliveries": 93,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "531676_replicate": {
+    "direct_deliveries": 48,
+    "adapter_deliveries": 48,
+    "abandoned_adapter": 0,
+    "plans": 8
+   },
+   "531676_s12_control": {
+    "direct_deliveries": 257,
+    "adapter_deliveries": 257,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "531676_s12_conserve": {
+    "direct_deliveries": 164,
+    "adapter_deliveries": 164,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "539595_replicate": {
+    "direct_deliveries": 248,
+    "adapter_deliveries": 248,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "539595_s12_control": {
+    "direct_deliveries": 207,
+    "adapter_deliveries": 207,
+    "abandoned_adapter": 0,
+    "plans": 13
+   },
+   "539595_s12_conserve": {
+    "direct_deliveries": 218,
+    "adapter_deliveries": 218,
+    "abandoned_adapter": 0,
+    "plans": 14
+   },
+   "547514_replicate": {
+    "direct_deliveries": 230,
+    "adapter_deliveries": 230,
+    "abandoned_adapter": 0,
+    "plans": 17
+   },
+   "547514_s12_control": {
+    "direct_deliveries": 90,
+    "adapter_deliveries": 90,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "547514_s12_conserve": {
+    "direct_deliveries": 44,
+    "adapter_deliveries": 44,
+    "abandoned_adapter": 0,
+    "plans": 3
+   },
+   "555433_replicate": {
+    "direct_deliveries": 91,
+    "adapter_deliveries": 91,
+    "abandoned_adapter": 0,
+    "plans": 6
+   },
+   "555433_s12_control": {
+    "direct_deliveries": 209,
+    "adapter_deliveries": 209,
+    "abandoned_adapter": 0,
+    "plans": 11
+   },
+   "555433_s12_conserve": {
+    "direct_deliveries": 196,
+    "adapter_deliveries": 196,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "563352_replicate": {
+    "direct_deliveries": 123,
+    "adapter_deliveries": 123,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "563352_s12_control": {
+    "direct_deliveries": 178,
+    "adapter_deliveries": 178,
+    "abandoned_adapter": 0,
+    "plans": 8
+   },
+   "563352_s12_conserve": {
+    "direct_deliveries": 229,
+    "adapter_deliveries": 229,
+    "abandoned_adapter": 0,
+    "plans": 12
+   },
+   "571271_replicate": {
+    "direct_deliveries": 73,
+    "adapter_deliveries": 73,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "571271_s12_control": {
+    "direct_deliveries": 253,
+    "adapter_deliveries": 253,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "571271_s12_conserve": {
+    "direct_deliveries": 248,
+    "adapter_deliveries": 248,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "579190_replicate": {
+    "direct_deliveries": 94,
+    "adapter_deliveries": 94,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "579190_s12_control": {
+    "direct_deliveries": 163,
+    "adapter_deliveries": 163,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "579190_s12_conserve": {
+    "direct_deliveries": 154,
+    "adapter_deliveries": 154,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "587109_replicate": {
+    "direct_deliveries": 103,
+    "adapter_deliveries": 103,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "587109_s12_control": {
+    "direct_deliveries": 186,
+    "adapter_deliveries": 186,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "587109_s12_conserve": {
+    "direct_deliveries": 98,
+    "adapter_deliveries": 98,
+    "abandoned_adapter": 0,
+    "plans": 9
+   }
+  },
+  "B": {
+   "500000_replicate": {
+    "direct_deliveries": 148,
+    "adapter_deliveries": 148,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "500000_s12_control": {
+    "direct_deliveries": 158,
+    "adapter_deliveries": 158,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "500000_s12_conserve": {
+    "direct_deliveries": 66,
+    "adapter_deliveries": 66,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "507919_replicate": {
+    "direct_deliveries": 115,
+    "adapter_deliveries": 115,
+    "abandoned_adapter": 0,
+    "plans": 5
+   },
+   "507919_s12_control": {
+    "direct_deliveries": 175,
+    "adapter_deliveries": 175,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "507919_s12_conserve": {
+    "direct_deliveries": 132,
+    "adapter_deliveries": 132,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "515838_replicate": {
+    "direct_deliveries": 257,
+    "adapter_deliveries": 257,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "515838_s12_control": {
+    "direct_deliveries": 66,
+    "adapter_deliveries": 66,
+    "abandoned_adapter": 0,
+    "plans": 3
+   },
+   "515838_s12_conserve": {
+    "direct_deliveries": 105,
+    "adapter_deliveries": 105,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "523757_replicate": {
+    "direct_deliveries": 97,
+    "adapter_deliveries": 97,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "523757_s12_control": {
+    "direct_deliveries": 91,
+    "adapter_deliveries": 91,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "523757_s12_conserve": {
+    "direct_deliveries": 93,
+    "adapter_deliveries": 93,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "531676_replicate": {
+    "direct_deliveries": 226,
+    "adapter_deliveries": 226,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "531676_s12_control": {
+    "direct_deliveries": 174,
+    "adapter_deliveries": 174,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "531676_s12_conserve": {
+    "direct_deliveries": 172,
+    "adapter_deliveries": 172,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "539595_replicate": {
+    "direct_deliveries": 243,
+    "adapter_deliveries": 243,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "539595_s12_control": {
+    "direct_deliveries": 202,
+    "adapter_deliveries": 202,
+    "abandoned_adapter": 0,
+    "plans": 13
+   },
+   "539595_s12_conserve": {
+    "direct_deliveries": 210,
+    "adapter_deliveries": 210,
+    "abandoned_adapter": 0,
+    "plans": 14
+   },
+   "547514_replicate": {
+    "direct_deliveries": 210,
+    "adapter_deliveries": 210,
+    "abandoned_adapter": 0,
+    "plans": 17
+   },
+   "547514_s12_control": {
+    "direct_deliveries": 90,
+    "adapter_deliveries": 90,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "547514_s12_conserve": {
+    "direct_deliveries": 44,
+    "adapter_deliveries": 44,
+    "abandoned_adapter": 0,
+    "plans": 3
+   },
+   "555433_replicate": {
+    "direct_deliveries": 89,
+    "adapter_deliveries": 89,
+    "abandoned_adapter": 0,
+    "plans": 6
+   },
+   "555433_s12_control": {
+    "direct_deliveries": 118,
+    "adapter_deliveries": 118,
+    "abandoned_adapter": 0,
+    "plans": 11
+   },
+   "555433_s12_conserve": {
+    "direct_deliveries": 196,
+    "adapter_deliveries": 196,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "563352_replicate": {
+    "direct_deliveries": 123,
+    "adapter_deliveries": 123,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "563352_s12_control": {
+    "direct_deliveries": 176,
+    "adapter_deliveries": 176,
+    "abandoned_adapter": 0,
+    "plans": 8
+   },
+   "563352_s12_conserve": {
+    "direct_deliveries": 210,
+    "adapter_deliveries": 210,
+    "abandoned_adapter": 0,
+    "plans": 12
+   },
+   "571271_replicate": {
+    "direct_deliveries": 192,
+    "adapter_deliveries": 192,
+    "abandoned_adapter": 0,
+    "plans": 9
+   },
+   "571271_s12_control": {
+    "direct_deliveries": 242,
+    "adapter_deliveries": 242,
+    "abandoned_adapter": 0,
+    "plans": 14
+   },
+   "571271_s12_conserve": {
+    "direct_deliveries": 239,
+    "adapter_deliveries": 239,
+    "abandoned_adapter": 0,
+    "plans": 15
+   },
+   "579190_replicate": {
+    "direct_deliveries": 149,
+    "adapter_deliveries": 149,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "579190_s12_control": {
+    "direct_deliveries": 155,
+    "adapter_deliveries": 155,
+    "abandoned_adapter": 0,
+    "plans": 7
+   },
+   "579190_s12_conserve": {
+    "direct_deliveries": 167,
+    "adapter_deliveries": 167,
+    "abandoned_adapter": 0,
+    "plans": 6
+   },
+   "587109_replicate": {
+    "direct_deliveries": 103,
+    "adapter_deliveries": 103,
+    "abandoned_adapter": 0,
+    "plans": 4
+   },
+   "587109_s12_control": {
+    "direct_deliveries": 177,
+    "adapter_deliveries": 177,
+    "abandoned_adapter": 0,
+    "plans": 8
+   },
+   "587109_s12_conserve": {
+    "direct_deliveries": 188,
+    "adapter_deliveries": 188,
+    "abandoned_adapter": 0,
+    "plans": 9
+   }
+  }
+ },
+ "T3_pending_edge_present_not_functional_not_buildable": {
+  "passed": true,
+  "detail": {
+   "state": "P",
+   "functional": false,
+   "buildable": false
+  }
+ },
+ "_wall_s": 567.1
+}

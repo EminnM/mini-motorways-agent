@@ -1,0 +1,20 @@
+{
+ "rule": "seed_i = 500000 + 7919*i, i = 0..11, fixed before any S9 episode; no outcome-based selection",
+ "seeds": [
+  500000,
+  507919,
+  515838,
+  523757,
+  531676,
+  539595,
+  547514,
+  555433,
+  563352,
+  571271,
+  579190,
+  587109
+ ],
+ "found_in_earlier_artifacts": {},
+ "overlap_known_lists": [],
+ "checked_against": "EVAL_SEEDS, VAL_SEEDS, 9101-9110, S7 capture seeds 311000+7919*i (i<18), plus a text scan of research/, experiments/, python/, runs/"
+}

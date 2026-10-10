@@ -1,0 +1,41 @@
+{
+ "seed": 500000,
+ "decisions": 150,
+ "edge_model_mismatch": 0,
+ "content_mismatch": 0,
+ "connectivity_mismatch": 0,
+ "illegal": 0,
+ "mothballed_events": [],
+ "upgrade_interrupts": 1,
+ "pending_seen": 0,
+ "wall_s": 62.5,
+ "score": 12,
+ "executor_stats": {
+  "plans": 3,
+  "completed": 3,
+  "abandoned": 0,
+  "abandon_reasons": {},
+  "waits_for_concrete": 0,
+  "compute_s": 0.06547100000898354,
+  "decisions": 149,
+  "illegal_suppressed": 0,
+  "destroy_vetoes": 0
+ },
+ "forced_actions": [
+  [
+   141,
+   3109
+  ]
+ ],
+ "connected_end": [
+  4,
+  4
+ ],
+ "diag_capability": {
+  "PING": {
+   "id": 1791501789715,
+   "op": "PING",
+   "pong": true
+  }
+ }
+}

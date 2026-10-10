@@ -1,0 +1,20 @@
+{
+ "window_boundary": {
+  "native_legal": 1366,
+  "native_illegal": 277,
+  "frac_native_legal": 0.8314,
+  "n": 1643
+ },
+ "water_endpoint": {
+  "native_legal": 169,
+  "native_illegal": 69,
+  "frac_native_legal": 0.7101,
+  "n": 238
+ },
+ "interior_dry": {
+  "native_legal": 2192,
+  "native_illegal": 0,
+  "frac_native_legal": 1.0,
+  "n": 2192
+ }
+}

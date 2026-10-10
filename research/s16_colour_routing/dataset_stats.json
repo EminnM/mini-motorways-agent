@@ -1,0 +1,48 @@
+{
+ "train": {
+  "geometries": 900,
+  "rejected": 215,
+  "cf_excluded": 657,
+  "samples": 1143,
+  "colour_dependent_pairs": 243,
+  "within_rf": 382,
+  "decoy_nearer": 603,
+  "mean_valid_set_size": 1.3140857392825898,
+  "slots_of_query": {
+   "0": 539,
+   "1": 529,
+   "2": 75
+  }
+ },
+ "val": {
+  "geometries": 150,
+  "rejected": 28,
+  "cf_excluded": 113,
+  "samples": 187,
+  "colour_dependent_pairs": 37,
+  "within_rf": 59,
+  "decoy_nearer": 79,
+  "mean_valid_set_size": 1.3636363636363635,
+  "slots_of_query": {
+   "0": 83,
+   "1": 92,
+   "2": 12
+  }
+ },
+ "test": {
+  "geometries": 400,
+  "rejected": 78,
+  "cf_excluded": 298,
+  "samples": 502,
+  "colour_dependent_pairs": 102,
+  "within_rf": 150,
+  "decoy_nearer": 257,
+  "mean_valid_set_size": 1.3784860557768925,
+  "slots_of_query": {
+   "0": 243,
+   "1": 219,
+   "2": 40
+  }
+ },
+ "generation_s": 66.7
+}

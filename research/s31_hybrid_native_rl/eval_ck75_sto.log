@@ -1,0 +1,15 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[step_0073728_sto] seed 500000: t 440 score 86.0 terminated True plan/edit/wait 353/83/1 destroyed 8 illegal 0 (65s)
+[step_0073728_sto] seed 507919: t 151 score 3.0 terminated True plan/edit/wait 116/25/9 destroyed 1 illegal 0 (89s)
+[step_0073728_sto] seed 515838: t 145 score 5.0 terminated True plan/edit/wait 107/28/9 destroyed 1 illegal 0 (112s)
+[step_0073728_sto] seed 523757: t 501 score 114.0 terminated True plan/edit/wait 244/254/0 destroyed 87 illegal 0 (202s)
+[step_0073728_sto] seed 531676: t 368 score 60.0 terminated True plan/edit/wait 262/101/3 destroyed 28 illegal 0 (264s)
+[step_0073728_sto] seed 539595: t 558 score 141.0 terminated True plan/edit/wait 301/248/6 destroyed 21 illegal 0 (354s)
+[step_0073728_sto] seed 547514: t 154 score 5.0 terminated True plan/edit/wait 73/75/5 destroyed 0 illegal 0 (379s)
+[step_0073728_sto] seed 555433: t 521 score 113.0 terminated True plan/edit/wait 339/171/8 destroyed 12 illegal 0 (470s)
+[step_0073728_sto] seed 563352: t 463 score 97.0 terminated True plan/edit/wait 321/138/1 destroyed 6 illegal 0 (549s)
+[step_0073728_sto] seed 571271: t 600 score 162.0 terminated False plan/edit/wait 425/170/1 destroyed 13 illegal 0 (652s)
+[step_0073728_sto] seed 579190: t 283 score 32.0 terminated True plan/edit/wait 208/63/10 destroyed 7 illegal 0 (701s)
+[step_0073728_sto] seed 587109: t 507 score 121.0 terminated True plan/edit/wait 345/144/15 destroyed 2 illegal 0 (805s)

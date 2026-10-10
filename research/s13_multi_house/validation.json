@@ -1,0 +1,204 @@
+{
+ "01_multi_edge_route_connects_house": {
+  "passed": true,
+  "detail": {
+   "connected_after_each_edge": [
+    0,
+    0,
+    1
+   ],
+   "env_equals_external": true
+  }
+ },
+ "02_second_house_spawns_after_first_connection": {
+  "passed": true,
+  "detail": {
+   "houses_before_t10": 1,
+   "houses_after": 2,
+   "first_still_connected": true
+  }
+ },
+ "03_concrete_changes_only_when_appropriate": {
+  "passed": true,
+  "detail": {
+   "plain_add": -1,
+   "second_plain_add": -1,
+   "wait": 0,
+   "house_edge_swap": 0,
+   "remove_refund": 1,
+   "illegal_action": 0
+  }
+ },
+ "04_construction_fails_with_insufficient_concrete": {
+  "passed": true,
+  "detail": {
+   "plain_add_masked": true,
+   "forced_plain_add_changes_state": false,
+   "house_edge_still_free": true
+  }
+ },
+ "05_weekly_replenishment": {
+  "passed": true,
+  "detail": {
+   "topups(decision,amount)": [
+    [
+     141,
+     20
+    ],
+    [
+     281,
+     30
+    ],
+    [
+     421,
+     10
+    ],
+    [
+     561,
+     20
+    ]
+   ],
+   "concrete_at_141": 45
+  }
+ },
+ "06_house_edge_swap_updates_active_mothballed": {
+  "passed": true,
+  "detail": {
+   "after_swap(E,S)": [
+    "M",
+    "A"
+   ],
+   "after_reactivate": [
+    "A",
+    null
+   ],
+   "after_third": [
+    null,
+    "M",
+    "A"
+   ]
+  }
+ },
+ "07_functional_connectivity_ignores_inactive_roads": {
+  "passed": true,
+  "detail": {
+   "connected_before": true,
+   "mothballed_edge_present": true,
+   "connected_after": false,
+   "deliveries_in_30_steps": 0
+  }
+ },
+ "08_routes_preserved_while_connecting_new_house": {
+  "passed": true,
+  "detail": {
+   "first_house_connected_throughout": true,
+   "route_edges_unchanged": true,
+   "second_connected": true,
+   "edges_added": 2
+  }
+ },
+ "09_removing_replacing_critical_road_interrupts_deliveries": {
+  "passed": true,
+  "detail": {
+   "deliveries_connected": 10,
+   "mid_route_remove_legal": [
+    false,
+    false,
+    false
+   ],
+   "after_dead_end_branch_removal": 10,
+   "after_driveway_replacement": 0,
+   "after_restoring": 10,
+   "mu_set_to": 1.0,
+   "note": "native legality allows REMOVE only on dead-end tiles, so the only way to destroy a trunk is a house-edge replacement (this was also the S11 failure mode)"
+  }
+ },
+ "10_disconnected_houses_accumulate_unmet_demand": {
+  "passed": true,
+  "detail": {
+   "disconnected": {
+    "mean_demand_t100": 5.75,
+    "game_over_fraction": 0.02,
+    "connected_houses": 0
+   },
+   "connected_2_houses": {
+    "mean_demand_t100": 2.27,
+    "game_over_fraction": 0.0,
+    "connected_houses": 2
+   }
+  }
+ },
+ "11_ignoring_houses_causes_penalty_and_termination": {
+  "passed": true,
+  "detail": {
+   "episodes_ended_game_over": 10,
+   "episode_return": [
+    -10.0
+   ],
+   "decisions_median": 189
+  }
+ },
+ "12_no_reward_for_endless_construction": {
+  "passed": true,
+  "detail": {
+   "reward_over_400_add_remove_steps": 0.0,
+   "concrete_min_max": [
+    24,
+    74
+   ]
+  }
+ },
+ "13_no_privileged_labels_in_observation": {
+  "passed": true,
+  "detail": {
+   "unused_channels_zero": true,
+   "obs_unchanged_by_hidden_labels": true,
+   "group_channel_values": [
+    0.0,
+    1.0
+   ],
+   "note": "house<->destination colour assignment is NOT observable (native encoder gives only a has-group flag): faithful, but a fidelity limitation"
+  }
+ },
+ "14_native_shapes_unchanged": {
+  "passed": true,
+  "detail": {
+   "obs": [
+    11666
+   ],
+   "dtype": "float32",
+   "actions": "3111",
+   "mask": [
+    3111
+   ],
+   "grid": [
+    37,
+    21
+   ],
+   "tile_features": 15,
+   "globals": 11
+  }
+ },
+ "15_s7_tasks_and_frozen_checkpoint_unaffected": {
+  "passed": true,
+  "detail": {
+   "frozen_files_older_than_S13_start": {
+    "s7.py": true,
+    "s7_oracle.py": true,
+    "s7_eval.py": true,
+    "s8_eval.py": true,
+    "layout.py": true,
+    "models.py": true,
+    "experiments/s8_train.py": true,
+    "experiments/s7_train.py": true
+   },
+   "checkpoint_sha_prefix": "85a9cb75cf287d24",
+   "s7_env_obs": [
+    11666
+   ],
+   "inference_on_s13_legal": true,
+   "inference_on_s7_legal": true,
+   "params_loaded": 73416
+  }
+ }
+}

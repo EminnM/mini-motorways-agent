@@ -1,0 +1,38 @@
+# Gap-1, Experiment C: native + beta*completion.
+experiment:
+  name: gap1_native_plus_completion
+  description: "MaskablePPO on Gap-1 tasks with the native score + beta * completion (beta=5, fixed before the run)"
+  hypothesis: "Explicit construction credit allows learning while retaining the native objective."
+  tags: [gap1, native_plus_completion]
+
+environment:
+  task: gap1
+  initialization: connected
+  reward: native_plus_completion
+  decision_interval_seconds: 1.0
+  gap1:
+    manifest_dir: C:/Users/TKA/Desktop/mini moto/research/gap1/manifests
+    construction_window: 20
+    continuation_decisions: 40
+    beta: 5.0
+
+policy:
+  algorithm: maskable_ppo
+  network: mlp
+  hyperparameters:            # identical to the frozen Baseline-0 native run
+    n_steps: 512
+    batch_size: 256
+    n_epochs: 4
+    target_kl: 0.03
+    gamma: 0.99
+
+training:
+  total_timesteps: 100000
+  seeds: [101]
+  checkpoint_every: 20000
+  eval_every: 20000
+  n_envs: 1
+  headless: true
+
+evaluation:                    # TEST is NOT used inside the run; see experiments.gap1.final_test
+  seeds: [1]

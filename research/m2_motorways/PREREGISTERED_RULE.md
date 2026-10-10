@@ -1,0 +1,16 @@
+# M2 Stage B — preregistered motorway-placement rule (defined before any Stage B outcome; written after Stage A validation only)
+
+**Cost model it is grounded in (S25 audit, CONFIRMED):** vehicles follow the single shortest-travel-time route fixed at dispatch; lane cost = `max(1, 10·Length/SpeedLimit)`; ordinary lanes have speed 1 (turns/junctions lower it further); motorway lanes have speed 3 with no turn/junction penalty (`GameBehaviourModel.GetLaneSpeed` 489–496); a motorway is two-way, one lane per direction, enterable only at its two endpoint tiles via ramps in a chosen 8-direction slot; it costs one Motorway upgrade and 0 concrete; removal refunds the upgrade (validated live in Stage A).
+
+**Travel-time proxy used by the rule (only hop counts are observable):** `T_road(h) = hops of the functional-road path from house h to the nearest same-colour destination stub` (speed 1); `T_motorway(h, a, b) = hops(h→a) + 2 + ceil(cheb(a, b)/3) + hops(b→stub)` where a, b are existing road tiles (the ramp endpoints), 2 = ramp entry/exit lanes, `cheb/3` = the motorway lane at speed 3. The estimate ignores turn penalties on the road part (which only makes the road slower than assumed, i.e. the rule is conservative).
+
+**Rule M (deterministic, applied whenever `motorwaysAvailableOrDraft ≥ 1` and no placement is pending):**
+1. Candidate endpoints: a = any functional road tile on the current route of a connected house at distance ≥ 2 hops from its stub; b = any functional road tile within 2 hops of a same-colour destination stub; `cheb(a,b) ≥ 4`.
+2. Saving for a pair = Σ over connected houses whose route passes a of `max(0, T_road(h) − T_motorway(h,a,b))`.
+3. Pick the pair with the largest saving (ties: lexicographic (a, b)); require saving ≥ 6 hops-equivalent and `MOTORWAY_CHECK` legal for some ramp-direction pair (first legal pair in the fixed order N,NE,E,SE,S,SW,W,NW × same); otherwise WAIT (opportunity logged as "no eligible placement").
+4. Place once per available upgrade; never remove or relocate. Road construction = planner B unchanged.
+**Upgrade choice in BOTH arms:** choose the Motorway option when offered, else slot 0 (so the arms are matched on inventory; S M1 showed Motorway offered at decision 421 on most seeds).
+**Arms:** `noMW` (planner B, identical upgrade choice, never places) and `ruleM`. 12 designated seeds, 600 decisions, one episode each (deterministic ⇒ exact pairing; the known native transient at decision 127 is accepted).
+**Logged:** per decision hashes (road/spawn divergence point vs control), opportunities evaluated (candidate pairs, best saving), placements (endpoints, directions, estimated saving, MOTORWAY_CHECK info), vehicle counts on the two endpoint tiles and on the two ramp tiles per decision (usage), per-house hop distance before/after, deliveries, survival, connectivity.
+**Analysis:** paired per seed deliveries and survival (ruleM − noMW), seeds with ≥ 1 placement vs without; usage = Σ endpoint vehicle counts after placement (0 ⇒ the motorway was not used); divergence point; policy-level outcome only — no causal claim per placement.
+**Stop rule:** if fewer than 4 seeds yield an eligible placement, or motorway usage is 0 on all placements, report "no meaningful placement opportunity in this regime" and stop.

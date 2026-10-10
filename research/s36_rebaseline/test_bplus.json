@@ -1,0 +1,75 @@
+{
+ "T1_targets_unreached_destinations": {
+  "passed": false,
+  "detail": {
+   "unreached_seen": 7,
+   "latency_decisions": {
+    "(-7, 7)": null,
+    "(-12, 3)": null,
+    "(-2, 7)": null,
+    "(-13, -1)": null,
+    "(-1, -2)": 0,
+    "(-10, -2)": 0,
+    "(-6, -4)": 0
+   }
+  }
+ },
+ "T2_recognises_served_destinations": {
+  "passed": true,
+  "detail": {
+   "plan_episodes_per_destination": {
+    "(-1, -2)": 1,
+    "(-10, -2)": 1,
+    "(-6, -4)": 1
+   },
+   "exec": {
+    "plans": 17,
+    "completed": 17,
+    "abandoned": 0,
+    "abandon_reasons": {},
+    "waits_for_concrete": 0,
+    "decisions": 696,
+    "illegal_suppressed": 0,
+    "destroy_vetoes": 0
+   }
+  }
+ },
+ "T3_no_redundant_construction": {
+  "passed": true,
+  "detail": {
+   "plan_episodes_per_destination": {
+    "(-1, -2)": 1,
+    "(-10, -2)": 1,
+    "(-6, -4)": 1
+   },
+   "removes": 0,
+   "abandon_reasons": {}
+  }
+ },
+ "T4_legality_and_resources": {
+  "passed": true,
+  "detail": {
+   "illegal": 0,
+   "boundary_violations": 0,
+   "negative_concrete_steps": 0,
+   "t": 700,
+   "score": 220.0
+  }
+ },
+ "T5_connectivity_preserved": {
+  "passed": true,
+  "detail": {
+   "destroyed": 0,
+   "destroy_vetoes": 0
+  }
+ },
+ "T6_flag_off_equals_historical_plannerB": {
+  "passed": true,
+  "detail": {
+   "t": 315,
+   "score": 41.0,
+   "dest_plans": 0
+  }
+ },
+ "_wall_s": 130.5
+}

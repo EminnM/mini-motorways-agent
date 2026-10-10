@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9hA2K9rRAQM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TKA\\Desktop\\mini moto\\tools\\systemcore_patcher\\systemcore_patcher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TKA\\.nuget\\packages\\mono.cecil\\0.11.5\\mono.cecil.0.11.5.nupkg.sha512"
+  ],
+  "logs": []
+}

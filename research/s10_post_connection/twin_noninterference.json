@@ -1,0 +1,6 @@
+{
+ "steps": 60,
+ "plain_vs_instrumented_identical": true,
+ "plain_vs_plain_identical": true,
+ "wall_s": 36.4
+}
